@@ -1,0 +1,45 @@
+      *
+       SETUP-PORDER-FOR-PDF-EMAIL-ONLY SECTION.
+       SUPOFPEONLY-005.
+      *    ACCEPT WS-USERNAME FROM ENVIRONMENT "USER".
+          
+      *    MOVE WS-USERNAME TO WS-MESSAGE
+      *    PERFORM ERROR-MESSAGE.
+          
+      *    MOVE W-FILENAME TO WS-MESSAGE
+      *    PERFORM ERROR-MESSAGE.
+       SUSFPEONLY-010.
+          MOVE 
+          CONCATENATE('PrintPOrderPdfEmailOnly ', 
+            CR-ACCOUNT-NUMBER, ' ',
+              WS-CO-NUMBER) TO WS-COMMAND-LINE.
+      *          TO WS-COMMAND-LINE.
+      
+      *    MOVE WS-COMMAND-LINE TO  WS-MESSAGE
+      *    PERFORM ERROR-MESSAGE.
+
+          CALL "SYSTEM" USING WS-COMMAND-LINE
+                     RETURNING W-STATUS.
+      
+      *    MOVE W-STATUS TO  WS-MESSAGE
+      *    PERFORM ERROR-MESSAGE.
+      *    DISPLAY W-STATUS  AT 2810.
+       SUSPOPEONLY-999.
+           EXIT.
+      *     STOP RUN.
+
+
+      *So far the variables which will be specified from inside the
+      *   COBOL programs are:
+      *$1 = The username                         e.g. steve
+      *$2 = The company number from 01 to 12     e.g. 07
+      *$3 = The Printername to print the file to e.g. MP250
+      *$4 = The Print file name which will replace
+      *                /ctools/spl/InPrintCo01 when specified in COBOL
+
+      *****************************************************************
+      * printing routine - sends disk file to printer....
+      *    MOVE "lp -d" WS-PRINTER & WS-PRINT-FILE
+      * E.G. "/ctools/dev/source/cobol/TestStuff.cob"    TO W-PRINTCOM1
+      *    MOVE "/ctools/dev/source/cobol/TestStuff.cob" TO W-PRINTCOM2
+      *****************************************************************

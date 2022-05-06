@@ -1,0 +1,51 @@
+       FD  DEBTOR1-MASTER.
+       01  DEBTOR1-RECORD.
+           03  DR1-KEY.
+               05  DR1-ACCOUNT-NUMBER PIC 9(7).
+           03  DR1-ALT-KEY.
+               05  DR1-NAME           PIC X(40).
+           03  DR1-ADDRESS1           PIC X(25).
+           03  DR1-ADDRESS2           PIC X(25).
+           03  DR1-ADDRESS3           PIC X(25).
+           03  DR1-POST-CODE          PIC 9(4).
+           03  DR1-DEL-ADDRESS1       PIC X(25).
+           03  DR1-DEL-ADDRESS2       PIC X(25).
+           03  DR1-DEL-ADDRESS3       PIC X(25).
+           03  DR1-TELEPHONE          PIC X(20).
+           03  DR1-TELEX              PIC X(20).
+           03  DR1-GSTNO              PIC X(13).
+           03  DR1-SALES-ANALYSIS     PIC 9(2).
+           03  DR1-CREDIT-LIMIT       PIC 9(7).
+           03  DR1-BALANCE            PIC S9(7)V99.
+           03  DR1-BAL-LAST-STATE     PIC S9(7)V99.
+           03  DR1-CURRENT            PIC S9(7)V99.
+           03  DR1-30DAY              PIC S9(7)V99.
+           03  DR1-60DAY              PIC S9(7)V99.
+           03  DR1-90DAY              PIC S9(7)V99.
+           03  DR1-120DAY             PIC S9(7)V99.
+           03  DR1-DATE-CREATED       PIC 9(8).
+           03  DR1-DATE-LAST-SALE     PIC 9(8).
+           03  DR1-DATE-LAST-PAY      PIC 9(8).
+           03  DR1-SALES-PTD          PIC S9(7)V99.
+           03  DR1-SALES-YTD          PIC S9(7)V99.
+           03  DR1-SALES-LAST         PIC S9(7)V99.
+           03  DR1-COST-PTD           PIC S9(7)V99.
+           03  DR1-COST-YTD           PIC S9(7)V99.
+           03  DR1-COST-LAST          PIC S9(7)V99.
+           03  DR1-DISCOUNT-CODE      PIC X.
+           03  DR1-TERMS-CODE         PIC X.
+           03  DR1-DELIVERY-CODE      PIC X.
+           03  DR1-SUPPLY-Y-N         PIC X.
+           03  DR1-SALESMAN           PIC X.
+           03  DR1-PART-ORDERS        PIC X.
+           03  DR1-CORPORATE-GROUP    PIC 999.
+           03  DR1-ACCOUNTS-CONTACT   PIC X(20).
+           03  DR1-SALES-CONTACT      PIC X(20).
+           03  DR1-SALES-EMAIL        PIC X(40).
+           03  DR1-ACC-PHONE          PIC X(20).
+           03  DR1-ACC-FAX            PIC X(20).
+           03  DR1-ACC-EMAIL          PIC X(40).
+      *
+      * DR1-PART-ORDERS S/BE: Y/N
+      * DR1-SUPPLY-Y-N  S/BE: Y/N/S
+      *

@@ -1,0 +1,144 @@
+        ************{** MINIMUM/MAXIMUM LEVEL ADJUSTMENT **}**********         
+        *                                                            *         
+        *                                                            *         
+        *                                                            *         
+        *    Minimum Stock For            : __ Weeks.                *         
+        *                                                            *         
+        *    Stock Category               : ___                      *         
+        *                                                            *         
+        *    Calculate figures on                                    *         
+        *           LAST YEAR only ??     : _                        *         
+        *                                                            *         
+        *    If St-Analysis = 'N'                                    *         
+        *     Move Zero to MinMax Fields. : _                        *         
+        *                                                            *         
+        *    If St-Analysis = 'T'                                    *         
+        *     Increase Min/Max by 30% ??  : _                        *         
+        *                                                            *         
+        *    If St-MinimumLevel = 1                                  *         
+        *     Move 0 to Min/Max Level     : _                        *         
+        *                                                            *         
+        * { NB. The Maximum Level Will Be twice the minimum Level. } *         
+        **************************************************************         
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+
+Form name: StMiMxMt                        size: 988   bytes
+height: 26    width: 79    number of fields: 7              
+
+Field name: WEEKQUES                                         
+Row: 4    Column: 44   Width: 2                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: STOCKCATEGORY                                    
+Row: 6    Column: 44   Width: 3                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: LYEAR                                            
+Row: 9    Column: 44   Width: 1                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: ANALYSIS                                         
+Row: 12   Column: 44   Width: 1                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: T-ITEM                                           
+Row: 15   Column: 44   Width: 1                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: ZERO                                             
+Row: 18   Column: 44   Width: 1                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+                                 
+ ******************************* 
+ *  COLOR PALETTE INFORMATION  * 
+ ******************************* 
+                                 
+            Caption Color: 6     
+               Line Color: 2     
+                                 
+                                 
+        *************************
+        *   I N T E N S I T Y   *
+*********************************
+* Color *  Red  * Green *  Blue *
+*********************************
+*   0   *   0   *   3   *   0   *
+*   1   *   0   *   2   *   0   *
+*   2   *   0   *   3   *   3   *
+*   3   *   0   *   2   *   2   *
+*   4   *   3   *   3   *   3   *
+*   5   *   2   *   2   *   2   *
+*   6   *   3   *   3   *   0   *
+*   7   *   3   *   0   *   0   *
+*********************************
+  

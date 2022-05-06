@@ -1,0 +1,84 @@
+******************** SHORT STOCK DESCRIPTION INQUIRY ************************** 
+                                                        Sort Key: Stock Special 
+Short Description: __________                     By Description  <Ret>         
+                                                  By Stock Number <f8>     <F5> 
+Stock Number   Stock Description                           Price   Spec A  Hand_
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+
+Form name: StDescIq                        size: 440   bytes
+height: 26    width: 80    number of fields: 3              
+
+Field name: SHORTDESC                                        
+Row: 2    Column: 19   Width: 10                             
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: E  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+Field name: WORK                                             
+Row: 4    Column: 79   Width: 1                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+                                 
+ ******************************* 
+ *  COLOR PALETTE INFORMATION  * 
+ ******************************* 
+                                 
+            Caption Color: 6     
+               Line Color: 2     
+                                 
+                                 
+        *************************
+        *   I N T E N S I T Y   *
+*********************************
+* Color *  Red  * Green *  Blue *
+*********************************
+*   0   *   0   *   3   *   0   *
+*   1   *   0   *   2   *   0   *
+*   2   *   0   *   3   *   3   *
+*   3   *   0   *   2   *   2   *
+*   4   *   3   *   3   *   3   *
+*   5   *   2   *   2   *   2   *
+*   6   *   3   *   3   *   0   *
+*   7   *   3   *   0   *   0   *
+*********************************
+  

@@ -1,0 +1,3 @@
+       FD  CRREMIT-TRANS-ASCII.
+       01  ASCII-RECORD.
+           03  ASCII-MESSAGE          PIC X(42).

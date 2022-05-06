@@ -1,0 +1,84 @@
+%'
+
+%#0: 
+
+
+No THREE Digit Month Name Was Entered, This Run Is Aborted.
+
+
+2:
+
+Screen Setup
+
+Y
+
+
+Y
+White Blue
+100
+
+Path
+Win
+Program
+
+C/2 Run
+MainCont.Int
+
+-N +P
+8
+THUTMES
+5
+2
+
+3
+X
+<Spl>CSCGL1
+
+FINAL JRN'S FOR THE MONTH.
+
+8
+X
+<Spl>CSCGL2
+
+10
+X
+<Spl>CSCGL3
+
+6
+X
+<Spl>CSCGL4
+
+9999999
+
+
+e
+
+
+Path
+Win
+Spl
+
+Rename
+<Spl>CSCGl*
+CSC%0*
+Yes
+
+
+/zip
+CSC%0*
+CSC.Zip
+Yes
+
+a n uMain
+[Win]<Spl>CSC.Zip
+
+[Win]<Spl>CSC.Zip
+
+
+
+Path
+Win
+Program
+
+
+**** CSC GL Monthly Reports Run Successfully *****

@@ -1,0 +1,7 @@
+           SELECT CB-LY-MASTER ASSIGN TO Ws-CbMasterLY
+               ORGANIZATION IS INDEXED
+               LOCK MANUAL
+               ACCESS MODE IS DYNAMIC
+               RECORD KEY IS CB-LY-KEY
+               ALTERNATE RECORD KEY CB-LY-DESCRIPTION 
+               FILE STATUS IS WS-CB-LY-STATUS.

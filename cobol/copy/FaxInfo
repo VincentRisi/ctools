@@ -1,0 +1,28 @@
+       77  WS-AUTO-FAX          PIC X VALUE " ".
+       77  WS-DELAY-FAX         PIC X VALUE " ".
+       01  WS-ERROR                   PIC 9(4) COMP.
+       01  FAX-FONT-DETAILS.
+           03  FAX-FONTFILENAME       PIC X(30).
+           03  FAX-CBFONTFILENAME     PIC 9(4) COMP.
+           03  FAX-FONTBUFFER         PIC X(9000).
+       01  FAX-FILE-DETAILS.
+           03  FAX-ASCIIFILENAME      PIC X(30).
+           03  FAX-CBASCIIFILENAME    PIC 9(4) COMP.
+           03  FAX-ASCIIFILEPSW       PIC X(12).
+           03  FAX-CBASCIIFILEPSW     PIC 9(4) COMP.
+           03  FAX-FAXFILENAME        PIC X(30).
+           03  FAX-CBFAXFILENAME      PIC 9(4) COMP.
+           03  FAX-FAXFILEPSW         PIC X(12).
+           03  FAX-CBFAXFILEPSW       PIC 9(4) COMP.
+           03  FAX-RESOLUTION         PIC 9(4) COMP.
+           03  FAX-BUFFER             PIC X(9000).
+           03  FAX-TYPE               PIC 9(4) COMP.
+       01  FAX-PHONE-DETAILS.
+           03  FAX-PHONENUMBER        PIC X(30).
+           03  FAX-CBPHONENUMBER      PIC 9(4) COMP.
+           03  FAX-JOBNUMBER          PIC 9(4) COMP.
+       01  WS-FAX-CHECK.
+           03  WS-F-C            PIC X OCCURS 60.
+       01  WS-FAX-SEND.
+           03  WS-FAX-12CHAR     PIC X(12).
+           03  WS-FAX-REST       PIC X(23).

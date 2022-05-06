@@ -1,0 +1,84 @@
+      ****************** INVOICE COMMENT FILE MAINTENANCE *******************  
+      *                                                                     *  
+      *                                                                     *  
+      *                                                                     *  
+      *                  Comment Code : _                                   *  
+      *                                                                     *  
+      *                Comment to be printed on all invoices                *  
+      *                                                                     *  
+      *    ____________________________________________________________     *  
+      *                                                                     *  
+      *                                                                     *  
+      ***********************************************************************  
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+
+Form name: SlInCoMt                        size: 440   bytes
+height: 26    width: 79    number of fields: 3              
+
+Field name: COMMCODE                                         
+Row: 4    Column: 40   Width: 1                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+Field name: COMMDESC                                         
+Row: 8    Column: 11   Width: 60                             
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+                                 
+ ******************************* 
+ *  COLOR PALETTE INFORMATION  * 
+ ******************************* 
+                                 
+            Caption Color: 2     
+               Line Color: 6     
+                                 
+                                 
+        *************************
+        *   I N T E N S I T Y   *
+*********************************
+* Color *  Red  * Green *  Blue *
+*********************************
+*   0   *   0   *   3   *   0   *
+*   1   *   0   *   2   *   0   *
+*   2   *   0   *   3   *   3   *
+*   3   *   0   *   2   *   2   *
+*   4   *   3   *   3   *   3   *
+*   5   *   2   *   2   *   2   *
+*   6   *   3   *   3   *   0   *
+*   7   *   3   *   0   *   0   *
+*********************************
+  

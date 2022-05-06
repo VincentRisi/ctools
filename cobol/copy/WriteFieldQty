@@ -1,0 +1,19 @@
+      *
+        WRITE-FIELD-QTY SECTION.
+        WRITE52-NA000.
+            CALL "WRITEFIELD" USING F-ERROR1
+                                    F-FORM
+                                    F-FIELDNAME
+                                    F-CBFIELDNAME
+                                    F-INDEX
+                                    F-EDNAMEFIELDQTY
+                                    F-CBFIELDLENGTH
+                                    F-TYPE.
+            IF F-ERROR1 NOT = 0
+                DISPLAY "WRITEFIELD QTY ERROR"
+                DISPLAY F-ERROR1
+                DISPLAY F-FIELDNAME
+                PERFORM ERROR-010
+                STOP RUN.
+        WRITE52-NA999.
+            EXIT.

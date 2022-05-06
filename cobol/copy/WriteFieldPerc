@@ -1,0 +1,19 @@
+      *
+        WRITE-FIELD-PERC SECTION.
+        WRITE-PERC000.
+            CALL "WRITEFIELD" USING F-ERROR1
+                                    F-FORM
+                                    F-FIELDNAME
+                                    F-CBFIELDNAME
+                                    F-INDEX
+                                    F-EDNAMEFIELDPERC
+                                    F-CBFIELDLENGTH
+                                    F-TYPE.
+            IF F-ERROR1 NOT = 0
+                DISPLAY "WRITEFIELD PERC ERROR"
+                DISPLAY F-NAMEFIELD
+                DISPLAY F-ERROR1
+                PERFORM ERROR-010
+                STOP RUN.
+        WRITE-PERC999.
+            EXIT.

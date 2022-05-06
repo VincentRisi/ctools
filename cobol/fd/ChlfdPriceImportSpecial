@@ -1,0 +1,19 @@
+       FD  PRICE-IMP-SP-MASTER.
+       01  PRICE-IMP-SP-RECORD.
+            03  PRICE-IMP-SP-KEY.
+                05  PRICE-IMP-SP-ST-NUM       PIC X(20).
+            03  FILLER                        PIC X(01).
+            03  PRICE-IMP-SP-DESCRIPTION      PIC X(60).
+            03  FILLER                        PIC X(01).
+            03  PRICE-IMP-SP-UNIT-OF-SALE     PIC X(10).
+            03  FILLER                        PIC X(01).
+            03  PRICE-IMP-SP-OLD-DEALER-PRICE PIC X(15).
+            03  FILLER                        PIC X(01).
+            03  PRICE-IMP-SP-NEW-DEALER-PRICE PIC X(14).
+            03  FILLER                        PIC X(01).
+            03  PRICE-IMP-SP-DEALER-DISCOUNT  PIC X(5).
+            03  FILLER                        PIC X(01).
+            03  PRICE-IMP-SP-OLD-LIST-PRICE   PIC X(14).
+            03  FILLER                        PIC X(01).
+            03  PRICE-IMP-SP-NEW-LIST-PRICE   PIC X(14).
+            03  FILLER                        PIC X(03).

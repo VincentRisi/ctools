@@ -1,0 +1,47 @@
+       FD  GLPARAMETER-ASCII.
+       01  ASCII-REC.
+           03  ASCII-KEY.
+               04  ASCII-RECORD           PIC 9.
+           03  ASCII-NAME                 PIC X(40).
+           03  ASCII-ADD1                 PIC X(25).
+           03  ASCII-ADD2                 PIC X(25).
+           03  ASCII-ADD3                 PIC X(25).
+           03  ASCII-ADD4                 PIC X(25).
+           03  ASCII-ADD5                 PIC X(25).
+           03  ASCII-ADD6                 PIC X(25).
+           03  ASCII-CURRENT-GLPER        PIC 9(2).
+           03  ASCII-RECJRN-POST          PIC X.
+           03  ASCII-GLTRANSNO            PIC 9(6).
+           03  ASCII-GROUP-NUM            PIC 9.
+           03  ASCII-PERIODS.
+               04  ASCII-PER PIC 9(8) OCCURS 13.
+           03  ASCII-GLVAT-REG-NO         PIC X(15).
+           03  ASCII-CREDITOR-FIELDS.
+               04  ASCII-CURRENT-CRPER    PIC 9(2).
+               04  ASCII-CR-REMIT         PIC X.
+               04  ASCII-CRTRANSNO        PIC 9(6).
+               04  ASCII-GLCRED-NO        PIC X(12).
+               04  ASCII-GLBANK           PIC X(12).
+               04  ASCII-GLVAT-ACC        PIC X(12).
+           03  ASCII-SHORT-CR OCCURS 10.
+               04  ASCII-IND              PIC X.
+               04  ASCII-NO               PIC X(12).
+           03  ASCII-DEBTOR-FIELDS.
+               04  ASCII-CURRENT-SLPER    PIC 9(2).
+               04  ASCII-GLDEBT-NO        PIC X(12).
+               04  ASCII-GLDRBANK         PIC X(12).
+               04  ASCII-GLVATOUTPUT-ACC  PIC X(12).
+               04  ASCII-GLSALES-ACC      PIC X(12).
+               04  ASCII-GLSALES-ADDONS   PIC X(12).
+               04  ASCII-GLSALES-DISC     PIC X(12).
+               04  ASCII-GLSALES-ADJ      PIC X(12).
+               04  ASCII-GLBDEBT-ACC      PIC X(12).
+           03  ASCII-CASHBOOK-FIELDS.
+               04  ASCII-CURRENT-CBPER    PIC 9(2).
+               04  ASCII-CB-POST          PIC X.
+               04  ASCII-CBTRANSNO        PIC 9(6).
+               04  ASCII-CAMS-BANK-CODE   PIC X(6).
+               04  ASCII-CAMS-BANK-ACC    PIC X(11).
+               04  ASCII-CAMS-BANK-NAME   PIC X(20).
+      *BANK-NAME IS JUST FOR THE INPUT SCREEN AND REPORTING
+      *       

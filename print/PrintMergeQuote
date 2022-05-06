@@ -1,0 +1,27 @@
+pdftk /ctools/fax/$1Quote$3.pdf /ctools/fax/$1Quote$4.pdf cat output /ctools/fax/$1QuoteFinal$4.pdf 
+
+if [ "$5" != "01" ] && [ "$7" = "P" ]
+   then
+     lp -d $2 /ctools/fax/$1QuoteFinal$4.pdf
+ fi
+
+if [ "$5" != "01" ] && [ "$6" = "F" ]
+   then
+    sendfax -n -d $8 /ctools/fax/$1QuoteFinal$4.pdf
+ fi
+
+#FORMAT FOR PRINTING IS:
+#lp -d W-PRINTERNAME W-PRINTFILE
+
+#--So far the variables which will be specified from inside the COBOL programs are:
+#---$1 = The company number from 01 to 12     e.g. 07
+#---$2 = The Printername to print the file to e.g. MP140
+#---$3 = The Print File name for Page 1
+#---$4 = The Print File Name for Page 2 and more
+#---$5 = The page-count. IF page-cnt=01 don't print, If=02 OR HIGHER print the Final report
+#---$6 = WS-AUTO-FAX.    IF = F then send by fax
+#---$7 = WS-ANSWER.      IF = P then print PDF.
+#---$8 = WS-fax-number.  Used ONLY if sending by fax.
+#--- add any extra commands here - perhaps cups printing
+#--- or sendfax via hylaFAX
+

@@ -1,0 +1,233 @@
+         **********CREDITORS CAMS TRANSACTION FILE***********                  
+         *                                                  *                  
+         *    Transaction Number : ______                   *                  
+         ****************************************************                  
+         *    Account Number     : _______                  *                  
+         *    Account Name       : ____________________     *                  
+         *    Creditor Number    : __________               *                  
+         *                                                  *                  
+         *    Cheque Number      : __________               *                  
+         *                                                  *                  
+         *    Date Of Transaction: __________               *                  
+         *                                                  *                  
+         *    Amount             : ___________              *                  
+         *                                                  *                  
+         *    Bank Name          : ____________________     *                  
+         *    Bank Account Number: ___________              *                  
+         *    Bank Branch Code   : ______                   *                  
+         *    Bank Account Type  : _                        *                  
+         *    Paid on FNB CAMS   : _                        *                  
+         ****************************************************                  
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+
+Form name: CrCAMSMt                        size: 1037  bytes
+height: 25    width: 79    number of fields: 13             
+
+Field name: TRANSNUM                                         
+Row: 2    Column: 35   Width: 6                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+Field name: ACCNUM                                           
+Row: 4    Column: 35   Width: 7                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+Field name: NAME                                             
+Row: 5    Column: 35   Width: 20                             
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+Field name: CREDNUM                                          
+Row: 6    Column: 35   Width: 10                             
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+Field name: CHEQUENUM                                        
+Row: 8    Column: 35   Width: 10                             
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+Field name: DATE                                             
+Row: 10   Column: 35   Width: 10                             
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+Field name: AMOUNT                                           
+Row: 12   Column: 35   Width: 11                             
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+Field name: BANKNAME                                         
+Row: 14   Column: 35   Width: 20                             
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+Field name: BANKNUM                                          
+Row: 15   Column: 35   Width: 11                             
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+Field name: BRANCHNUM                                        
+Row: 16   Column: 35   Width: 6                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+Field name: ACC-TYPE                                         
+Row: 17   Column: 35   Width: 1                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+Field name: PAID                                             
+Row: 18   Column: 35   Width: 1                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+                                 
+ ******************************* 
+ *  COLOR PALETTE INFORMATION  * 
+ ******************************* 
+                                 
+            Caption Color: 4     
+               Line Color: 7     
+                                 
+                                 
+        *************************
+        *   I N T E N S I T Y   *
+*********************************
+* Color *  Red  * Green *  Blue *
+*********************************
+*   0   *   0   *   3   *   0   *
+*   1   *   0   *   2   *   0   *
+*   2   *   0   *   3   *   3   *
+*   3   *   0   *   2   *   2   *
+*   4   *   3   *   3   *   3   *
+*   5   *   2   *   2   *   2   *
+*   6   *   3   *   3   *   0   *
+*   7   *   3   *   0   *   0   *
+*********************************
+  

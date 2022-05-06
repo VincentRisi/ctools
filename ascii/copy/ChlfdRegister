@@ -1,0 +1,66 @@
+       FD  INCR-REGISTER.
+       01  INCR-REC.
+           03  INCR-KEY.
+               05  INCR-TRANS      PIC 9.
+               05  INCR-INVOICE    PIC 9(6).
+           03  INCR-ALT-KEY.
+               05  INCR-ACCOUNT    PIC 9(7).
+               05  INCR-PORDER     PIC X(20).
+           03  INCR-GSTNO          PIC X(13).
+           03  INCR-DATE           PIC 9(8).
+           03  INCR-SALES          PIC 99.
+           03  INCR-INVCRED-AMT    PIC 9(8)V99.
+           03  INCR-TAX            PIC 9(8)V99.
+           03  INCR-ADDONS         PIC 9(8)V99.
+           03  INCR-DISCOUNT       PIC 9(8)V99.
+           03  INCR-INVCRED-COST   PIC 9(8)V99.
+           03  INCR-SB-TYPE        PIC X(2).
+           03  INCR-DRTRANS-NO     PIC 9(6).
+           03  INCR-PULLBY         PIC X(2).
+           03  INCR-PULL-DATE      PIC 9(8).
+           03  INCR-PULL-TIME      PIC 9(6).
+      * incr-printed starts = char 131
+           03  INCR-PRINTED        PIC X.
+           03  INCR-AREA           PIC X.
+           03  INCR-COPY-NUMBER    PIC 99.
+           03  INCR-PART-ORDERS    PIC X.
+           03  INCR-INVOICE-FIELDS.
+             04  INCR-NAME           PIC X(40).
+             04  INCR-ADD1           PIC X(25).
+             04  INCR-ADD2           PIC X(25).
+             04  INCR-ADD3           PIC X(25).
+             04  INCR-CODE           PIC 9(4).
+             04  INCR-DEL1           PIC X(25).
+             04  INCR-DEL2           PIC X(25).
+             04  INCR-DEL3           PIC X(25).
+             04  INCR-TERMS          PIC X(11).
+             04  INCR-PHONE          PIC X(20).
+             04  INCR-CONTACT        PIC X(20).
+             04  INCR-DELIVERY       PIC X(20).
+             04  INCR-BIN            PIC X(6).
+             04  INCR-COMMENT        PIC X(30).
+             04  INCR-BO-INV-NO      PIC 9(6).
+             04  INCR-BO-DATE        PIC 9(8).
+             04  INCR-ADDPOST        PIC 9(8)V99.
+             04  INCR-ADDFREIGHT     PIC 9(8)V99.
+             04  INCR-ADDLABOUR      PIC 9(8)V99.
+             04  INCR-ADDMISC        PIC 9(8)V99.
+             04  INCR-LINENO         PIC 9(3).
+           03  INCR-KIT-FIELDS REDEFINES INCR-INVOICE-FIELDS.
+             04  INCR-KITNAME        PIC X(15).
+             04  INCR-KITQTY         PIC 9(3).
+             04  INCR-KITSHPDQTY     PIC 9(3).
+             04  INCR-KITDESC1       PIC X(20).
+             04  INCR-KITDESC2       PIC X(20).
+             04  INCR-KITPRICE       PIC 9(8)V99.
+             04  INCR-KITCOMMENT     PIC X(40).
+             04  FILLER              PIC X(203).
+      * ALTERNATE KEYS:
+      *       INCR-KEY, INCR-ALT-KEY, INCR-DATE, INCR-PRINTED, 
+      *       INCR-PORDER, INCR-AREA, INCR-NAME, INCR-ADD1, INCR-DEL1
+      *
+      *TRANS: 1=INVOICE, 2=BLANK ,3=REPAIR    4=ORDER/PICKING SLIP,
+      *       5=BLANK ,  6=CREDIT,7=TOOLKITS, 8=QUOTE,
+      *       9=BLANK.
+      *PRINTED:Y OR N, P=1st COPY PRINTED, IN THE STORE.
+      *        H=HELD BY OPERATOR(PENDING COMPLETION).

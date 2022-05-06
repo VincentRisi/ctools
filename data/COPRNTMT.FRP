@@ -1,0 +1,234 @@
+***************************** PRINTER FILE ENTRY / EDIT************************
+*                                                                             *
+*                     Printer Number : __                                     *
+*******************************************************************************
+*                                                                             *
+*            Printer Name            : ____________                           *
+*                                                                             *
+*            Printer Type            : __                                     *
+*                                                                             *
+*            Printer Location        : ____________________                   *
+*                                                                             *
+*            Prompt to change Paper  : _                                      *
+*                                                                             *
+*            Special Print Characters                                         *
+*                                                                             *
+*            Compressed Mode (17cpi) : _                                      *
+*            Bold & Double Size      : _                                      *
+*            Reset Bold to 10cpi     : _                                      *
+*            Set to Normal (10cpi)   : _                                      *
+*            Set to  8" Paper Length : ____                                   *
+*            Set to 11" Paper Length : ____                                   *
+*            Set to  4" Paper Length : ____                                   *
+*                                                                             *
+*******************************************************************************
+                                                                               
+                                                                               
+
+Form name: CoPrntMt                        size: 1007  bytes
+height: 26    width: 79    number of fields: 13             
+
+Field name: NUMBER                                           
+Row: 2    Column: 39   Width: 2                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+Field name: NAME                                             
+Row: 5    Column: 39   Width: 20                             
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+Field name: TYPE                                             
+Row: 7    Column: 39   Width: 2                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+Field name: DESC                                             
+Row: 9    Column: 39   Width: 20                             
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+Field name: PROMT-PAPER                                      
+Row: 11   Column: 39   Width: 1                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+Field name: COMP                                             
+Row: 15   Column: 39   Width: 2                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+Field name: BOLD                                             
+Row: 16   Column: 39   Width: 2                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+Field name: UNBOLD                                           
+Row: 17   Column: 39   Width: 2                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+Field name: NORMAL                                           
+Row: 18   Column: 39   Width: 2                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+Field name: EIGHT                                            
+Row: 19   Column: 39   Width: 8                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+Field name: ELEVEN                                           
+Row: 20   Column: 39   Width: 8                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+Field name: FOUR                                             
+Row: 21   Column: 39   Width: 8                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+                                 
+ ******************************* 
+ *  COLOR PALETTE INFORMATION  * 
+ ******************************* 
+                                 
+            Caption Color: 4     
+               Line Color: 7     
+                                 
+                                 
+        *************************
+        *   I N T E N S I T Y   *
+*********************************
+* Color *  Red  * Green *  Blue *
+*********************************
+*   0   *   0   *   3   *   0   *
+*   1   *   0   *   2   *   0   *
+*   2   *   0   *   3   *   3   *
+*   3   *   0   *   2   *   2   *
+*   4   *   3   *   3   *   3   *
+*   5   *   2   *   2   *   2   *
+*   6   *   3   *   3   *   0   *
+*   7   *   3   *   0   *   0   *
+*********************************
+  

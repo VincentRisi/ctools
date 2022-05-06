@@ -1,0 +1,6 @@
+           SELECT SALES-ANALYSIS ASSIGN TO Ws-Sales
+               ORGANIZATION IS INDEXED
+               LOCK MANUAL
+               ACCESS MODE IS DYNAMIC
+               FILE STATUS IS WS-SALES-STATUS
+               RECORD KEY IS SA-KEY.

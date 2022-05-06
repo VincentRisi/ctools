@@ -1,0 +1,45 @@
+      *----------------------------------------------------------------*
+       A995-QUEUE-FSD SECTION.
+      *----------------------------------------------------------------*
+       A995-ENTRY.
+            MOVE SPACES              TO FS-QE-RECORD.
+            MOVE 6                   TO FS-CBID.
+            MOVE 1                   TO FS-USERNUMBER.
+            MOVE 0                   TO FS-WSNUMBER.
+            MOVE 1                   TO FS-SEQUENCE.
+            MOVE 17                  TO FS-CBLIBRARY.
+            MOVE "[Win]<FPlus>FPlus" TO FS-LIBRARY.
+            MOVE 8                   TO FS-CBFORM.
+            MOVE "Statemnt"          TO FS-FORM.
+            MOVE 4                   TO FS-CBPRINTER.
+            MOVE "HP6P"              TO FS-PRINTER.
+            MOVE 5                   TO FS-CBPITCH.
+            MOVE "12.00"             TO FS-PITCH.
+            MOVE 0                   TO FS-CBFEED.
+            MOVE " "                 TO FS-FEED.
+            MOVE 0                   TO FS-CBWHEEL.
+            MOVE " "                 TO FS-WHEEL.
+            MOVE 0                   TO FS-FPRINTALL.
+            MOVE 0                   TO FS-BDATATYPE.
+            MOVE 0                   TO FS-DELETEAFTER.
+            MOVE 0                   TO FS-FMULTIPLERPF.
+            MOVE 21                  TO FS-CBDATAFILE.
+            MOVE W-FILENAME          TO FS-DATAFILE.
+            MOVE 0                   TO FS-USERNUMBER.
+      *******************************************************
+      * BOOLEAN VALUES FOR WS-AREAS EG. FS-DELETEAFTER      *
+      * 1= TRUE      = Y DELETE                             *
+      * 0= FALSE     = N DO NOT DELETE                      *
+      *******************************************************
+            CALL "&AddQueueEntry" USING W-ERROR
+                                        FS-Q-NAME 
+                                        FS-Q-NAME-LEN 
+                                        FS-FQIFNOSERVER 
+                                        FS-PRIORITY 
+                                        FS-Q-TYPE 
+                                        FS-QE-RECORD 
+                                        FS-QE-RECORD-LEN 
+                                        FS-DATETIME 
+                                        FS-REPEATTIME.
+       A991-EXIT.
+            EXIT.

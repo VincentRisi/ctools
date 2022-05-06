@@ -1,0 +1,50 @@
+       FD  STOCK2-TRANS-FILE.
+       01  STOCK2-TRANS-REC.
+         02  STTR2-KEY.
+           03  STTR2-TYPE                 PIC 99.
+           03  STTR2-REFERENCE1           PIC 9(6).
+           03  STTR2-TRANSACTION-NUMBER   PIC 9(6).
+         02  STTR2-ST-KEY.
+           03  STTR2-ST-COMPLETE          PIC X.
+           03  STTR2-STOCK-NUMBER         PIC X(15).
+           03  STTR2-ST-DATE              PIC 9(8).
+         02  STTR2-AC-KEY.
+           03  STTR2-AC-COMPLETE          PIC X.
+           03  STTR2-ACCOUNT-NUMBER       PIC 9(7).
+           03  STTR2-AC-DATE              PIC 9(8).
+         02  STTR2-INV-NO                 PIC 9(6).
+         02  STTR2-DATE                   PIC 9(8).
+         02  STTR2-COMPLETE               PIC X.
+         02  DATA2-FIELDS.
+           03  STTR2-ORDERQTY             PIC 9(5).
+           03  STTR2-SHIPQTY              PIC 9(5).
+           03  STTR2-SHIPPEDQTY           PIC 9(5).
+           03  STTR2-SALES-VALUE          PIC 9(8)V99.
+           03  STTR2-COST-VALUE           PIC 9(8)V99.
+           03  STTR2-PRICE                PIC 9(8)V99.
+           03  STTR2-DESC1                PIC X(20).
+           03  STTR2-DESC2                PIC X(20).
+           03  STTR2-ITEMDISC             PIC 9(4)V99.
+           03  STTR2-TAX                  PIC X.
+           03  STTR2-UNIT                 PIC X(4).
+           03  STTR2-FILLER               PIC X(4).
+         02  COMMENT2-FIELDS REDEFINES DATA2-FIELDS.
+           03  COM2-ORDERQTY             PIC X(5).
+           03  COM2-SHIPQTY              PIC X(5).
+           03  COM2-DESC                 PIC X(20).
+           03  COM2-UNIT                 PIC X(4).
+           03  COM2-PRICE                PIC X(11).
+           03  COM2-COST                 PIC X(11).
+           03  COM2-DISC                 PIC X(5).
+           03  COM2-FILLER               PIC X(39).
+      *
+      * REF1 : INVOICE/CREDIT/QUOTE/P-SLIP/BM NUMBER.
+      * STTR2-COMPLETE: N=USED FOR ORDERS NOT INVOICED,
+      *                Y=DELETE AT MONTH END,
+      *                B=INVOICED, NOT COMPLETE (BACKORDER).
+      *                L=LINE COMPLETE, BUT ORDER NOT COMPLETE OR
+      *                  FINAL PRINT OF ORDER NOT DONE.
+      *TRANS: 1=INVOICE, 2=BLANK ,3=REPAIRS,  4=ORDER/PICKING SLIP,
+      *       5=BLANK ,  6=CREDIT,7=TOOLKITS, 8=QUOTE,
+      *       9=BLANK.
+      *

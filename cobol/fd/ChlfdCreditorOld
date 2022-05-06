@@ -1,0 +1,49 @@
+       FD  CREDITOROLD-MASTER.
+       01  CREDITOROLD-RECORD.
+           03  CROLD-KEY.
+               05  CROLD-ACCOUNT-NUMBER PIC 9(7).
+           03  CROLD-ALT-KEY.
+               05  CROLD-NAME           PIC X(40).
+           03  CROLD-ADDRESS1           PIC X(25).
+           03  CROLD-ADDRESS2           PIC X(25).
+           03  CROLD-ADDRESS3           PIC X(25).
+           03  CROLD-POST-CODE          PIC 9(4).
+           03  CROLD-DEL-ADDRESS1       PIC X(25).
+           03  CROLD-DEL-ADDRESS2       PIC X(25).
+           03  CROLD-DEL-ADDRESS3       PIC X(25).
+           03  CROLD-TELEPHONE          PIC X(20).
+           03  CROLD-FAX                PIC X(20).
+           03  CROLD-CURRENCY           PIC X(5).
+           03  CROLD-TERMS              PIC X.
+           03  CROLD-FOREIGN-LOCAL      PIC X.
+           03  CROLD-PAY-METHOD         PIC X.
+           03  CROLD-SETT-DISC          PIC 9(2)V99.
+           03  CROLD-TRADE-DISC         PIC 9(2)V99.
+           03  CROLD-SUPPLIER-NUMBER    PIC X(10).
+           03  CROLD-DATE-CREATED       PIC 9(8).
+           03  CROLD-DATE-LAST-INVOICE  PIC 9(8).
+           03  CROLD-DATE-LAST-PAY      PIC 9(8).
+           03  CROLD-PURCHASE-PTD       PIC S9(7)V99 LEADING SEPARATE.
+           03  CROLD-PURCHASE-YTD       PIC S9(7)V99 LEADING SEPARATE.
+           03  CROLD-PURCHASE-LAST      PIC S9(7)V99 LEADING SEPARATE.
+           03  CROLD-FOR-PURCH-YTD      PIC S9(7)V99 LEADING SEPARATE.
+           03  CROLD-FOR-PURCH-LAST     PIC S9(7)V99 LEADING SEPARATE.
+           03  CROLD-BALANCE            PIC S9(7)V99 LEADING SEPARATE.
+           03  CROLD-BAL-LAST-STATE     PIC S9(7)V99 LEADING SEPARATE.
+           03  CROLD-CURRENT            PIC S9(7)V99 LEADING SEPARATE.
+           03  CROLD-30DAY              PIC S9(7)V99 LEADING SEPARATE.
+           03  CROLD-60DAY              PIC S9(7)V99 LEADING SEPARATE.
+           03  CROLD-90DAY              PIC S9(7)V99 LEADING SEPARATE.
+           03  CROLD-120DAY             PIC S9(7)V99 LEADING SEPARATE.
+           03  CROLD-CONTACT-NAME       PIC X(25).
+           03  CROLD-EMAIL              PIC X(40).
+           03  CROLD-ACC-CONTACT-NAME   PIC X(25).
+           03  CROLD-ACC-EMAIL          PIC X(40).
+           03  CROLD-CAMS-BANK-NAME     PIC X(20).
+           03  CROLD-CAMS-BANK-NUM      PIC X(11).
+           03  CROLD-CAMS-BRANCH-NUM    PIC X(6).
+           03  CROLD-CAMS-ACC-TYPE      PIC X.
+      *    
+      *BANK-NAME IS JUST FOR INFO ON THE INPUT SCREEN AND FOR
+      *REPORTING PURPOSES
+      *BANK-ACC-TYPE MUST BE: 1=CURRENT   2=SAVINGS

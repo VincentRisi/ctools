@@ -1,0 +1,43 @@
+       ZoomBox Section.
+       ZB-005.
+                Move 79                to sCols
+                Move 27                to sLines
+                Move 1                 to fFinalBox
+                Move spaces            to Title.
+                Move "Zoombox Enquiry" To Title
+                Move H"0F00"           To cbTitle.
+      ***************************************************************
+      * The above H"0F00" = Hex 15.  cbTitle for some reason        *
+      * has to have the size entered this way and not as usual in   *
+      * the format 15. cbTitle refers to the number of char's in    *
+      * Title "Zoombox Enquiry"                                     *
+      ***************************************************************
+                Move Low-Values  to AttrArray
+                                    CharArray.
+                Move High-Values to fCenterTitle.
+            
+                Call "&GetPointer" Using pBkgFrameChars
+                                          CharArray.
+                Call "&ConvertQuad" Using pBkgFrameChars
+                                          pBkgFrameChars.
+            
+                Call "&GetPointer" Using pBkgFrameAttrs
+                                          AttrArray.
+                Call "&ConvertQuad" Using pBkgFrameAttrs
+                                           pBkgFrameAttrs.
+                                           
+                Call "&GetPointer" Using pbTitle
+                                           Title.
+                Call "&ConvertQuad" Using pbTitle
+                                          pbTitle.
+       ZB-040.            
+                CALL "&ZOOMBOX" USING F-Error
+                                      pBoxDesc
+                                      sCols
+                                      sLines
+                                      fFinalBox.
+       ZB-050.            
+                CALL "&UNZOOMBOX" USING F-Error
+                                       pBoxDesc.
+       ZB-999.
+           EXIT.

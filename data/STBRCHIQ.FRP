@@ -1,0 +1,969 @@
+****************{** STOCKMASTER BRANCH ENQUIRY PROGRAM **}*********************
+*                                                                             *
+*StockNumber  : _______________                                               *
+*Description  : ________________________________________  Bin No      : ______*
+*Category     : ___        Supplier Disc: _____           No. of Weeks: __    *
+*Supplier Name: _______    Currency Type: _____           Min Buy Qty : ______*
+*Foreign Cost : __________ Exchange : _________           Max Level   : ______*
+*                          Old Price: _________           Min Level   : ______*
+*Selling Price: _________  __________ _______                                 *
+*Special Price: _________  __________ _______                                 *
+*Price + Vat  : _________  __________ ______                                  *
+*Per          : ____                                                          *
+*Discount 1   : _____                                                         *
+*         2   : _____                      Co     Hand   Resv  Order    B/O   *
+*         3   : _____                      ___  ______ ______ ______ ______   *
+*         4   : _____                      ___  ______ ______ ______ ______   *
+*         5   : _____                      ___  ______ ______ ______ ______   *
+*         6   : _____                      ___  ______ ______ ______ ______   *
+*         7   : _____                      ___  ______ ______ ______ ______   *
+*         8   : _____                                                         *
+*         9   : _____                                                         *
+*Average Cost : _________                                                     *
+*Last Cost    : _________                                                     *
+*******************************************************************************
+                                                                               
+                                                                               
+
+Form name: StBrchIq                        size: 2532  bytes
+height: 26    width: 79    number of fields: 62             
+
+Field name: STOCKNUMBER                                      
+Row: 2    Column: 16   Width: 15                             
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DESCRIPTION1                                     
+Row: 3    Column: 16   Width: 20                             
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DESCRIPTION2                                     
+Row: 3    Column: 36   Width: 20                             
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: BINLOCATION                                      
+Row: 3    Column: 72   Width: 6                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: CATEGORY                                         
+Row: 4    Column: 16   Width: 3                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: SUPP-DISC                                        
+Row: 4    Column: 42   Width: 5                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DEL-DELAY                                        
+Row: 4    Column: 72   Width: 2                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: SUPPLIER                                         
+Row: 5    Column: 16   Width: 7                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: CURRENCY                                         
+Row: 5    Column: 42   Width: 5                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: MINBUYQTY                                        
+Row: 5    Column: 72   Width: 6                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: FOREIGNCOST                                      
+Row: 6    Column: 16   Width: 10                             
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: CURR-RATE                                        
+Row: 6    Column: 38   Width: 9                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: MAXIMUMLEVEL                                     
+Row: 6    Column: 72   Width: 6                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: OLDPRICE                                         
+Row: 7    Column: 38   Width: 9                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: MINIMUMLEVEL                                     
+Row: 7    Column: 72   Width: 6                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PRICE                                            
+Row: 8    Column: 16   Width: 9                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PU-DESC                                          
+Row: 8    Column: 27   Width: 10                             
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PERC                                             
+Row: 8    Column: 38   Width: 7                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: SPRICE                                           
+Row: 9    Column: 16   Width: 9                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: MIN-DESC                                         
+Row: 9    Column: 27   Width: 10                             
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PERC-DS                                          
+Row: 9    Column: 38   Width: 7                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: VATPRICE                                         
+Row: 10   Column: 16   Width: 9                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: MIN-MU                                           
+Row: 10   Column: 27   Width: 10                             
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PERC-MIN                                         
+Row: 10   Column: 38   Width: 6                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: UNITOFMEASURE                                    
+Row: 11   Column: 16   Width: 4                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DISCOUNT1                                        
+Row: 12   Column: 16   Width: 5                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DISCOUNT2                                        
+Row: 13   Column: 16   Width: 5                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DISCOUNT3                                        
+Row: 14   Column: 16   Width: 5                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: BRANCH-ALIAS                                     
+Row: 14   Column: 43   Width: 3                              
+Repeating? Yes  Index: 1      (first: 1      last: 5    )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: QTYONHAND                                        
+Row: 14   Column: 48   Width: 6                              
+Repeating? Yes  Index: 1      (first: 1      last: 5    )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: QTYONRESERVE                                     
+Row: 14   Column: 55   Width: 6                              
+Repeating? Yes  Index: 1      (first: 1      last: 5    )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: QTYONORDER                                       
+Row: 14   Column: 62   Width: 6                              
+Repeating? Yes  Index: 1      (first: 1      last: 5    )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: QTYONB/ORDER                                     
+Row: 14   Column: 69   Width: 6                              
+Repeating? Yes  Index: 1      (first: 1      last: 5    )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DISCOUNT4                                        
+Row: 15   Column: 16   Width: 5                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: BRANCH-ALIAS                                     
+Row: 15   Column: 43   Width: 3                              
+Repeating? Yes  Index: 2      (first: 1      last: 5    )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: QTYONHAND                                        
+Row: 15   Column: 48   Width: 6                              
+Repeating? Yes  Index: 2      (first: 1      last: 5    )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: QTYONRESERVE                                     
+Row: 15   Column: 55   Width: 6                              
+Repeating? Yes  Index: 2      (first: 1      last: 5    )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: QTYONORDER                                       
+Row: 15   Column: 62   Width: 6                              
+Repeating? Yes  Index: 2      (first: 1      last: 5    )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: QTYONB/ORDER                                     
+Row: 15   Column: 69   Width: 6                              
+Repeating? Yes  Index: 2      (first: 1      last: 5    )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DISCOUNT5                                        
+Row: 16   Column: 16   Width: 5                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: BRANCH-ALIAS                                     
+Row: 16   Column: 43   Width: 3                              
+Repeating? Yes  Index: 3      (first: 1      last: 5    )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: QTYONHAND                                        
+Row: 16   Column: 48   Width: 6                              
+Repeating? Yes  Index: 3      (first: 1      last: 5    )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: QTYONRESERVE                                     
+Row: 16   Column: 55   Width: 6                              
+Repeating? Yes  Index: 3      (first: 1      last: 5    )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: QTYONORDER                                       
+Row: 16   Column: 62   Width: 6                              
+Repeating? Yes  Index: 3      (first: 1      last: 5    )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: QTYONB/ORDER                                     
+Row: 16   Column: 69   Width: 6                              
+Repeating? Yes  Index: 3      (first: 1      last: 5    )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DISCOUNT6                                        
+Row: 17   Column: 16   Width: 5                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: BRANCH-ALIAS                                     
+Row: 17   Column: 43   Width: 3                              
+Repeating? Yes  Index: 4      (first: 1      last: 5    )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: QTYONHAND                                        
+Row: 17   Column: 48   Width: 6                              
+Repeating? Yes  Index: 4      (first: 1      last: 5    )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: QTYONRESERVE                                     
+Row: 17   Column: 55   Width: 6                              
+Repeating? Yes  Index: 4      (first: 1      last: 5    )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: QTYONORDER                                       
+Row: 17   Column: 62   Width: 6                              
+Repeating? Yes  Index: 4      (first: 1      last: 5    )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: QTYONB/ORDER                                     
+Row: 17   Column: 69   Width: 6                              
+Repeating? Yes  Index: 4      (first: 1      last: 5    )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DISCOUNT7                                        
+Row: 18   Column: 16   Width: 5                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: BRANCH-ALIAS                                     
+Row: 18   Column: 43   Width: 3                              
+Repeating? Yes  Index: 5      (first: 1      last: 5    )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: QTYONHAND                                        
+Row: 18   Column: 48   Width: 6                              
+Repeating? Yes  Index: 5      (first: 1      last: 5    )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: QTYONRESERVE                                     
+Row: 18   Column: 55   Width: 6                              
+Repeating? Yes  Index: 5      (first: 1      last: 5    )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: QTYONORDER                                       
+Row: 18   Column: 62   Width: 6                              
+Repeating? Yes  Index: 5      (first: 1      last: 5    )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: QTYONB/ORDER                                     
+Row: 18   Column: 69   Width: 6                              
+Repeating? Yes  Index: 5      (first: 1      last: 5    )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DISCOUNT8                                        
+Row: 19   Column: 16   Width: 5                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DISCOUNT9                                        
+Row: 20   Column: 16   Width: 5                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: AVERAGECOST                                      
+Row: 21   Column: 16   Width: 9                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: LASTCOST                                         
+Row: 22   Column: 16   Width: 9                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+                                 
+ ******************************* 
+ *  COLOR PALETTE INFORMATION  * 
+ ******************************* 
+                                 
+            Caption Color: 6     
+               Line Color: 2     
+                                 
+                                 
+        *************************
+        *   I N T E N S I T Y   *
+*********************************
+* Color *  Red  * Green *  Blue *
+*********************************
+*   0   *   0   *   3   *   0   *
+*   1   *   0   *   2   *   0   *
+*   2   *   0   *   3   *   3   *
+*   3   *   0   *   2   *   2   *
+*   4   *   3   *   3   *   3   *
+*   5   *   2   *   2   *   2   *
+*   6   *   3   *   3   *   0   *
+*   7   *   3   *   0   *   0   *
+*********************************
+  

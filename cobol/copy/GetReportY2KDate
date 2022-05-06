@@ -1,0 +1,42 @@
+      *
+       GET-REPORT-Y2K-DATE SECTION.
+       GRYD-001.
+           ACCEPT WS-DATE             FROM DATE YYYYMMDD.
+           ACCEPT WS-TIME             FROM TIME.
+           ACCEPT CURRENT-DAY-OF-WEEK FROM DAY-OF-WEEK.
+           
+           MOVE WS-CDOF (WS-DAY-OF-WEEK) TO WS-NAME-OF-DAY.
+           MOVE WS-CMOY (WS-MM)          TO WS-NAME-OF-MONTH.
+           MOVE WS-DD                    TO WS-DAY-NUMBER.
+           MOVE WS-YY                    TO WS-YEAR-NUMBER.
+           MOVE WS-HR                    TO WS-HOUR-DISPLAY. 
+           MOVE WS-MIN                   TO WS-MIN-DISPLAY.
+       GRYD-999.
+           EXIT.
+      *
+      ***************************
+      *CTOS VERSION - ORIGINAL  *
+      ***************************
+      * GET-REPORT-Y2K-DATE SECTION.
+      * GRYD-001.
+      *     CALL "&GETDATETIME" USING Erc
+      *                               DateTime.
+      *
+      *     CALL "&CONVERTQUAD" USING DateTime
+      *                               DateTime.
+      * GRYD-005.
+      *     MOVE Spaces                                     TO pbRet.
+      *     MOVE "!Www! !Nnn! !*d!, !YYYY! !hh!:!0m! !2*a!" TO pbTemplate
+      *     MOVE 40                                         TO cbTemplate.
+      * GRYD-010.
+      *     CALL "&NLSFormatDateTime" USING Erc
+      *                                     pNLStableArea
+      *                                     DateTime
+      *                                     pbTemplate
+      *                                     cbTemplate
+      *                                     pbRet
+      *                                     cbMax
+      *                                     pcbRet.
+      * GRYD-999.
+      *     EXIT.
+      *

@@ -1,0 +1,18 @@
+      *
+        WRITE-FIELD-AMOUNT1 SECTION.
+        WRITE-NA000.
+            CALL "WRITEFIELD" USING F-ERROR1
+                                    F-FORM
+                                    F-FIELDNAME
+                                    F-CBFIELDNAME
+                                    F-INDEX
+                                    F-EDNAMEFIELDAMOUNT1
+                                    F-CBFIELDLENGTH
+                                    F-TYPE.
+            IF F-ERROR1 NOT = 0
+                DISPLAY "WRITEFIELD AMOUNT1 ERROR"
+                DISPLAY F-ERROR1
+                PERFORM ERROR-010
+                STOP RUN.
+        WRITE-NA999.
+            EXIT.

@@ -1,0 +1,444 @@
+**********************{** GENERAL LEDGER PARAMETER FILE **}********************
+*                         { GENERAL LEDGER INFORMATION }                      *
+*   Key     : _                                                               *
+*                                                             GL Period       *
+*   Co Name : ________________________________________      1: __________     *
+*   Address1: _________________________                     2: __________     *
+*          2: _________________________                     3: __________     *
+*          3: _________________________                     4: __________     *
+*          4: _________________________                     5: __________     *
+*          5: _________________________                     6: __________     *
+*          6: _________________________                     7: __________     *
+*                                                           8: __________     *
+*   Current Period          : __                            9: __________     *
+*   Recurring  Jrn's Posted : _                            10: __________     *
+*   Transaction Number      : ______                       11: __________     *
+*   V.A.T. Registration No  : _______________              12: __________     *
+*   G/ledger Group Number   : _                            13: __________     *
+*                                                                             *
+*******************************************************************************
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+
+Form name: GlParmGl                        size: 1267  bytes
+height: 26    width: 79    number of fields: 27             
+
+Field name: KEY                                              
+Row: 2    Column: 14   Width: 1                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:  4          Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: NAME                                             
+Row: 4    Column: 14   Width: 40                             
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:  4          Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PER                                              
+Row: 4    Column: 63   Width: 10                             
+Repeating? Yes  Index: 1      (first: 1      last: 13   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:  4          Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: ADD1                                             
+Row: 5    Column: 14   Width: 25                             
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:  4          Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PER                                              
+Row: 5    Column: 63   Width: 10                             
+Repeating? Yes  Index: 2      (first: 1      last: 13   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:  4          Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: ADD2                                             
+Row: 6    Column: 14   Width: 25                             
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:  4          Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PER                                              
+Row: 6    Column: 63   Width: 10                             
+Repeating? Yes  Index: 3      (first: 1      last: 13   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:  4          Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: ADD3                                             
+Row: 7    Column: 14   Width: 25                             
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:  4          Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PER                                              
+Row: 7    Column: 63   Width: 10                             
+Repeating? Yes  Index: 4      (first: 1      last: 13   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:  4          Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: ADD4                                             
+Row: 8    Column: 14   Width: 25                             
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:  4          Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PER                                              
+Row: 8    Column: 63   Width: 10                             
+Repeating? Yes  Index: 5      (first: 1      last: 13   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:  4          Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: ADD5                                             
+Row: 9    Column: 14   Width: 25                             
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:  4          Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PER                                              
+Row: 9    Column: 63   Width: 10                             
+Repeating? Yes  Index: 6      (first: 1      last: 13   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:  4          Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: ADD6                                             
+Row: 10   Column: 14   Width: 25                             
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:  4          Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PER                                              
+Row: 10   Column: 63   Width: 10                             
+Repeating? Yes  Index: 7      (first: 1      last: 13   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:  4          Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PER                                              
+Row: 11   Column: 63   Width: 10                             
+Repeating? Yes  Index: 8      (first: 1      last: 13   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:  4          Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: CURRENTGLPER                                     
+Row: 12   Column: 30   Width: 2                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:  4          Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PER                                              
+Row: 12   Column: 63   Width: 10                             
+Repeating? Yes  Index: 9      (first: 1      last: 13   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:  4          Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: RECJRNPOST                                       
+Row: 13   Column: 30   Width: 1                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:  4          Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PER                                              
+Row: 13   Column: 63   Width: 10                             
+Repeating? Yes  Index: 10     (first: 1      last: 13   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:  4          Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: GLTRANSNO                                        
+Row: 14   Column: 30   Width: 6                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:  4          Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PER                                              
+Row: 14   Column: 63   Width: 10                             
+Repeating? Yes  Index: 11     (first: 1      last: 13   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:  4          Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: VATREG                                           
+Row: 15   Column: 30   Width: 15                             
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:  4          Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PER                                              
+Row: 15   Column: 63   Width: 10                             
+Repeating? Yes  Index: 12     (first: 1      last: 13   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:  4          Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: GROUP                                            
+Row: 16   Column: 30   Width: 1                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:  4          Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PER                                              
+Row: 16   Column: 63   Width: 10                             
+Repeating? Yes  Index: 13     (first: 1      last: 13   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:  4          Unselected Color Number: 0
+List of values:                                              
+
+
+
+                                 
+ ******************************* 
+ *  COLOR PALETTE INFORMATION  * 
+ ******************************* 
+                                 
+            Caption Color: 4     
+               Line Color: 5     
+                                 
+                                 
+        *************************
+        *   I N T E N S I T Y   *
+*********************************
+* Color *  Red  * Green *  Blue *
+*********************************
+*   0   *   0   *   3   *   0   *
+*   1   *   0   *   2   *   0   *
+*   2   *   0   *   3   *   3   *
+*   3   *   0   *   2   *   2   *
+*   4   *   3   *   3   *   3   *
+*   5   *   2   *   2   *   2   *
+*   6   *   3   *   3   *   0   *
+*   7   *   3   *   0   *   0   *
+*********************************
+  

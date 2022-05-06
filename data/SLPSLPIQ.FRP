@@ -1,0 +1,1674 @@
+ ************************{** P-SLIP/INVOICE INQUIRY **}************************
+ *                                                                            *
+ *         Transaction Num. : __________   ____________________               *
+ *         Account Number   : _______                                         *
+ *                                               Print/Del/Pull               *
+ *Tran #*  Date    *Account*  Short POrder    *  Date    *  Time  *   Amount  *
+ *______*__________*_______*__________________*__________*________*___________*
+ *______*__________*_______*__________________*__________*________*___________*
+ *______*__________*_______*__________________*__________*________*___________*
+ *______*__________*_______*__________________*__________*________*___________*
+ *______*__________*_______*__________________*__________*________*___________*
+ *______*__________*_______*__________________*__________*________*___________*
+ *______*__________*_______*__________________*__________*________*___________*
+ *______*__________*_______*__________________*__________*________*___________*
+ *______*__________*_______*__________________*__________*________*___________*
+ *______*__________*_______*__________________*__________*________*___________*
+ *______*__________*_______*__________________*__________*________*___________*
+ *______*__________*_______*__________________*__________*________*___________*
+ *______*__________*_______*__________________*__________*________*___________*
+ *______*__________*_______*__________________*__________*________*___________*
+ *______*__________*_______*__________________*__________*________*___________*
+ ******************************************************************************
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+
+Form name: SlPSlpIq                        size: 2906  bytes
+height: 26    width: 79    number of fields: 109            
+
+Field name: TRANS                                            
+Row: 2    Column: 30   Width: 10                             
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PODESC                                           
+Row: 2    Column: 43   Width: 20                             
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: I  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: ACCNUM                                           
+Row: 3    Column: 30   Width: 7                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PSLIP                                            
+Row: 6    Column: 2    Width: 6                              
+Repeating? Yes  Index: 1      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DATE                                             
+Row: 6    Column: 9    Width: 10                             
+Repeating? Yes  Index: 1      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: ACCNO                                            
+Row: 6    Column: 20   Width: 7                              
+Repeating? Yes  Index: 1      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PORDERNO                                         
+Row: 6    Column: 28   Width: 18                             
+Repeating? Yes  Index: 1      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DATE-DEL                                         
+Row: 6    Column: 47   Width: 10                             
+Repeating? Yes  Index: 1      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DEL-TIME                                         
+Row: 6    Column: 58   Width: 8                              
+Repeating? Yes  Index: 1      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: AMOUNT                                           
+Row: 6    Column: 67   Width: 11                             
+Repeating? Yes  Index: 1      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PSLIP                                            
+Row: 7    Column: 2    Width: 6                              
+Repeating? Yes  Index: 2      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DATE                                             
+Row: 7    Column: 9    Width: 10                             
+Repeating? Yes  Index: 2      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: ACCNO                                            
+Row: 7    Column: 20   Width: 7                              
+Repeating? Yes  Index: 2      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PORDERNO                                         
+Row: 7    Column: 28   Width: 18                             
+Repeating? Yes  Index: 2      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DATE-DEL                                         
+Row: 7    Column: 47   Width: 10                             
+Repeating? Yes  Index: 2      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DEL-TIME                                         
+Row: 7    Column: 58   Width: 8                              
+Repeating? Yes  Index: 2      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: AMOUNT                                           
+Row: 7    Column: 67   Width: 11                             
+Repeating? Yes  Index: 2      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PSLIP                                            
+Row: 8    Column: 2    Width: 6                              
+Repeating? Yes  Index: 3      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DATE                                             
+Row: 8    Column: 9    Width: 10                             
+Repeating? Yes  Index: 3      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: ACCNO                                            
+Row: 8    Column: 20   Width: 7                              
+Repeating? Yes  Index: 3      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PORDERNO                                         
+Row: 8    Column: 28   Width: 18                             
+Repeating? Yes  Index: 3      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DATE-DEL                                         
+Row: 8    Column: 47   Width: 10                             
+Repeating? Yes  Index: 3      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DEL-TIME                                         
+Row: 8    Column: 58   Width: 8                              
+Repeating? Yes  Index: 3      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: AMOUNT                                           
+Row: 8    Column: 67   Width: 11                             
+Repeating? Yes  Index: 3      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PSLIP                                            
+Row: 9    Column: 2    Width: 6                              
+Repeating? Yes  Index: 4      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DATE                                             
+Row: 9    Column: 9    Width: 10                             
+Repeating? Yes  Index: 4      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: ACCNO                                            
+Row: 9    Column: 20   Width: 7                              
+Repeating? Yes  Index: 4      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PORDERNO                                         
+Row: 9    Column: 28   Width: 18                             
+Repeating? Yes  Index: 4      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DATE-DEL                                         
+Row: 9    Column: 47   Width: 10                             
+Repeating? Yes  Index: 4      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DEL-TIME                                         
+Row: 9    Column: 58   Width: 8                              
+Repeating? Yes  Index: 4      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: AMOUNT                                           
+Row: 9    Column: 67   Width: 11                             
+Repeating? Yes  Index: 4      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PSLIP                                            
+Row: 10   Column: 2    Width: 6                              
+Repeating? Yes  Index: 5      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DATE                                             
+Row: 10   Column: 9    Width: 10                             
+Repeating? Yes  Index: 5      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: ACCNO                                            
+Row: 10   Column: 20   Width: 7                              
+Repeating? Yes  Index: 5      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PORDERNO                                         
+Row: 10   Column: 28   Width: 18                             
+Repeating? Yes  Index: 5      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DATE-DEL                                         
+Row: 10   Column: 47   Width: 10                             
+Repeating? Yes  Index: 5      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DEL-TIME                                         
+Row: 10   Column: 58   Width: 8                              
+Repeating? Yes  Index: 5      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: AMOUNT                                           
+Row: 10   Column: 67   Width: 11                             
+Repeating? Yes  Index: 5      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PSLIP                                            
+Row: 11   Column: 2    Width: 6                              
+Repeating? Yes  Index: 6      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DATE                                             
+Row: 11   Column: 9    Width: 10                             
+Repeating? Yes  Index: 6      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: ACCNO                                            
+Row: 11   Column: 20   Width: 7                              
+Repeating? Yes  Index: 6      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PORDERNO                                         
+Row: 11   Column: 28   Width: 18                             
+Repeating? Yes  Index: 6      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DATE-DEL                                         
+Row: 11   Column: 47   Width: 10                             
+Repeating? Yes  Index: 6      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DEL-TIME                                         
+Row: 11   Column: 58   Width: 8                              
+Repeating? Yes  Index: 6      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: AMOUNT                                           
+Row: 11   Column: 67   Width: 11                             
+Repeating? Yes  Index: 6      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PSLIP                                            
+Row: 12   Column: 2    Width: 6                              
+Repeating? Yes  Index: 7      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DATE                                             
+Row: 12   Column: 9    Width: 10                             
+Repeating? Yes  Index: 7      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: ACCNO                                            
+Row: 12   Column: 20   Width: 7                              
+Repeating? Yes  Index: 7      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PORDERNO                                         
+Row: 12   Column: 28   Width: 18                             
+Repeating? Yes  Index: 7      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DATE-DEL                                         
+Row: 12   Column: 47   Width: 10                             
+Repeating? Yes  Index: 7      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DEL-TIME                                         
+Row: 12   Column: 58   Width: 8                              
+Repeating? Yes  Index: 7      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: AMOUNT                                           
+Row: 12   Column: 67   Width: 11                             
+Repeating? Yes  Index: 7      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PSLIP                                            
+Row: 13   Column: 2    Width: 6                              
+Repeating? Yes  Index: 8      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DATE                                             
+Row: 13   Column: 9    Width: 10                             
+Repeating? Yes  Index: 8      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: ACCNO                                            
+Row: 13   Column: 20   Width: 7                              
+Repeating? Yes  Index: 8      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PORDERNO                                         
+Row: 13   Column: 28   Width: 18                             
+Repeating? Yes  Index: 8      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DATE-DEL                                         
+Row: 13   Column: 47   Width: 10                             
+Repeating? Yes  Index: 8      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DEL-TIME                                         
+Row: 13   Column: 58   Width: 8                              
+Repeating? Yes  Index: 8      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: AMOUNT                                           
+Row: 13   Column: 67   Width: 11                             
+Repeating? Yes  Index: 8      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PSLIP                                            
+Row: 14   Column: 2    Width: 6                              
+Repeating? Yes  Index: 9      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DATE                                             
+Row: 14   Column: 9    Width: 10                             
+Repeating? Yes  Index: 9      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: ACCNO                                            
+Row: 14   Column: 20   Width: 7                              
+Repeating? Yes  Index: 9      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PORDERNO                                         
+Row: 14   Column: 28   Width: 18                             
+Repeating? Yes  Index: 9      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DATE-DEL                                         
+Row: 14   Column: 47   Width: 10                             
+Repeating? Yes  Index: 9      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DEL-TIME                                         
+Row: 14   Column: 58   Width: 8                              
+Repeating? Yes  Index: 9      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: AMOUNT                                           
+Row: 14   Column: 67   Width: 11                             
+Repeating? Yes  Index: 9      (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PSLIP                                            
+Row: 15   Column: 2    Width: 6                              
+Repeating? Yes  Index: 10     (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DATE                                             
+Row: 15   Column: 9    Width: 10                             
+Repeating? Yes  Index: 10     (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: ACCNO                                            
+Row: 15   Column: 20   Width: 7                              
+Repeating? Yes  Index: 10     (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PORDERNO                                         
+Row: 15   Column: 28   Width: 18                             
+Repeating? Yes  Index: 10     (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DATE-DEL                                         
+Row: 15   Column: 47   Width: 10                             
+Repeating? Yes  Index: 10     (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DEL-TIME                                         
+Row: 15   Column: 58   Width: 8                              
+Repeating? Yes  Index: 10     (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: AMOUNT                                           
+Row: 15   Column: 67   Width: 11                             
+Repeating? Yes  Index: 10     (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PSLIP                                            
+Row: 16   Column: 2    Width: 6                              
+Repeating? Yes  Index: 11     (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DATE                                             
+Row: 16   Column: 9    Width: 10                             
+Repeating? Yes  Index: 11     (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: ACCNO                                            
+Row: 16   Column: 20   Width: 7                              
+Repeating? Yes  Index: 11     (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PORDERNO                                         
+Row: 16   Column: 28   Width: 18                             
+Repeating? Yes  Index: 11     (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DATE-DEL                                         
+Row: 16   Column: 47   Width: 10                             
+Repeating? Yes  Index: 11     (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DEL-TIME                                         
+Row: 16   Column: 58   Width: 8                              
+Repeating? Yes  Index: 11     (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: AMOUNT                                           
+Row: 16   Column: 67   Width: 11                             
+Repeating? Yes  Index: 11     (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PSLIP                                            
+Row: 17   Column: 2    Width: 6                              
+Repeating? Yes  Index: 12     (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DATE                                             
+Row: 17   Column: 9    Width: 10                             
+Repeating? Yes  Index: 12     (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: ACCNO                                            
+Row: 17   Column: 20   Width: 7                              
+Repeating? Yes  Index: 12     (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PORDERNO                                         
+Row: 17   Column: 28   Width: 18                             
+Repeating? Yes  Index: 12     (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DATE-DEL                                         
+Row: 17   Column: 47   Width: 10                             
+Repeating? Yes  Index: 12     (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DEL-TIME                                         
+Row: 17   Column: 58   Width: 8                              
+Repeating? Yes  Index: 12     (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: AMOUNT                                           
+Row: 17   Column: 67   Width: 11                             
+Repeating? Yes  Index: 12     (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PSLIP                                            
+Row: 18   Column: 2    Width: 6                              
+Repeating? Yes  Index: 13     (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DATE                                             
+Row: 18   Column: 9    Width: 10                             
+Repeating? Yes  Index: 13     (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: ACCNO                                            
+Row: 18   Column: 20   Width: 7                              
+Repeating? Yes  Index: 13     (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PORDERNO                                         
+Row: 18   Column: 28   Width: 18                             
+Repeating? Yes  Index: 13     (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DATE-DEL                                         
+Row: 18   Column: 47   Width: 10                             
+Repeating? Yes  Index: 13     (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DEL-TIME                                         
+Row: 18   Column: 58   Width: 8                              
+Repeating? Yes  Index: 13     (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: AMOUNT                                           
+Row: 18   Column: 67   Width: 11                             
+Repeating? Yes  Index: 13     (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PSLIP                                            
+Row: 19   Column: 2    Width: 6                              
+Repeating? Yes  Index: 14     (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DATE                                             
+Row: 19   Column: 9    Width: 10                             
+Repeating? Yes  Index: 14     (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: ACCNO                                            
+Row: 19   Column: 20   Width: 7                              
+Repeating? Yes  Index: 14     (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PORDERNO                                         
+Row: 19   Column: 28   Width: 18                             
+Repeating? Yes  Index: 14     (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DATE-DEL                                         
+Row: 19   Column: 47   Width: 10                             
+Repeating? Yes  Index: 14     (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DEL-TIME                                         
+Row: 19   Column: 58   Width: 8                              
+Repeating? Yes  Index: 14     (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: AMOUNT                                           
+Row: 19   Column: 67   Width: 11                             
+Repeating? Yes  Index: 14     (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PSLIP                                            
+Row: 20   Column: 2    Width: 6                              
+Repeating? Yes  Index: 15     (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DATE                                             
+Row: 20   Column: 9    Width: 10                             
+Repeating? Yes  Index: 15     (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: ACCNO                                            
+Row: 20   Column: 20   Width: 7                              
+Repeating? Yes  Index: 15     (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PORDERNO                                         
+Row: 20   Column: 28   Width: 18                             
+Repeating? Yes  Index: 15     (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DATE-DEL                                         
+Row: 20   Column: 47   Width: 10                             
+Repeating? Yes  Index: 15     (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DEL-TIME                                         
+Row: 20   Column: 58   Width: 8                              
+Repeating? Yes  Index: 15     (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: AMOUNT                                           
+Row: 20   Column: 67   Width: 11                             
+Repeating? Yes  Index: 15     (first: 1      last: 15   )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+                                 
+ ******************************* 
+ *  COLOR PALETTE INFORMATION  * 
+ ******************************* 
+                                 
+            Caption Color: 2     
+               Line Color: 6     
+                                 
+                                 
+        *************************
+        *   I N T E N S I T Y   *
+*********************************
+* Color *  Red  * Green *  Blue *
+*********************************
+*   0   *   0   *   3   *   0   *
+*   1   *   0   *   2   *   0   *
+*   2   *   0   *   3   *   3   *
+*   3   *   0   *   2   *   2   *
+*   4   *   3   *   3   *   3   *
+*   5   *   2   *   2   *   2   *
+*   6   *   3   *   3   *   0   *
+*   7   *   3   *   0   *   0   *
+*********************************
+  

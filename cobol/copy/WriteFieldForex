@@ -1,0 +1,19 @@
+      *
+        WRITE-FIELD-FOREX SECTION.
+        WRITE-NA000.
+            CALL "WRITEFIELD" USING F-ERROR1
+                                    F-FORM
+                                    F-FIELDNAME
+                                    F-CBFIELDNAME
+                                    F-INDEX
+                                    F-EDNAMEFIELDFOREX
+                                    F-CBFIELDLENGTH
+                                    F-TYPE.
+            IF F-ERROR1 NOT = 0
+                DISPLAY "WRITEFIELD FOREX ERROR"
+                DISPLAY F-ERROR1
+                DISPLAY F-FIELDNAME
+                PERFORM ERROR-010
+                STOP RUN.
+        WRITE-NA999.
+            EXIT.

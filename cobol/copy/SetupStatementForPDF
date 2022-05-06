@@ -1,0 +1,50 @@
+      *
+       SETUP-STATEMENT-FOR-PDF SECTION.
+       SUSFP-005.
+          ACCEPT WS-USERNAME FROM ENVIRONMENT "USER".
+          
+      *    MOVE WS-USERNAME TO WS-MESSAGE
+      *    PERFORM ERROR-MESSAGE.
+          
+      *    MOVE W-FILENAME TO WS-MESSAGE
+      *    PERFORM ERROR-MESSAGE.
+       SUSFP-010.
+          MOVE 
+          CONCATENATE('PrintStatement ', TRIM(WS-USERNAME), ' ',
+              WS-CO-NUMBER, ' ', TRIM(WS-PRINTER-SAVE), ' ',
+                TRIM(WS-PRINTER)) TO WS-COMMAND-LINE.
+      *          TO WS-COMMAND-LINE.
+      
+      *    MOVE WS-COMMAND-LINE TO  WS-MESSAGE
+      *    PERFORM ERROR-MESSAGE.
+
+      *     DISPLAY WS-COMMAND-LINE  AT 2810
+      *     ACCEPT W-ENTER.
+          CALL "SYSTEM" USING WS-COMMAND-LINE
+                     RETURNING W-STATUS.
+      
+      *    MOVE W-STATUS TO  WS-MESSAGE
+      *    PERFORM ERROR-MESSAGE.
+      *    DISPLAY W-STATUS  AT 2810.
+       SUSFP-999.
+           EXIT.
+      *     STOP RUN.
+
+
+      *So far the variables which will be specified from inside the
+      *   COBOL programs are:
+      *$1 = The username                         e.g. steve
+      *$2 = The company number from 01 to 12     e.g. 07
+      *$3 = The Printername to print the file to e.g. MP250
+      *$4 = The Print file name which will replace
+      *                /ctools/spl/InPrintCo01 when specified in COBOL
+
+      *****************************************************************
+      * printing routine - sends disk file to printer....
+      *    MOVE "lp -d" WS-PRINTER & WS-PRINT-FILE
+      * E.G. "/ctools/dev/source/cobol/TestStuff.cob"    TO W-PRINTCOM1
+      *    MOVE "/ctools/dev/source/cobol/TestStuff.cob" TO W-PRINTCOM2
+      *****************************************************************
+
+      * add any extra commands here - perhaps cups printing
+      * or sendfax via hylaFAX

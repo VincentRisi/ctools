@@ -1,0 +1,47 @@
+       FD  GLPARAMETER-FILE.
+       01  GLPARAMETER-REC.
+           03  GLPA-KEY.
+               04  GLPA-RECORD           PIC 9.
+           03  GLPA-NAME                 PIC X(40).
+           03  GLPA-ADD1                 PIC X(25).
+           03  GLPA-ADD2                 PIC X(25).
+           03  GLPA-ADD3                 PIC X(25).
+           03  GLPA-ADD4                 PIC X(25).
+           03  GLPA-ADD5                 PIC X(25).
+           03  GLPA-ADD6                 PIC X(25).
+           03  GLPA-CURRENT-GLPER        PIC 9(2).
+           03  GLPA-RECJRN-POST          PIC X.
+           03  GLPA-GLTRANSNO            PIC 9(6).
+           03  GLPA-GROUP-NUM            PIC 9.
+           03  GLPA-PERIODS.
+               04  GLPA-PER PIC 9(8) OCCURS 13.
+           03  GLPA-GLVAT-REG-NO         PIC X(15).
+           03  GLPA-CREDITOR-FIELDS.
+               04  GLPA-CURRENT-CRPER    PIC 9(2).
+               04  GLPA-CR-REMIT         PIC X.
+               04  GLPA-CRTRANSNO        PIC 9(6).
+               04  GLPA-GLCRED-NO        PIC X(12).
+               04  GLPA-GLBANK           PIC X(12).
+               04  GLPA-GLVAT-ACC        PIC X(12).
+           03  GLPA-SHORT-CR OCCURS 10.
+               04  GLPA-IND              PIC X.
+               04  GLPA-NO               PIC X(12).
+           03  GLPA-DEBTOR-FIELDS.
+               04  GLPA-CURRENT-SLPER    PIC 9(2).
+               04  GLPA-GLDEBT-NO        PIC X(12).
+               04  GLPA-GLDRBANK         PIC X(12).
+               04  GLPA-GLVATOUTPUT-ACC  PIC X(12).
+               04  GLPA-GLSALES-ACC      PIC X(12).
+               04  GLPA-GLSALES-ADDONS   PIC X(12).
+               04  GLPA-GLSALES-DISC     PIC X(12).
+               04  GLPA-GLSALES-ADJ      PIC X(12).
+               04  GLPA-GLBDEBT-ACC      PIC X(12).
+           03  GLPA-CASHBOOK-FIELDS.
+               04  GLPA-CURRENT-CBPER    PIC 9(2).
+               04  GLPA-CB-POST          PIC X.
+               04  GLPA-CBTRANSNO        PIC 9(6).
+               04  GLPA-CAMS-BANK-CODE   PIC X(6).
+               04  GLPA-CAMS-BANK-ACC    PIC X(11).
+               04  GLPA-CAMS-BANK-NAME   PIC X(20).
+      *BANK-NAME IS JUST FOR THE INPUT SCREEN AND REPORTING
+      *

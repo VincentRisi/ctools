@@ -1,0 +1,11 @@
+      *
+       READ-DATAFILE SECTION.
+       RC-005.
+           Move 0 to Sub-3.
+       RC-010.
+           Add 1 to Sub-3.
+           If Ws-DataNumberEntered (Sub-3) not = Ws-DataNumber
+            If Sub-3 Not = 60
+               Go to RC-010.
+       RC-999.
+           EXIT.

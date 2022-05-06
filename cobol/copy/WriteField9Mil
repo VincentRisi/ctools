@@ -1,0 +1,18 @@
+      *
+        WRITE-FIELD-9Mil SECTION.
+        WRITE-9Mil000.
+            CALL "WRITEFIELD" USING F-ERROR1
+                                    F-FORM
+                                    F-FIELDNAME
+                                    F-CBFIELDNAME
+                                    F-INDEX
+                                    F-EDNAMEFIELD9Mil
+                                    F-CBFIELDLENGTH
+                                    F-TYPE.
+            IF F-ERROR1 NOT = 0
+                DISPLAY "WRITEFIELD NUM 9Mil ERROR"
+                DISPLAY F-ERROR1
+                PERFORM ERROR-010
+                STOP RUN.
+        WRITE-9Mil999.
+            EXIT.

@@ -1,0 +1,36 @@
+      *
+       CHECK-DATA-NAME-VOL-DIR SECTION.
+       CDNVD-005.
+          MOVE " " TO ALPHA-RATE.
+          MOVE 0   TO SUB-1.
+       CDNVD-010.
+          MOVE WS-VOL-DIR TO ALPHA-RATE.
+       CDNVD-015.
+          ADD 1 TO SUB-1.
+          IF SUB-1 NOT > 60
+           IF AL-RATE (SUB-1) NOT = " "
+            GO TO CDNVD-015.
+       CDNVD-020.
+          MOVE WS-Data-file TO DATA-RATE.
+          MOVE 1            TO SUB-2.
+       CDNVD-025.
+          MOVE DAT-RATE (SUB-2) TO AL-RATE (SUB-1)
+          ADD 1 TO SUB-1 SUB-2.
+          IF DAT-RATE (SUB-2) NOT = " "
+           IF SUB-1 NOT > 60
+             GO TO CDNVD-025.
+       CDNVD-030.
+          MOVE ALPHA-RATE TO WS-DATA.
+       CDNVD-035.
+          MOVE " " TO ALPHA-RATE DATA-RATE
+          MOVE WS-VOL-DIR TO ALPHA-RATE.
+       CDNVD-040.
+          SUBTRACT SUB-2 FROM SUB-1
+          ADD 1 TO SUB-1
+          MOVE 1 TO SUB-2
+      *    MOVE Ws-DataNameToOpen (Sub-3) TO DATA-RATE
+          MOVE WS-Data-file TO DATA-RATE
+          PERFORM CDNVD-025.
+       CDNVD-999.
+          EXIT.
+      *

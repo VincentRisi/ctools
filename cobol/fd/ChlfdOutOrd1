@@ -1,0 +1,21 @@
+       FD  OUTSTANDING-ORDERS1.
+       01  OUT-ORDER-REC1.
+           03  OO1-KEY.
+               05  OO1-ORDER-NUMBER       PIC X(20).
+               05  OO1-STOCK-NUMBER       PIC X(15).
+           03  OO1-ORIG-QTY               PIC S9(5) LEADING SEPARATE.
+           03  OO1-QUANTITY               PIC S9(5) LEADING SEPARATE.
+           03  OO1-ORDERDATE              PIC 9(8).
+           03  OO1-DUEDATE                PIC 9(8).
+           03  OO1-DELIVERY-METHOD        PIC X.
+           03  OO1-SUPPLIER-NUMBER        PIC X(7).
+           03  OO1-UPDATED                PIC X.
+           03  OO1-COST                   PIC 9(6)V999.
+           03  OO1-DISC                   PIC 9(2)V99.
+           03  OO1-FOR-LOC                PIC X.
+      *
+      *ORDERS ON SUPPLIERS RECORD.
+      *
+      *OO1-UPDATED: N=NEW ORDER NOT CONFIRMED
+      *            Y=CONFIRMED
+      *            C=

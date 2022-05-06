@@ -1,0 +1,24 @@
+       *
+        SEND-LABEL-REPORT-TO-PRINTER SECTION.
+        SLRTP-005.
+          IF WS-PRINTERSELECTED = 0 OR = 88
+              GO TO SRTP-999.
+      * WS-PRINTER-SAVE IS THE ACTUAL PRINTER NAME
+      * WS-PRINTER IS THE FILE NAME BEING PRINTED
+          MOVE "lp -d "        TO W-PRINTCOM1A
+          MOVE WS-PRINTER-SAVE TO W-PRINTCOM1
+          MOVE WS-PRINTER      TO W-PRINTCOM2.
+          
+          DISPLAY "PRINT COMMAND: " W-PRINTCOMMAND AT 2710.
+          ACCEPT W-ENTER AT 2810
+
+          CALL "SYSTEM" USING W-PRINTCOMMAND 
+             RETURNING W-STATUS
+             END-CALL.
+         
+       *   DISPLAY "STATUS of CALL: " AT 2810
+       *   DISPLAY W-STATUS AT 2825
+       *   ACCEPT W-ENTER AT 2910.
+        SLRTP-999.
+            EXIT.
+       *

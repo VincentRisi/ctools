@@ -1,0 +1,77 @@
+%'
+
+%#0: 
+
+
+No THREE Digit Month Name Was Entered, This Run Is Aborted.
+
+
+2:
+
+
+Screen Setup
+
+Y
+
+
+Y
+White Blue
+100
+
+C/2 Run
+MainCont.Int
+
+-N +P
+11
+THUTMES
+5
+2
+
+3
+X
+<GL>HKYGL1
+
+FINAL JRN'S FOR THE YEAR.
+
+8
+X
+<GL>HKYGL2
+
+10
+X
+<GL>HKYGL3
+
+5
+X
+<GL>HKYGL42
+
+9999999
+
+
+6
+X
+<GL>HKYGL41
+
+9999999
+
+
+e
+
+Path
+Win
+GL
+Type
+<Temp>GLMonthlyMessage
+
+Rename
+HKYGl*
+HKY%0*
+Yes
+
+
+Path
+Win
+Program
+
+
+**** HKY Yearly Reports Run Successfully *****

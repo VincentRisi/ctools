@@ -1,0 +1,69 @@
+*****************************  MAIN CONTROL MENU  *********************        
+*  **************************** STOCK CONTROL MENU  ***********************    
+*  *  ***************************SPECIAL PROGRAM MENU**************************
+*  *  *                                                                       *
+*  *  *  1. Stock Master Entry/Edit       11. Stock Repairs Entry             *
+*  *  *  2. Stock Master - OnHand Fields  12. Stock Repairs Enq. By Account   *
+*  *  *                                   13. Stock Repairs Enq. By Stock     *
+*  *  *  3. Stock Master - Field Change   14. Stock Repairs By Repair Num.    *
+*  *  *                                                                       *
+*  *  *  4. Branch StockFile Update       15. Stock Duty% Change By Tariff Num*
+*  *  *                                   16. Stock Duty%/Tariff Error Report *
+*  *  *  5. StTrans Entry/Edit                                                *
+*  *  *  6. StTransLYR Entry/Edit         17. Stock Ave / Last Cost fix       *
+*  *  *                                   18. Stock Number Change By Range    *
+*  *  *  7. StTrans Checking with SlReg   19. Stock New Price Import / Change *
+*  *  *                                   20. Stock Supplier Part # Lookup    *
+*  *  *  8. Stock Foreign Receipts Entry/Edit                                 *
+*  *  *                                                                       *
+*  *  *  9. Stock Number Checking Between DataBases (CTJ, CTN, CSC etc.)      *
+*  *  *      Based on The "Stock NewPriceList".                               *
+****  *                                                                       *
+   **** 10. Branch Stock Category's for Branch Update.                        *
+      *                                                                       *
+      ***************************ENTER SELECTION : __**************************
+                                                                               
+                                                                               
+
+Form name: St4Menu                         size: 1477  bytes
+height: 26    width: 79    number of fields: 2              
+
+Field name: SELECTION                                        
+Row: 23   Column: 51   Width: 2                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+                                 
+ ******************************* 
+ *  COLOR PALETTE INFORMATION  * 
+ ******************************* 
+                                 
+            Caption Color: 4     
+               Line Color: 7     
+                                 
+                                 
+        *************************
+        *   I N T E N S I T Y   *
+*********************************
+* Color *  Red  * Green *  Blue *
+*********************************
+*   0   *   0   *   3   *   0   *
+*   1   *   0   *   2   *   0   *
+*   2   *   0   *   3   *   3   *
+*   3   *   0   *   2   *   2   *
+*   4   *   3   *   3   *   3   *
+*   5   *   2   *   2   *   2   *
+*   6   *   3   *   3   *   0   *
+*   7   *   3   *   0   *   0   *
+*********************************
+  

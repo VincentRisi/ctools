@@ -1,0 +1,6 @@
+           SELECT STBRANCHCAT-MASTER ASSIGN TO Ws-StBranchCat
+               ORGANIZATION IS INDEXED
+               LOCK MANUAL
+               ACCESS MODE IS DYNAMIC
+               FILE STATUS IS WS-STBRCAT-STATUS
+               RECORD KEY IS STBRCAT-KEY.

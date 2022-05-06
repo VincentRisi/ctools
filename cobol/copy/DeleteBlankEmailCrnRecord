@@ -1,0 +1,14 @@
+      *
+       DELETE-BLANK-EMAIL-CRN-RECORD SECTION.
+       DBECR-005.
+          MOVE 
+          CONCATENATE('rm ', TRIM(WS-TEMP-EMAIL-FILE))
+               TO WS-COMMAND-LINE.
+      
+      *    MOVE WS-COMMAND-LINE TO  WS-MESSAGE
+      *    PERFORM ERROR-MESSAGE.
+
+          CALL "SYSTEM" USING WS-COMMAND-LINE.
+       DBECR-999.
+           EXIT.
+      *     STOP RUN.

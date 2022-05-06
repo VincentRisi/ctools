@@ -1,0 +1,51 @@
+
+       *  GET SECTION.
+            IF F-EXIT-CH = X"05"
+                PERFORM READ-GL-PREVIOUS
+             IF WS-END NOT = "Y"
+               GO TO GET-003
+             ELSE
+               PERFORM CLEAR-FORM
+               GO TO GET-000.
+
+       * FILL SECTION.
+            IF F-EXIT-CH = X"05"
+               PERFORM REWRITE-GL-RECORD
+               PERFORM READ-GL-PREVIOUS
+             IF WS-END = "Y"
+               PERFORM CLEAR-FORM
+               GO TO FILL-999
+             ELSE
+               PERFORM GET-003 THRU GET-050
+               GO TO FILL-001.
+
+
+      *
+       READ-GL-PREVIOUS SECTION.
+       RDPR-005. 
+           READ GL-MASTER PREVIOUS WITH LOCK
+             AT END 
+               MOVE " " TO GL-NUMBER
+                           WS-NUMBER
+               MOVE "Y" TO WS-END
+               PERFORM CLEAR-FORM
+            MOVE "END OF PREVIOUS PAGE SEQUENCE, ENTER A NEW IDENTIFIER"
+               TO WS-MESSAGE
+               PERFORM ERROR-MESSAGE
+               GO TO RDPR-999.
+           IF WS-GLMAST-ST1 = 23 OR 35 OR 49 OR 51
+               MOVE 0 TO WS-GLMAST-ST1
+           MOVE "GL-MASTER BUSY, ON READ-PREVIOUS-LOCK, 'ESC' TO RETRY."
+               TO WS-MESSAGE
+               PERFORM ERROR-MESSAGE
+               GO TO RDPR-005.
+           IF WS-GLMAST-ST1 NOT = 0
+               MOVE 0 TO WS-GLMAST-ST1
+               PERFORM START-GL
+               GO TO RDPR-005.
+           MOVE GL-NUMBER TO WS-NUMBER.
+           MOVE "N" TO NEW-GLNO.
+           MOVE "Y" TO WS-HEAD-VALID
+                       WS-SUB-VALID.
+       RDPR-999.
+             EXIT.

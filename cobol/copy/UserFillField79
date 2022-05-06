@@ -1,0 +1,18 @@
+      *
+       USER-FILL-FIELD79 SECTION.
+       USER79-000.
+           CALL "USERFILLFIELD" USING F-ERROR
+                                      F-FORM
+                                      F-FIELDNAME
+                                      F-CBFIELDNAME
+                                      F-INDEX
+                                      F-INITSTATE
+                                      F-EXITSTATE.
+           IF F-ERROR NOT = 0
+                DISPLAY "USERFILLFIELD79 ERROR"
+                DISPLAY F-FIELDNAME
+                DISPLAY F-ERROR
+                PERFORM ERROR-010
+                STOP RUN.
+       USER79-999.
+           EXIT.

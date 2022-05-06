@@ -1,0 +1,24 @@
+      *
+       GET-REPORT-Y2K-DATE SECTION.
+       GRYD-001.
+           CALL "&GETDATETIME" USING Erc
+                                     DateTime.
+
+           CALL "&CONVERTQUAD" USING DateTime
+                                     DateTime.
+       GRYD-005.
+           MOVE Spaces                                     TO pbRet.
+           MOVE "!Www! !Nnn! !*d!, !YYYY! !hh!:!0m! !2*a!" TO pbTemplate
+           MOVE 40                                         TO cbTemplate.
+       GRYD-010.
+           CALL "&NLSFormatDateTime" USING Erc
+                                           pNLStableArea
+                                           DateTime
+                                           pbTemplate
+                                           cbTemplate
+                                           pbRet
+                                           cbMax
+                                           pcbRet.
+       GRYD-999.
+           EXIT.
+      *

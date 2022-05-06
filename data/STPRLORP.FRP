@@ -1,0 +1,204 @@
+            *****{** L O C A L   P R I C E L I S T   P R I N T **}*****        
+            *                                                         *        
+            *                                                         *        
+            *  Beginning Stock Number                : _______________*        
+            *                                                         *        
+            *  Ending Stock Number                   : _______________*        
+            *                                                         *        
+            *  Transaction Type                      : _              *        
+            *    P = Print from StockMaster file.                     *        
+            *    R = Re-Print from New Pricelist.                     *        
+            *    U = Update StockMaster From PriceList.               *        
+            *    W = Write NEW PriceList to disk.                     *        
+            *                                                         *        
+            *  Number Of Copies Required                : __          *        
+            *  Print NEW Categories On Next Page?       : _           *        
+            *  Print Costs ?                            : _           *        
+            *  Flag Excess Stock Over Maximum ?         : _           *        
+            *  Only Print Items Where Qtyonhand > 0     : _           *        
+            *  Only Print If Create Date > Date Entered : _           *        
+            *  Date From which the PriceList is Valid   : __________  *        
+            ***********************************************************        
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+
+Form name: StPrLoRp                        size: 1325  bytes
+height: 26    width: 79    number of fields: 11             
+
+Field name: RANGE1                                           
+Row: 3    Column: 55   Width: 15                             
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: RANGE2                                           
+Row: 5    Column: 55   Width: 15                             
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: RANGE7                                           
+Row: 7    Column: 55   Width: 1                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: COPIES                                           
+Row: 13   Column: 58   Width: 2                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: RANGE3                                           
+Row: 14   Column: 58   Width: 1                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: RANGE4                                           
+Row: 15   Column: 58   Width: 1                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: RANGE5                                           
+Row: 16   Column: 58   Width: 1                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: RANGE6                                           
+Row: 17   Column: 58   Width: 1                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: RANGE8                                           
+Row: 18   Column: 58   Width: 1                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: DATE                                             
+Row: 19   Column: 58   Width: 10                             
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+                                 
+ ******************************* 
+ *  COLOR PALETTE INFORMATION  * 
+ ******************************* 
+                                 
+            Caption Color: 6     
+               Line Color: 2     
+                                 
+                                 
+        *************************
+        *   I N T E N S I T Y   *
+*********************************
+* Color *  Red  * Green *  Blue *
+*********************************
+*   0   *   0   *   3   *   0   *
+*   1   *   0   *   2   *   0   *
+*   2   *   0   *   3   *   3   *
+*   3   *   0   *   2   *   2   *
+*   4   *   3   *   3   *   3   *
+*   5   *   2   *   2   *   2   *
+*   6   *   3   *   3   *   0   *
+*   7   *   3   *   0   *   0   *
+*********************************
+  

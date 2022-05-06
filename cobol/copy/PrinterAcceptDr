@@ -1,0 +1,23 @@
+       CONTROL-004.
+           MOVE 0           TO WS-PRINTERNUMBER (21).
+       CONTROL-005.
+           MOVE 1           TO WS-PRINTERTYPE (21).
+           MOVE "DrPrinter" TO WS-PRINTPROG.
+           CALL WS-PRINTPROG USING WS-LINKAGE.
+           CANCEL WS-PRINTPROG.
+           IF WS-PRINTERSELECTED = 99
+              GO TO END-900.
+       CONTROL-006.
+           MOVE 610 TO POS.
+           DISPLAY "Printer Is:[  ] = " AT POS.
+           MOVE 622 TO POS
+           DISPLAY WS-PRINTERNUMBER (21) AT POS
+           ADD 6 TO POS
+           DISPLAY WS-PRINTERNAME (21) AT POS
+           ADD 26 TO POS
+           DISPLAY WS-PRINTERLOCATION (21) AT POS.
+           MOVE WS-PRINTERNAME  (21) TO WS-PRINTER.
+           MOVE WS-PRINTERCHARS (21) TO WS-PRINT-CHARS.
+           MOVE WS-PRINTERTYPE  (21) TO WS-PRINT-TYPE.
+           MOVE WS-PRINT-BOLD        TO COMP-DIG1
+           MOVE WS-PRINT-UNBOLD      TO COMP-DIG2.

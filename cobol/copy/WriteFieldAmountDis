@@ -1,0 +1,19 @@
+      *
+        WRITE-FIELD-AMOUNTDIS SECTION.
+        WRITE-NADIS000.
+            CALL "WRITEFIELD" USING F-ERROR1
+                                    F-FORM
+                                    F-FIELDNAME
+                                    F-CBFIELDNAME
+                                    F-INDEX
+                                    F-EDNAMEFIELDAMOUNTDIS
+                                    F-CBFIELDLENGTH
+                                    F-TYPE.
+            IF F-ERROR1 NOT = 0
+                DISPLAY "WRITEFIELD AMOUNTDIS ERROR"
+                DISPLAY F-ERROR1
+                DISPLAY F-NAMEFIELD
+                PERFORM ERROR-010
+                STOP RUN.
+        WRITE-NADIS999.
+            EXIT.

@@ -1,0 +1,36 @@
+       FD  STOCKCHANGE-MASTER.
+       01  STOCKCHANGE-RECORD.
+           03  STCH-KEY.
+               05  STCH-STOCKNUMBER    PIC X(15).
+           03  STCH-DESCRIPTION1       PIC X(20).
+           03  STCH-DESCRIPTION2       PIC X(20).
+           03  STCH-CATEGORY           PIC X(3).
+           03  STCH-SUPPLIER           PIC X(7).
+           03  STCH-FOREIGNCOST        PIC 9(6)V999.
+           03  STCH-SUPPLIERDISC       PIC 99V99.
+           03  STCH-CURRENCY           PIC X(5).
+           03  STCH-CURRENCY-RATE      PIC 9(3)V9(5).
+           03  STCH-PRICE              PIC 9(6)V99.
+           03  STCH-MIN-PERC           PIC 9(3)V99.
+           03  STCH-UNITOFMEASURE      PIC X(4).
+           03  STCH-DISCOUNT1          PIC 9(2)V99.
+           03  STCH-DISCOUNT2          PIC 9(2)V99.
+           03  STCH-DISCOUNT3          PIC 9(2)V99.
+           03  STCH-DISCOUNT4          PIC 9(2)V99.
+           03  STCH-DISCOUNT5          PIC 9(2)V99.
+           03  STCH-DISCOUNT6          PIC 9(2)V99.
+           03  STCH-DISCOUNT7          PIC 9(2)V99.
+           03  STCH-DISCOUNT8          PIC 9(2)V99.
+           03  STCH-DISCOUNT9          PIC 9(2)V99.
+           03  STCH-AVERAGECOST        PIC 9(6)V99.
+           03  STCH-LASTCOST           PIC 9(6)V99.
+           03  STCH-DEL-DELAY          PIC 9(2).
+           03  STCH-MINBUYQTY          PIC 9(6).
+           03  STCH-ANALYSIS           PIC X.
+           03  STCH-DUTYPERCENT        PIC 9(2)V9.
+           03  STCH-DUTYTARIFF         PIC 9(8).
+           03  STCH-SURCHARGE          PIC 9(2)V9.
+           03  STCH-PERMIT             PIC X.
+           03  STCH-TYPE-OF-CHANGE     PIC X.
+      *TYPE: D=DELETE C=CHANGE  N=NEW ITEM  R=RENAME  M=MERGE
+      *

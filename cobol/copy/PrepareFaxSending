@@ -1,0 +1,76 @@
+      *
+       PREPARE-FAX-SENDING SECTION.
+       FAX-SEND-000.
+           IF FAX-FONTFILENAME NOT = " "
+               GO TO FAX-SEND-010.
+           MOVE "[Win]<Sys>Fax16.Font" TO FAX-FONTFILENAME.
+           MOVE 20                     TO FAX-CBFONTFILENAME.
+           CALL "&LOADFAXFONT" USING   WS-ERROR
+                                       FAX-FONTFILENAME
+                                       FAX-CBFONTFILENAME
+                                       FAX-FONTBUFFER.
+            If Ws-Error not = 0
+              Move 
+            "There is an ERROR in LOADFAXFONT, 'CANCEL' for FileName."
+              TO WS-MESSAGE
+              PERFORM ERROR-MESSAGE
+              MOVE FAX-FONTFILENAME TO WS-MESSAGE
+              PERFORM ERROR-MESSAGE.
+       FAX-SEND-010.
+           MOVE 0                   TO FAX-RESOLUTION
+                                       FAX-CBASCIIFILEPSW
+                                       FAX-CBFAXFILEPSW.
+      ********************************************************
+      * Fax-Type: 1=Fax Xbus Module  2=Murata Fax Interface  *
+      *           3=XQS FAX                                  *
+      ********************************************************
+           MOVE Fax-PaNumber          TO FAX-TYPE.
+           CALL "&ASCIITOFAX" USING WS-ERROR
+                                    FAX-ASCIIFILENAME
+                                    FAX-CBASCIIFILENAME
+                                    FAX-ASCIIFILEPSW
+                                    FAX-CBASCIIFILEPSW
+                                    FAX-FAXFILENAME
+                                    FAX-CBFAXFILENAME
+                                    FAX-FAXFILEPSW
+                                    FAX-CBFAXFILEPSW
+                                    FAX-RESOLUTION
+                                    FAX-TYPE
+                                    FAX-FONTBUFFER
+                                    FAX-BUFFER.
+            If Ws-Error not = 0
+              Move 
+            "There is an ERROR in ASCITOFAX, 'CANCEL' for FileName."
+              TO WS-MESSAGE
+              PERFORM ERROR-MESSAGE
+              Move Fax-AsciiFileName to Ws-Message
+              PERFORM ERROR-MESSAGE
+              Move Fax-FaxFileName to Ws-Message
+              PERFORM ERROR-MESSAGE.
+       FAX-SEND-020.
+           CALL "&SENDFAX" USING WS-ERROR
+                                 FAX-FAXFILENAME
+                                 FAX-CBFAXFILENAME
+                                 FAX-FAXFILEPSW
+                                 FAX-CBFAXFILEPSW
+                                 FAX-PHONENUMBER
+                                 FAX-CBPHONENUMBER
+                                 FAX-JOBNUMBER.
+           IF FAX-JOBNUMBER = 0
+              MOVE 
+         "FAX SOFTWARE NOT LOADED, ADVISE SUPERVISOR, 'CANCEL' TO EXIT."
+              TO WS-MESSAGE
+              PERFORM ERROR-MESSAGE.
+           If Ws-Error not = 0
+              Move 
+            "There is an ERROR in SendFax, 'CANCEL' for FileName + Num."
+              TO WS-MESSAGE
+              PERFORM ERROR-MESSAGE
+              Move Fax-FaxFileName to Ws-Message
+              PERFORM ERROR-MESSAGE
+              Move Fax-PhoneNumber to Ws-Message
+              PERFORM ERROR-MESSAGE.
+           MOVE 2710 TO POS.
+           DISPLAY "                                         " AT POS.
+       FAX-SEND-999.
+           EXIT.

@@ -1,0 +1,6 @@
+       FD  STBRANCHCAT-MASTER.
+       01  STBRANCHCAT-RECORD.
+           03  STBRCAT-KEY.
+               05  STBRCAT-CATEGORY   PIC X(3).
+           03  FILLER                 PIC X(5).
+      *

@@ -1,0 +1,40 @@
+      *
+       OPEN-900.
+            CALL "OPENFILE" USING  F-ERROR1
+                                   F-FH
+                                   F-FILENAME
+                                   F-CBFILENAME
+                                   F-FILENAME
+                                   F-INTEGERZERO
+                                   F-OPENMODE.
+            IF F-ERROR1 NOT = 0
+                MOVE "OPEN FORMS LIBRARY FILENAME ERROR" TO WS-MESSAGE
+                PERFORM ERROR-MESSAGE
+                MOVE F-ERROR1 TO WS-MESSAGE
+                PERFORM ERROR-MESSAGE
+                MOVE F-FILENAME TO WS-MESSAGE
+                PERFORM ERROR-MESSAGE
+                STOP RUN.
+            CALL "OPENFORM" USING  F-ERROR2
+                                   F-FH
+                                   F-FORMNAME
+                                   F-CBFORMNAME
+                                   F-FORM
+                                   F-CBMAX.
+            IF F-ERROR2 NOT = 0
+                MOVE "OPEN FORM ERROR" TO WS-MESSAGE
+                PERFORM ERROR-MESSAGE
+                MOVE F-ERROR2 TO WS-MESSAGE
+                PERFORM ERROR-MESSAGE
+                MOVE F-FORMNAME TO WS-MESSAGE
+                PERFORM ERROR-MESSAGE
+                STOP RUN.
+            CALL "CLOSEFILE" USING F-ERROR1
+                                   F-FH.
+            IF F-ERROR1 NOT = 0
+                MOVE "ERROR ON CLOSEFILE" TO WS-MESSAGE
+                PERFORM ERROR-MESSAGE
+                MOVE F-ERROR1 TO WS-MESSAGE
+                PERFORM ERROR-MESSAGE
+                STOP RUN.
+      *

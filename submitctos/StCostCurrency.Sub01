@@ -1,0 +1,209 @@
+Type
+<Temp>StCostMessage
+
+1
+
+
+
+C Run
+MainCont
+
++P -N
+1 
+GENMNG
+2 
+1 
+7
+
+10
+AB
+AB Z
+1.12
+AY
+
+10
+BRN
+BRN Z
+1.12
+AY
+
+
+10
+BTS
+BTS Z
+1.190
+AY
+
+
+10
+CK 
+CK Z
+1.12
+AY
+
+10
+CON
+CON Z
+1.12
+AY
+
+10
+CRC
+CRC Z
+1.12
+AY
+
+10
+DEC
+DEC C
+1.12
+AY
+
+10
+DIA
+DIA C
+1.12
+AY
+
+10
+ERM
+ERM Z
+1.120
+AY
+
+10
+FEM
+FEM Z
+1.19
+AY
+
+10
+ITE
+ITE Z
+1.12
+AY
+
+10
+KES
+KES Z
+1.12
+AY
+
+10
+KYO
+KYO Z
+1.12
+AY
+
+10
+LPO
+LPO Z
+1.41
+AY
+
+10
+MAX
+MAX Z
+1.12
+AY
+
+10
+MC
+MC Z
+1.12
+AY
+
+10
+ORX
+ORX Z
+1.12
+AY
+
+10
+PAN
+PAN Z
+1.44
+AY
+
+10
+POL
+POL Z
+1.12
+AY
+
+10
+RCT
+RCT Z
+1.12
+AY
+
+10
+SCH
+SCH Z
+1.12
+AY
+
+10
+SCS
+SCS Z
+1.12
+AY
+
+10
+SIM
+SIM Z
+1.12
+AY
+
+10
+SPG
+SPG Z
+1.12
+AY
+
+10
+UNI
+UNI Z
+1.120
+AY
+
+10
+VB
+VB Z
+1.12
+AY
+
+10
+VIK
+VIK Z
+1.49
+AY
+
+10
+WHL
+WHL Z
+1.12
+AY
+
+10
+WLR
+WLR Z
+1.09
+AY
+
+10
+XLT
+XLT Z
+1.12
+AY
+
+10
+XRN
+XRN Z
+1.12
+AY
+
+
+E
+
+**** FINISHED STOCK COST UPDATE ROUTINE ******

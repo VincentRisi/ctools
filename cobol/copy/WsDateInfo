@@ -1,0 +1,251 @@
+       77  POS                  PIC 9(4) VALUE 0.
+       77  SUB-1                PIC S9(6) VALUE 0.
+       77  SUB-1SAVE            PIC S9(6) VALUE 0.
+       77  SUB-2                PIC S9(6) VALUE 0.
+       77  SUB-3                PIC S9(6) VALUE 0.
+       77  SUB-4                PIC S9(6) VALUE 0.
+       77  SUB-5                PIC S9(6) VALUE 0.
+       77  SUB-6                PIC S9(6) VALUE 0.
+       77  SUB-7                PIC S9(6) VALUE 0.
+       77  SUB-8                PIC S9(6) VALUE 0.
+       77  SUB-9                PIC S9(6) VALUE 0.
+       77  SUB-10               PIC S9(6) VALUE 0.
+       77  SUB-15               PIC S9(6) VALUE 0.
+       77  SUB-20               PIC S9(6) VALUE 0.
+       77  SUB-21               PIC S9(6) VALUE 0.
+       77  SUB-25               PIC S9(3) VALUE 0.
+       77  SUB-30               PIC S9(3) VALUE 0.
+       77  SUB-35               PIC S9(3) VALUE 0.
+       77  SUB-40               PIC 9(2) VALUE 0.
+       77  SUB-45               PIC S9(3) VALUE 0.
+       77  SUB-46               PIC S9(3) VALUE 0.
+       77  SUB-50               PIC 9(2) VALUE 0.
+       77  WS-PRINTER           PIC X(100) VALUE " ".
+       77  WS-PRINTER-SAVE      PIC X(100) VALUE " ".
+       77  WS-PDFPRINTER        PIC X(100) VALUE " ".
+       77  WS-CALC-PERIOD       PIC 9(2) VALUE 0.
+       77  WS-PROG-TYPE         PIC 9 VALUE 0.
+       77  Ws-PrintProg         PIC X(12) VALUE " ".
+       77  WS-LEAP-YEAR         PIC X VALUE " ".
+       77  W-ERC                BINARY-SHORT VALUE 0.
+       77  W-DELAY              BINARY-SHORT VALUE 50.
+       77  W-COL                BINARY-SHORT VALUE 0.
+       77  W-FRAME              BINARY-SHORT VALUE 0.
+       77  W-LINE               BINARY-SHORT VALUE 0.
+      * 77  W-ERC                PIC 9(4) COMP VALUE 0.
+      * 77  W-COL                PIC 9(4) COMP VALUE 0.
+      * 77  W-FRAME              PIC 9(4) COMP VALUE 0.
+      * 77  W-LINE               PIC 9(4) COMP VALUE 0.
+       77  WS-MESSAGE           PIC X(79) VALUE " ".
+       77  WS-MESSAGE1          PIC X(79) VALUE " ".
+       77  WS-MESSAGE2          PIC X(79) VALUE " ".
+       77  WS-AMOUNT            PIC 9(4)V99 VALUE 0.
+       01  SIGN-FOUND           PIC 9(4) COMP.
+      * 01  WS-COMMAND-LINE      PIC X(256).                                    
+       01  WS-COMMAND-LINE      PIC X(512).                                    
+       01  W-PRINTCOMMAND.
+           03  W-PRINTCOM1A     PIC X(6) VALUE SPACES.
+           03  W-PRINTCOM1      PIC X(90) VALUE SPACES.
+           03  W-PRINTCOM2      PIC X(100) VALUE SPACES.
+       01  W-STATUS             PIC 9(4) BINARY COMP.
+       01  W-ENTER              PIC X.
+       01  CTOS_DISPLAY_ACCEPT.
+          78  CDA-BLACK   VALUE 0.
+          78  CDA-RED     VALUE 1.
+          78  CDA-GREEN   VALUE 2.
+          78  CDA-YELLOW  VALUE 3.
+          78  CDA-BLUE    VALUE 4.
+          78  CDA-MAGENTA VALUE 5.
+          78  CDA-CYAN    VALUE 6.
+          78  CDA-WHITE   VALUE 7.
+          03  CDA-ERROR       BINARY-SHORT.
+          03  CDA-ROW         BINARY-SHORT.
+          03  CDA-COL         BINARY-SHORT.
+          03  CDA-DATA        PIC X(80).
+          03  CDA-DATALEN     BINARY-SHORT.
+          03  CDA-COLOR       BINARY-SHORT.
+          03  CDA-ATTR        PIC X.         
+          03  CDA-KEY         BINARY-CHAR.
+          03  CDA-FILTER      PIC X(10) VALUE
+              X"0A1B04010B070C1D1F00".
+      *          1 2 3 4 5 6 7 8 9  null terminated
+      *  1=RETURN, 2=GO, 3=FINISH, 4=UP, 5=DOWN, 6=CANCEL,
+      *  7=NEXT-PAGE, 8=F8, 9=F10
+      *
+      * 01  W-DEFINE-ESCAPE.
+      *     05  W-ESCAPE-KEY     PIC 99 COMP-X.
+      *     05  W-ESCAPE-TABLE   PIC X(20) VALUE
+      *           X"010A011B01040101010B0107010C011D011F00".
+      *               1   2   3   4   5   6   7   8   9
+      *  1=RETURN,    2=GO,  3=FINISH, 4=UP, 5=DOWN, 6=CANCEL,
+      *  7=NEXT-PAGE, 8=F8,  9=F10
+       
+       01  W-DEFINE-ESCAPE.
+           05  W-ESCAPE-KEY     PIC 99 COMP-X.
+           05  W-ESCAPE-TABLE   PIC X(20) VALUE
+              X"0A1B04010B070C1D1F00".
+      *          1 2 3 4 5 6 7 8 9  null terminated
+      *  1=RETURN, 2=GO, 3=FINISH, 4=UP, 5=DOWN, 6=CANCEL,
+      *  7=NEXT-PAGE, 8=F8, 9=F10
+      *           X"010A011B01040101010B0107010C011D011F00".
+      *               1   2   3   4   5   6   7   8   9
+      *  1=RETURN,    2=GO,  3=FINISH, 4=UP, 5=DOWN, 6=CANCEL,
+      *  7=NEXT-PAGE, 8=F8,  9=F10
+       01  WS-COMPANY-DIGITS.
+           03  WS-CO-DIG1       PIC 9.
+           03  WS-CO-DIG2       PIC 9.
+       01  WS-GLNO-CHECK.
+           03  WS-CH            PIC X OCCURS 15.
+       01  ALPHA-RATE.
+           03  AL-RATE          PIC X OCCURS 100.
+       01  DATA-RATE.
+           03  DAT-RATE         PIC X OCCURS 100.
+       01  MESSAGE-RATE.
+           03  MES-AL-RATE      PIC X OCCURS 100.
+       01  MES-DATA-RATE.
+           03  MES-DAT-RATE     PIC X OCCURS 100.
+       01  FAX-RATE.
+           03  FX-RATE          PIC X OCCURS 100.
+       01  NUM-RATE.
+           03  NUMERIC-RATE     PIC S9(10)V9(5).
+           03  FILLER REDEFINES NUMERIC-RATE.
+               05  N-RATE       PIC 9 OCCURS 15.
+       01  WS-PRINT-CHARS.
+           03  WS-PRINT-COMP    PIC X.
+           03  WS-PRINT-BOLD    PIC X.
+           03  WS-PRINT-UNBOLD  PIC X.
+           03  WS-PRINT-NORMAL  PIC X.
+           03  WS-PRINT-8       PIC X(4).
+           03  WS-PRINT-11      PIC X(4).
+           03  WS-PRINT-4       PIC X(4).
+           03  FILLER           PIC X(4).
+           03  WS-PRINT-TYPE    PIC 99.
+       01  WS-DATE-TIME.
+           03  WS-DT1          PIC 9(8).
+           03  WS-DT2          PIC 9(6).
+       01  WS-TIME.
+           03  WS-HR           PIC 99.
+           03  WS-MIN          PIC 99.
+           03  WS-SEC          PIC 9999.
+       01  WS-DATE.
+           03  WS-YY            PIC 9999.
+           03  WS-MM            PIC 99.
+           03  WS-DD            PIC 99.
+       01  SPLIT-DATE.
+           03  SPLIT-YY         PIC 9999.
+           03  SPLIT-MM         PIC 99.
+           03  SPLIT-DD         PIC 99.
+       01  CONVERT-DATE.
+           03  CONVERT-DD       PIC 99.
+           03  CONVERT-MM       PIC 99.
+           03  CONVERT-YY       PIC 9999.
+       01  WS-CONVERT-DATE      REDEFINES CONVERT-DATE PIC 9(8).
+       01  DISPLAY-DATE         PIC 99/99/9999.
+       01  WS-CH-DATE.
+           03  WS-CH-DD         PIC 99.
+           03  WS-CH-MM         PIC 99.
+           03  WS-CH-YY         PIC 9999.
+       01  WS-Pay-Date.
+           03  WS-Pay-YY         PIC 9999.
+           03  WS-Pay-MM         PIC 99.
+           03  WS-Pay-DD         PIC 99.
+       01  WS-BEG-DATE.
+           03  WS-BEG-YY           PIC 9999.
+           03  WS-BEG-MM           PIC 99.
+           03  WS-BEG-DD           PIC 99.
+       01  WS-END-DATE.
+           03  WS-END-YY           PIC 9999.
+           03  WS-END-MM           PIC 99.
+           03  WS-END-DD           PIC 99.
+       01  WS-AGE-DATE.
+           03  WS-AGE-YY       PIC 9999.
+           03  WS-AGE-MM       PIC 99.
+           03  WS-AGE-DD       PIC 99.
+       01  WS-NEW-DATE.
+           03  WS-ND            PIC 9 OCCURS 8.
+       01  WS-CHECKING.
+           03  WS-DATE-CHECK    PIC X(10).
+           03  FILLER REDEFINES WS-DATE-CHECK.
+               05  WS-DC        PIC X OCCURS 10.
+       01  WS-GLPERIODS.
+           03  WS-GLPER OCCURS 13.
+               05  GL-BEGDATE             PIC 9(8).
+               05  GL-ENDDATE             PIC 9(8).
+      *  WS-GetUserFileEntry.
+      * 01  WS-pNlsTableArea     PIC 9(9) COMP VALUE 0.
+      * 01  WS-pBuffer           PIC X(1024).
+      * 01  WS-sBuffer           PIC 9(4) COMP VALUE 1024.
+       01  WS-pbFieldName        PIC X(12) VALUE "MailUserName".
+       01  WS-cbFieldName        PIC 9(4) COMP VALUE 12.
+       01  WS-USERNAME           PIC X(30) VALUE " ".
+       01  WS-USEREMAILADD       PIC X(50) VALUE " ".
+       01  WS-pbValue            PIC X(30) VALUE " ".
+      * 01  WS-sValueMax         PIC 9(4) COMP VALUE 30.
+      * 01  WS-pcbValueRet       PIC 9(4) COMP-X.
+      
+      * NEW DATE LINE TO MOVE INTO pbRet.
+       01  PBRET.
+           03  WS-NAME-OF-DAY       PIC X(4) VALUE " ".
+           03  WS-NAME-OF-MONTH     PIC X(4) VALUE " ".
+           03  WS-DAY-NUMBER        PIC Z9.
+           03  FILLER               PIC XX VALUE ", ".
+           03  WS-YEAR-NUMBER       PIC X(4) VALUE " ".
+           03  FILLER               PIC XX VALUE " ".
+           03  WS-HOUR-DISPLAY      PIC XX VALUE " ".
+           03  FILLER               PIC X VALUE ":".
+           03  WS-MIN-DISPLAY       PIC XX VALUE " ".
+       01  DAY-NAME.
+           03  FILLER           PIC X(3) VALUE "Mon".
+           03  FILLER           PIC X(3) VALUE "Tue".
+           03  FILLER           PIC X(3) VALUE "Wed".
+           03  FILLER           PIC X(3) VALUE "Thu".
+           03  FILLER           PIC X(3) VALUE "Fri".
+           03  FILLER           PIC X(3) VALUE "Sat".
+           03  FILLER           PIC X(3) VALUE "Sun".
+       01  WS-CURRENT-DAY REDEFINES DAY-NAME.
+           03  WS-CDOF          PIC X(3) OCCURS 7.
+       01  MONTH-NAME.
+           03  FILLER           PIC X(3) VALUE "Jan".
+           03  FILLER           PIC X(3) VALUE "Feb".
+           03  FILLER           PIC X(3) VALUE "Mar".
+           03  FILLER           PIC X(3) VALUE "Apr".
+           03  FILLER           PIC X(3) VALUE "May".
+           03  FILLER           PIC X(3) VALUE "Jun".
+           03  FILLER           PIC X(3) VALUE "Jul".
+           03  FILLER           PIC X(3) VALUE "Aug".
+           03  FILLER           PIC X(3) VALUE "Sep".
+           03  FILLER           PIC X(3) VALUE "Oct".
+           03  FILLER           PIC X(3) VALUE "Nov".
+           03  FILLER           PIC X(3) VALUE "Dec".
+       01  WS-CURRENT-MONTH REDEFINES MONTH-NAME.
+           03  WS-CMOY          PIC X(3) OCCURS 12.
+       01  CURRENT-DAY-OF-WEEK.
+           05  WS-DAY-OF-WEEK   PIC 9.
+              88  Mon           value 1.
+              88  Tue           value 2.
+              88  Wed           value 3.
+              88  Thu           value 4.
+              88  Fri           value 5.
+              88  Sat           value 6.
+              88  Sun           value 7.
+       01  WS-REPORT-FINAL-LINES.
+           03  FILLER           PIC X(22) VALUE "Report From Terminal:".
+           03  WS-TERMINALNAME  PIC X(25) VALUE " ".
+           03  WS-REPORT-DATE   PIC X(25) VALUE " ".
+           
+      *  GetDateTime &  NLSFormatDateTime Entries
+      * 01  Y2K-DATE.
+      *     03  pNlsTableArea    Pic 9(9) Comp Value 0.
+      *     03  DateTime         Pic 9(9) comp-x.
+      *     03  pbTemplate       Pic X(40) Value " ".
+      *     03  cbTemplate       Pic 9(4) Comp-X Value 0.
+      *     03  pbRet            Pic X(50).
+      *     03  cbMax            Pic 9(4) Comp Value 50.
+      *     03  pcbRet           Pic 9(4) Comp-X.
+      *     03  Erc              Pic 9(4) Comp.
+       01  COMPANY-LINE.
+           03  FILLER           PIC X(19) VALUE " ".
+           03  COMP-DIG1        PIC X.
+           03  CO-NAME          PIC X(40).
+           03  COMP-DIG2        PIC X.
+           03  FILLER           PIC X(71) VALUE " ".

@@ -1,0 +1,5 @@
+       FD  INV-ASCII.
+       01  ASCII-REC.
+           03  ASCII-KEY.
+               05  ASCII-NO             PIC 9(6).
+      *

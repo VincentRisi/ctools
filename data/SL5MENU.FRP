@@ -1,0 +1,67 @@
+**************************{**  MAIN CONTROL MENU  **}******************        
+*   ************************{** SALES CONTROL MENU **}********************     
+*   *   **********************{* SALES PERIOD END MENU *}**********************
+*   *   *                                                                     *
+*   *   * {Week End Processing}                                               *
+*   *   *   1. Invoice Register                5. Sales Analysis Master List  *
+*   *   *   2. Distribution Totals             6. Sold By List                *
+*   *   *   3. Daily Exception Log             7. Stock Receipts Report       *
+*   *   *   4. Sales Tax Analysis                                             *
+*   *   ***********************************************************************
+*   *   * {Month End Processing}          *  {Year End Processing}            *
+*   *   *   8. Sales Analysis By Code     *   18. Debtors By Discount Code    *
+*   *   *   9. Salesman Corporate A/cs    *************************************
+*   *   *  10. Purchase Orders            *   19.{PERIOD UPDATE PROGRAM}      *
+*   *   *  11. Open Item Age analysis     *************************************
+*   *   *  12. S. & G.M.                  *                                   *
+*   *   *  13. Stock Valuation            *   20. Sort Debtors                *
+*   *   *  14. Stock Movements Per Period *   21. Maintain Data Files         *
+*   *   *  15. Statements Print Program   *   22. Isam Reorganise Data Files  *
+*   *   *  16. Stock Analysis Report      *   23. MonthEnd Submit Routine     *
+*****   *  17. Stock Lost By Adjustments  *   24. YearEnd Submit Routine      *
+    ***************************************************************************
+        *                                                                     *
+        ***********************ENTER SELECTION : __****************************
+
+Form name: Sl5Menu                         size: 1516  bytes
+height: 24    width: 79    number of fields: 2              
+
+Field name: SELECTION                                        
+Row: 23   Column: 49   Width: 2                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+                                 
+ ******************************* 
+ *  COLOR PALETTE INFORMATION  * 
+ ******************************* 
+                                 
+            Caption Color: 4     
+               Line Color: 7     
+                                 
+                                 
+        *************************
+        *   I N T E N S I T Y   *
+*********************************
+* Color *  Red  * Green *  Blue *
+*********************************
+*   0   *   0   *   3   *   0   *
+*   1   *   0   *   2   *   0   *
+*   2   *   0   *   3   *   3   *
+*   3   *   0   *   2   *   2   *
+*   4   *   3   *   3   *   3   *
+*   5   *   2   *   2   *   2   *
+*   6   *   3   *   3   *   0   *
+*   7   *   3   *   0   *   0   *
+*********************************
+  

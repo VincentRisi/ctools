@@ -1,0 +1,13 @@
+       FD  FAX-ASCII.
+       01  ASCII-PARAMRECORD.
+           03  ASCII-PAKEY.
+               04  ASCII-PARMKEY  PIC 9.
+           03  ASCII-PANUMBER     PIC 9.
+           03  ASCII-PANAME       PIC X(25).
+      ***********************************************************
+      *FAX-PANAME = MURATA, CTOS FAX-SLICE OR X-FAX             *
+      ***********************************************************
+      *FAX-PANUMBER: 1=FAX SLICE (OLD STYLE)                    *
+      *              2=MURATA INTERFACE                         *
+      *              3=X-FAX                                    *
+      ***********************************************************

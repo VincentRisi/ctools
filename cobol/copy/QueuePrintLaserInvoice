@@ -1,0 +1,83 @@
+      *----------------------------------------------------------------*
+       A995-QUEUE-FSD SECTION.
+      *----------------------------------------------------------------*
+       A995-ENTRY.
+            MOVE SPACES              TO FS-QE-RECORD.
+            MOVE 6                   TO FS-CBID.
+            MOVE 1                   TO FS-USERNUMBER.
+            MOVE 0                   TO FS-WSNUMBER.
+            MOVE 1                   TO FS-SEQUENCE.
+            MOVE 17                  TO FS-CBLIBRARY.
+            MOVE "[Win]<FPlus>FPlus" TO FS-LIBRARY.
+            
+            MOVE " " TO ALPHA-RATE
+            IF WS-PROG-TYPE = "1"
+               MOVE "InvCo"          TO ALPHA-RATE.
+            IF WS-PROG-TYPE = "2"
+               MOVE "DNoteCo"        TO ALPHA-RATE.
+            IF WS-PROG-TYPE = "3"
+               MOVE "InvDnCo"        TO ALPHA-RATE.
+            IF WS-PROG-TYPE = "4"
+               MOVE "CreditCo"       TO ALPHA-RATE.
+            PERFORM CHECK-NAME-POS
+            MOVE ALPHA-RATE          TO FS-FORM.
+            MOVE SUB-1               TO FS-CBFORM.
+            MOVE 4                   TO FS-CBPRINTER.
+            MOVE "HP6P"              TO FS-PRINTER.
+            MOVE 5                   TO FS-CBPITCH.
+            MOVE "12.00"             TO FS-PITCH.
+            MOVE 0                   TO FS-CBFEED.
+            MOVE " "                 TO FS-FEED.
+            MOVE 0                   TO FS-CBWHEEL.
+            MOVE " "                 TO FS-WHEEL.
+            MOVE 0                   TO FS-FPRINTALL.
+            MOVE 0                   TO FS-BDATATYPE.
+            MOVE 1                   TO FS-DELETEAFTER.
+            MOVE 0                   TO FS-FMULTIPLERPF.
+            MOVE 18                  TO FS-CBDATAFILE.
+            MOVE W-FILENAME          TO FS-DATAFILE.
+            MOVE 0                   TO FS-USERNUMBER.
+      *******************************************************
+      * WS-PROG-TYPE: 1=INVOICE ONLY                        *
+      *               2=D/NOTES ONLY                        *
+      *               3=D/N & INV                           *
+      *               4=C/NOTES                             *
+      *******************************************************
+      * BOOLEAN VALUES FOR WS-AREAS EG. FS-DELETEAFTER      *
+      * 1= TRUE      = Y DELETE                             *
+      * 0= FALSE     = N DO NOT DELETE                      *
+      *******************************************************
+            CALL "&AddQueueEntry" USING W-ERROR
+                                        FS-Q-NAME 
+                                        FS-Q-NAME-LEN 
+                                        FS-FQIFNOSERVER 
+                                        FS-PRIORITY 
+                                        FS-Q-TYPE 
+                                        FS-QE-RECORD 
+                                        FS-QE-RECORD-LEN 
+                                        FS-DATETIME 
+                                        FS-REPEATTIME.
+            IF W-ERROR NOT = 0
+            MOVE 
+            "THERE IS AN ERROR QUEUEING THIS REPORT, CANCEL FOR ERROR."
+               TO WS-MESSAGE
+               PERFORM ERROR-MESSAGE
+               MOVE W-ERROR TO WS-MESSAGE
+               PERFORM ERROR-MESSAGE.
+       A991-EXIT.
+            EXIT.
+      *
+       CHECK-NAME-POS SECTION.
+       CNP-005.
+           MOVE 0 TO SUB-1.
+       CNP-010.
+           ADD 1 TO SUB-1.
+           IF AL-RATE (SUB-1) NOT = " "
+              GO TO CNP-010.
+      *     MOVE WS-CO-NUMBER TO AL-RATE (SUB-1).
+          MOVE WS-CO-NUMBER TO WS-COMPANY-DIGITS
+          MOVE WS-CO-DIG1   TO AL-RATE (SUB-1)
+          ADD 1             TO SUB-1
+          MOVE WS-CO-DIG2   TO AL-RATE (SUB-1).
+       CNP-999.
+           EXIT.

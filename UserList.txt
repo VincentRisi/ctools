@@ -1,0 +1,81 @@
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+libuuid:x:100:101::/var/lib/libuuid:
+syslog:x:101:104::/home/syslog:/bin/false
+messagebus:x:102:106::/var/run/dbus:/bin/false
+usbmux:x:103:46:usbmux daemon,,,:/home/usbmux:/bin/false
+dnsmasq:x:104:65534:dnsmasq,,,:/var/lib/misc:/bin/false
+avahi-autoipd:x:105:114:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/bin/false
+kernoops:x:106:65534:Kernel Oops Tracking Daemon,,,:/:/bin/false
+rtkit:x:107:115:RealtimeKit,,,:/proc:/bin/false
+saned:x:108:116::/home/saned:/bin/false
+speech-dispatcher:x:109:29:Speech Dispatcher,,,:/var/run/speech-dispatcher:/bin/sh
+avahi:x:110:117:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/bin/false
+colord:x:111:119:colord colour management daemon,,,:/var/lib/colord:/bin/false
+pulse:x:112:120:PulseAudio daemon,,,:/var/run/pulse:/bin/false
+hplip:x:113:7:HPLIP system user,,,:/var/run/hplip:/bin/false
+mdm:x:114:122:MDM Display Manager:/var/lib/mdm:/bin/false
+
+ctools:x:1000:1000:ctools,,,:/home/ctools:/bin/bash
+steve:x:1001:1000:Steve Christensen,,,:/home/steve:/bin/bash
+john:x:1002:1000:John Christensen,,,:/home/john:/bin/bash
+sshd:x:115:65534::/var/run/sshd:/usr/sbin/nologin
+vince:x:1003:1000:Vincent Risi,,,:/home/vince:/bin/bash
+ctj-jonathan:x:1004:1000:Jonathan Potgieter,,,:/home/ctj-jonathan:/bin/bash
+ctj-counter1:x:1005:1000:Counter Sales,,,:/home/ctj-counter1:/bin/bash
+ctj-counter2:x:1006:1000:Counter2 Sales,,,:/home/ctj-counter2:/bin/bash
+ctj-donovan:x:1007:1000:Donovan Swart,,,:/home/ctj-donovan:/bin/bash
+ctj-lizzie:x:1008:1000:Lizzie Stidworthy,,,:/home/ctj-lizzie:/bin/bash
+ctj-lourens:x:1009:1000:Lourens Theron,,,:/home/ctj-lourens:/bin/bash
+ctj-penny:x:1010:1000:Penny Ocansey,,,:/home/ctj-penny:/bin/bash
+ctj-ray:x:1011:1000:Ray Engela,,,:/home/ctj-ray:/bin/bash
+ctj-rosa:x:1012:1000:Rosa Piscitello,,,:/home/ctj-rosa:/bin/bash
+ctj-sam:x:1013:1000:Samual Nhlapo,,,:/home/ctj-sam:/bin/bash
+ctj-lynn:x:1014:1000:Lynn Laubscher,,,:/home/ctj-lynn:/bin/bash
+ctj-store:x:1015:1000:CTJ Store,,,:/home/ctj-store:/bin/bash
+ctj-werner:x:1016:1000:Werner Roodt,,,:/home/ctj-werner:/bin/bash
+ctj-yvonne:x:1017:1000:Yvonne Whitehead,,,:/home/ctj-yvonne:/bin/bash
+ctn-adhir:x:1018:1000:Adhir Ramborosa,,,:/home/ctn-adhir:/bin/bash
+ctn-niresh:x:1019:1000:Niresh Harrypersadh,,,:/home/ctn-niresh:/bin/bash
+ctn-livell:x:1020:1000:Livell Singh,,,:/home/ctn-livell:/bin/bash
+ctn-randhir:x:1021:1000:Randhir Hirallal,,,:/home/ctn-randhir:/bin/bash
+ctn-store:x:1022:1000:CTN Store,,,:/home/ctn-store:/bin/bash
+sfj-bianca:x:1023:1000:Bianca DeVilliers,,,:/home/sfj-bianca:/bin/bash
+sfj-chesley:x:1024:1000:Chesley Arendse,,,:/home/sfj-chesley:/bin/bash
+sfj-craig:x:1025:1000:Craig Whelan,,,:/home/sfj-craig:/bin/bash
+sfj-daleen:x:1026:1000:Daleen Muller,,,:/home/sfj-daleen:/bin/bash
+sfj-gert:x:1027:1000:Gert VanRensburg,,,:/home/sfj-gert:/bin/bash
+sfj-kevin:x:1028:1000:Kevin Nel,,,:/home/sfj-kevin:/bin/bash
+sfj-sagran:x:1029:1000:Sagran Chetty,,,:/home/sfj-sagran:/bin/bash
+sfj-store:x:1030:1000:SFJ store,,,:/home/sfj-store:/bin/bash
+csc-bianca:x:1031:1000:Bianca Grundmann,,,:/home/csc-bianca:/bin/bash
+csc-kevin:x:1032:1000:Kevin Butler,,,:/home/csc-kevin:/bin/bash
+csc-rudie:x:1033:1000:Rudie Basson,,,:/home/csc-rudie:/bin/bash
+csc-store:x:1034:1000:CSC Store,,,:/home/csc-store:/bin/bash
+csc-suzanne:x:1035:1000:Suzanne Abraham,,,:/home/csc-suzanne:/bin/bash
+postfix:x:116:124::/var/spool/postfix:/bin/false
+faxmaster:x:117:126:HylaFAX administrative mailbox,,,:/var/spool/hylafax:/bin/false
+ctj-kim:x:1036:1000:Kim Fredericks,,,:/home/ctj-kim:/bin/bash
+ctj-prince:x:1037:1000:Prince Dube,,,:/home/ctj-prince:/bin/bash
+ctj-ricardo:x:1038:1000:Ricardo Fredricks ,,,:/home/ctj-ricardo:/bin/bash
+ctn-viresh:x:1039:1000:Viresh Dasarath,,,:/home/ctn-viresh:/bin/bash
+sfj-arno:x:1040:1000:Arno Pretorius,,,:/home/sfj-arno:/bin/bash
+ctn-dylan:x:1041:1000:Dylan Govender,,,:/home/ctn-dylan:/bin/bash
+ctj-christo:x:1042:1000:Christo Dierdricks,,,:/home/ctj-christo:/bin/bash
+ctj-themba:x:1043:1000:Themba Radebe,,,:/home/ctj-themba:/bin/bash

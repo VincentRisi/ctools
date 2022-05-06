@@ -1,0 +1,32 @@
+
+Path
+Win
+Cr
+
+Screen Setup
+
+Y
+
+
+Y
+W B
+100Type
+[Win]<Temp>DelCrFilesMessage1/Zip
+*
+<CrZip>Cr.Zip
+No
+
+
+
+
+1
+
+Delete
+<Cr>* [d1]<Cr>*
+
+
+Path
+Win
+Program
+
+**** CREDITOR MONTH-END ZIPPING ROUTINE FINISHED ****

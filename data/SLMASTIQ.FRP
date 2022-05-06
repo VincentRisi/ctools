@@ -1,0 +1,173 @@
+ ************************{** SALES ANALYSIS FILE **}*************************  
+ *                                                                          *  
+ *     Analysis Code    : __                                                *  
+ *                                                                          *  
+ *     Description      : _________________________                         *  
+ *                                                                          *  
+ *                                                                          *  
+ *                         This Week       Month        Year                *  
+ *                          To Date       To Date      To Date              *  
+ *     Costs Of Sales   : ____________  ____________  ____________          *  
+ *                                                                          *  
+ *     Total Sales      : ____________  ____________  ____________          *  
+ *                                                                          *  
+ *                                                                          *  
+ *                                                                          *  
+ ****************************************************************************  
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+
+Form name: SlMastIq                        size: 748   bytes
+height: 25    width: 79    number of fields: 9              
+
+Field name: KEY                                              
+Row: 2    Column: 26   Width: 2                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:  4          Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: NAME                                             
+Row: 4    Column: 26   Width: 25                             
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:  4          Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: COSTWEEK                                         
+Row: 9    Column: 26   Width: 12                             
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:  4          Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: COSTPTD                                          
+Row: 9    Column: 40   Width: 12                             
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:  4          Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: COSTYTD                                          
+Row: 9    Column: 54   Width: 12                             
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:  4          Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: SALESWEEK                                        
+Row: 11   Column: 26   Width: 12                             
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: H  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:  4          Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: SALESPTD                                         
+Row: 11   Column: 40   Width: 12                             
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: H  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:  4          Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: SALESYTD                                         
+Row: 11   Column: 54   Width: 12                             
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: H  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:  4          Unselected Color Number: 0
+List of values:                                              
+
+
+
+                                 
+ ******************************* 
+ *  COLOR PALETTE INFORMATION  * 
+ ******************************* 
+                                 
+            Caption Color: 2     
+               Line Color: 6     
+                                 
+                                 
+        *************************
+        *   I N T E N S I T Y   *
+*********************************
+* Color *  Red  * Green *  Blue *
+*********************************
+*   0   *   0   *   3   *   0   *
+*   1   *   0   *   2   *   0   *
+*   2   *   0   *   3   *   3   *
+*   3   *   0   *   2   *   2   *
+*   4   *   3   *   3   *   3   *
+*   5   *   2   *   2   *   2   *
+*   6   *   3   *   3   *   0   *
+*   7   *   3   *   0   *   0   *
+*********************************
+  

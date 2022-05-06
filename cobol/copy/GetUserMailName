@@ -1,0 +1,35 @@
+      *
+       GET-USER-MAIL-NAME SECTION.
+       GUMN-005.
+      *     ACCEPT WS-USERNAME FROM ENVIRONMENT "USER".
+            
+            ACCEPT WS-USERNAME FROM ENVIRONMENT "USERFULLNAME".
+            MOVE WS-USERNAME TO WS-pbValue.
+            
+      *      MOVE WS-USERNAME TO WS-MESSAGE
+      *      PERFORM ERROR-MESSAGE.
+      *      
+       GUMN-999.
+           EXIT.
+      *
+      **************************
+      *CTOS VERSION - ORIGINAL *
+      **************************
+      * GUMN-005.
+      *     CALL "&GetUserFileEntry" USING F-Error
+      *                                    WS-pNlsTableArea
+      *                                    WS-pBuffer
+      *                                    WS-sBuffer
+      *                                    WS-pbFieldName
+      *                                    WS-cbFieldName
+      *                                    WS-pbValue
+      *                                    WS-sValueMax
+      *                                    WS-pcbValueRet.
+      *     IF F-ERROR NOT = 0
+      *         MOVE "NO MailUser ENTRY IN USER FILE!!" TO WS-MESSAGE
+      *         PERFORM ERROR-MESSAGE
+      *         MOVE F-ERROR TO WS-MESSAGE
+      *         PERFORM ERROR-MESSAGE.
+       GUMN-999.
+           EXIT.
+      *

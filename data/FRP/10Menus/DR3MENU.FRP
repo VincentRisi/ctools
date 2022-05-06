@@ -1,0 +1,66 @@
+*****************************  MAIN CONTROL MENU  *******************          
+* ***************************** DEBTOR CONTROL MENU *********************      
+* * *****************************  DEBTOR REPORTING   *************************
+* * *                                                                         *
+* * *  1. Debtor Master List Report           15. Debtor Call Schedule By Rep *
+* * *  2. Debtor Mailing Labels Report                                        *
+* * *                                         16. Special Mail List Report    *
+* * *  3. Debtor Sales By Discount Report                                     *
+* * *  4. Debtors With Discount Report        17. Debtor Special Discount     *
+* * *                                              By Account Number Report   *
+* * *  5. Age Analysis Report                 18. Debtor Special Discount     *
+* * *  6. Age Analysis Totals Report               By Stock Number Report     *
+* * *  7. Debtor Overdue Account Faxes        19. Pricelist By Debtor Account *
+* * *  8. Debtor Account Status Report             with Special Discounts     *
+* * *  9. Statement Print Report                                              *
+* * *                                         20. Debtor Sales By Corporate   *
+* * * 10. Debtor Sales By Area Code                 Grouping                  *
+* * * 11. Debtor Sales By Area Totals         21. Debtor Name & Fax Number in *
+*** * 12. Debtor Sales In Jhb Surrounds             XFax & Man3000 Format     *
+  * * 13. Debtor Not Bought/Bought Since...   22. Debtor Credit Limit Report  *
+  *** 14. Debtor Highest Sales (Top 50...)                                    *
+    *                                                                         *
+    ****************************ENTER SELECTION : __***************************
+
+Form name: Dr3Menu                         size: 1548  bytes
+height: 23    width: 79    number of fields: 2              
+
+Field name: SELECTION                                        
+Row: 22   Column: 50   Width: 2                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+                                 
+ ******************************* 
+ *  COLOR PALETTE INFORMATION  * 
+ ******************************* 
+                                 
+            Caption Color: 4     
+               Line Color: 7     
+                                 
+                                 
+        *************************
+        *   I N T E N S I T Y   *
+*********************************
+* Color *  Red  * Green *  Blue *
+*********************************
+*   0   *   0   *   3   *   0   *
+*   1   *   0   *   2   *   0   *
+*   2   *   0   *   3   *   3   *
+*   3   *   0   *   2   *   2   *
+*   4   *   3   *   3   *   3   *
+*   5   *   2   *   2   *   2   *
+*   6   *   3   *   3   *   0   *
+*   7   *   3   *   0   *   0   *
+*********************************
+  

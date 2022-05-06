@@ -1,0 +1,9 @@
+       FD  ORDER-GEN-FILE.
+       01  ORDER-GEN-REC.
+           03  OG-KEY.
+               05  OG-SUPPLIER           PIC X(7).
+               05  OG-SEA-AIR            PIC X.
+               05  OG-STOCK-NUMBER       PIC X(15).
+           03  OG-QUANTITY               PIC 9(5).
+      *
+      *OG-SEA-AIR:SEA=S, AIR=A

@@ -1,0 +1,27 @@
+       FD  CRTR-ASCII.
+       01  ASCII-REC.
+           03  ASCII-KEY.
+               05  ASCII-TYPE        PIC 99.
+               05  ASCII-TRANS       PIC 9(6).
+           03  ASCII-PERIOD.
+               05  ASCII-FUTURE      PIC X.
+               05  ASCII-NO          PIC 9(2).
+           03  ASCII-ACC-NUMBER      PIC 9(7).
+           03  ASCII-REFERENCE       PIC X(10).
+           03  ASCII-INV-NO          PIC X(10).
+           03  ASCII-DNOTE-NO        PIC X(10).
+           03  ASCII-DATE            PIC 9(8).
+           03  ASCII-DUE-DATE        PIC 9(8).
+           03  ASCII-LOC-AMT         PIC S9(7)V99.
+           03  ASCII-VAT-AMT         PIC S9(7)V99.
+           03  ASCII-UNAPPLIED-AMT   PIC S9(7)V99.
+           03  ASCII-FOR-AMT         PIC S9(7)V99.
+           03  ASCII-EXCHANGE        PIC 9(3)V9(5).
+           03  ASCII-SETT-DISC       PIC S9(7)V99.
+      *
+      * CRTR-PERIOD: (FORMAT=01 ETC OR
+      *                        F02 FOR FUTURE PERIOD)
+      * CRTR-REFERENCE: = BATCH NO ENTERED.
+      * CRTR-TYPE: 1=INVOICE, 2=PAYMENT,  4=JRN-DEBIT, 5=JRN-CREDIT,
+      *            6=C/NOTE,  7=INTEREST, 8=DISCOUNT,  9=FOREX       
+      *

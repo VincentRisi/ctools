@@ -1,0 +1,19 @@
+      *
+        WRITE-FIELD-FAX SECTION.
+        WRITE-F000.
+            CALL "WRITEFIELD" USING F-ERROR1
+                                    F-FORM
+                                    F-FIELDNAME
+                                    F-CBFIELDNAME
+                                    F-INDEX
+                                    F-EDNAMEFIELDFAX
+                                    F-CBFIELDLENGTH
+                                    F-TYPE.
+            IF F-ERROR1 NOT = 0
+                DISPLAY "WRITEFIELD FAX ERROR"
+                DISPLAY F-ERROR1
+                DISPLAY F-FIELDNAME
+                PERFORM ERROR-010
+                STOP RUN.
+        WRITE-F999.
+            EXIT.

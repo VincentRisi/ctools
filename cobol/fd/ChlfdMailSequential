@@ -1,0 +1,16 @@
+       FD  MAILSEQ-MASTER.
+       01  MAILSEQ-RECORD.
+           03  FILLER                PIC X.
+           03  MS-CO-NAME            PIC X(31).
+           03  MS-ADDRESS1           PIC X(27).
+           03  MS-ADDRESS2           PIC X(20).
+           03  MS-POST-CODE          PIC X(4).
+           03  MS-TELE-CODE          PIC X(10).
+           03  FILLER                PIC X(2).
+           03  MS-TELEPHONE          PIC X(11).
+           03  MS-INITIALS           PIC X(7).
+           03  MS-NAME               PIC X(18).
+           03  FILLER                PIC X.
+      *
+      *THIS RECORD IS USED TO CREATE CHLFDMAILLIST BY USING
+      *  MAILLIST.INT

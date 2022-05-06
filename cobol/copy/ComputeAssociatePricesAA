@@ -1,0 +1,73 @@
+      *
+       COMPUTE-ASSOCIATE-PRICES SECTION.
+       CASP-005.
+           IF ST-AVERAGECOST = 0
+               MOVE
+             "THIS ITEM DOES NOT HAVE A COST, ADVISE YOUR SUPERVISOR"
+               TO WS-MESSAGE
+               PERFORM ERROR-000
+               GO TO CASP-999.
+      *
+      *THIS EXTRA READ IS BROUGHT IN TO READ THE PRICE AND AVE COST
+      * OTHERWISE THE M/U % IS INCORRECTLY WORKED.
+               
+           READ STOCK-MASTER
+               INVALID KEY NEXT SENTENCE.
+           COMPUTE WS-PERC = ((ST-PRICE - ST-AVERAGECOST)
+                   / ST-AVERAGECOST) * 100.
+      **************   
+      *1.5% ITEMS  *
+      **************
+           IF ST-CATEGORY = "MAG" OR = "PLA"
+              COMPUTE WS-NEWPRICE ROUNDED = ST-AVERAGECOST * 1.015
+              GO TO CASP-010.
+      **************   
+      *2.5% ITEMS  *
+      **************
+           IF ST-CATEGORY = "FLK"
+              COMPUTE WS-NEWPRICE ROUNDED = ST-AVERAGECOST * 1.025
+              GO TO CASP-010.
+      **************   
+      *3.0% ITEMS  *
+      **************
+           IF ST-CATEGORY = "WLR" OR = "ORX" OR = "PAN" OR = "XRN"
+                       OR = "AB " OR = "BTS" OR = "SCS" OR = "MC "
+                       OR = "XLT" OR = "RCT" OR = "KAR"
+              COMPUTE WS-NEWPRICE ROUNDED = ST-AVERAGECOST * 1.030
+              GO TO CASP-010.
+           IF ST-STOCKNUMBER = "FEM SL-114" OR = "RSC 7002"
+                          OR = "BRN 4-392"  OR = "LP T32301"
+                          OR = "FEM F65"    OR = "KES S/D"
+              COMPUTE WS-NEWPRICE ROUNDED = ST-AVERAGECOST * 1.030
+              GO TO CASP-010.
+      **************
+      *10.0% ITEMS *
+      **************
+           IF ST-CATEGORY = "DPR"
+              COMPUTE WS-NEWPRICE ROUNDED = ST-AVERAGECOST * 1.10
+              GO TO CASP-010.
+           
+      *IF STOCK NOT FROM ABOVE CATEGORIES THEN THE NORMAL DISCOUNT
+      * WOULD APPLY FOR THE ASSOCIATE COMPANIES.
+      
+           GO TO CASP-999.
+       CASP-010.
+      *DISCOUNT ZEROD IF ITEM IS AT SPECIAL M/U TO ASSOCIATE.
+      *
+           MOVE "Y" TO B-SPECIAL (SUB-1).
+       
+           MOVE
+           "THE MARGIN ON THIS ITEM IS        %, NORMAL PRICE IS R"
+              TO WS-MESSAGE
+           PERFORM ERROR-000
+           MOVE 3042 TO POS
+           MOVE WS-PERC TO F-EDNAMEFIELDADDON
+           DISPLAY F-EDNAMEFIELDADDON AT POS
+           
+           MOVE 3070 TO POS
+           MOVE ST-PRICE TO F-EDNAMEFIELDAMOUNT
+           DISPLAY F-EDNAMEFIELDAMOUNT AT POS
+           MOVE WS-NEWPRICE TO STTR-PRICE.
+       CASP-999.
+           EXIT.
+      *

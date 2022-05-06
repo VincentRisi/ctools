@@ -1,0 +1,18 @@
+      *
+       WRITE-FIELD-AMTBLANK SECTION.
+       WRITE-BL000.
+            CALL "WRITEFIELD" USING F-ERROR1
+                                    F-FORM
+                                    F-FIELDNAME
+                                    F-CBFIELDNAME
+                                    F-INDEX
+                                    F-EDNAMEFIELDAMTBLANK
+                                    F-CBFIELDLENGTH
+                                    F-TYPE.
+            IF F-ERROR1 NOT = 0
+                DISPLAY "WRITEFIELD AMTBLANK ERROR"
+                DISPLAY F-ERROR1
+                PERFORM ERROR-010
+                STOP RUN.
+       WRITE-BL999.
+            EXIT.

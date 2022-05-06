@@ -1,0 +1,9 @@
+       FD  CURRENCY-MASTER.
+       01  CURRENCY-RECORD.
+           03  CU-KEY.
+               05  CU-CURRENCY-TYPE  PIC X(5).
+           03  CU-DESCRIPTION        PIC X(20).
+           03  CU-VALUE              PIC 9(3)V9(5).
+      *
+      *CU-VALUE = VALUE AGAINST THE RAND.(RAND = 1.00)
+      *

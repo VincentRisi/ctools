@@ -1,0 +1,19 @@
+      *
+       ERROR5-MESSAGE SECTION.
+       ERROR5-000.
+             PERFORM CENTRE-MESSAGE-INFO.
+             
+             MOVE 2801 TO POS.
+             DISPLAY "                                      " AT POS.
+             DISPLAY WS-MESSAGE AT 2801 WITH REVERSE-VIDEO
+      *       DISPLAY WS-MESSAGE AT 2801 WITH reverse-video BLINK
+                BELL FOREGROUND-COLOR IS 4.
+       ERROR5-010.
+             CALL "LOCKKBD" USING F-FIELDNAME.
+       ERROR5-020.
+             MOVE 2901 TO POS
+             MOVE " " TO WS-MESSAGE
+             DISPLAY WS-MESSAGE AT POS.
+       ERROR5-999.
+             EXIT.
+      *

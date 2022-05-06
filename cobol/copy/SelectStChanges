@@ -1,0 +1,6 @@
+           SELECT STOCKCHANGE-MASTER ASSIGN TO Ws-StChange
+               ORGANIZATION IS INDEXED
+               LOCK MANUAL
+               ACCESS MODE IS DYNAMIC
+               FILE STATUS IS WS-STCHANGE-STATUS
+               RECORD KEY IS STCH-KEY.

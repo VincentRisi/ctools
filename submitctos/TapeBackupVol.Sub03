@@ -1,0 +1,168 @@
+Dis Cluster
+
+APT Terminate
+S
+
+
+Screen Setup
+
+Yes
+
+
+Yes
+White Blue
+100
+
+Type
+<Temp>TapebackupvolMessage1
+
+1
+
+
+Path
+Win
+PS03
+
+Screen Setup
+
+Yes
+
+
+Yes
+White Blue
+100
+
+Type
+<Temp>TapebackupvolMessage2/Zip
+*/*
+WeekEnd.Zip
+No
+
+
+
+
+1
+
+Delete
+*/*
+
+
+Path
+Win
+Program
+
+Orthello
+
+
+C RUN
+MainCont
+
++P-N
+3
+MONTHLY
+3
+X
+<CTN>Quotes
+11
+3
+
+
+
+
+
+
+2
+1
+12
+A
+Z
+
+
+
+8
+9
+** RESET INPUTS **
+
+E
+
+ISAM Terminate 
+DeInstall XQS Fax Server
+DeInstall Mail Service
+
+Delete
+<$*>*
+
+Delete
+<*>*-old <*>*.ts <Spl>* <*>*.tmp
+
+Delete
+[D1]<Spl>*
+
+
+Delete
+[Win]<Organizer>ss.Log
+
+
+
+Tape Reten
+
+
+Vol Archive
+Win
+Orthello
+
+
+No
+[Qic]
+Yes
+[D1]<Spl>VolArchive.Lst
+
+Yes
+Yes
+Yes
+
+
+
+Rename
+<CTN>Quotes
+<Spl>Quotes
+
+Copy
+<Temp>Compressed.Key
+[SplXtra]
+
+Print
+<Spl>Quotes
+[SplB]
+
+
+
+** Restoring to [D1] drive as a further backup **
+Path
+D1
+Sys
+
+Screen Setup
+
+Yes
+
+
+Yes
+White Blue
+100
+
+Res Arch
+
+
+
+Yes
+
+
+
+
+
+Yes
+
+Type
+<Temp>TapeVolMessage
+Boot

@@ -1,0 +1,87 @@
+      *
+       CHECK-FOR-PAUSE SECTION.
+       CHECK-PAUSE-010. 
+           CALL "DELAY" USING
+                        W-ERROR
+                        W-DELAY.
+       CHECK-PAUSE-050. 
+           CALL "READKEYEDQUEUEENTRY" USING
+                                       W-ERROR
+                                       W-STATUS-QUEUENAME
+                                       W-STATUS-QUEUENAMELEN
+                                       W-PRINTERNAME
+                                       W-PRINTERNAMELEN
+                                       W-ZERO
+                                       W-ZERO
+                                       W-ZERO
+                                       W-ZERO
+                                       W-SPOOLST
+                                       W-SPOOLST-LEN
+                                       W-STATUSBLOCK
+                                       W-STATUSBLOCKLENGTH.
+      *
+      *WS-SPOOLST-IND. 00=IDLE   01=PAUSED   02=PRINTING   03=OFFLINE
+      *
+           IF WS-SPOOLST-FILENAME = W-FILENAME
+            IF WS-SPOOLST-IND = 01
+              GO TO CHECK-PAUSE-EXIT.
+           IF WS-SPOOLST-IND = 03
+              MOVE
+           "The Printer Is OFF-LINE, SWITCH ON, Press CANCEL To Retry"
+              TO WS-MESSAGE
+              PERFORM ERROR-MESSAGE
+              GO TO CHECK-PAUSE-010.
+           IF WS-SPOOLST-FILENAME NOT = W-FILENAME
+              MOVE "The Printer Is Unavailable - Press CANCEL To Retry"
+              TO WS-MESSAGE
+              PERFORM ERROR-MESSAGE
+              GO TO CHECK-PAUSE-010.
+           GO TO CHECK-PAUSE-010.
+       CHECK-PAUSE-EXIT.
+           EXIT.
+      *
+       CHECK-PAUSE-PRINT SECTION.
+       CPP-010. 
+           CALL "DELAY" USING
+                         W-ERROR
+                         W-DELAY.
+       CPP-050. 
+           CALL "READKEYEDQUEUEENTRY" USING
+                                       W-ERROR
+                                       W-STATUS-QUEUENAME
+                                       W-STATUS-QUEUENAMELEN
+                                       W-PRINTERNAME
+                                       W-PRINTERNAMELEN
+                                       W-ZERO
+                                       W-ZERO
+                                       W-ZERO
+                                       W-ZERO
+                                       W-SPOOLST
+                                       W-SPOOLST-LEN
+                                       W-STATUSBLOCK
+                                       W-STATUSBLOCKLENGTH.
+           IF WS-SPOOLST-FILENAME = W-FILENAME
+            IF WS-SPOOLST-IND NOT = 01
+              GO TO CPP-010.
+       CPP-EXIT.
+           EXIT.
+      *
+       SEND-CONTROL-CHAR SECTION.
+           CALL "ADDQUEUEENTRY" USING
+                                 W-ERROR
+                                 W-PAR-QUEUENAME
+                                 W-PAR-QUEUENAMELENGTH
+                                 W-Q-NO-SERVER
+                                 W-PRIORITY
+                                 W-QUEUETYPE
+                                 W-RESTART
+                                 W-RESTARTLENGTH
+                                 W-DATE-TIME
+                                 W-REPEATTIME.
+
+           IF W-ERROR NOT = 0
+              DISPLAY "ADDQUEUEENTRY ERROR"
+              DISPLAY W-ERROR
+              ACCEPT W-ACCEPT.
+       SEND-CONTROL-EXIT.
+           EXIT.

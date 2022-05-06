@@ -1,0 +1,4 @@
+       FD  DAILY-EXCEPTIONS.
+       01  DAILY-EX-REC.
+           03  DAILY-MESSAGE          PIC X(80).
+      *

@@ -1,0 +1,18 @@
+python fohtotext.py -r invoice -T /ctools/spl/$1.temp0.txt /ctools/spl/$1InPrintCo$2
+text2pdf /ctools/spl/$1.temp0.txt -fCourier-Bold -t8 -s10 -x842 -y595 -c135 -l48 > /ctools/spl/$1.temp1.pdf
+pdftk /ctools/spl/$1.temp1.pdf background /ctools/dev/source/print/InvoiceOverlay$2.pdf output /ctools/spl/$1.temp2.pdf
+pdftk /ctools/spl/$1.temp2.pdf cat 1-endwest output /ctools/spl/$1InPrintCo$2.pdf
+lp -d $3 /ctools/spl/$1InPrintCo$2.pdf
+
+#FORMAT FOR PRINTING IS:
+#lp -d W-PRINTERNAME W-PRINTFILE
+
+#--So far the variables which will be specified from inside the COBOL programs are:
+#---$1 = The username                         e.g. steve
+#---$2 = The company number from 01 to 12     e.g. 07
+#---$3 = The Printername to print the file to e.g. MP250
+#---$4 = The Print file name which will replace /ctools/spl/InPrintCo01 when specified in COBOL
+
+
+#--- add any extra commands here - perhaps cups printing
+#--- or sendfax via hylaFAX 

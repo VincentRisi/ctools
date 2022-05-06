@@ -1,0 +1,32 @@
+text2pdf /ctools/cr/$3 -fCourier-Bold -x595 -y842 -l66 -c88 -V16 -H41 > /ctools/cr/$3.tmp1.pdf
+pdftk /ctools/cr/$3.tmp1.pdf background /ctools/dev/source/print/$1QuoteOverlay2.pdf output /ctools/cr/$1Remit$3.pdf
+
+if [ "$4" = "02" ] && [ "$6" = "P" ]
+   then
+     lp -d $2 /ctools/cr/$3.pdf
+ fi
+
+if [ "$4" = "02" ] &&  [ "$5" = "F" ]
+   then
+     sendcr -n -d $7 /ctools/cr/$3.pdf
+ fi
+
+rm /ctools/cr/$3
+rm /ctools/cr/*$3.tmp1.pdf
+
+#lp -d $2 $3
+#--- the following pdftk cats the first statement to a single file from two
+#--- this is basically for testing cres with only one statement
+##pdftk QuoteCo01.pdf cat 1-1 output single.pdf
+
+#FORMAT FOR PRINTING IS:
+#lp -d W-PRINTERNAME W-PRINTFILE
+
+#--So far the variables which will be specified from inside the COBOL programs are:
+#---$1 = The company number from 01 to 12     e.g. 07
+#---$2 = The Printername to print the file to e.g. MP140
+#---$3 = The Remit file name e.g. 2002Co010300150-2 specified in COBOL
+#---$4 = The page-cnt.  If page-cnt = 01 then don't print, If = 02 OR HIGHER then print.
+#---$5 = WS-AUTO-FAX.   If = F then send by cr
+#---$6 = WS-ANSWER.     If = P then print PDF.
+#---$7 = WS-cr-number.  Used ONLY if sending by cr.

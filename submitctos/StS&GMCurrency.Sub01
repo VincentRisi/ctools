@@ -1,0 +1,278 @@
+Type
+<Temp>StS&GMMessage
+
+1
+
+
+Is Del
+<Data>StNewPrices
+
+
+C Run
+MainCont
+
++P -N
+1 
+CTJ-MONTH
+2 
+1 
+7
+
+8
+AB
+AB Z
+2.145
+N85
+WAY
+
+8
+BRN
+BRN Z
+2.145
+N85
+WAY
+
+
+8
+BTS
+BTS Z
+4.775
+N85
+WAY
+
+8
+CK 
+CK Z
+2.1450
+N85
+WAY
+
+8
+CON
+CON Z
+2.145
+N85
+WAY
+
+8
+CRC
+CRC Z
+2.145
+N85
+WAY
+
+8
+DEC
+DEC C
+2.145
+N85
+WAY
+
+8
+DIA
+DIA C
+2.145
+N85
+WAY
+
+8
+ERM
+ERM Z
+2.1450
+N85
+WAY
+
+8
+FEM
+FEM Z
+2.185
+N85
+WAY
+
+8
+ITE
+ITE Z
+2.145
+N85
+WAY
+
+8
+KES
+KES Z
+2.145
+N85
+WAY
+
+8
+KYO
+KYO Z
+2.145
+N85
+WAY
+
+8
+LPO
+LPO Z
+2.60
+N85
+WAY
+
+8
+MAX
+MAX Z
+2.145
+N85
+WAY
+
+8
+MC
+MC Z
+2.145
+N85
+WAY
+
+8
+ORX
+ORX Z
+2.145
+N85
+WAY
+
+8
+PAN
+PAN Z
+2.66
+N85
+WAY
+
+8
+POL
+POL Z
+2.145
+N85
+WAY
+
+8
+RCT
+RCT Z
+2.145
+N85
+WAY
+
+7
+RSC
+RSC Z
+1.8500
+Y85
+WAY
+
+8
+SCH
+SCH Z
+2.145
+N85
+WAY
+
+8
+SCS
+SCS Z
+2.145
+N85
+WAY
+
+8
+SIM
+SIM Z
+2.145
+N85
+WAY
+
+8
+SPG
+SPG Z
+2.145
+N85
+WAY
+
+8
+UNI
+UNI Z
+2.1450
+N85
+WAY
+
+8
+VB
+VB Z
+2.145
+N85
+WAY
+
+8
+VIK
+VIK Z
+2.75
+N85
+WAY
+
+8
+WHL
+WHL Z
+2.145
+N85
+WAY
+
+8
+WLR
+WLR Z
+1.95
+N85
+WAY
+
+8
+XLT
+XLT Z
+2.145
+N85
+WAY
+
+8
+XRN
+XRN Z
+2.145
+N85
+WAY
+
+
+6
+12
+X
+<SPL>BMREWK1
+CK
+CK Z
+YYYYWNR
+1.00
+1.83
+
+
+
+
+
+
+12
+X
+<SPL>BMREWK2
+RSA
+RSA Z
+YYYYWNR
+1.00
+1.83
+
+
+
+
+
+
+E
+
+**** FINISHED STOCK S&GM PRICE UPDATE ROUTINE ******

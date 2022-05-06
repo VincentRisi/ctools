@@ -1,0 +1,69 @@
+**************************{**  MAIN CONTROL MENU  **}******************        
+*   ************************{** SALES CONTROL MENU **}********************     
+*   *   **********************{* MAINTENANCE & ENQUIRY *}**********************
+*   *   *                                                                     *
+*   *   *  1. Delivery File Entry/Edit        14. Credit Note Entry           *
+*   *   *  2. Distribution File Entry/Edit    15. Credit Note Reversal        *
+*   *   *  3. V.A.T. File Enquiry                                             *
+*   *   *  4. Invoice Comment Entry/Edit      16. Invoice Entry               *
+*   *   *  5. Parameter File Entry/Edit       17. Invoice Reversal            *
+*   *   *  6. Sales Analysis Entry/Edit                                       *
+*   *   *  7. Terms File Entry/Edit           18. Order/Picking Slip Entry    *
+*   *   *                                     19. Picking Slip Stock Allocate *
+*   *   *  8. Soldby File Entry/Edit          20. Picking Slip Batch Print    *
+*   *   *  9. Rep/Internal File Entry/Edit                                    *
+*   *   * 10. Puller File Entry/Edit          21. Quotations - Entry/Edit     *
+*   *   *                                                                     *
+*   *   * 11. Customer Short POrder Enq.      22. Register Account Enquiry    *
+*   *   *                                     23. Register Name/Address Edit  *
+*   *   * 12. Invoiced Item Enquiry - Acc     24. Register Enquiry By: Name,  *
+*****   * 13. Invoiced Item Enquiry - Stock        Postal or Delivery Address *
+    *****                                                                     *
+        *                                     25. Distribution File Enquiry   *
+        *************************ENTER SELECTION : __**************************
+                                                                               
+                                                                               
+                                                                               
+
+Form name: Sl2Menu                         size: 1498  bytes
+height: 26    width: 79    number of fields: 2              
+
+Field name: SELECTION                                        
+Row: 22   Column: 51   Width: 2                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+                                 
+ ******************************* 
+ *  COLOR PALETTE INFORMATION  * 
+ ******************************* 
+                                 
+            Caption Color: 4     
+               Line Color: 7     
+                                 
+                                 
+        *************************
+        *   I N T E N S I T Y   *
+*********************************
+* Color *  Red  * Green *  Blue *
+*********************************
+*   0   *   0   *   3   *   0   *
+*   1   *   0   *   2   *   0   *
+*   2   *   0   *   3   *   3   *
+*   3   *   0   *   2   *   2   *
+*   4   *   3   *   3   *   3   *
+*   5   *   2   *   2   *   2   *
+*   6   *   3   *   3   *   0   *
+*   7   *   3   *   0   *   0   *
+*********************************
+  

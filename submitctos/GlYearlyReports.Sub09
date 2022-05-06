@@ -1,0 +1,77 @@
+%'
+
+%#0: 
+
+
+No THREE Digit Month Name Was Entered, This Run Is Aborted.
+
+
+2:
+
+
+Screen Setup
+
+Y
+
+
+Y
+White Blue
+100
+
+C/2 Run
+MainCont.Int
+
+-N +P
+9
+THUTMES
+5
+2
+
+3
+X
+<GL>SFIGL1
+
+FINAL JRN'S FOR THE YEAR.
+
+8
+X
+<GL>SFIGL2
+
+10
+X
+<GL>SFIGL3
+
+5
+X
+<GL>SFIGL42
+
+9999999
+
+
+6
+X
+<GL>SFIGL41
+
+9999999
+
+
+e
+
+Path
+Win
+GL
+Type
+<Temp>GLMonthlyMessage
+
+Rename
+SFIGl*
+SFI%0*
+Yes
+
+
+Path
+Win
+Program
+
+
+**** SFI Yearly Reports Run Successfully *****

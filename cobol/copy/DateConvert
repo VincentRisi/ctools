@@ -1,0 +1,64 @@
+      *
+       DATE-CONVERT SECTION.
+       DCON-001.
+           IF WS-YY = 0
+             MOVE 0       TO WS-NEW-DATE
+             GO TO DCON-999.
+           MOVE 19        TO WS-N-CC
+           MOVE WS-YY     TO WS-N-YY
+           MOVE WS-MM     TO WS-N-MM
+           MOVE WS-DD     TO WS-N-DD.
+       DCON-999.
+           EXIT.
+      *
+       MV-TIME SECTION.
+       MV-010.
+           PERFORM MV-030.
+           PERFORM MV-040.
+       MV-020.
+           PERFORM MV-030.
+           PERFORM MV-050.
+       MV-030.
+           ACCEPT WS-TIME FROM TIME
+           MOVE WS-HR           TO SPLIT-HR
+           MOVE ":"             TO SPLIT-HR-FIL
+                                   SPLIT-MN-FIL
+           MOVE WS-MIN          TO SPLIT-MN
+           MOVE WS-SEC          TO SPLIT-SC.
+       MV-040.
+           MOVE WS-TIME-DISPLAY TO WS-DAILY-2ND.
+       MV-050.
+           MOVE WS-TIME-DISPLAY TO WS-DAILY-4TH.
+       MV-999.
+           EXIT.
+      *
+       WRITE-DAILY SECTION.
+       WRDA-000.
+           OPEN EXTEND DAILY-EXCEPTIONS.
+           IF WS-DAILY-ST1 NOT = "0"
+              MOVE " " TO WS-DAILY-ST1
+              MOVE "Daily File Busy, Press 'CANCEL To Retry"
+                TO WS-MESSAGE
+              PERFORM ERROR-MESSAGE
+              GO TO WRDA-000.
+       WRDA-010.
+           MOVE WS-DAILY-MESSAGE TO DAILY-EX-REC.
+           WRITE DAILY-EX-REC.
+           IF WS-DAILY-ST1 NOT = "0"
+              MOVE " " TO WS-DAILY-ST1
+              MOVE "Daily File Busy On Write, Press 'CANCEL' To Retry"
+                TO WS-MESSAGE
+              PERFORM ERROR-MESSAGE
+              GO TO WRDA-010.
+       WRDA-900.
+           CLOSE DAILY-EXCEPTIONS.
+           IF WS-DAILY-ST1 NOT = "0"
+              MOVE " " TO WS-DAILY-ST1
+              MOVE "Daily File Busy On CLOSE, Press 'CANCEL' To Retry"
+              TO WS-MESSAGE
+              PERFORM ERROR-MESSAGE
+              GO TO WRDA-900.
+           MOVE " " TO WS-DAILY-MESSAGE.
+       WRDA-999.
+           EXIT.
+      *

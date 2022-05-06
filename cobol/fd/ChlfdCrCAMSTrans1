@@ -1,0 +1,19 @@
+       FD  CR-CAMS-TRANS1-FILE.
+       01  CR-CAMS-TRANS1-REC.
+           03  CR-CAMS-TRANS1-KEY.
+               05  CR-CAMS-TRANS1-NUM         PIC 9(6).
+           03  CR-CAMS-TRANS1-ACC-NUMBER      PIC 9(7).
+           03  CR-CAMS-TRANS1-ACC-NAME        PIC X(20).
+           03  CR-CAMS-TRANS1-CRED-NUM        PIC X(10).
+           03  CR-CAMS-TRANS1-CHEQUE-NUM      PIC X(10).
+           03  CR-CAMS-TRANS1-DATE            PIC 9(8).
+           03  CR-CAMS-TRANS1-AMOUNT          PIC S9(7)V99.
+           03  CR-CAMS-TRANS1-BANK-NAME       PIC X(20).
+           03  CR-CAMS-TRANS1-CRED-TYPE       PIC 9.
+           03  CR-CAMS-TRANS1-BANK-NUM        PIC X(11).
+           03  CR-CAMS-TRANS1-BRANCH-NUM      PIC X(6).
+           03  CR-CAMS-TRANS1-PAID            PIC X.
+      *
+      * CR-CAMS-TRANS1-PERIOD: (FORMAT=01 ETC OR
+      * CR-CAMS-TRANS1-REFERENCE: = BATCH NO ENTERED.
+      * CR-CAMS-TRANS1-COMPLETE:N=NO(PENDING POSTING), Y=YES

@@ -1,0 +1,13 @@
+       FD  FAX-PARAMETER.
+       01  FAX-PARAMRECORD.
+           03  FAX-PAKEY.
+               04  FAX-PARMKEY  PIC 9.
+           03  FAX-PANUMBER     PIC 9.
+           03  FAX-PANAME       PIC X(25).
+      ***********************************************************
+      *FAX-PANAME = MURATA, CTOS FAX-SLICE OR X-FAX             *
+      ***********************************************************
+      *FAX-PANUMBER: 1=FAX SLICE (OLD STYLE)                    *
+      *              2=MURATA INTERFACE                         *
+      *              3=X-FAX                                    *
+      ***********************************************************

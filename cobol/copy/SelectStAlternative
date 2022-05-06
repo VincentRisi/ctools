@@ -1,0 +1,6 @@
+           SELECT STALT-MASTER ASSIGN TO Ws-StAlternative
+               ORGANIZATION IS INDEXED
+               LOCK MANUAL
+               ACCESS MODE IS DYNAMIC
+               FILE STATUS IS WS-STALT-STATUS
+               RECORD KEY IS STALT-KEY.

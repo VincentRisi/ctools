@@ -1,0 +1,3 @@
+./text2pdf landscape.txt -fCourier-Bold -t8 -s10 -x842 -y595 -c135 -l48 > .temp1.pdf
+pdftk .temp1.pdf background invoice01.pdf output landscape.invoice01.pdf
+pdftk .temp1.pdf background creditnote01.pdf output landscape.creditnote01.pdf

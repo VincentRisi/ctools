@@ -1,0 +1,5 @@
+       FD  QUOTE-IMP-MASTER.
+       01  QUOTE-IMP-RECORD.
+            03  QUOTE-IMP-KEY.
+                05  QUOTE-IMP-QB-NUM       PIC 9(6).
+            03 QUOTE-RETUTN-CHAR           PIC X.

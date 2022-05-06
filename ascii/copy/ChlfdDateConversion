@@ -1,0 +1,32 @@
+       77  WS-MESSAGE           PIC X(60) VALUE " ".
+       01  F-FORMS.
+           03  F-FIELDNAME         PIC X(20).
+           01  WS-NEW-DATE.
+               03  WS-N-CC          PIC 99.
+               03  WS-N-YY          PIC 99.
+               03  WS-N-MM          PIC 99.
+               03  WS-N-DD          PIC 99.
+           01  WS-OLD-DATE.
+               03  WS-YY            PIC 99.
+               03  WS-CC            PIC 99.
+               03  WS-DD            PIC 99.
+               03  WS-MM            PIC 99.
+       01  WS-TIME.
+           03  WS-HR            PIC 99.
+           03  WS-MIN           PIC 99.
+           03  WS-SEC           PIC 99.
+       01  WS-TIME-DISPLAY.
+           03  SPLIT-TIME-FIL     PIC X(6) VALUE "Time:".
+           03  SPLIT-HR           PIC 99.
+           03  SPLIT-HR-FIL       PIC X.
+           03  SPLIT-MN           PIC 99.
+           03  SPLIT-MN-FIL       PIC X.
+           03  SPLIT-SC           PIC 99.
+       01  WS-DAILY-STATUS.
+           03  WS-DAILY-ST1     PIC X.
+           03  WS-DAILY-ST2     PIC 9(2) COMP-X.
+       01  WS-DAILY-MESSAGE.
+           03  WS-DAILY-1ST        PIC X(20) VALUE " ".
+           03  WS-DAILY-2ND        PIC X(20) VALUE " ".
+           03  WS-DAILY-3RD        PIC X(20) VALUE " ".
+           03  WS-DAILY-4TH        PIC X(20) VALUE " ".

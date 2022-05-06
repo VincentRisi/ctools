@@ -1,0 +1,19 @@
+      *
+        WRITE-FIELD-TYPE SECTION.
+        WRITE-FT000.
+            CALL "WRITEFIELD" USING F-ERROR1
+                                    F-FORM
+                                    F-FIELDNAME
+                                    F-CBFIELDNAME
+                                    F-INDEX
+                                    F-EDNAMEFIELDTYPE
+                                    F-CBFIELDLENGTH
+                                    F-TYPE.
+            IF F-ERROR1 NOT = 0
+                DISPLAY "WRITEFIELD TYPE ERROR"
+                DISPLAY F-ERROR1
+                DISPLAY F-FIELDNAME
+                PERFORM ERROR-010
+                STOP RUN.
+        WRITE-FT999.
+            EXIT.

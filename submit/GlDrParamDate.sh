@@ -1,0 +1,3 @@
+Submit MainCont GlParamDate.Sub
+
+echo Re-setting of G/Ledger Period Dates Done.....

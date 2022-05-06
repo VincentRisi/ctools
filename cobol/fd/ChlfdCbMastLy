@@ -1,0 +1,13 @@
+       FD  CB-LY-MASTER.
+       01  CB-LY-RECORD.
+           03  CB-LY-KEY.
+               04  CB-LY-NUMBER       PIC X(12).
+           03  CB-LY-DESCRIPTION      PIC X(40).
+           03  CB-LY-BALANCE          PIC S9(8)V99.
+           03  CB-LY-OPEN-YEAR-BAL    PIC S9(8)V99.
+           03  CB-LY-LAST-YEAR-BAL    PIC S9(8)V99.
+           03  CB-LY-CURRENT-PERIODS.
+               04  CB-LY-PER          PIC S9(8)V99 OCCURS 12.
+           03  CB-LY-LAST-PERIODS.
+               04  CB-LY-LAST-PER     PIC S9(8)V99 OCCURS 12.
+      *

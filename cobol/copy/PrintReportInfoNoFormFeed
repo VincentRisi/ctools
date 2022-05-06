@@ -1,0 +1,19 @@
+       PRINT-REPORT-INFO-NFF SECTION.
+       PRI-NFF-005.
+           MOVE Ws-UserName  TO WS-TERMINALNAME
+           MOVE PBRET        TO WS-REPORT-DATE
+           WRITE PRINT-REC FROM WS-REPORT-FINAL-LINES AFTER 1
+           MOVE " "        TO PRINT-REC
+           MOVE "**** END OF PRINT FILE ****" TO PRINT-REC
+           WRITE PRINT-REC AFTER 1
+           MOVE " "        TO PRINT-REC
+           WRITE PRINT-REC AFTER 1.
+           IF WS-PRINT-TYPE = 2
+               MOVE WS-PRINT-NORMAL TO PRINT-REC
+               WRITE PRINT-REC.
+      * new line below entered for linux to get a form feed AFTER the
+      * report is finished printing. TAKEN OUT FOR THIS VERSION
+           MOVE " "        TO PRINT-REC.
+      *     WRITE PRINT-REC BEFORE PAGE.
+       PRI-NFF-999.
+           EXIT.

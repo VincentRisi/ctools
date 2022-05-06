@@ -1,0 +1,14 @@
+       FD  CB-MASTER.
+       01  CB-RECORD.
+           03  CB-KEY.
+               04  CB-NUMBER       PIC X(12).
+           03  CB-DESCRIPTION      PIC X(40).
+           03  CB-BALANCE          PIC S9(8)V99.
+           03  CB-OPEN-PER-BAL     PIC S9(8)V99.
+           03  CB-OPEN-YEAR-BAL    PIC S9(8)V99.
+           03  CB-LY-OPEN-BAL      PIC S9(8)V99.
+           03  CB-CURRENT-PERIODS.
+               04  CB-PER          PIC S9(8)V99 OCCURS 12.
+           03  CB-LY-PERIODS.
+               04  CB-LAST-PER     PIC S9(8)V99 OCCURS 12.
+      *

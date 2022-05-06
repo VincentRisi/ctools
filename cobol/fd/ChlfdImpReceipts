@@ -1,0 +1,37 @@
+       FD  IMPRECEIPTS-FILE.
+       01  IMPORT-RECEIPTS-REC.
+           03  IMRE-KEY.
+               05  IMRE-TRANSACTION-NUMBER  PIC 9(6).
+           03  IMRE-ALT-KEY.
+               05  IMRE-SUPPLIER            PIC X(7).
+               05  IMRE-INVOICENUM          PIC X(10).
+           03  IMRE-CURRENCY                PIC X(4).
+           03  IMRE-INVAMTFOREIGN           PIC 9(8)V99.
+           03  IMRE-FREIGHTAMTFOREIGN       PIC 9(8)V99.
+           03  IMRE-RANDINVAMTGROSS         PIC 9(8)V99.
+           03  IMRE-TOTALDUTYRAND           PIC 9(8)V99.
+           03  IMRE-FREIGHTRAND             PIC 9(8)V99.
+           03  IMRE-WARFAGE                 PIC 9(8)V99.
+           03  IMRE-CLEARING                PIC 9(8)V99.
+           03  IMRE-TOTALCHARGES            PIC 9(8)V99.
+           03  IMRE-ONCOSTPERCENT           PIC 999V99.
+           03  IMRE-ORDERNUM                PIC X(20).
+           03  IMRE-DATERECEIVED            PIC 9(8).
+           03  IMRE-RATEPAID                PIC 9(4)V9(5).
+           03  IMRE-EXCHANGERATE            PIC 9(4)V9(5).
+           03  IMRE-MARKUPPERCENT           PIC 999V99.
+           03  IMRE-NETT-RAND-INV-AMT       PIC 9(8)V99.
+           03  IMRE-SURCHARGE-RAND          PIC 9(8)V99.
+           03  IMRE-RAND-AMT-PAID           PIC 9(8)V99.
+      *
+      *STOCK BODY LINES
+      *
+           03  IMRE-STOCK-NUMBER            PIC X(15).
+           03  IMRE-QUANTITY                PIC 9(5).
+           03  IMRE-COSTEACH                PIC 9(8)V999.
+           03  IMRE-DUTYPERCENT             PIC 99V99.
+           03  IMRE-DISCOUNTPERCENT         PIC 9(3)V99.
+           03  IMRE-LDCOST                  PIC 9(8)V99.
+           03  IMRE-SPRICE                  PIC 9(8)V99.
+           03  IMRE-UPDATED-YN              PIC X.
+      *

@@ -1,0 +1,6 @@
+            SELECT SOLD-BY ASSIGN TO Ws-SoldBy
+               ORGANIZATION IS INDEXED
+               LOCK MANUAL
+               ACCESS MODE IS DYNAMIC
+               FILE STATUS IS WS-SOLDBY-STATUS
+               RECORD KEY IS SB-KEY.

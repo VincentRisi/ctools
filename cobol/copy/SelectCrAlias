@@ -1,0 +1,6 @@
+           SELECT CRALIAS-MASTER ASSIGN TO Ws-CrAlias
+               ORGANIZATION IS INDEXED
+               LOCK MANUAL
+               ACCESS MODE IS DYNAMIC
+               FILE STATUS IS WS-ALIAS-STATUS
+               RECORD KEY IS CRAL-KEY.

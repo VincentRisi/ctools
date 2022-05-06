@@ -1,0 +1,8 @@
+       *
+        DELAY-ROUTINE SECTION.
+        DELAY-005.
+           CALL "C$SLEEP" USING 1.
+        DELAY-005.
+            EXIT.
+       *
+       *USING 1 = 1 SECOND, 120 = 120 SECONDS ETC

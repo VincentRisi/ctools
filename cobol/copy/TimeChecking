@@ -1,0 +1,62 @@
+      *
+       TIME-CHECKING SECTION.
+       TC-000.
+             MOVE " " TO WS-DC (1)
+                         WS-DC (2)
+                         WS-DC (3)
+                         WS-DC (4)
+                         WS-DC (5)
+                         WS-DC (6)
+                         WS-DC (7)
+                         WS-DC (8).
+             MOVE 1 TO SUB-5 SUB-6.
+             MOVE 0 TO SIGN-FOUND.
+       TC-010.
+             IF AL-RATE (SUB-5) NOT = ":" AND NOT = "0" AND NOT = "1"
+              AND NOT = "2" AND NOT = "3" AND NOT = "4" AND NOT = "5"
+              AND NOT = "6" AND NOT = "7" AND NOT = "8" AND NOT = "9"
+              AND NOT = " "
+                 MOVE 9 TO SIGN-FOUND
+                 MOVE 1 TO SUB-5
+                 GO TO TC-900.
+             ADD 1 TO SUB-5.
+             IF SUB-5 < 9
+                 GO TO TC-010.
+             MOVE 1 TO SUB-5 SUB-6.
+       TC-060.
+             IF AL-RATE (SUB-5) NOT = ":"
+              IF SUB-6 = 3 OR = 6
+                MOVE ":" TO WS-DC (SUB-6)
+                ADD 1 TO SUB-6
+                MOVE AL-RATE (SUB-5) TO WS-DC (SUB-6)
+                GO TO TC-065.
+             MOVE AL-RATE (SUB-5) TO WS-DC (SUB-6).
+       TC-065.
+             ADD 1 TO SUB-5 SUB-6.
+             IF SUB-6 < 9
+                GO TO TC-060.
+             MOVE 1 TO SUB-5 SUB-6.
+       TC-080.
+             IF WS-DC (SUB-5) = ":"
+              IF SUB-5 = 1 OR = 2 OR = 4 OR = 5 OR = 7 OR = 8
+                MOVE "TIME ENTERED INCORRECTLY, RE-ENTER" TO WS-MESSAGE
+                PERFORM ERROR-MESSAGE
+                MOVE 9 TO SIGN-FOUND
+                GO TO TC-999.
+             ADD 1 TO SUB-5.
+             IF SUB-5 < 9
+                GO TO TC-080.
+             MOVE 1 TO SUB-5 SUB-6.
+       TC-090.
+             IF WS-DC (SUB-5) = ":"
+                ADD 1 TO SUB-5.
+             MOVE WS-DC (SUB-5) TO WS-ND (SUB-6).
+             ADD 1 TO SUB-5 SUB-6.
+             IF SUB-6  < 7
+                GO TO TC-090.
+       TC-900.
+             IF SIGN-FOUND = 9
+                MOVE "ERROR IN TIME ENTRY, RE-ENTER" TO WS-MESSAGE
+                PERFORM ERROR-MESSAGE.
+       TC-999.
+             EXIT.

@@ -1,0 +1,15 @@
+      *
+       MOVE-EMAIL-RECORD-FROM-EIMAGE SECTION.
+       MERFE-005.
+          MOVE 
+          CONCATENATE('mv ', TRIM(WS-TEMP-EMAIL-FILE), ' ',
+                             TRIM(WS-EMAIL-FINAL))
+               TO WS-COMMAND-LINE.
+      
+      *     MOVE WS-COMMAND-LINE TO  WS-MESSAGE
+      *     PERFORM ERROR-MESSAGE.
+
+          CALL "SYSTEM" USING WS-COMMAND-LINE.
+       MERFE-999.
+           EXIT.
+      *     STOP RUN.

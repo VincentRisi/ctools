@@ -1,0 +1,12 @@
+       FD  CRFOREX-FILE.
+       01  CRFOREX-REC.
+           03  CRFOREX-KEY. 
+               05  CRFOREX-FBC-NUMBER        PIC X(20).
+           03  CRFOREX-CURRENCY-TYPE         PIC X(5).
+           03  CRFOREX-INITIAL-FOREIGN-AMT   PIC 9(8)V99.
+           03  CRFOREX-UNAPPLIED-AMT         PIC 9(8)V99.
+           03  CRFOREX-EXCHANGE-RATE         PIC 9(3)V9(5).
+           03  CRFOREX-LOCAL-AMT             PIC 9(8)V99.
+           03  CRFOREX-CONTRACT-DATE         PIC 9(8).
+           03  CRFOREX-MATURITY-DATE         PIC 9(8).
+      *

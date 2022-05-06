@@ -1,0 +1,6 @@
+           SELECT CURRENCY-MASTER ASSIGN TO Ws-CrCurrency
+               ORGANIZATION IS INDEXED
+               LOCK MANUAL
+               ACCESS MODE IS DYNAMIC
+               FILE STATUS IS WS-CURRENCY-STATUS
+               RECORD KEY IS CU-KEY.

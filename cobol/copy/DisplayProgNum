@@ -1,0 +1,11 @@
+      *
+       DISPLAY-PR-NO SECTION.
+       DPN-010.
+            MOVE 3015 TO POS
+            DISPLAY "Program Number" AT POS
+            MOVE 3030 TO POS
+            DISPLAY WS-ANSWER AT POS
+            MOVE 3033 TO POS
+            DISPLAY "Is Being Loaded, Please Be Patient.." AT POS.
+       DPN-999.
+            EXIT.

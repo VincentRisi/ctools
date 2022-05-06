@@ -1,0 +1,47 @@
+       FD  CREDITOR1-MASTER.
+       01  CREDITOR1-RECORD.
+           03  CR1-KEY.
+               05  CR1-ACCOUNT-NUMBER PIC 9(7).
+           03  CR1-ALT-KEY.
+               05  CR1-NAME           PIC X(40).
+           03  CR1-ADDRESS1           PIC X(25).
+           03  CR1-ADDRESS2           PIC X(25).
+           03  CR1-ADDRESS3           PIC X(25).
+           03  CR1-POST-CODE          PIC 9(4).
+           03  CR1-DEL-ADDRESS1       PIC X(25).
+           03  CR1-DEL-ADDRESS2       PIC X(25).
+           03  CR1-DEL-ADDRESS3       PIC X(25).
+           03  CR1-TELEPHONE          PIC X(20).
+           03  CR1-FAX                PIC X(20).
+           03  CR1-CURRENCY           PIC X(5).
+           03  CR1-TERMS              PIC X.
+           03  CR1-FOREIGN-LOCAL      PIC X.
+           03  CR1-PAY-METHOD         PIC X.
+           03  CR1-SETT-DISC          PIC 9(2)V99.
+           03  CR1-TRADE-DISC         PIC 9(2)V99.
+           03  CR1-SUPPLIER-NUMBER    PIC X(10).
+           03  CR1-DATE-CREATED       PIC 9(8).
+           03  CR1-DATE-LAST-INVOICE  PIC 9(8).
+           03  CR1-DATE-LAST-PAY      PIC 9(8).
+           03  CR1-PURCHASE-PTD       PIC S9(7)V99 LEADING SEPARATE.
+           03  CR1-PURCHASE-YTD       PIC S9(7)V99 LEADING SEPARATE.
+           03  CR1-PURCHASE-LAST      PIC S9(7)V99 LEADING SEPARATE.
+           03  CR1-BALANCE            PIC S9(7)V99 LEADING SEPARATE.
+           03  CR1-BAL-LAST-STATE     PIC S9(7)V99 LEADING SEPARATE.
+           03  CR1-CURRENT            PIC S9(7)V99 LEADING SEPARATE.
+           03  CR1-30DAY              PIC S9(7)V99 LEADING SEPARATE.
+           03  CR1-60DAY              PIC S9(7)V99 LEADING SEPARATE.
+           03  CR1-90DAY              PIC S9(7)V99 LEADING SEPARATE.
+           03  CR1-120DAY             PIC S9(7)V99 LEADING SEPARATE.
+           03  CR1-CONTACT-NAME       PIC X(25).
+           03  CR1-EMAIL              PIC X(40).
+           03  CR1-ACC-CONTACT-NAME   PIC X(25).
+           03  CR1-ACC-EMAIL          PIC X(40).
+           03  CR1-CAMS-BANK-NAME     PIC X(20).
+           03  CR1-CAMS-BANK-NUM      PIC X(11).
+           03  CR1-CAMS-BRANCH-NUM    PIC X(6).
+           03  CR1-CAMS-ACC-TYPE      PIC X.
+      *    
+      *BANK-NAME IS JUST FOR INFO ON THE INPUT SCREEN AND FOR
+      *REPORTING PURPOSES
+      *BANK-ACC-TYPE MUST BE: 1=CURRENT   2=SAVINGS

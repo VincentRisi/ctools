@@ -1,0 +1,27 @@
+sudo apt update
+sudo apt install snapd
+sudo snap install pdftk
+
+This  was taken from snapcraft.io/install/pdftk/mint
+
+
+look at .bashrc for a line like export PATH=... and add it to that line with a : as a delimiter 
+export PATH=xxx:/snap/bin
+
+where xxx is whatever is there
+
+On Mon, Jul 13, 2020 at 9:55 AM Steve Christensen <steve@christensen.co.za> wrote:
+
+    Vince, how do I add /snap/bin to PATH .....??
+
+    On 13-Jul-20 9:51 AM, Vincent Risi wrote:
+>     /var/snap/pdftk
+>     /snap/pdftk
+>     /snap/pdftk/2/usr/bin/pdftk
+>     /snap/bin/pdftk
+>
+>     It seems that what you need to do is add /snap/bin to the PATH
+>
+>     mint@mint:~$ pdftk
+>     Command 'pdftk' is available in '/snap/bin/pdftk'
+>     The command could not be located because '/snap/bin' is not included in the PATH environment variable.

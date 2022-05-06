@@ -1,0 +1,19 @@
+      *
+        WRITE-FIELD-QTYCRED SECTION.
+        WRITE52-NACRED000.
+            CALL "WRITEFIELD" USING F-ERROR1
+                                    F-FORM
+                                    F-FIELDNAME
+                                    F-CBFIELDNAME
+                                    F-INDEX
+                                    F-EDNAMEFIELDQTYCRED
+                                    F-CBFIELDLENGTH
+                                    F-TYPE.
+            IF F-ERROR1 NOT = 0
+                DISPLAY "WRITEFIELD QTY-CRED ERROR"
+                DISPLAY F-ERROR1
+                DISPLAY F-FIELDNAME
+                PERFORM ERROR-010
+                STOP RUN.
+        WRITE52-NACRED999.
+            EXIT.

@@ -1,0 +1,19 @@
+      *
+        WRITE-FIELD-PERC-NEG SECTION.
+        WRITE-PER-NEGC000.
+            CALL "WRITEFIELD" USING F-ERROR1
+                                    F-FORM
+                                    F-FIELDNAME
+                                    F-CBFIELDNAME
+                                    F-INDEX
+                                    F-EDNAMEFIELDPERCNEG
+                                    F-CBFIELDLENGTH
+                                    F-TYPE.
+            IF F-ERROR1 NOT = 0
+                DISPLAY "WRITEFIELD PERC NEG ERROR"
+                DISPLAY F-NAMEFIELD
+                DISPLAY F-ERROR1
+                PERFORM ERROR-010
+                STOP RUN.
+        WRITE-PERC-NEG999.
+            EXIT.

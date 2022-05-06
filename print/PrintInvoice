@@ -1,0 +1,67 @@
+python fohtotext.py -r invoice -T /ctools/spl/$1.temp0.txt /ctools/spl/$1InPrintCo$2
+#text2pdf /ctools/spl/$1.temp0.txt -fCourier-Bold -t8 -s10 -x842 -y595 -c135 -l48 > /ctools/spl/$1.temp1.pdf
+text2pdf /ctools/spl/$1.temp0.txt -fCourier-Bold -t8 -s10 -x842 -y605 -c135 -l48 > /ctools/spl/$1.temp1.pdf
+pdftk /ctools/spl/$1.temp1.pdf background /ctools/dev/source/print/InvoiceOverlay$2.pdf output /ctools/spl/$1.temp2.pdf
+
+if [ "$2" = "01" ]
+   then
+     pdftk /ctools/spl/$1.temp2.pdf cat 1-endsouth output /ctools/spl/$1InPrintCo$2.pdf
+ fi
+ 
+if [ "$2" = "07" ]
+   then
+     pdftk /ctools/spl/$1.temp2.pdf cat 1-endsouth output /ctools/spl/$1InPrintCo$2.pdf
+ fi
+
+if [ "$2" = "03" ]
+   then
+     pdftk /ctools/spl/$1.temp2.pdf cat 1-endwest output /ctools/spl/$1InPrintCo$2.pdf
+ fi
+
+if [ "$2" = "05" ]
+   then
+     pdftk /ctools/spl/$1.temp2.pdf cat 1-endwest output /ctools/spl/$1InPrintCo$2.pdf
+ fi
+if [ "$2" = "08" ]
+   then
+     pdftk /ctools/spl/$1.temp2.pdf cat 1-endwest output /ctools/spl/$1InPrintCo$2.pdf
+ fi
+if [ "$2" = "09" ]
+   then
+     pdftk /ctools/spl/$1.temp2.pdf cat 1-endwest output /ctools/spl/$1InPrintCo$2.pdf
+ fi
+if [ "$2" = "10" ]
+   then
+     pdftk /ctools/spl/$1.temp2.pdf cat 1-endwest output /ctools/spl/$1InPrintCo$2.pdf
+ fi
+if [ "$2" = "11" ]
+   then
+     pdftk /ctools/spl/$1.temp2.pdf cat 1-endwest output /ctools/spl/$1InPrintCo$2.pdf
+ fi
+if [ "$2" = "12" ]
+   then
+     pdftk /ctools/spl/$1.temp2.pdf cat 1-endwest output /ctools/spl/$1InPrintCo$2.pdf
+ fi
+ #pdftk /ctools/spl/$1.temp2.pdf cat 1-endwest output /ctools/spl/$1InPrintCo$2.pdf
+ #pdftk /ctools/spl/$1.temp2.pdf cat 1-endsouth output /ctools/spl/$1InPrintCo$2.pdf
+
+lp -d $3 /ctools/spl/$1InPrintCo$2.pdf
+
+#rm /ctools/spl/$1InPrintCo$2.pdf
+
+#To print off the command line after making changes to e.g. /ctools/spl/steveInPrintCo08 file: 
+# command is: PrintInvoice   $1  $2 $3        $4                                               
+#        e.g. PrintInvoice steve 08 CTJ-MP171 /ctools/spl/InPrintCo                            
+#                                                                                              
+#--So far the variables which will be specified from inside the COBOL programs are:            
+#---$1 = The username                         e.g. steve                                       
+#---$2 = The company number from 01 to 12     e.g. 07                                          
+#---$3 = The Printername to print the file to e.g. MP250                                       
+#---$4 = The Print file which will replace /ctools/spl/InPrintCo01.pdf when specified in COBOL 
+
+#this param is 4 from within the Invoice/Credit print program
+#---$4 = Print Y/N : Y=Print, N=No Print (Create PDF ONLY for Docutrieve Purposes)
+#
+#FORMAT FOR STANDARD FILE PRINTING IS:
+#lp -d W-PRINTERNAME W-PRINTFILE
+#

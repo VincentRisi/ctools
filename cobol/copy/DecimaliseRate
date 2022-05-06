@@ -1,0 +1,86 @@
+      *
+       DECIMALISE-RATE SECTION.
+       DR-000.
+             MOVE 0 TO N-RATE (1)
+                       N-RATE (2)
+                       N-RATE (3)
+                       N-RATE (4)
+                       N-RATE (5)
+                       N-RATE (6)
+                       N-RATE (7)
+                       N-RATE (8)
+                       N-RATE (9)
+                       N-RATE (10)
+                       N-RATE (11)
+                       N-RATE (12)
+                       N-RATE (13)
+                       N-RATE (14)
+                       N-RATE (15).
+             MOVE 1 TO SUB-5 SUB-6 SUB-7.
+             MOVE 0 TO SIGN-FOUND.
+       DR-001.
+             IF AL-RATE (SUB-5) = "-"
+                 MOVE " " TO AL-RATE (SUB-5)
+                 MOVE 1 TO SIGN-FOUND
+                 MOVE 1 TO SUB-5
+                 GO TO DR-002.
+             ADD 1 TO SUB-5.
+             IF SUB-5 < 16
+                 GO TO DR-001.
+             MOVE 1 TO SUB-5.
+       DR-002.
+             IF AL-RATE (SUB-5) NOT = " "
+                 MOVE 1 TO SUB-5 SUB-6 SUB-7
+                 GO TO DR-003.
+             MOVE "0" TO AL-RATE (SUB-5).
+             ADD 1 TO SUB-5.
+             IF SUB-5 < 16
+                 GO TO DR-002.
+             MOVE 0 TO NUMERIC-RATE.
+             GO TO DR-900.
+             MOVE 1 TO SUB-5.
+       DR-003.
+      * IF SUB-6 = 1 IT MEANS THIS IS THE 1ST '.' WE HAVE FOUND
+      * IF SUB-6 = 2 IT MEANS THIS IS THE 2ND '.' FOUND THEREFORE WE
+      *                                         MUST MOVE 0 TO THIS POS.
+             IF AL-RATE (SUB-5) = "."
+              IF SUB-6 = 1
+                 MOVE 2 TO SUB-6
+              ELSE
+                 MOVE "0" TO AL-RATE (SUB-5)
+                 MOVE 1   TO SUB-5 SUB-6 SUB-7
+                 GO TO DR-010.
+             ADD 1 TO SUB-5.
+             IF SUB-5 < 15
+                 GO TO DR-003.
+             MOVE 1 TO SUB-5.
+       DR-010.
+             IF AL-RATE (SUB-5) = "." OR = " "
+                 ADD 1 SUB-5 GIVING SUB-6
+                 GO TO DR-020.
+             ADD 1 TO SUB-5.
+             IF SUB-5 < 16
+                 GO TO DR-010.
+             MOVE 0 TO NUMERIC-RATE.
+             GO TO DR-900.
+       DR-020.
+             MOVE 11 TO SUB-7.
+       DR-030.
+             MOVE AL-RATE (SUB-6) TO N-RATE (SUB-7).
+             ADD 1 TO SUB-6 SUB-7.
+             IF SUB-7 < 16
+                 GO TO DR-030.
+             MOVE 10 TO SUB-6.
+       DR-040.
+             SUBTRACT 1 FROM SUB-5.
+             IF SUB-5 > 0
+                 MOVE AL-RATE (SUB-5) TO N-RATE (SUB-6).
+             SUBTRACT 1 FROM SUB-6.
+             IF SUB-6 > 0
+                 GO TO DR-040.
+       DR-900.
+             IF SIGN-FOUND = 1
+                COMPUTE NUMERIC-RATE = NUMERIC-RATE * -1.
+       DR-999.
+             EXIT.
+      *

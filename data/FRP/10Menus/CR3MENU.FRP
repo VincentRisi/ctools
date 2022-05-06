@@ -1,0 +1,69 @@
+*****************************  MAIN CONTROL MENU  *********************        
+*   *************************** CREDITOR CONTROL MENU ********************     
+*   *   ************************* REPORTING PROGRAM MENU **********************
+*   *   *                                                                     *
+*   *   *  1. Creditors Master List           14. Creditor Not Bought From    *
+*   *   *                                          Since ??/??/????           *
+*   *   *  2. Remittances / Auto Cash Alloc.                                  *
+*   *   *  3. Cash Required Report            15. Creditor Name & Fax Number  *
+*   *   *  4. Creditors Batch Cheque Print         In XFax & Man3000 Format   *
+*   *   *  5. Creditors Manual Cheque Print                                   *
+*   *   *                                     16. EMail Remittance Creation   *
+*   *   *  6. Creditor Age Analysis Report                                    *
+*   *   *  7. Creditor Age Analysis Report (Gross Totals Only)                *
+*   *   *  8. Outstanding Journal Listing                                     *
+*   *   *                                                                     *
+*   *   *  9. CRJRN Listing Summary                                           *
+*   *   *                                                                     *
+*   *   * 10. Label Print Report                                              *
+*****   *                                                                     *
+    *   * 11. FBC Master list                                                 *
+    ***** 12. FBC POrder & Invoice Transactions                               *
+        *                                                                     *
+        * 13. Creditor Alias List                                             *
+        ***********************ENTER SELECTION : __****************************
+                                                                               
+                                                                               
+
+Form name: Cr3Menu                         size: 1281  bytes
+height: 26    width: 79    number of fields: 2              
+
+Field name: SELECTION                                        
+Row: 23   Column: 49   Width: 2                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+                                 
+ ******************************* 
+ *  COLOR PALETTE INFORMATION  * 
+ ******************************* 
+                                 
+            Caption Color: 4     
+               Line Color: 7     
+                                 
+                                 
+        *************************
+        *   I N T E N S I T Y   *
+*********************************
+* Color *  Red  * Green *  Blue *
+*********************************
+*   0   *   0   *   3   *   0   *
+*   1   *   0   *   2   *   0   *
+*   2   *   0   *   3   *   3   *
+*   3   *   0   *   2   *   2   *
+*   4   *   3   *   3   *   3   *
+*   5   *   2   *   2   *   2   *
+*   6   *   3   *   3   *   0   *
+*   7   *   3   *   0   *   0   *
+*********************************
+  

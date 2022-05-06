@@ -1,0 +1,6 @@
+           SELECT COMPANY-MENU ASSIGN TO Ws-CoCompany
+               ORGANIZATION IS INDEXED
+               LOCK MANUAL
+               ACCESS MODE IS DYNAMIC
+               FILE STATUS IS WS-MENU-STATUS
+               RECORD KEY IS PTY-KEY.

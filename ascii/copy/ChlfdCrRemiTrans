@@ -1,0 +1,10 @@
+       FD  CRREMIT-TRANS-FILE.
+       01  CRREMTR-RECORD.
+           03  CRREMTR-KEY.
+               05  CRREMTR-YY          PIC 99.
+               05  CRREMTR-MM          PIC 99.
+               05  CRREMTR-ACC-NUMBER  PIC 9(7).
+               05  CRREMTR-INVNO       PIC X(10).
+           03  CRREMTR-INV-AMT         PIC S9(8)V99.
+           03  CRREMTR-DISC-AMT        PIC S9(8)V99.
+           03  CRREMTR-COMPLETE        PIC X.

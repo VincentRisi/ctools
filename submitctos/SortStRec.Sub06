@@ -1,0 +1,26 @@
+Sort
+[Win]<6Bar>StReceipt
+[Win]<6Bar>Temp
+@[Win]<Temp>StRecSort.Key
+
+[Win]<$>SortWorkFile1
+[Win]<$>SortWorkFile2
+
+Rename
+[Win]<6Bar>Temp
+[Win]<6Bar>StReceipt
+Y
+
+I Reo
+[Win]<6Bar>StReceipt
+<6BarInd>StReceipt.Ind
+
+
+
+@[Win]<Temp>StRec.Key
+5
+100
+50
+500
+
+Y

@@ -1,0 +1,19 @@
+
+           MOVE ' '       TO CDA-DATA.
+           MOVE 2         TO CDA-DATALEN.
+           MOVE 3         TO CDA-ROW.
+           MOVE 30        TO CDA-COL.
+           MOVE CDA-WHITE TO CDA-COLOR.
+           MOVE 'F'       TO CDA-ATTR.
+           PERFORM CTOS-ACCEPT.
+           MOVE CDA-DATA TO WS-ACCEPT.
+
+           PERFORM GET-USER-PRINT-NAME.
+           OPEN OUTPUT PRINT-FILE.
+
+           CLOSE PRINT-FILE.
+           PERFORM SEND-REPORT-TO-PRINTER.
+
+       Copy "GetUserPrintName".
+       Copy "SendReportToPrinter".
+       Copy "CTOSCobolAccept".

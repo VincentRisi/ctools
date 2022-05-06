@@ -1,0 +1,7 @@
+# Enter a Month Name like Jun, Aug etc. as $1 input
+Submit MainCont GlMonthly.Sub
+
+python renamegl.py 
+
+echo   CT Group GL Monthly Reports Run Successfully 
+

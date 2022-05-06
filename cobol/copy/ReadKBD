@@ -1,0 +1,13 @@
+      *
+        READ-KBD SECTION.
+        READ-KBD000.
+      *      CALL "&READKBD" USING F-ERROR1
+      *                            W-READ-KEY.
+      *      IF F-ERROR1 NOT = 0
+      *          DISPLAY "READKBD ERROR"
+      *          DISPLAY F-ERROR1
+      *          STOP RUN.
+        ACCEPT W-READ-KEY AT POS WITH SECURE AUTO.
+        READ-KBD999.
+            EXIT.
+      *

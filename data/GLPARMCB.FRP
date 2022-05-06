@@ -1,0 +1,144 @@
+**********************{** GENERAL LEDGER PARAMETER FILE **}********************
+*                         { CASH BOOK INFORMATION }                           *
+*                                                                             *
+*                  Current Period        : __                                 *
+*                                                                             *
+*                  Cash Book Posted      : _                                  *
+*                                                                             *
+*                  Cash Book Trans No    : ______                             *
+*                                                                             *
+*                  Company Bankers Name  : ____________________               *
+*                                                                             *
+*                  Bank Branch Code      : ______                             *
+*                                                                             *
+*                  Bank Account Number   : ___________                        *
+*                                                                             *
+*******************************************************************************
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+
+Form name: GlParmCb                        size: 659   bytes
+height: 26    width: 79    number of fields: 7              
+
+Field name: CURRENTCBPER                                     
+Row: 3    Column: 43   Width: 2                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:   4         Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: CBPOST                                           
+Row: 5    Column: 43   Width: 1                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:   4         Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: CBTRANSNO                                        
+Row: 7    Column: 43   Width: 6                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:   4         Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: CAMS-BANK-NAME                                   
+Row: 9    Column: 43   Width: 20                             
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:   4         Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: CAMS-BANK-CODE                                   
+Row: 11   Column: 43   Width: 6                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:   4         Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: CAMS-BANK-ACC                                    
+Row: 13   Column: 43   Width: 11                             
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:   4         Unselected Color Number: 0
+List of values:                                              
+
+
+
+                                 
+ ******************************* 
+ *  COLOR PALETTE INFORMATION  * 
+ ******************************* 
+                                 
+            Caption Color: 4     
+               Line Color: 5     
+                                 
+                                 
+        *************************
+        *   I N T E N S I T Y   *
+*********************************
+* Color *  Red  * Green *  Blue *
+*********************************
+*   0   *   0   *   3   *   0   *
+*   1   *   0   *   2   *   0   *
+*   2   *   0   *   3   *   3   *
+*   3   *   0   *   2   *   2   *
+*   4   *   3   *   3   *   3   *
+*   5   *   2   *   2   *   2   *
+*   6   *   3   *   3   *   0   *
+*   7   *   3   *   0   *   0   *
+*********************************
+  

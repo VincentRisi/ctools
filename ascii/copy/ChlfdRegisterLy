@@ -1,0 +1,62 @@
+       FD  INCR-LY-REGISTER.
+       01  INCR-LY-REC.
+           03  INCR-LY-KEY.
+               05  INCR-LY-TRANS      PIC 9.
+               05  INCR-LY-INVOICE    PIC 9(6).
+           03  INCR-LY-ALT-KEY.
+               05  INCR-LY-ACCOUNT    PIC 9(7).
+               05  INCR-LY-PORDER     PIC X(20).
+           03  INCR-LY-GSTNO          PIC X(13).
+           03  INCR-LY-DATE           PIC 9(8).
+           03  INCR-LY-SALES          PIC 99.
+           03  INCR-LY-INVCRED-AMT    PIC 9(8)V99.
+           03  INCR-LY-TAX            PIC 9(8)V99.
+           03  INCR-LY-ADDONS         PIC 9(8)V99.
+           03  INCR-LY-DISCOUNT       PIC 9(8)V99.
+           03  INCR-LY-INVCRED-COST   PIC 9(8)V99.
+           03  INCR-LY-SB-TYPE        PIC X(2).
+           03  INCR-LY-DRTRANS-NO     PIC 9(6).
+           03  INCR-LY-PULLBY         PIC X(2).
+           03  INCR-LY-PULL-DATE      PIC 9(8).
+           03  INCR-LY-PULL-TIME      PIC 9(6).
+           03  INCR-LY-PRINTED        PIC X.
+           03  INCR-LY-AREA           PIC X.
+           03  INCR-LY-COPY-NUMBER    PIC 99.
+           03  INCR-LY-PART-ORDERS    PIC X.
+           03  INCR-LY-INVOICE-FIELDS.
+             04  INCR-LY-NAME           PIC X(40).
+             04  INCR-LY-ADD1           PIC X(25).
+             04  INCR-LY-ADD2           PIC X(25).
+             04  INCR-LY-ADD3           PIC X(25).
+             04  INCR-LY-CODE           PIC 9(4).
+             04  INCR-LY-DEL1           PIC X(25).
+             04  INCR-LY-DEL2           PIC X(25).
+             04  INCR-LY-DEL3           PIC X(25).
+             04  INCR-LY-TERMS          PIC X(11).
+             04  INCR-LY-PHONE          PIC X(20).
+             04  INCR-LY-CONTACT        PIC X(20).
+             04  INCR-LY-DELIVERY       PIC X(20).
+             04  INCR-LY-BIN            PIC X(6).
+             04  INCR-LY-COMMENT        PIC X(30).
+             04  INCR-LY-BO-INV-NO      PIC 9(6).
+             04  INCR-LY-BO-DATE        PIC 9(8).
+             04  INCR-LY-ADDPOST        PIC 9(8)V99.
+             04  INCR-LY-ADDFREIGHT     PIC 9(8)V99.
+             04  INCR-LY-ADDLABOUR      PIC 9(8)V99.
+             04  INCR-LY-ADDMISC        PIC 9(8)V99.
+             04  INCR-LY-LINENO         PIC 9(3).
+           03  INCR-LY-KIT-FIELDS REDEFINES INCR-LY-INVOICE-FIELDS.
+             04  INCR-LY-KITNAME        PIC X(15).
+             04  INCR-LY-KITQTY         PIC 9(3).
+             04  INCR-LY-KITSHPDQTY     PIC 9(3).
+             04  INCR-LY-KITDESC1       PIC X(20).
+             04  INCR-LY-KITDESC2       PIC X(20).
+             04  INCR-LY-KITPRICE       PIC 9(8)V99.
+             04  INCR-LY-KITCOMMENT     PIC X(40).
+             04  FILLER                 PIC X(197).
+      *
+      *TRANS: 1=INVOICE, 2=BLANK ,3=REPAIR    4=ORDER/PICKING SLIP,
+      *       5=BLANK ,  6=CREDIT,7=TOOLKITS, 8=QUOTE,
+      *       9=BLANK.
+      *PRINTED:Y OR N, P=1st COPY PRINTED, IN THE STORE.
+      *        H=HELD BY OPERATOR(PENDING COMPLETION).

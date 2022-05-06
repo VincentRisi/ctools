@@ -1,0 +1,18 @@
+      *
+        WRITE-FIELD-NUMERIC5 SECTION.
+        WRITE52-NA000.
+            CALL "WRITEFIELD" USING F-ERROR1
+                                    F-FORM
+                                    F-FIELDNAME
+                                    F-CBFIELDNAME
+                                    F-INDEX
+                                    F-EDNAMEFIELDNUM5
+                                    F-CBFIELDLENGTH
+                                    F-TYPE.
+            IF F-ERROR1 NOT = 0
+                DISPLAY "WRITEFIELD NUM 52AMT ERROR"
+                DISPLAY F-ERROR1
+                PERFORM ERROR-010
+                STOP RUN.
+        WRITE52-NA999.
+            EXIT.

@@ -1,0 +1,53 @@
+Type
+<Temp>StS&GMMessage
+
+1
+
+C Run
+MainCont.Int
+
++P -N
+
+5
+MENU65
+2 
+1 
+7
+
+
+4
+ORX
+ORX Z
+21.001
+Y85
+WY
+
+4
+OSP
+OSP Z
+15.369
+Y85
+WY
+
+
+
+6
+11
+X
+<SPL>BMREWK1
+ORX
+ORX Z
+YYYYWYR
+1.00
+1.85
+
+
+
+
+
+
+
+
+E
+
+**** FINISHED STOCK-S&GM.SUB5 REWORK ROUTINE ******

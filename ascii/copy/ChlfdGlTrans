@@ -1,0 +1,18 @@
+       FD  GLTRANS-FILE.
+       01  GLTRANS-REC.
+           03  GLTRANS-KEY.
+               05  GLTRANS-REFERENCE       PIC X(10).
+               05  GLTRANS-TRANS           PIC 9(6).
+               05  GLTRANS-TYPE            PIC 9(2).
+           03  GLTRANS-PERIOD.
+               05  GLTRANS-FUTURE          PIC X.
+               05  GLTRANS-NO              PIC 9(2).
+           03  GLTRANS-ACC-DATE.
+               05  GLTRANS-ACCOUNT-NUMBER  PIC X(12).
+               05  GLTRANS-DATE            PIC 9(8).
+           03  GLTRANS-AMOUNT              PIC S9(8)V99.
+           03  GLTRANS-LINE-DESC           PIC X(25).
+      *
+      * GLTRANS-PERIOD: (FORMAT=01 ETC OR
+      *                        F02 FOR FUTURE PERIOD)
+      *

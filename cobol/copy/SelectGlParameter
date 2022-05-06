@@ -1,0 +1,6 @@
+           SELECT GLPARAMETER-FILE ASSIGN TO Ws-GlParameter
+               ORGANIZATION IS INDEXED
+               LOCK MANUAL
+               ACCESS MODE IS DYNAMIC
+               FILE STATUS IS WS-GLPARAMETER-STATUS
+               RECORD KEY IS GLPA-KEY.

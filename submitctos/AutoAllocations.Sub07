@@ -1,0 +1,60 @@
+
+Screen Setup
+
+Y
+
+
+Y
+
+100
+
+Path
+Win
+Program
+
+
+C/2 Run
+MainCont
+
+-N +P
+7
+SFJ-MONTH
+3
+1
+19
+A
+ZZZZ
+P
+N
+
+20
+X
+<SPL>AA1
+CN
+
+
+20
+X
+<SPL>AA2
+DN
+
+
+
+
+E
+
+Screen Setup
+
+Y
+
+
+Y
+
+100
+
+Print
+<Spl>AA1 <Spl>AA2
+[SplB]
+
+
+***** RUNNING AND PRINTING OF AUTO-ALLOCATIONS COMPLETE *****

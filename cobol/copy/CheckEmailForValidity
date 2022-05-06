@@ -1,0 +1,77 @@
+      *
+       CHECK-EMAIL-FOR-VALIDITY SECTION.
+       CEFV-005.
+             MOVE 0 TO SUB-1.
+             MOVE SPACES TO ALPHA-RATE
+             MOVE F-NAMEFIELD TO ALPHA-RATE.
+             MOVE "N" TO WS-ACC-ERROR.
+       CEFV-010.
+             ADD 1 TO SUB-1.
+             IF SUB-1 > 42
+                MOVE "Y" TO WS-ACC-ERROR
+                GO TO CEFV-900.
+             IF AL-RATE (SUB-1) = "@"
+                MOVE "1" TO WS-ACC-ERROR
+                GO TO CEFV-015.
+             GO TO CEFV-010.
+       CEFV-015.
+             ADD 1 TO SUB-1.
+             IF SUB-1 > 42
+              IF WS-ACC-ERROR = "1"
+                MOVE "N" TO WS-ACC-ERROR
+                MOVE 0 TO SUB-1
+                GO TO CEFV-020.
+             IF AL-RATE (SUB-1) = "@"
+                MOVE "Y" TO WS-ACC-ERROR
+                MOVE 0 TO SUB-1
+                GO TO CEFV-900.
+             GO TO CEFV-015.
+       CEFV-020.
+             ADD 1 TO SUB-1.
+             IF SUB-1 > 42
+                MOVE "Y" TO WS-ACC-ERROR
+                GO TO CEFV-900.
+             IF AL-RATE (SUB-1) = "."
+                GO TO CEFV-025.
+             GO TO CEFV-020.
+       CEFV-025.
+      *ADDED THIS NEXT LINE SO THAT WE DON'T CHECK FOR AN EXTRA . OR COM
+             GO TO CEFV-999.
+       
+             ADD 1 TO SUB-1.
+             IF AL-RATE (SUB-1) = "c"
+                GO TO CEFV-026
+             ELSE
+                SUBTRACT 1 FROM SUB-1
+                GO TO CEFV-030.
+             MOVE "Y" TO WS-ACC-ERROR.
+       CEFV-026.
+             ADD 1 TO SUB-1.
+             IF AL-RATE (SUB-1) = "o"
+                GO TO CEFV-027.
+             SUBTRACT 2 FROM SUB-1
+             GO TO CEFV-030.
+       CEFV-027.
+             ADD 1 TO SUB-1.
+             IF AL-RATE (SUB-1) = "m"
+                GO TO CEFV-040.
+             SUBTRACT 3 FROM SUB-1.
+       CEFV-030.
+             ADD 1 TO SUB-1.
+             IF SUB-1 > 42
+                MOVE "Y" TO WS-ACC-ERROR
+                GO TO CEFV-900.
+             IF AL-RATE (SUB-1) = "."
+                GO TO CEFV-040.
+             GO TO CEFV-030.
+        CEFV-040.
+             MOVE "N" TO WS-ACC-ERROR
+             GO TO CEFV-999.
+       CEFV-900.
+           MOVE
+          "THERE IS AN ERROR IN THE EMAIL ADDRESS ENTERED, PLEASE" &
+          " FIX, 'ESC' TO RETRY."
+            TO WS-MESSAGE
+            PERFORM ERROR-MESSAGE.
+       CEFV-999.
+           EXIT.

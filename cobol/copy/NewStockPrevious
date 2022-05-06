@@ -1,0 +1,46 @@
+
+      *  GET SECTION
+            IF F-EXIT-CH = X"05"
+                PERFORM READ-STOCK-PREVIOUS
+             IF WS-END NOT = "Y"
+               GO TO GET-003
+             ELSE
+               PERFORM CLSC-010
+               GO TO GET-000.
+
+
+      * FILL SECTION
+            IF F-EXIT-CH = X"05"
+               PERFORM REWRITE-STOCK-RECORD
+               PERFORM READ-STOCK-PREVIOUS
+               PERFORM GET-003 THRU GET-100
+               GO TO FILL-001.
+
+
+      *
+       READ-STOCK-PREVIOUS SECTION.
+       RSPREV-005. 
+           READ STOCK-MASTER PREVIOUS WITH LOCK
+             AT END 
+               MOVE " " TO ST-STOCKNUMBER
+                           WS-STOCKNUMBER
+               MOVE "Y" TO WS-END
+            MOVE "END OF PREV-PAGE SEQUENCE, ENTER A NEW IDENTIFIER"
+               TO WS-MESSAGE
+               PERFORM ERROR-MESSAGE
+               GO TO RSPREV-999.
+           IF WS-STOCK-ST1 = 23 OR 35 OR 49 OR 51
+               MOVE 0 TO WS-STOCK-ST1
+               MOVE "STOCK FILE BUSY ON READ-PREV, PRESS 'ESC' TO RETRY"
+               TO WS-MESSAGE
+               PERFORM ERROR-MESSAGE
+               GO TO RSPREV-005.
+           IF WS-STOCK-ST1 NOT = 0
+               MOVE 0 TO WS-STOCK-ST1
+               PERFORM START-STOCK
+               GO TO RSPREV-005.
+           MOVE ST-STOCKNUMBER TO WS-STOCKNUMBER.
+           MOVE ST-CATEGORY    TO WS-CATEGORY.
+           MOVE "N"            TO NEW-STOCKNO.
+       RSPREV-999.
+             EXIT.

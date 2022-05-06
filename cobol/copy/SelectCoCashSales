@@ -1,0 +1,6 @@
+           SELECT CASH-SALE ASSIGN TO Ws-CoCashSale
+               ORGANIZATION IS INDEXED
+               LOCK MANUAL
+               ACCESS MODE IS DYNAMIC
+               FILE STATUS IS WS-CASHSALE-STATUS
+               RECORD KEY IS CS-KEY.

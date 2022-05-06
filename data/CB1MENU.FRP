@@ -1,0 +1,69 @@
+**************************{**  MAIN CONTROL MENU  **}******************        
+*   ************************{** CASH BOOK MENU **}*****************************
+*   *                                                                         *
+*   *                                                                         *
+*   *                                                                         *
+*   *   1. Cash Book Master File Entry/Edit                                   *
+*   *   2. Cash Book Master File Enquiry     12. CashBook Posting To G/Ledger *
+*   *   3. Cash Book Master L/Year Enquiry                                    *
+*   *                                        13. CashBook CAMS Auto Allocation*
+*   *   4. Transaction File Entry/Edit                                        *
+*   *   5. Transaction Enquiry - Current     14. Create CashBook Trans. From  *
+*   *   6. Transaction Enquiry - Future          CAMS Entries                 *
+*   *   7. Transaction Enquiry - Last Year                                    *
+*   *                                        15. Period End Program           *
+*   *   8. Bank Statement Item Entry/Edit                                     *
+*   *   9. Bank Statement Item Allocations                                    *
+*   *  10. Bank Statement/CashBook Report                                     *
+*   *  11. Bank Statement O/S Items Report                                    *
+*   *                                                                         *
+*****                                                                         *
+    *                                                                         *
+    ****************************ENTER SELECTION : __***************************
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+
+Form name: Cb1Menu                         size: 1158  bytes
+height: 26    width: 79    number of fields: 2              
+
+Field name: SELECTION                                        
+Row: 21   Column: 50   Width: 2                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+                                 
+ ******************************* 
+ *  COLOR PALETTE INFORMATION  * 
+ ******************************* 
+                                 
+            Caption Color: 4     
+               Line Color: 7     
+                                 
+                                 
+        *************************
+        *   I N T E N S I T Y   *
+*********************************
+* Color *  Red  * Green *  Blue *
+*********************************
+*   0   *   0   *   3   *   0   *
+*   1   *   0   *   2   *   0   *
+*   2   *   0   *   3   *   3   *
+*   3   *   0   *   2   *   2   *
+*   4   *   3   *   3   *   3   *
+*   5   *   2   *   2   *   2   *
+*   6   *   3   *   3   *   0   *
+*   7   *   3   *   0   *   0   *
+*********************************
+  

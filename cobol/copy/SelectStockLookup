@@ -1,0 +1,7 @@
+           SELECT StLook-Master ASSIGN TO Ws-StockLookup
+               ORGANIZATION IS INDEXED
+               LOCK MANUAL
+               ACCESS MODE IS DYNAMIC
+               RECORD KEY IS STLook-KEY
+               FILE STATUS IS WS-LOOK-STATUS
+               ALTERNATE RECORD KEY IS STLOOK-ALT-KEY WITH DUPLICATES.

@@ -1,0 +1,21 @@
+       FD  GLJRN-FILE.
+       01  GLJRN-REC.
+           03  GLJRN-KEY.
+               05  GLJRN-REFERENCE   PIC X(10).
+           03  GLJRN-BAL.
+             04  GLJRN-MAIN-DESC       PIC X(25).
+             04  GLJRN-PERIOD          PIC X(3).
+             04  GLJRN-ACTION          PIC X.
+             04  GLJRN-DATE            PIC 9(8).
+             04  GLJRN-COMPLETE        PIC X.
+             04  GLJRN-LINE-ITEMS OCCURS 50.
+               05  GLJRN-GLNUMBER    PIC X(12).
+               05  GLJRN-AMOUNT      PIC S9(8)V99.
+               05  GLJRN-LINE-DESC   PIC X(25).
+      *
+      * GLJRN-COMPLETE: Y=POSTED, P=PENDING (NOT READY FOR POSTING),
+      *                 R=READY TO POST,
+      * GLJRN-ACTION: BLANK=NORMAL, R=RECURRING,
+      * GLJRN-PERIOD: P=PREVIOUS, F=FUTURE, (FORMAT=P01 ETC)
+      *               BLANK=CURRENT
+      *               LYR=POSTING INTO LAST YEAR FIGURES AFTER YEAR-END

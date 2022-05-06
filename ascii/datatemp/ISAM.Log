@@ -1,0 +1,1136 @@
+
+Data store file                                   [Win]<Data>BmMaster
+Index file                                        [Win]<DataInd>BmMaster.Ind
+Last accessed                                     Fri Aug 15, 2014 10:58 AM
+Last modified                                     Fri Aug 15, 2014 10:58 AM
+Record size (bytes)                               33
+Node size (sectors)                               6
+Size of Data store file (sectors)                 725
+Size of Index file (sectors)                      1150
+Growth increment for Data store file (sectors)    80
+Growth increment for Index file (sectors)         80
+Number of records (valid and deleted)             8469
+Number of nodes (valid and deleted)               189
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:30.0.ASU.M      3
+  1     Character:15.15.ASD.M     2
+
+Data store file                                   [Win]<Data>CbMaster
+Index file                                        [Win]<DataInd>CbMaster.Ind
+Last accessed                                     Fri Aug 15, 2014 8:45 AM
+Last modified                                     Fri Aug 15, 2014 8:45 AM
+Record size (bytes)                               332
+Node size (sectors)                               6
+Size of Data store file (sectors)                 30
+Size of Index file (sectors)                      30
+Growth increment for Data store file (sectors)    30
+Growth increment for Index file (sectors)         30
+Number of records (valid and deleted)             2
+Number of nodes (valid and deleted)               2
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:12.0.ANU.W      1
+  1     Character:40.12.AND.W     1
+
+Data store file                                   [Win]<Data>CbMasterLY
+Index file                                        [Win]<DataInd>CbMasterLY.Ind
+Last accessed                                     Thu Aug 14, 2014 9:49 AM
+Last modified                                     Thu Aug 14, 2014 9:49 AM
+Record size (bytes)                               322
+Node size (sectors)                               6
+Size of Data store file (sectors)                 30
+Size of Index file (sectors)                      30
+Growth increment for Data store file (sectors)    30
+Growth increment for Index file (sectors)         30
+Number of records (valid and deleted)             2
+Number of nodes (valid and deleted)               2
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:12.0.ANU.W      1
+  1     Character:40.12.AND.W     1
+
+Data store file                                   [Win]<Data>CbTrans
+Index file                                        [Win]<DataInd>CbTrans.Ind
+Last accessed                                     Fri Aug 15, 2014 8:45 AM
+Last modified                                     Fri Aug 15, 2014 8:45 AM
+Record size (bytes)                               90
+Node size (sectors)                               6
+Size of Data store file (sectors)                 435
+Size of Index file (sectors)                      300
+Growth increment for Data store file (sectors)    100
+Growth increment for Index file (sectors)         100
+Number of records (valid and deleted)             2145
+Number of nodes (valid and deleted)               46
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:8.0.ANU.M       2
+  1     Character:20.21.AND.M     2
+  2     Character:3.18.AND.M      2
+
+Data store file                                   [Win]<Data>CbTransLY
+Index file                                        [Win]<DataInd>CbTransLY.Ind
+Last accessed                                     Thu Aug 14, 2014 12:31 PM
+Last modified                                     Thu Aug 14, 2014 12:31 PM
+Record size (bytes)                               89
+Node size (sectors)                               6
+Size of Data store file (sectors)                 1011
+Size of Index file (sectors)                      600
+Growth increment for Data store file (sectors)    100
+Growth increment for Index file (sectors)         100
+Number of records (valid and deleted)             5329
+Number of nodes (valid and deleted)               97
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:8.0.ANU.M       2
+  1     Character:20.20.AND.M     2
+  2     Character:2.18.AND.M      2
+
+Data store file                                   [Win]<Data>CoCashSales
+Index file                                        [Win]<DataInd>CoCashSales.Ind
+Last accessed                                     Fri Aug 15, 2014 9:45 AM
+Last modified                                     Fri Aug 15, 2014 9:45 AM
+Record size (bytes)                               33
+Node size (sectors)                               6
+Size of Data store file (sectors)                 30
+Size of Index file (sectors)                      25
+Growth increment for Data store file (sectors)    30
+Growth increment for Index file (sectors)         30
+Number of records (valid and deleted)             61
+Number of nodes (valid and deleted)               1
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Byte:6.0.ANU.M            1
+
+Data store file                                   [Win]<Data>CoCompany
+Index file                                        [Win]<DataInd>CoCompany.Ind
+Last accessed                                     Fri Aug 15, 2014 11:33 AM
+Last modified                                     Fri Aug 15, 2014 11:33 AM
+Record size (bytes)                               67
+Node size (sectors)                               6
+Size of Data store file (sectors)                 30
+Size of Index file (sectors)                      30
+Growth increment for Data store file (sectors)    30
+Growth increment for Index file (sectors)         30
+Number of records (valid and deleted)             12
+Number of nodes (valid and deleted)               1
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:2.0.ANU.M       1
+
+Data store file                                   [Win]<Data>CoDataName
+Index file                                        [Win]<DataInd>CoDataName.Ind
+Last accessed                                     Fri Aug 15, 2014 10:46 AM
+Last modified                                     Fri Aug 15, 2014 10:46 AM
+Record size (bytes)                               28
+Node size (sectors)                               6
+Size of Data store file (sectors)                 34
+Size of Index file (sectors)                      30
+Growth increment for Data store file (sectors)    30
+Growth increment for Index file (sectors)         30
+Number of records (valid and deleted)             66
+Number of nodes (valid and deleted)               1
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:3.0.ANU.M       1
+
+Data store file                                   [Win]<Data>CoFaxParam
+Index file                                        [Win]<DataInd>CoFaxParam.Ind
+Last accessed                                     Fri Aug 15, 2014 10:54 AM
+Last modified                                     Fri Aug 15, 2014 10:54 AM
+Record size (bytes)                               27
+Node size (sectors)                               6
+Size of Data store file (sectors)                 30
+Size of Index file (sectors)                      7
+Growth increment for Data store file (sectors)    30
+Growth increment for Index file (sectors)         30
+Number of records (valid and deleted)             1
+Number of nodes (valid and deleted)               1
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:1.0.ANU.M       1
+
+Data store file                                   [Win]<Data>CoMenu
+Index file                                        [Win]<DataInd>CoMenu.Ind
+Last accessed                                     Fri Aug 15, 2014 10:47 AM
+Last modified                                     Fri Aug 15, 2014 10:47 AM
+Record size (bytes)                               422
+Node size (sectors)                               6
+Size of Data store file (sectors)                 30
+Size of Index file (sectors)                      30
+Growth increment for Data store file (sectors)    30
+Growth increment for Index file (sectors)         30
+Number of records (valid and deleted)             30
+Number of nodes (valid and deleted)               1
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:2.0.ANU.M       1
+
+Data store file                                   [Win]<Data>CoPrinters
+Index file                                        [Win]<DataInd>CoPrinters.Ind
+Last accessed                                     Fri Aug 15, 2014 11:01 AM
+Last modified                                     Fri Aug 15, 2014 11:01 AM
+Record size (bytes)                               79
+Node size (sectors)                               6
+Size of Data store file (sectors)                 33
+Size of Index file (sectors)                      7
+Growth increment for Data store file (sectors)    30
+Growth increment for Index file (sectors)         30
+Number of records (valid and deleted)             12
+Number of nodes (valid and deleted)               1
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:2.0.ANU.M       1
+
+Data store file                                   [Win]<Data>CoPullBy
+Index file                                        [Win]<DataInd>CoPullby.Ind
+Last accessed                                     Fri Aug 15, 2014 11:14 AM
+Last modified                                     Fri Aug 15, 2014 11:14 AM
+Record size (bytes)                               27
+Node size (sectors)                               6
+Size of Data store file (sectors)                 120
+Size of Index file (sectors)                      55
+Growth increment for Data store file (sectors)    30
+Growth increment for Index file (sectors)         30
+Number of records (valid and deleted)             1675
+Number of nodes (valid and deleted)               6
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:8.0.ANU.M       2
+
+Data store file                                   [Win]<Data>CoPullers
+Index file                                        [Win]<DataInd>CoPullers.Ind
+Last accessed                                     Fri Aug 15, 2014 11:14 AM
+Last modified                                     Fri Aug 15, 2014 11:14 AM
+Record size (bytes)                               22
+Node size (sectors)                               6
+Size of Data store file (sectors)                 30
+Size of Index file (sectors)                      7
+Growth increment for Data store file (sectors)    30
+Growth increment for Index file (sectors)         30
+Number of records (valid and deleted)             23
+Number of nodes (valid and deleted)               1
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:2.0.ANU.M       1
+
+Data store file                                   [Win]<Data>CoStaffInOut
+Index file                                        [Win]<DataInd>CoStaffInOut.Ind
+Last accessed                                     Fri Aug 15, 2014 8:09 AM
+Last modified                                     Fri Aug 15, 2014 8:09 AM
+Record size (bytes)                               47
+Node size (sectors)                               6
+Size of Data store file (sectors)                 30
+Size of Index file (sectors)                      7
+Growth increment for Data store file (sectors)    30
+Growth increment for Index file (sectors)         30
+Number of records (valid and deleted)             30
+Number of nodes (valid and deleted)               1
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Byte:25.0.ANU.M           1
+
+Data store file                                   [Win]<Data>CrAlias
+Index file                                        [Win]<DataInd>CrAlias.Ind
+Last accessed                                     Thu Aug 14, 2014 2:13 PM
+Last modified                                     Thu Aug 14, 2014 2:13 PM
+Record size (bytes)                               14
+Node size (sectors)                               6
+Size of Data store file (sectors)                 30
+Size of Index file (sectors)                      7
+Growth increment for Data store file (sectors)    30
+Growth increment for Index file (sectors)         30
+Number of records (valid and deleted)             151
+Number of nodes (valid and deleted)               1
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:7.0.ANU.M       1
+
+Data store file                                   [Win]<Data>CrCAMSTrans
+Index file                                        [Win]<DataInd>CrCAMSTrans.Ind
+Last accessed                                     Thu Aug 14, 2014 4:15 PM
+Last modified                                     Thu Aug 14, 2014 4:15 PM
+Record size (bytes)                               109
+Node size (sectors)                               6
+Size of Data store file (sectors)                 1440
+Size of Index file (sectors)                      180
+Growth increment for Data store file (sectors)    30
+Growth increment for Index file (sectors)         30
+Number of records (valid and deleted)             6190
+Number of nodes (valid and deleted)               27
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:6.0.ANU.M       2
+
+Data store file                                   [Win]<Data>CrCheques
+Index file                                        [Win]<DataInd>CrCheques.Ind
+Last accessed                                     Fri Jul 11, 2014 10:48 AM
+Last modified                                     Fri Jul 11, 2014 10:48 AM
+Record size (bytes)                               30
+Node size (sectors)                               6
+Size of Data store file (sectors)                 30
+Size of Index file (sectors)                      7
+Growth increment for Data store file (sectors)    30
+Growth increment for Index file (sectors)         30
+Number of records (valid and deleted)             68
+Number of nodes (valid and deleted)               1
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:7.0.ANU.M       1
+
+Data store file                                   [Win]<Data>CrCurrency
+Index file                                        [Win]<DataInd>CrCurrency.Ind
+Last accessed                                     Fri Aug 15, 2014 10:42 AM
+Last modified                                     Fri Aug 15, 2014 10:42 AM
+Record size (bytes)                               33
+Node size (sectors)                               6
+Size of Data store file (sectors)                 30
+Size of Index file (sectors)                      30
+Growth increment for Data store file (sectors)    30
+Growth increment for Index file (sectors)         30
+Number of records (valid and deleted)             10
+Number of nodes (valid and deleted)               1
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:5.0.ANU.M       1
+
+Data store file                                   [Win]<Data>CrFBCHeader
+Index file                                        [Win]<DataInd>CrFBCHeader.Ind
+Last accessed                                     Wed Nov 27, 2013 2:23 PM
+Last modified                                     Wed Nov 27, 2013 2:23 PM
+Record size (bytes)                               79
+Node size (sectors)                               6
+Size of Data store file (sectors)                 30
+Size of Index file (sectors)                      7
+Growth increment for Data store file (sectors)    30
+Growth increment for Index file (sectors)         30
+Number of records (valid and deleted)             0
+Number of nodes (valid and deleted)               1
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:20.0.ANU.M      1
+
+Data store file                                   [Win]<Data>CrFBCTrans
+Index file                                        [Win]<DataInd>CrFBCTrans.Ind
+Last accessed                                     Wed Nov 27, 2013 2:23 PM
+Last modified                                     Wed Nov 27, 2013 2:23 PM
+Record size (bytes)                               492
+Node size (sectors)                               6
+Size of Data store file (sectors)                 34
+Size of Index file (sectors)                      13
+Growth increment for Data store file (sectors)    30
+Growth increment for Index file (sectors)         30
+Number of records (valid and deleted)             33
+Number of nodes (valid and deleted)               2
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:20.0.ANU.M      1
+  1     Character:20.20.AND.M     1
+
+Data store file                                   [Win]<Data>CrJrn
+Index file                                        [Win]<DataInd>CrJrn.Ind
+Last accessed                                     Fri Aug 15, 2014 9:45 AM
+Last modified                                     Fri Aug 15, 2014 9:45 AM
+Record size (bytes)                               817
+Node size (sectors)                               6
+Size of Data store file (sectors)                 823
+Size of Index file (sectors)                      120
+Growth increment for Data store file (sectors)    30
+Growth increment for Index file (sectors)         30
+Number of records (valid and deleted)             508
+Number of nodes (valid and deleted)               18
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:17.0.ANU.W      2
+  1     Character:7.20.AND.W      2
+  2     Character:10.27.AND.W     2
+  3     Character:10.37.AND.W     2
+
+Data store file                                   [Win]<Data>CrMaster
+Index file                                        [Win]<DataInd>CrMaster.Ind
+Last accessed                                     Fri Aug 15, 2014 11:24 AM
+Last modified                                     Fri Aug 15, 2014 11:24 AM
+Record size (bytes)                               579
+Node size (sectors)                               6
+Size of Data store file (sectors)                 810
+Size of Index file (sectors)                      120
+Growth increment for Data store file (sectors)    30
+Growth increment for Index file (sectors)         30
+Number of records (valid and deleted)             683
+Number of nodes (valid and deleted)               19
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:7.0.ANU.W       2
+  1     Character:40.7.AND.W      2
+
+Data store file                                   [Win]<Data>CrMasterOld
+Index file                                        [Win]<DataInd>CrMasterOld.Ind
+Last accessed                                     Thu Aug 14, 2014 3:50 PM
+Last modified                                     Thu Aug 14, 2014 3:50 PM
+Record size (bytes)                               579
+Node size (sectors)                               6
+Size of Data store file (sectors)                 30
+Size of Index file (sectors)                      13
+Growth increment for Data store file (sectors)    30
+Growth increment for Index file (sectors)         30
+Number of records (valid and deleted)             0
+Number of nodes (valid and deleted)               2
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:7.0.ANU.W       1
+  1     Character:40.7.AND.W      1
+
+Data store file                                   [Win]<Data>CrRemittance
+Index file                                        [Win]<DataInd>CrRemittance.Ind
+Last accessed                                     Thu Aug 14, 2014 4:17 PM
+Last modified                                     Thu Aug 14, 2014 4:17 PM
+Record size (bytes)                               2469
+Node size (sectors)                               6
+Size of Data store file (sectors)                 28216
+Size of Index file (sectors)                      475
+Growth increment for Data store file (sectors)    30
+Growth increment for Index file (sectors)         30
+Number of records (valid and deleted)             5826
+Number of nodes (valid and deleted)               75
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:12.0.ANU.M      2
+  1     Character:7.5.AND.M       2
+
+Data store file                                   [Win]<Data>CrRemitTrans
+Index file                                        [Win]<DataInd>CrRemitTrans.Ind
+Last accessed                                     Thu Aug 14, 2014 4:25 PM
+Last modified                                     Thu Aug 14, 2014 4:25 PM
+Record size (bytes)                               42
+Node size (sectors)                               6
+Size of Data store file (sectors)                 1950
+Size of Index file (sectors)                      1435
+Growth increment for Data store file (sectors)    30
+Growth increment for Index file (sectors)         30
+Number of records (valid and deleted)             19721
+Number of nodes (valid and deleted)               236
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:21.0.ANU.M      3
+
+Data store file                                   [Win]<Data>CrTrans
+Index file                                        [Win]<DataInd>CrTrans.Ind
+Last accessed                                     Fri Aug 15, 2014 11:24 AM
+Last modified                                     Fri Aug 15, 2014 11:24 AM
+Record size (bytes)                               117
+Node size (sectors)                               6
+Size of Data store file (sectors)                 162
+Size of Index file (sectors)                      180
+Growth increment for Data store file (sectors)    30
+Growth increment for Index file (sectors)         30
+Number of records (valid and deleted)             583
+Number of nodes (valid and deleted)               29
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:8.0.ANU.W       2
+  1     Character:3.8.AND.W       2
+  2     Character:7.11.AND.W      2
+  3     Character:10.28.AND.W     2
+  4     Character:10.38.AND.W     2
+  5     Character:10.18.AND.W     2
+
+Data store file                                   [Win]<Data>DrContact
+Index file                                        [Win]<DataInd>DrContact.Ind
+Last accessed                                     Thu Aug 14, 2014 4:32 PM
+Last modified                                     Thu Aug 14, 2014 4:32 PM
+Record size (bytes)                               90
+Node size (sectors)                               6
+Size of Data store file (sectors)                 103
+Size of Index file (sectors)                      60
+Growth increment for Data store file (sectors)    30
+Growth increment for Index file (sectors)         30
+Number of records (valid and deleted)             482
+Number of nodes (valid and deleted)               7
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:7.0.ANU.M       2
+  1     Character:3.47.AND.M      2
+
+Data store file                                   [Win]<Data>DrDeliver
+Index file                                        [Win]<DataInd>DrDeliver.Ind
+Last accessed                                     Thu Aug 14, 2014 4:39 PM
+Last modified                                     Thu Aug 14, 2014 4:39 PM
+Record size (bytes)                               104
+Node size (sectors)                               6
+Size of Data store file (sectors)                 30
+Size of Index file (sectors)                      7
+Growth increment for Data store file (sectors)    120
+Growth increment for Index file (sectors)         120
+Number of records (valid and deleted)             30
+Number of nodes (valid and deleted)               1
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:9.0.ANU.M       1
+
+Data store file                                   [Win]<Data>DrMaster
+Index file                                        [Win]<DataInd>DrMaster.Ind
+Last accessed                                     Fri Aug 15, 2014 11:23 AM
+Last modified                                     Fri Aug 15, 2014 11:23 AM
+Record size (bytes)                               573
+Node size (sectors)                               6
+Size of Data store file (sectors)                 1260
+Size of Index file (sectors)                      400
+Growth increment for Data store file (sectors)    120
+Growth increment for Index file (sectors)         120
+Number of records (valid and deleted)             1109
+Number of nodes (valid and deleted)               62
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:7.0.ANU.M       2
+  1     Character:40.7.ASD.M      2
+  2     Character:9.359.DSD.M     2
+  3     Character:9.368.DSD.M     2
+  4     Character:1.404.ASD.M     2
+  5     Character:1.407.ASD.M     2
+  6     Character:1.408.ASD.M     2
+  7     Character:3.410.ASD.M     2
+
+Data store file                                   [Win]<Data>DrMasterOld
+Index file                                        [Win]<DataInd>DrMasterOld.Ind
+Last accessed                                     Thu Aug 14, 2014 4:56 PM
+Last modified                                     Thu Aug 14, 2014 4:56 PM
+Record size (bytes)                               573
+Node size (sectors)                               6
+Size of Data store file (sectors)                 1394
+Size of Index file (sectors)                      193
+Growth increment for Data store file (sectors)    120
+Growth increment for Index file (sectors)         120
+Number of records (valid and deleted)             1227
+Number of nodes (valid and deleted)               32
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:7.0.ANU.M       2
+  1     Character:40.7.ASD.M      2
+
+Data store file                                   [Win]<Data>DrTrans
+Index file                                        [Win]<DataInd>DrTrans.Ind
+Last accessed                                     Fri Aug 15, 2014 11:07 AM
+Last modified                                     Fri Aug 15, 2014 11:07 AM
+Record size (bytes)                               75
+Node size (sectors)                               6
+Size of Data store file (sectors)                 135
+Size of Index file (sectors)                      90
+Growth increment for Data store file (sectors)    30
+Growth increment for Index file (sectors)         30
+Number of records (valid and deleted)             762
+Number of nodes (valid and deleted)               11
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:8.0.ANU.M       2
+  1     Character:7.8.AND.M       2
+
+Data store file                                   [Win]<Data>GLJrn
+Index file                                        [Win]<DataInd>GlJrn.Ind
+Last accessed                                     Fri Aug 15, 2014 10:58 AM
+Last modified                                     Fri Aug 15, 2014 10:58 AM
+Record size (bytes)                               2398
+Node size (sectors)                               6
+Size of Data store file (sectors)                 114
+Size of Index file (sectors)                      30
+Growth increment for Data store file (sectors)    30
+Growth increment for Index file (sectors)         30
+Number of records (valid and deleted)             10
+Number of nodes (valid and deleted)               1
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:10.0.ANU.M      1
+
+Data store file                                   [Win]<Data>GlMaster
+Index file                                        [Win]<DataInd>GlMaster.Ind
+Last accessed                                     Fri Aug 15, 2014 11:04 AM
+Last modified                                     Fri Aug 15, 2014 11:04 AM
+Record size (bytes)                               461
+Node size (sectors)                               6
+Size of Data store file (sectors)                 300
+Size of Index file (sectors)                      90
+Growth increment for Data store file (sectors)    30
+Growth increment for Index file (sectors)         30
+Number of records (valid and deleted)             320
+Number of nodes (valid and deleted)               10
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:12.0.ANU.M      2
+  1     Character:40.12.AND.M     2
+
+Data store file                                   [Win]<Data>GlMasterLY
+Index file                                        [Win]<DataInd>GlMasterLY.Ind
+Last accessed                                     Fri Aug 15, 2014 11:10 AM
+Last modified                                     Fri Aug 15, 2014 11:10 AM
+Record size (bytes)                               451
+Node size (sectors)                               6
+Size of Data store file (sectors)                 270
+Size of Index file (sectors)                      90
+Growth increment for Data store file (sectors)    30
+Growth increment for Index file (sectors)         30
+Number of records (valid and deleted)             293
+Number of nodes (valid and deleted)               10
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:12.0.ANU.M      2
+  1     Character:40.12.AND.M     2
+
+Data store file                                   [Win]<Data>GlParameter
+Index file                                        [Win]<DataInd>GlParameter.Ind
+Last accessed                                     Fri Aug 15, 2014 11:20 AM
+Last modified                                     Fri Aug 15, 2014 11:20 AM
+Record size (bytes)                               639
+Node size (sectors)                               6
+Size of Data store file (sectors)                 29
+Size of Index file (sectors)                      30
+Growth increment for Data store file (sectors)    30
+Growth increment for Index file (sectors)         30
+Number of records (valid and deleted)             1
+Number of nodes (valid and deleted)               1
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:1.0.ANU.W       1
+
+Data store file                                   [Win]<Data>GlTrans
+Index file                                        [Win]<DataInd>GlTrans.Ind
+Last accessed                                     Fri Aug 15, 2014 8:45 AM
+Last modified                                     Fri Aug 15, 2014 8:45 AM
+Record size (bytes)                               76
+Node size (sectors)                               6
+Size of Data store file (sectors)                 783
+Size of Index file (sectors)                      750
+Growth increment for Data store file (sectors)    30
+Growth increment for Index file (sectors)         30
+Number of records (valid and deleted)             4654
+Number of nodes (valid and deleted)               120
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:18.0.ANU.M      2
+  1     Character:3.18.AND.M      2
+  2     Character:12.29.AND.M     2
+  3     Character:2.19.AND.M      2
+
+Data store file                                   [Win]<Data>GlTransLY
+Index file                                        [Win]<DataInd>GlTransLY.Ind
+Last accessed                                     Wed May 14, 2014 3:32 PM
+Last modified                                     Wed May 14, 2014 3:32 PM
+Record size (bytes)                               75
+Node size (sectors)                               6
+Size of Data store file (sectors)                 1949
+Size of Index file (sectors)                      1350
+Growth increment for Data store file (sectors)    30
+Growth increment for Index file (sectors)         30
+Number of records (valid and deleted)             12012
+Number of nodes (valid and deleted)               224
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:18.0.ANU.M      3
+  1     Character:2.18.AND.M      2
+  2     Character:12.28.AND.M     2
+
+Data store file                                   [Win]<Data>SlDistTot
+Index file                                        [Win]<DataInd>SlDistTot.Ind
+Last accessed                                     Fri Aug 15, 2014 11:03 AM
+Last modified                                     Fri Aug 15, 2014 11:03 AM
+Record size (bytes)                               451
+Node size (sectors)                               6
+Size of Data store file (sectors)                 30
+Size of Index file (sectors)                      30
+Growth increment for Data store file (sectors)    30
+Growth increment for Index file (sectors)         30
+Number of records (valid and deleted)             1
+Number of nodes (valid and deleted)               1
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:1.0.ASU.M       1
+
+Data store file                                   [Win]<Data>SlInvRev
+Index file                                        [Win]<DataInd>SlInvRev.Ind
+Last accessed                                     Fri Aug 15, 2014 11:14 AM
+Last modified                                     Fri Aug 15, 2014 11:14 AM
+Record size (bytes)                               6
+Node size (sectors)                               6
+Size of Data store file (sectors)                 30
+Size of Index file (sectors)                      30
+Growth increment for Data store file (sectors)    30
+Growth increment for Index file (sectors)         30
+Number of records (valid and deleted)             3
+Number of nodes (valid and deleted)               1
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:6.0.ANU.M       1
+
+Data store file                                   [Win]<Data>SlMaster
+Index file                                        [Win]<DataInd>SlMaster.Ind
+Last accessed                                     Fri Aug 15, 2014 11:22 AM
+Last modified                                     Fri Aug 15, 2014 11:22 AM
+Record size (bytes)                               93
+Node size (sectors)                               6
+Size of Data store file (sectors)                 35
+Size of Index file (sectors)                      30
+Growth increment for Data store file (sectors)    30
+Growth increment for Index file (sectors)         30
+Number of records (valid and deleted)             29
+Number of nodes (valid and deleted)               1
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:2.0.ASU.M       1
+
+Data store file                                   [Win]<Data>SlParameter
+Index file                                        [Win]<DataInd>SlParameter.Ind
+Last accessed                                     Fri Aug 15, 2014 11:26 AM
+Last modified                                     Fri Aug 15, 2014 11:26 AM
+Record size (bytes)                               358
+Node size (sectors)                               6
+Size of Data store file (sectors)                 30
+Size of Index file (sectors)                      30
+Growth increment for Data store file (sectors)    30
+Growth increment for Index file (sectors)         30
+Number of records (valid and deleted)             38
+Number of nodes (valid and deleted)               1
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:2.0.ASU.M       1
+
+Data store file                                   [Win]<Data>SlRegister
+Index file                                        [Win]<DataInd>SlRegister.Ind
+Last accessed                                     Fri Aug 15, 2014 11:23 AM
+Last modified                                     Fri Aug 15, 2014 11:23 AM
+Record size (bytes)                               494
+Node size (sectors)                               6
+Size of Data store file (sectors)                 7120
+Size of Index file (sectors)                      5500
+Growth increment for Data store file (sectors)    500
+Growth increment for Index file (sectors)         500
+Number of records (valid and deleted)             6781
+Number of nodes (valid and deleted)               848
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:7.0.ANU.M       2
+  1     Character:27.7.AND.M      3
+  2     Character:8.47.AND.M      2
+  3     Character:1.131.AND.M     2
+  4     Character:20.14.AND.M     3
+  5     Character:1.132.AND.M     2
+  6     Character:40.136.AND.M    3
+  7     Character:25.176.AND.M    3
+  8     Character:25.255.AND.M    3
+  9     Character:7.7.AND.M       2
+  10    Character:8.117.AND.M     2
+
+Data store file                                   [Win]<Data>SlRegLY
+Index file                                        [Win]<DataInd>SlRegLY.Ind
+Last accessed                                     Thu Aug 14, 2014 4:28 PM
+Last modified                                     Thu Aug 14, 2014 4:28 PM
+Record size (bytes)                               494
+Node size (sectors)                               6
+Size of Data store file (sectors)                 5400
+Size of Index file (sectors)                      5500
+Growth increment for Data store file (sectors)    500
+Growth increment for Index file (sectors)         500
+Number of records (valid and deleted)             5501
+Number of nodes (valid and deleted)               697
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:7.0.ANU.M       2
+  1     Character:27.7.AND.M      3
+  2     Character:8.47.AND.M      2
+  3     Character:1.131.AND.M     2
+  4     Character:20.14.AND.M     2
+  5     Character:1.132.AND.M     2
+  6     Character:40.136.AND.M    3
+  7     Character:25.176.AND.M    3
+  8     Character:25.255.AND.M    3
+  9     Character:7.7.AND.M       2
+  10    Character:8.117.AND.M     2
+
+Data store file                                   [Win]<Data>SlSbRep
+Index file                                        [Win]<DataInd>SlSbRep.Ind
+Last accessed                                     Fri Aug 15, 2014 11:22 AM
+Last modified                                     Fri Aug 15, 2014 11:22 AM
+Record size (bytes)                               53
+Node size (sectors)                               6
+Size of Data store file (sectors)                 30
+Size of Index file (sectors)                      30
+Growth increment for Data store file (sectors)    30
+Growth increment for Index file (sectors)         30
+Number of records (valid and deleted)             16
+Number of nodes (valid and deleted)               1
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:1.0.ANU.M       1
+
+Data store file                                   [Win]<Data>SlSoldBy
+Index file                                        [Win]<DataInd>SlSoldBy.Ind
+Last accessed                                     Fri Aug 15, 2014 11:03 AM
+Last modified                                     Fri Aug 15, 2014 11:03 AM
+Record size (bytes)                               67
+Node size (sectors)                               6
+Size of Data store file (sectors)                 210
+Size of Index file (sectors)                      100
+Growth increment for Data store file (sectors)    50
+Growth increment for Index file (sectors)         30
+Number of records (valid and deleted)             205
+Number of nodes (valid and deleted)               1
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:8.0.ANU.M       1
+
+Data store file                                   [Win]<Data>SlSpecials
+Index file                                        [Win]<Data>SlSpecials.Ind
+Last accessed                                     Fri Aug 15, 2014 11:03 AM
+Last modified                                     Fri Aug 15, 2014 11:03 AM
+Record size (bytes)                               95
+Node size (sectors)                               6
+Size of Data store file (sectors)                 30
+Size of Index file (sectors)                      30
+Growth increment for Data store file (sectors)    30
+Growth increment for Index file (sectors)         30
+Number of records (valid and deleted)             24
+Number of nodes (valid and deleted)               1
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Byte:23.0.ANU.M           1
+
+Data store file                                   [Win]<Data>StAlternative
+Index file                                        [Win]<DataInd>StAlternative.Ind
+Last accessed                                     Fri Aug 15, 2014 11:26 AM
+Last modified                                     Fri Aug 15, 2014 11:26 AM
+Record size (bytes)                               165
+Node size (sectors)                               6
+Size of Data store file (sectors)                 440
+Size of Index file (sectors)                      187
+Growth increment for Data store file (sectors)    200
+Growth increment for Index file (sectors)         150
+Number of records (valid and deleted)             722
+Number of nodes (valid and deleted)               8
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:15.0.ANU.M      2
+
+Data store file                                   [Win]<Data>StBranchCat
+Index file                                        [Win]<DataInd>StBranchCat.Ind
+Last accessed                                     Wed Aug 13, 2014 12:08 PM
+Last modified                                     Wed Aug 13, 2014 12:08 PM
+Record size (bytes)                               8
+Node size (sectors)                               6
+Size of Data store file (sectors)                 30
+Size of Index file (sectors)                      7
+Growth increment for Data store file (sectors)    30
+Growth increment for Index file (sectors)         30
+Number of records (valid and deleted)             38
+Number of nodes (valid and deleted)               1
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:3.0.ANU.M       1
+
+Data store file                                   [Win]<Data>StCatalogue
+Index file                                        [Win]<DataInd>StCatalogue.Ind
+Last accessed                                     Fri Aug 15, 2014 11:26 AM
+Last modified                                     Fri Aug 15, 2014 11:26 AM
+Record size (bytes)                               20
+Node size (sectors)                               6
+Size of Data store file (sectors)                 560
+Size of Index file (sectors)                      349
+Growth increment for Data store file (sectors)    200
+Growth increment for Index file (sectors)         150
+Number of records (valid and deleted)             6888
+Number of nodes (valid and deleted)               58
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:15.0.ANU.M      2
+
+Data store file                                   [Win]<Data>StChanges
+Index file                                        [Win]<DataInd>StChanges.Ind
+Last accessed                                     Thu Aug 14, 2014 11:15 AM
+Last modified                                     Thu Aug 14, 2014 11:15 AM
+Record size (bytes)                               185
+Node size (sectors)                               6
+Size of Data store file (sectors)                 3380
+Size of Index file (sectors)                      997
+Growth increment for Data store file (sectors)    200
+Growth increment for Index file (sectors)         200
+Number of records (valid and deleted)             8815
+Number of nodes (valid and deleted)               116
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:15.0.ANU.M      2
+
+Data store file                                   [Win]<Data>StDiscAcc
+Index file                                        [Win]<DataInd>StDiscAcc.Ind
+Last accessed                                     Fri Aug 15, 2014 11:03 AM
+Last modified                                     Fri Aug 15, 2014 11:03 AM
+Record size (bytes)                               34
+Node size (sectors)                               6
+Size of Data store file (sectors)                 4727
+Size of Index file (sectors)                      6331
+Growth increment for Data store file (sectors)    30
+Growth increment for Index file (sectors)         30
+Number of records (valid and deleted)             57558
+Number of nodes (valid and deleted)               1054
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:22.0.ANU.M      3
+  1     Character:7.15.AND.M      3
+
+Data store file                                   [Win]<Data>StImports
+Index file                                        [Win]<DataInd>StImports.Ind
+Last accessed                                     Wed Aug 13, 2014 3:23 PM
+Last modified                                     Wed Aug 13, 2014 3:23 PM
+Record size (bytes)                               254
+Node size (sectors)                               6
+Size of Data store file (sectors)                 1950
+Size of Index file (sectors)                      500
+Growth increment for Data store file (sectors)    200
+Growth increment for Index file (sectors)         150
+Number of records (valid and deleted)             3583
+Number of nodes (valid and deleted)               78
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:6.0.ANU.M       2
+  1     Character:17.6.AND.M      2
+  2     Character:15.188.AND.M    2
+
+Data store file                                   [Win]<Data>StMaster
+Index file                                        [Win]<DataInd>StMaster.Ind
+Last accessed                                     Fri Aug 15, 2014 11:26 AM
+Last modified                                     Fri Aug 15, 2014 11:26 AM
+Record size (bytes)                               388
+Node size (sectors)                               6
+Size of Data store file (sectors)                 16550
+Size of Index file (sectors)                      3250
+Growth increment for Data store file (sectors)    500
+Growth increment for Index file (sectors)         300
+Number of records (valid and deleted)             21145
+Number of nodes (valid and deleted)               496
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:15.0.ANU.M      3
+  1     Character:20.15.AND.M     3
+  2     Character:7.58.AND.M      2
+
+Data store file                                   [Win]<Data>StNewPrices
+Index file                                        [Win]<DataInd>StNewPrices.Ind
+Last accessed                                     Tue Mar 11, 2014 2:18 PM
+Last modified                                     Tue Mar 11, 2014 2:18 PM
+Record size (bytes)                               32
+Node size (sectors)                               6
+Size of Data store file (sectors)                 60
+Size of Index file (sectors)                      60
+Growth increment for Data store file (sectors)    30
+Growth increment for Index file (sectors)         30
+Number of records (valid and deleted)             612
+Number of nodes (valid and deleted)               7
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Byte:15.0.ANU.M           2
+
+Data store file                                   [Win]<Data>StockLookup
+Index file                                        [Win]<DataInd>StockLookup.Ind
+Last accessed                                     Wed Aug 6, 2014 4:38 PM
+Last modified                                     Wed Aug 6, 2014 4:38 PM
+Record size (bytes)                               30
+Node size (sectors)                               6
+Size of Data store file (sectors)                 210
+Size of Index file (sectors)                      325
+Growth increment for Data store file (sectors)    30
+Growth increment for Index file (sectors)         30
+Number of records (valid and deleted)             2750
+Number of nodes (valid and deleted)               54
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:15.0.ANU.M      2
+  1     Character:15.15.AND.M     2
+
+Data store file                                   [Win]<Data>StOrderGen
+Index file                                        [Win]<DataInd>StOrderGen.Ind
+Last accessed                                     Tue Aug 12, 2014 10:41 AM
+Last modified                                     Tue Aug 12, 2014 10:41 AM
+Record size (bytes)                               28
+Node size (sectors)                               6
+Size of Data store file (sectors)                 30
+Size of Index file (sectors)                      30
+Growth increment for Data store file (sectors)    30
+Growth increment for Index file (sectors)         30
+Number of records (valid and deleted)             29
+Number of nodes (valid and deleted)               1
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:23.0.ANU.M      1
+
+Data store file                                   [Win]<Data>StOrders
+Index file                                        [Win]<DataInd>StOrders.Ind
+Last accessed                                     Fri Aug 15, 2014 10:58 AM
+Last modified                                     Fri Aug 15, 2014 10:58 AM
+Record size (bytes)                               86
+Node size (sectors)                               6
+Size of Data store file (sectors)                 100
+Size of Index file (sectors)                      150
+Growth increment for Data store file (sectors)    30
+Growth increment for Index file (sectors)         30
+Number of records (valid and deleted)             502
+Number of nodes (valid and deleted)               21
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:35.0.ANU.M      2
+  1     Character:15.20.AND.M     2
+  2     Character:7.64.AND.M      2
+
+Data store file                                   [Win]<Data>StReceipt
+Index file                                        [Win]<DataInd>StReceipt.Ind
+Last accessed                                     Thu Aug 14, 2014 12:52 PM
+Last modified                                     Thu Aug 14, 2014 12:52 PM
+Record size (bytes)                               95
+Node size (sectors)                               6
+Size of Data store file (sectors)                 1156
+Size of Index file (sectors)                      1000
+Growth increment for Data store file (sectors)    100
+Growth increment for Index file (sectors)         50
+Number of records (valid and deleted)             5332
+Number of nodes (valid and deleted)               159
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:7.0.ANU.M       2
+  1     Character:15.7.AND.M      2
+  2     Character:8.67.AND.M      2
+  3     Character:20.75.AND.M     2
+
+Data store file                                   [Win]<Data>StReceiptLY
+Index file                                        [Win]<DataInd>StReceiptLy.Ind
+Last accessed                                     Wed Aug 13, 2014 3:23 PM
+Last modified                                     Wed Aug 13, 2014 3:23 PM
+Record size (bytes)                               95
+Node size (sectors)                               6
+Size of Data store file (sectors)                 2342
+Size of Index file (sectors)                      2050
+Growth increment for Data store file (sectors)    100
+Growth increment for Index file (sectors)         50
+Number of records (valid and deleted)             11635
+Number of nodes (valid and deleted)               336
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:7.0.ANU.M       2
+  1     Character:15.7.AND.M      3
+  2     Character:8.67.AND.M      2
+  3     Character:20.75.AND.M     3
+
+Data store file                                   [Win]<Data>StSpecPr
+Index file                                        [Win]<DataInd>StSpecPr.Ind
+Last accessed                                     Fri Aug 15, 2014 11:26 AM
+Last modified                                     Fri Aug 15, 2014 11:26 AM
+Record size (bytes)                               31
+Node size (sectors)                               6
+Size of Data store file (sectors)                 180
+Size of Index file (sectors)                      150
+Growth increment for Data store file (sectors)    30
+Growth increment for Index file (sectors)         30
+Number of records (valid and deleted)             2341
+Number of nodes (valid and deleted)               17
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:15.0.ANU.M      2
+
+Data store file                                   [Win]<Data>StTrans
+Index file                                        [Win]<DataInd>StTrans.Ind
+Last accessed                                     Fri Aug 15, 2014 11:22 AM
+Last modified                                     Fri Aug 15, 2014 11:22 AM
+Record size (bytes)                               153
+Node size (sectors)                               6
+Size of Data store file (sectors)                 9461
+Size of Index file (sectors)                      15000
+Growth increment for Data store file (sectors)    1000
+Growth increment for Index file (sectors)         1000
+Number of records (valid and deleted)             26996
+Number of nodes (valid and deleted)               1506
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:14.0.ANU.M      3
+  1     Character:16.14.AND.M     3
+  2     Character:8.30.AND.M      3
+  3     Character:8.44.AND.M      3
+  4     Character:1.52.AND.M      2
+  5     Character:15.15.AND.M     3
+  6     Character:7.31.AND.M      3
+
+Data store file                                   [Win]<Data>StTransLY
+Index file                                        [Win]<DataInd>StTransLY.Ind
+Last accessed                                     Thu Aug 14, 2014 11:33 AM
+Last modified                                     Thu Aug 14, 2014 11:33 AM
+Record size (bytes)                               153
+Node size (sectors)                               6
+Size of Data store file (sectors)                 7710
+Size of Index file (sectors)                      15000
+Growth increment for Data store file (sectors)    1000
+Growth increment for Index file (sectors)         1000
+Number of records (valid and deleted)             24507
+Number of nodes (valid and deleted)               1376
+
+Index       Index                BTree
+Number  Specification            Depth
+  0     Character:14.0.ANU.M      3
+  1     Character:16.14.AND.M     3
+  2     Character:8.30.AND.M      3
+  3     Character:8.44.AND.M      3
+  4     Character:1.52.AND.M      2
+  5     Character:15.15.AND.M     3
+  6     Character:7.31.AND.M      3

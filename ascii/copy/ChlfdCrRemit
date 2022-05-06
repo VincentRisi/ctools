@@ -1,0 +1,19 @@
+       FD  CRREMIT-FILE.
+       01  CRREM-RECORD.
+           03  CRREM-KEY.
+               05  CRREM-YY          PIC 99.
+               05  CRREM-MM          PIC 99.
+               05  CRREM-F-L         PIC X.
+               05  CRREM-ACC-NUMBER  PIC 9(7).
+           03  CRREM-BAL-LAST        PIC S9(8)V99.
+           03  CRREM-PREV-PAID       PIC S9(8)V99.
+           03  CRREM-BAL-NOW         PIC S9(8)V99.
+           03  CRREM-BAL-FROM-REMIT  PIC S9(8)V99.
+           03  CRREM-ADJUSTMENTS OCCURS 40.
+               05  CRREM-DESC        PIC X(50).
+               05  CRREM-AMT         PIC S9(8)V99.
+           03  CRREM-DISC-AMT        PIC S9(8)V99.
+           03  CRREM-COMPLETE        PIC X.
+           03  CRREM-PMT-REF         PIC 9(6).
+      *
+      *CRREM-F-L = FOREIGN-LOCAL

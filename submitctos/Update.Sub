@@ -1,0 +1,173 @@
+****SAVING FILES TO >SAVE FORMAT BEFORE CONVERSION *****
+
+Is copy
+<Kris>StTrans
+<Kris>StTrans>Save
+
+Is copy
+<Kris>StTransLy
+<Kris>StTransLy>Save
+
+Is copy
+<Kris>SlRegister
+<Kris>SlRegister>Save
+
+Is copy
+<Kris>SlRegLY
+<Kris>SlRegLY>Save
+
+
+*****RUNNING THE CONVERSION PROGRAMS *****
+
+
+c run
+StTranMv.Int
+
+c run
+StTrLyMv.Int
+
+
+c run
+SlRegiMv.Int
+
+
+c run
+SlRgLyMv.Int
+
+c run
+CoCashMv.Int
+
+*** RENAMING *1 DATA FILES TO ORIGINAL FILE NAMES ****
+
+
+Is copy
+<Kris>StTrans1
+<Kris>StTrans
+<KrisInd>StTrans.Ind
+y
+
+Is copy
+<Kris>StTransLy1
+<Kris>StTransLy
+<KrisInd>StTransLy.Ind
+y
+
+Is copy
+<Kris>SlRegister1
+<Kris>SlRegister
+<KrisInd>SlRegister.Ind
+y
+
+Is copy
+<Kris>SlRegLY1
+<Kris>SlRegLY
+<KrisInd>SlRegLY.Ind
+y
+
+Is copy
+<Kris>CoCashSales1
+<Kris>CoCashSales
+<KrisInd>CoCashSales.Ind
+y
+
+***** ISAM REORGANISE OF NEW DATA FILES. ******
+
+Path
+Win
+KrisInd
+
+Sort
+[Win]<Kris>StTrans
+[Win]<Kris>Temp
+@[Win]<Temp>StTransSort.Key
+
+[Win]<$>SortWorkFile1
+[Win]<$>SortWorkFile2
+
+Rename
+[Win]<Kris>Temp
+[Win]<Kris>StTrans
+Y
+
+I Reo
+[Win]<Kris>StTrans
+StTrans.Ind
+
+
+
+@[Win]<Temp>StTrans.Key
+6
+
+
+
+
+Y
+
+Sort
+[Win]<Kris>StTransLy
+[Win]<Kris>Temp
+@[Win]<Temp>StTransSort.Key
+
+[Win]<$>SortWorkFile1
+[Win]<$>SortWorkFile2
+
+Rename
+[Win]<Kris>Temp
+[Win]<Kris>StTransLy
+Y
+I Reo
+[Win]<Kris>StTransLy
+StTransLy.Ind
+
+
+
+@[Win]<Temp>StTrans.Key
+6
+120
+120
+400
+80
+Y
+
+Sort
+[Win]<Kris>SlRegister
+[Win]<Kris>Temp
+@[Win]<Temp>RegSort.Key
+
+[Win]<$>SortWorkFile1
+[Win]<$>SortWorkFile2
+
+Rename
+[Win]<Kris>Temp
+[Win]<Kris>SlRegister
+Y
+I Reo
+[Win]<Kris>SlRegister
+SlRegister.Ind
+
+
+
+@[Win]<Temp>Reg.Key
+6
+100
+60
+300
+
+Y
+
+I Reo
+[Win]<Kris>SlRegLy
+SlRegLy.Ind
+
+
+
+@[Win]<Temp>Reg.Key
+6
+500
+500
+5500
+60
+Y
+
+
+**** Update.Sub Process finished .......***

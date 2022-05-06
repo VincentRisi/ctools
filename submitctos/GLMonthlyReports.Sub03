@@ -1,0 +1,87 @@
+%'
+
+%#0: 
+
+
+No THREE Digit Month Name Was Entered, This Run Is Aborted.
+
+
+2:
+
+Screen Setup
+
+Y
+
+
+Y
+White Blue
+100
+
+Path
+Win
+Program
+
+
+C/2 Run
+MainCont.Int
+
+-N +P
+3
+THUTMES
+5
+2
+
+3
+X
+<Spl>CTNGl1
+
+FINAL JRN'S FOR THE MONTH.
+
+8
+X
+<Spl>CTNGl2
+
+10
+X
+<Spl>CTNGl3
+
+6
+X
+<Spl>CTNGl4
+
+9999999
+
+
+e
+
+
+Path
+Win
+Spl
+
+Rename
+<Spl>CTNGl*
+CTN%0*
+Yes
+
+
+/zip
+CTN%0*
+CTN.Zip
+Yes
+
+
+a n uMain
+[Win]<Spl>CTN.Zip
+
+[Win]<Spl>CTN.Zip
+
+
+
+
+Path
+Win
+Program
+
+
+**** CTN GL Monthly Reports Run Successfully *****

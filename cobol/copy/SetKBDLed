@@ -1,0 +1,19 @@
+      *
+       SET-KBD-LED SECTION.
+       SKL-010.
+      *SET F10 LED ON
+           MOVE X"FFFF" TO F-FON.
+           MOVE 0       TO F-ILED.
+           CALL "&SETKBDLED" USING F-ERROR1
+                                   F-ILED
+                                   F-FON.
+       SKL-020.
+      *SET F10 LED OFF
+           MOVE X"0000" TO F-FON.
+           MOVE 0       TO F-ILED.
+           CALL "&SETKBDLED" USING F-ERROR1
+                                   F-ILED
+                                   F-FON.
+       SKL-999.
+          EXIT.
+      *

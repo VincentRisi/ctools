@@ -1,0 +1,22 @@
+       FD  DEBTOR1-TRANS-FILE.
+       01  DEBTOR1-TRANS-REC.
+           03  DRTR1-KEY.
+               05  DRTR1-TYPE               PIC 99.
+               05  DRTR1-TRANSACTION-NUMBER PIC 9(6).
+           03  DRTR1-ACC-KEY.
+               05  DRTR1-ACCOUNT-NUMBER     PIC 9(7).
+               05  DRTR1-DATE               PIC 9(8).
+           03  DRTR1-REFERENCE1             PIC X(20).
+           03  DRTR1-REFERENCE2             PIC X(6).
+           03  DRTR1-DEL-DATE               PIC 9(8). 
+           03  DRTR1-AMT-OF-INVOICE         PIC 9(7)V99.
+           03  DRTR1-AMT-OUTSTANDING        PIC 9(7)V99.
+      *
+      * REF1 : ORDER NUMBER
+      * REF2 : OUTST.INV.NO./CASH RECEIPT NO./JOURNAL NO.
+      *DRTR1-TYPE:1=INV(+),             2=CASH(-),   
+      *          3=R/D CHEQUE(+),      5=CR-JRN(-),
+      *          4=DR-JRN(+)           6=C/NOTE(-),
+      *          7=INTEREST(+),        8=DISC(-),
+      *         10=CHEQUE REFUND(+)    9=B-DEBT(-),
+      *                               11=INTEREST REV(-)

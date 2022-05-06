@@ -1,0 +1,65 @@
+      *----------------------------------------------------------------*
+      * FORMS SERVER VARIABLES                                         *
+      *----------------------------------------------------------------*
+       01 FS-Q-TYPE           PIC S9(04) COMP VALUE 129.
+       01 FS-Q-NAME           PIC  X(50)      VALUE "FORMSSERVER".
+       01 FS-Q-NAME-LEN       PIC S9(04) COMP VALUE 11.
+       01 FS-QHANDLE          PIC S9(04) COMP VALUE 0.
+
+       01 FS-QE-RECORD.
+          02 FS-CBID                PIC S9(02) COMP VALUE 0.
+          02 FS-WSNUMBER            PIC  9(03).
+          02 FS-USERNUMBER          PIC  9(03).
+          02 FS-SEQUENCE            PIC S9(04) COMP VALUE 0.
+          02 FS-CBLIBRARY           PIC S9(02) COMP VALUE 0.
+          02 FS-LIBRARY             PIC  X(91)      VALUE
+                                    "[Win]<FPlus>FPlus".
+          02 FS-CBFORM              PIC S9(02) COMP VALUE 0.
+          02 FS-FORM                PIC  X(29)      VALUE " ".
+          02 FS-CBPRINTER           PIC S9(02) COMP VALUE 0.
+          02 FS-PRINTER             PIC  X(12)      VALUE " ".
+          02 FS-CBPITCH             PIC S9(02) COMP VALUE 0.
+          02 FS-PITCH               PIC  X(05)      VALUE " ".
+          02 FS-CBFEED              PIC S9(02) COMP VALUE 0.
+          02 FS-FEED                PIC  X(30)      VALUE " ".
+          02 FS-CBWHEEL             PIC S9(02) COMP VALUE 0.
+          02 FS-WHEEL               PIC  X(30)      VALUE " ".
+          02 FS-FPRINTALL           PIC S9(02) COMP VALUE 0.
+          02 FS-BDATATYPE           PIC S9(02) COMP VALUE 0.
+          02 FS-DELETEAFTER         PIC S9(02) COMP VALUE 0.
+          02 FS-FMULTIPLERPF        PIC S9(02) COMP VALUE 0.
+          02 FS-CBDATAFILE          PIC S9(02) COMP VALUE 0.
+          02 FS-DATAFILE            PIC  X(91).
+
+       01 FS-QE-RECORD-LEN          PIC S9(04) COMP VALUE 308.
+       01 FS-FQIFNOSERVER           PIC  X(01)      VALUE X"FF".
+       01 FS-PRIORITY               PIC S9(02) COMP VALUE 5.
+       01 FS-DATETIME               PIC S9(09) COMP VALUE 0.
+       01 FS-REPEATTIME             PIC S9(04) COMP VALUE 0.
+       01 WS-USERNUM                PIC S9(04) COMP.
+       01 WS-WSNUM                  PIC S9(04) COMP.
+
+       01 FS-SQ-TYPE          PIC S9(04) COMP VALUE 130.
+       01 FS-SQ-NAME          PIC  X(11)      VALUE "FORMSSTATUS".
+       01 FS-SQ-NAME-LEN      PIC S9(04) COMP VALUE 11.
+
+       01 FS-CBKEY1                 PIC  9(04) COMP VALUE 6.
+       01 FS-OKEY1                  PIC  9(04) COMP VALUE 0.
+
+       01 FS-CBKEY2                 PIC  9(04) COMP VALUE 0.
+       01 FS-OKEY2                  PIC  9(04) COMP VALUE 0.
+
+       01 FSR-ENTRYRET.
+          05 FSR-CBID               PIC  9(04) COMP VALUE 6.
+          05 FSR-WSNUMBER           PIC  X(03).
+          05 FSR-USERNUMBER         PIC  X(03).
+          05 FSR-SEQUENCE           PIC  9(04) COMP.
+          05 FSR-STATUS             PIC  9(02) COMP.
+          05 FSR-CLASSERC           PIC  9(04) COMP.
+          05 FSR-DETAILERC          PIC  9(04) COMP.
+
+       01 FSR-CBENTRYRET            PIC  9(04) COMP.
+       01 FSR-STATUSBLK             PIC  X(12).
+       01 FSR-STATUSBLK-LEN         PIC  9(04) COMP VALUE 12.
+
+

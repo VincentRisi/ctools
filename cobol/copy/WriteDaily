@@ -1,0 +1,30 @@
+      *
+       WRITE-DAILY SECTION.
+       WRDA-000.
+           OPEN EXTEND DAILY-EXCEPTIONS.
+           IF WS-DAILY-ST1 NOT = "0"
+              MOVE " " TO WS-DAILY-ST1
+              MOVE "Daily File Busy, Press 'CANCEL To Retry"
+                TO WS-MESSAGE
+              PERFORM ERROR-MESSAGE
+              GO TO WRDA-000.
+       WRDA-010.
+           MOVE WS-DAILY-MESSAGE TO DAILY-EX-REC.
+           WRITE DAILY-EX-REC.
+           IF WS-DAILY-ST1 NOT = "0"
+              MOVE " " TO WS-DAILY-ST1
+              MOVE "Daily File Busy On Write, Press 'CANCEL' To Retry"
+                TO WS-MESSAGE
+              PERFORM ERROR-MESSAGE
+              GO TO WRDA-010.
+       WRDA-900.
+           CLOSE DAILY-EXCEPTIONS.
+           IF WS-DAILY-ST1 NOT = "0"
+              MOVE " " TO WS-DAILY-ST1
+              MOVE "Daily File Busy On CLOSE, Press 'CANCEL' To Retry"
+              TO WS-MESSAGE
+              PERFORM ERROR-MESSAGE
+              GO TO WRDA-900.
+           MOVE " " TO WS-DAILY-MESSAGE.
+       WRDA-999.
+           EXIT.

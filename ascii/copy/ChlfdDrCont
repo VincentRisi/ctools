@@ -1,0 +1,11 @@
+       FD  DRCONT-MASTER.
+       01  DRCONT-RECORD.
+           03  DC-KEY.
+               05  DC-ACCOUNT-NUMBER PIC 9(7).
+           03  DC-NAME               PIC X(40).
+           03  DC-ALT-KEY.
+               05  DC-SALESMAN       PIC X.
+               05  DC-AREA           PIC 99.
+           03  DC-AREA-NAME          PIC X(40).
+      *
+      *RECORD USED FOR TYING UP DEBTOR FILE TO A SALEMANS CALL SCHEDULE.

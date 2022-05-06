@@ -1,0 +1,6 @@
+           SELECT Fax-Parameter Assign TO Ws-CoFaxParam
+               ORGANIZATION IS INDEXED
+               LOCK MANUAL
+               ACCESS MODE IS DYNAMIC
+               FILE STATUS IS WS-FAX-STATUS
+               RECORD KEY IS Fax-PaKey.

@@ -1,0 +1,11 @@
+       FD  PRICE-MASTER.
+       01  PRICE-RECORD.
+            03  PRICE-KEY.
+                05  PRICE-ST-NUM       PIC X(15).
+            03  PRICE-DESCRIPTION      PIC X(40).
+            03  PRICE-UNIT-OF-SALE     PIC X(4).
+            03  PRICE-OLD-DEALER-PRICE PIC 9(6)V99.
+            03  PRICE-NEW-DEALER-PRICE PIC 9(6)V99.
+            03  PRICE-DEALER-DISCOUNT  PIC 9(2)V99.
+            03  PRICE-OLD-LIST-PRICE   PIC 9(6)V99.
+            03  PRICE-NEW-LIST-PRICE   PIC 9(6)V99.

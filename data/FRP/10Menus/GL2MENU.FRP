@@ -1,0 +1,69 @@
+*****************************  MAIN CONTROL MENU  ******************           
+*   *************************** GENERAL LEDGER MENU ********************       
+*   *   ************************* MAINTENANCE  MENU ***************************
+*   *   * 1. Account Entry/Edit                                               *
+*   *   * 2. Account Inquiry               15. Batch Update Of Budgets        *
+*   *   * 3. Account Short Name Inq                                           *
+*   *   *                                  16. Period/Year End Program        *
+*   *   * 4. Account Entry/Edit - LYR                                         *
+*   *   * 5. Account Enquiry - LYR         17. Maintain Data Files            *
+*   *   * 6. Account Short Name Inq - LYR      (Ensure No Terminal Is Using   *
+*   *   *                                         General Ledger Files)       *
+*   *   * 7. Journal Entry/Edit                                               *
+*   *   * 8. Batch Posting Of Journals                                        *
+*   *   *                                                                     *
+*   *   * 9. Parameter File Entry/Enquiry                                     *
+*   *   *                                                                     *
+*   *   *10. Trans Entry/Edit                                                 *
+*****   *11. Trans LYR Entry/Edit                                             *
+    *   *                                                                     *
+    *****12. Trans Enquiry                                                    *
+        *13. Trans Enquiry - Futures                                          *
+        *14. Trans Enquiry - Last Year                                        *
+        **********************ENTER SELECTION : __*****************************
+                                                                               
+                                                                               
+                                                                               
+
+Form name: Gl2Menu                         size: 1206  bytes
+height: 26    width: 79    number of fields: 2              
+
+Field name: SELECTION                                        
+Row: 22   Column: 48   Width: 2                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+                                 
+ ******************************* 
+ *  COLOR PALETTE INFORMATION  * 
+ ******************************* 
+                                 
+            Caption Color: 4     
+               Line Color: 7     
+                                 
+                                 
+        *************************
+        *   I N T E N S I T Y   *
+*********************************
+* Color *  Red  * Green *  Blue *
+*********************************
+*   0   *   0   *   3   *   0   *
+*   1   *   0   *   2   *   0   *
+*   2   *   0   *   3   *   3   *
+*   3   *   0   *   2   *   2   *
+*   4   *   3   *   3   *   3   *
+*   5   *   2   *   2   *   2   *
+*   6   *   3   *   3   *   0   *
+*   7   *   3   *   0   *   0   *
+*********************************
+  

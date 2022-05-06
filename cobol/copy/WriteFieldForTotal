@@ -1,0 +1,19 @@
+      *
+        WRITE-FIELD-FORTOTAL SECTION.
+        WFF-000.
+            CALL "WRITEFIELD" USING F-ERROR1
+                                    F-FORM
+                                    F-FIELDNAME
+                                    F-CBFIELDNAME
+                                    F-INDEX
+                                    F-EDNAMEFIELDFORTOTAL
+                                    F-CBFIELDLENGTH
+                                    F-TYPE.
+            IF F-ERROR1 NOT = 0
+                DISPLAY "WRITEFIELD FOREIGN-TOTAL ERROR"
+                DISPLAY F-NAMEFIELD
+                DISPLAY F-ERROR1
+                PERFORM ERROR-010
+                STOP RUN.
+        WFF-999.
+            EXIT.

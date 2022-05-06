@@ -1,0 +1,8 @@
+           SELECT TOOLKITS ASSIGN TO Ws-Toolkit
+               ORGANIZATION IS INDEXED
+               LOCK MANUAL
+               ACCESS MODE IS DYNAMIC
+               FILE STATUS IS WS-TOOLKIT-STATUS
+               RECORD KEY IS TO-KEY
+                ALTERNATE RECORD KEY IS
+                     TO-COMPONENT-NUMBER WITH DUPLICATES.

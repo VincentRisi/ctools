@@ -1,0 +1,13 @@
+       FD  STKRECEIPTSLY-FILE.
+       01  STOCK-RECEIPTSLY-REC.
+           03  STRELY-KEY.
+               05  STRELY-TRANSACTION-NUMBER  PIC 9(6).
+               05  STRELY-TRANSACTION-CODE    PIC 9.
+           03  STRELY-STOCK-NUMBER            PIC X(15).
+           03  STRELY-QUANTITY                PIC S9(5).
+           03  STRELY-UNIT-PRICE              PIC 9(8)V99.
+           03  STRELY-TOTAL-PRICE             PIC 9(8)V99.
+           03  STRELY-REFERENCE-NO            PIC X(20).
+           03  STRELY-REFERENCE-DATE          PIC 9(8).
+           03  STRELY-ORDER-NUMBER            PIC X(20).
+      *

@@ -1,0 +1,66 @@
+*****************************  MAIN CONTROL MENU  *******************          
+*   *************************** DEBTOR CONTROL MENU *********************      
+*   *   *************************MAINTENANCE & ENQUIRY ************************
+*   *   *                                                                     *
+*   *   *  1. Debtor Number Entry/Edit          13. Total Number of Acc's     *
+*   *   *  2. Debtor Number Enquiry                                           *
+*   *   *  3. Debtor Credit Limit/Supply Field  14. Account Special Discount  *
+*   *   *  4. Debtor Date Created Entry/Edit         By StockNumber           *
+*   *   *  5. Debtor Salesman Field Entry/Edit  15. Account Special Discount  *
+*   *   *                                            By Range of Stock        *
+*   *   *  6. Debtor Name Enquiry                                             *
+*   *   *  7. Debtor Account Status Enquiry     16. Debtor Trans Inquiry      *
+*   *   *                                                                     *
+*   *   *  8. Debtor Payment Allocation                                       *
+*   *   *  9. Debtor Interest Allocation                                      *
+*   *   *                                                                     *
+*   *   * 10. Debtor Call Schedule Entry/Edit                                 *
+*   *   *                                                                     *
+*****   * 11. Special Mail List Entry/Edit                                    *
+    *   *                                                                     *
+    ***** 12. Special Delivery Info For Accounts                              *
+        *                                                                     *
+        ************************ENTER SELECTION : __***************************
+
+Form name: Dr2Menu                         size: 1251  bytes
+height: 23    width: 79    number of fields: 2              
+
+Field name: SELECTION                                        
+Row: 22   Column: 50   Width: 2                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+                                 
+ ******************************* 
+ *  COLOR PALETTE INFORMATION  * 
+ ******************************* 
+                                 
+            Caption Color: 4     
+               Line Color: 7     
+                                 
+                                 
+        *************************
+        *   I N T E N S I T Y   *
+*********************************
+* Color *  Red  * Green *  Blue *
+*********************************
+*   0   *   0   *   3   *   0   *
+*   1   *   0   *   2   *   0   *
+*   2   *   0   *   3   *   3   *
+*   3   *   0   *   2   *   2   *
+*   4   *   3   *   3   *   3   *
+*   5   *   2   *   2   *   2   *
+*   6   *   3   *   3   *   0   *
+*   7   *   3   *   0   *   0   *
+*********************************
+  

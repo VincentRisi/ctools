@@ -1,0 +1,31 @@
+      *
+       CLEAR-SCREEN-FORM SECTION.
+       CLSC-000.
+             MOVE " " TO OFIS-NAME
+                         OFIS-FIRSTNAME
+                         OFIS-TITLE
+                         OFIS-AFFILIATION
+                         OFIS-CATEGORY
+                         OFIS-PHONE
+                         OFIS-PHONE-LABEL
+                         OFIS-ADDRESS1
+                         OFIS-ADDRESS2
+                         OFIS-ADDRESS3
+                         OFIS-FAX
+                         OFIS-FAX-LABEL
+                         OFIS-ADDRESS4
+                         OFIS-ADDRESS5
+                         OFIS-ADDRESS6.
+             MOVE 1 TO SUB-25.
+       CLSC-005.
+             MOVE " " TO OFIS-LINE-DESC (SUB-25).
+             IF SUB-25 < 200
+                ADD 1 TO SUB-25
+                GO TO CLSC-005.
+                
+             MOVE 1 TO SUB-25.
+             GO TO CLSC-999.
+       CLSC-010.
+      *     UNLOCK OFIS-FILE.
+       CLSC-999.
+            EXIT.

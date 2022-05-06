@@ -1,0 +1,6 @@
+python fohtotext.py -r invoice -T .temp0.txt InPrintCo01
+./text2pdf .temp0.txt -fCourier-Bold -t8 -s10 -x842 -y595 -c135 -l48 > .temp1.pdf
+pdftk .temp1.pdf background invoice01.pdf output .temp2.pdf
+pdftk .temp2.pdf cat 1-endwest output InPrintCo01.pdf
+#--- add any extra commands here - perhap cups printing
+#--- or sendfax via hylaFAX

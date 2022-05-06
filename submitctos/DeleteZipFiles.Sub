@@ -1,0 +1,127 @@
+Screen Setup
+
+Y
+
+
+Y
+
+100
+
+Path
+
+CTJ
+
+Delete
+Sl* St* DR* DB*
+
+Path
+
+CTN
+
+Delete
+Sl* St* DR* DB*
+
+Path
+
+CTC
+
+Delete
+Sl* St* DR* DB*
+
+Path
+
+GRC
+
+Delete
+Sl* St* DR* DB*
+
+
+Path
+
+Orx
+
+Delete
+Sl* St* DR* DB*
+
+Path
+
+6Br
+
+Delete
+Sl* St* DR* DB*
+
+Path
+
+Qtm
+
+Delete
+Sl* St* DR* DB*
+
+
+Path
+
+SFJ
+
+Delete
+Sl* St* DR* DB*
+
+
+Path
+
+CSC
+
+Delete
+Sl* St* DR* DB*
+
+Path
+
+Program
+
+LCOP
+@<Temp>Del.Fls
+
+[D1]<Company>
+
+y
+
+Path
+D1
+Company
+
+Screen Setup
+
+Y
+
+
+Y
+W B
+100
+
+Type
+[Win]<Temp>DelZipFilesMessage1
+
+Rename
+MonthEnd*
+MonthEnd*
+
+
+
+1
+
+Lcop
+*
+
+[Win]<Company>
+
+N
+N
+
+
+
+
+Path
+Win
+Program
+
+***** Month-end Zip Files Deleted ****
+

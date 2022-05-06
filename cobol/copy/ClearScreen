@@ -1,0 +1,24 @@
+      *
+       CLEAR-SCREEN SECTION.
+       CLEAR-010.
+           MOVE SPACES TO WS-MESSAGE
+           MOVE 0500 TO POS.
+       CLEAR-015.
+           DISPLAY WS-MESSAGE AT POS.
+           IF POS < 3400
+              ADD 79 TO POS
+              GO TO CLEAR-015.
+        CLEAR-020.
+           CALL "XE4".
+      *     CALL "&POSFRAMECURSOR" USING W-ERC
+      *                                  W-FRAME
+      *                                  W-COL
+      *                                  W-LINE.
+      * CLEAR-015.
+      *     CALL X"E4".
+      * CLEAR-020.
+      *     CALL X"B0" USING 0 
+      *                      W-DEFINE-ESCAPE.
+       CLEAR-999.
+           EXIT.
+      *

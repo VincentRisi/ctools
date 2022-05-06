@@ -1,0 +1,246 @@
+Dis Cluster
+
+APT Terminate
+S
+
+
+Delete
+[Win]<Organizer>SS.Log
+
+Screen Setup
+
+Y
+
+
+Y
+W B
+100
+
+Type
+<Temp>TapebackupvolMessage1
+
+1
+
+
+Path
+Win
+PS01
+
+Screen Setup
+
+Y
+
+
+Y
+W B
+100
+
+Type
+<Temp>TapebackupvolMessage2/Zip
+*/*
+WeekEnd.Zip
+No
+
+
+
+
+1
+
+Delete
+*/* [d1]<Ps01>*/* 
+
+
+Path
+Win
+Program
+
+
+C/2 Run
+MainCont
+
+-N +P
+1
+CTJ-MONTH
+3
+2
+18
+X
+<CTJ>DelSch
+I
+S
+
+
+2
+1
+12
+A
+Z
+R
+
+
+2
+27
+2
+
+ZZZZZZZZ
+
+
+
+3
+1
+19
+A
+Z
+A
+N
+
+20
+X
+<Temp>AA1
+CN
+
+
+20
+X
+<Temp>AA2
+DN
+
+
+
+
+2
+
+11
+X
+<TEMP>Quotes
+
+
+
+
+
+8
+9
+** RESET INPUTS **
+
+
+
+E
+
+
+Screen Setup
+
+Y
+
+
+Y
+W B
+100
+
+Path
+
+
+
+Orthello
+
+ISAM Terminate 
+DeInstall XQS Fax Server
+;DeInstall Fax Server          / Old Murata fax
+;DeInstall Mail Service
+;De Qu Man
+
+Delete
+[d0]<$*>* [d1]<$*>*
+
+
+Delete
+[d1]<$*>*
+
+
+Delete
+[d1]<XFaxFile>*
+
+
+Delete
+<*>*-old <*>*.ts <Spl>* <*>*.tmp
+
+Rename
+<CTJ>DelSch
+<Spl>DelSch
+y
+
+Delete
+[D1]<Spl>*
+
+
+Tape Retension
+
+Delete
+[Win]<Organizer>SS.Log
+
+Vol Archive
+Win
+Orthello
+
+
+No
+[Qic]
+Yes
+[D1]<Spl>VolArchive.Lst
+
+Yes
+Yes
+Yes
+
+
+Delete
+<$*>*
+
+
+;Print
+;<Spl>DelSch
+;[SplBStr]
+
+Rename
+<Temp>AA*
+<Spl>AA*
+
+
+Print
+<Spl>AA1 <Spl>AA2
+[SplBStr]
+
+Rename
+<Temp>Quotes
+<Spl>Quotes
+
+Copy
+<Temp>Compressed.Key
+[SplXtra]
+
+Print
+<Spl>Quotes
+[SplXtra]
+
+** Restoring to [D1] drive as a further backup **
+Path
+D1
+Sys
+
+Orthello
+
+Restore Archive
+
+
+
+Yes
+
+
+
+
+
+Yes
+
+Type
+<Temp>TapeVolMessage
+Boot
+

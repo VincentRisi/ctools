@@ -1,0 +1,858 @@
+ DELETING OF FILES & ALL DIRECTORIES STARTS 
+
+ FILES UPDATED ON 1ST APRIL 2008 
+
+Screen Setup
+
+Yes
+
+
+Yes
+
+100
+Yes
+
+
+Path
+D1
+Sys
+
+Orthello
+
+
+
+
+Rem Dir
+$000
+
+Yes
+
+
+Rem Dir
+$Gps
+
+Yes
+
+
+Rem Dir
+6Bar
+
+Yes
+
+
+Rem Dir
+6BarInd
+
+Yes
+
+
+Rem Dir
+6Br
+
+Yes
+
+
+Rem Dir
+APTNet
+
+Yes
+
+
+Rem Dir
+APTNetGen
+
+Yes
+
+
+Rem Dir
+Beltel
+
+Yes
+
+Rem Dir
+BelZip
+
+Yes
+
+
+Rem Dir
+Booze
+
+Yes
+
+
+Rem Dir
+CDat
+
+Yes
+
+Rem Dir
+Chris
+
+Yes
+
+Rem Dir
+Cobol2
+
+Yes
+
+Rem Dir
+Comp2001
+
+Yes
+
+
+Rem Dir
+Comp2002
+
+Yes
+
+
+Rem Dir
+Comp2003
+
+Yes
+
+Rem Dir
+Comp2004
+
+Yes
+
+
+Rem Dir
+Comp2005
+
+Yes
+
+Rem Dir
+Comp2006
+
+Yes
+
+
+Rem Dir
+Company
+
+Yes
+
+
+Rem Dir
+CR
+
+Yes
+
+
+Rem Dir
+CRZip
+
+Yes
+
+
+Rem Dir
+CSC
+
+Yes
+
+
+Rem Dir
+CTJ
+
+Yes
+
+
+Rem Dir
+CTN
+
+Yes
+
+
+Rem Dir
+Data
+
+Yes
+
+
+Rem Dir
+DataInd
+
+Yes
+
+Rem Dir
+Dr
+
+Yes
+
+
+Rem Dir
+DrZip
+
+Yes
+
+
+Rem Dir
+ECredt
+
+Yes
+
+Rem Dir
+EInvoc
+
+Yes
+
+Rem Dir
+EPOrdr
+
+Yes
+
+Rem Dir
+EQuote
+
+Yes
+
+Rem Dir
+ERemit
+
+Yes
+
+Rem Dir
+EState
+
+Yes
+
+Rem Dir
+Exec
+
+Yes
+
+
+Rem Dir
+Fms.Fp
+
+Yes
+
+
+Rem Dir
+Forms
+
+Yes
+
+
+Rem Dir
+Formsc
+
+Yes
+
+
+Rem Dir
+FPlus
+
+Yes
+
+
+Rem Dir
+GDat
+
+Yes
+
+
+Rem Dir
+GDatInd
+
+Yes
+
+
+Rem Dir
+GL
+
+Yes
+
+
+Rem Dir
+GLZip
+
+Yes
+
+
+Rem Dir
+GPS
+
+Yes
+
+
+Rem Dir
+GRC
+
+Yes
+
+
+Rem Dir
+HKY
+
+Yes
+
+
+Rem Dir
+Hunk
+
+Yes
+
+
+Rem Dir
+HunkInd
+
+Yes
+
+Rem Dir
+Image
+
+Yes
+
+
+Rem Dir
+Installed
+
+Yes
+
+
+Rem Dir
+ISAM
+
+Yes
+
+
+Rem Dir
+JSC
+
+Yes
+
+
+Rem Dir
+Kris
+
+Yes
+
+
+Rem Dir
+KrisInd
+
+Yes
+
+
+Rem Dir
+Krs
+
+Yes
+
+
+Rem Dir
+Mail.Admin
+
+Yes
+
+
+Rem Dir
+Mail.Andre
+
+Yes
+
+Rem Dir
+Mail.Andrew
+
+Yes
+
+Rem Dir
+Mail.Annebel
+
+Yes
+
+
+Rem Dir
+Mail.Board
+
+Yes
+
+
+Rem Dir
+Mail.Cape
+
+Yes
+
+
+Rem Dir
+Mail.Counter
+
+Yes
+
+
+Rem Dir
+Mail.Daryl
+
+Yes
+
+
+Rem Dir
+Mail.Dead
+
+Yes
+
+Rem Dir
+Mail.Don
+
+Yes
+
+
+Rem Dir
+Mail.DrFax
+
+Yes
+
+
+Rem Dir
+Mail.Duane
+
+Yes
+
+
+Rem Dir
+Mail.Erika
+
+Yes
+
+
+Rem Dir
+Mail.John
+
+Yes
+
+
+Rem Dir
+Mail.Linbro
+
+Yes
+
+Rem Dir
+Mail.Lizzie
+
+Yes
+
+
+Rem Dir
+Mail.Lynn
+
+Yes
+
+
+Rem Dir
+Mail.Memo
+
+Yes
+
+
+Rem Dir
+Mail.Natal
+
+Yes
+
+
+Rem Dir
+Mail.Ray
+
+Yes
+
+
+Rem Dir
+Mail.Raymond
+
+Yes
+
+
+Rem Dir
+Mail.Rosa
+
+Yes
+
+
+Rem Dir
+Mail.Sam
+
+Yes
+
+Rem Dir
+Mail.Samuel
+
+Yes
+
+
+Rem Dir
+Mail.Sched
+
+Yes
+
+
+Rem Dir
+Mail.Sergio
+
+Yes
+
+
+Rem Dir
+Mail.Sipho
+
+Yes
+
+
+Rem Dir
+Mail.Steve
+
+Yes
+
+
+Rem Dir
+Mail.Store
+
+Yes
+
+
+Rem Dir
+Mail.Store2
+
+Yes
+
+
+Rem Dir
+Mail.Store3
+
+Yes
+
+
+Rem Dir
+Mail.Stuart
+
+Yes
+
+
+Rem Dir
+Mail.Sydwell
+
+Yes
+
+
+Rem Dir
+Mail.XFaxes
+
+Yes
+
+
+Rem Dir
+Mail.Yvonne
+
+Yes
+
+
+Rem Dir
+MailService
+
+Yes
+
+
+Rem Dir
+MI
+
+Yes
+
+
+Rem Dir
+Organizer
+
+Yes
+
+
+Rem Dir
+Orx
+
+Yes
+
+
+Rem Dir
+Oryx
+
+Yes
+
+
+Rem Dir
+OryxInd
+
+Yes
+
+
+Rem Dir
+Payslyp
+
+Yes
+
+
+Rem Dir
+PayZip
+
+Yes
+
+
+Rem Dir
+PFD
+
+Yes
+
+
+Rem Dir
+Program
+
+Yes
+
+
+Rem Dir
+PS01
+
+Yes
+
+
+Rem Dir
+PS02
+
+Yes
+
+
+Rem Dir
+PS03
+
+Yes
+
+
+Rem Dir
+PS04
+
+Yes
+
+
+Rem Dir
+PS05
+
+Yes
+
+
+Rem Dir
+PS06
+
+Yes
+
+
+Rem Dir
+PS07
+
+Yes
+
+
+Rem Dir
+PS08
+
+Yes
+
+
+Rem Dir
+PS09
+
+Yes
+
+
+Rem Dir
+PS10
+
+Yes
+
+
+Rem Dir
+PS11
+
+Yes
+
+
+Rem Dir
+PS12
+
+Yes
+
+
+Rem Dir
+Qtm
+
+Yes
+
+
+Rem Dir
+Qutm
+
+Yes
+
+
+Rem Dir
+QutmInd
+
+Yes
+
+
+Rem Dir
+RqTCP
+
+Yes
+
+
+Rem Dir
+Safi
+
+Yes
+
+
+Rem Dir
+SafiInd
+
+Yes
+
+
+Rem Dir
+Sdl
+
+Yes
+
+
+Rem Dir
+Sfi
+
+Yes
+
+
+Rem Dir
+Sfj
+
+Yes
+
+
+Rem Dir
+Spl
+
+Yes
+
+
+Rem Dir
+SPSoft
+
+Yes
+
+
+Rem Dir
+Stuff
+
+Yes
+Rem Dir
+Sys
+
+Yes
+
+
+Rem Dir
+Tax
+
+Yes
+
+
+Rem Dir
+TCP
+
+Yes
+
+
+Rem Dir
+TCP/IP.CSock
+
+Yes
+
+
+Rem Dir
+TCP/IP.FAPI
+
+Yes
+
+
+Rem Dir
+TCP/IP.FTP
+
+Yes
+
+
+Rem Dir
+TCP/IP.Sock
+
+Yes
+
+
+Rem Dir
+Temp
+
+Yes
+
+Rem Dir
+UIF
+
+Yes
+
+Rem Dir
+VPC
+
+Yes
+
+
+Rem Dir
+WG
+
+Yes
+
+
+Rem Dir
+WP
+
+Yes
+
+Rem Dir
+WPEc
+
+Yes
+
+
+Rem Dir
+WPSja
+
+Yes
+
+
+Rem Dir
+XFax
+
+Yes
+
+
+Rem Dir
+XFaxFile
+
+Yes
+
+Rem Dir
+Zip
+
+Yes
+
+
+Path
+Win
+Program
+
+
+***** D1 DRIVE HAS BEEN CLEARED OF ALL FOLDERS AND FILES *******
+

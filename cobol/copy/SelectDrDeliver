@@ -1,0 +1,6 @@
+           SELECT DEBTOR-DELIVERY ASSIGN TO Ws-DrDeliver
+               ORGANIZATION IS INDEXED
+               LOCK MANUAL
+               ACCESS MODE IS DYNAMIC
+               FILE STATUS IS Ws-DrDel-STATUS
+               RECORD KEY IS DRDEL-KEY.

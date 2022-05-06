@@ -1,0 +1,11 @@
+python fohtotext.py -r statement -T /ctools/pdf$2/S$1.temp0.txt /ctools/pdf$2/S$1
+text2pdf /ctools/pdf$2/S$1.temp0.txt -fCourier-Bold -x595 -y842 -l66 -c88 -V18 -H41 > /ctools/pdf$2/S$1.temp1.pdf
+pdftk /ctools/pdf$2/S$1.temp1.pdf background /ctools/dev/source/print/StatementOverlay$2.pdf output /ctools/pdf$2/S$1.pdf
+
+rm /ctools/pdf$2/S$1
+rm /ctools/pdf$2/S$1.temp0.txt
+rm /ctools/pdf$2/S$1.temp1.pdf
+
+#--So far the variables which will be specified from inside the COBOL programs are:                
+#---$1 = The Account Number                   e.g. 0300150
+#---$2 = The company number from 01 to 12     e.g. 07                                              

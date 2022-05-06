@@ -1,0 +1,20 @@
+      *
+       READ-FIELD-NUMERIC SECTION.
+       READ-N000.
+            CALL "READFIELD" USING F-ERROR1
+                                   F-FORM
+                                   F-FIELDNAME
+                                   F-CBFIELDNAME
+                                   F-INDEX
+                                   F-NAMEFIELDNUM
+                                   F-CBFIELDLENGTH
+                                   F-CBFIRSTLINE
+                                   F-TYPE.
+            IF F-ERROR1 NOT = 0
+                DISPLAY "READFIELD NUMERIC ERROR"
+                DISPLAY F-ERROR1
+                DISPLAY F-FIELDNAME
+                STOP RUN.
+            PERFORM ERROR-020.
+       READ-N999.
+           EXIT.

@@ -1,0 +1,26 @@
+Sort
+[Win]<Oryx>StReceiptLY
+[Win]<Oryx>Temp
+@[Win]<Temp>StRecSort.Key
+
+[Win]<$>SortWorkFile1
+[Win]<$>SortWorkFile2
+
+Rename
+[Win]<Oryx>Temp
+[Win]<Oryx>StReceiptLY
+Y
+
+I Reo
+[Win]<Oryx>StReceiptLY
+<OryxInd>StReceiptLY.Ind
+
+
+
+@[Win]<Temp>StRec.Key
+5
+100
+50
+500
+
+Y

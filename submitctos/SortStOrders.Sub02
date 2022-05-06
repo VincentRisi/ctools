@@ -1,0 +1,26 @@
+Sort
+[Win]<GDat>StOrders
+[Win]<GDat>Temp
+@[Win]<Temp>StOrderSort.Key
+
+[Win]<$>SortWorkFile1
+[Win]<$>SortWorkFile2
+
+Rename
+[Win]<GDat>Temp
+[Win]<GDat>StOrders
+Y
+
+I Reo
+[Win]<GDat>StOrders
+<GDatInd>StOrders.Ind
+
+
+
+@[Win]<Temp>StOrders.Key
+5
+100
+50
+500
+
+Y

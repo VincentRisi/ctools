@@ -1,0 +1,51 @@
+      *
+       SETUP-MERGE-OVERDUE-FOR-PDF SECTION.
+       SUMQFP-010.
+      * WS-PRINTER-SAVE IS THE ACTUAL PRINTER NAME
+      * WS-PRINTER IS THE FILE NAME BEING PRINTED
+      
+           IF WS-AUTO-FAX NOT > " "
+               GO TO SUMQFP-999.
+
+           MOVE "SETUP MERGE OVERDUE" TO WS-MESSAGE
+           PERFORM ERROR-MESSAGE.
+           MOVE PAGE-CNT TO WS-MESSAGE
+           PERFORM ERROR1-000
+           MOVE WS-AUTO-FAX TO WS-MESSAGE
+           PERFORM ERROR-MESSAGE
+           PERFORM ERROR1-020.
+
+          MOVE 
+          CONCATENATE('PrintMergeDrOverdue ', ' ', WS-CO-NUMBER, ' ',
+           TRIM(WS-PRINTER-SAVE), ' ', TRIM(WS-PRINTER-PAGE1), ' ', 
+            TRIM(WS-PRINTER-PAGE2), ' ', 
+            PAGE-CNT, ' ', WS-AUTO-FAX, ' ', WS-ANSWER, ' ',
+               WS-FAX-NUMBER)
+               TO WS-COMMAND-LINE.
+      
+      *    DISPLAY WS-COMMAND-LINE AT 3001
+      *    PERFORM ERROR-010.
+
+          CALL "SYSTEM" USING WS-COMMAND-LINE
+                     RETURNING W-STATUS.
+       SUMQFP-999.
+           EXIT.
+
+      *So far the variables which will be specified from inside the
+      *   COBOL programs are:
+      *$1 = The company number from 01 to 12     e.g. 07
+      *$2 = The Printername to print the file to e.g. MP140
+      *$3 = The Print File name for Page 1
+      *$4 = The Print File Name for Page 2 and more
+      *$5 = The Page-cnt
+      *$6 = Auto-Fax E=Email, F=Fax
+
+      *****************************************************************
+      * printing routine - sends disk file to printer....
+      *    MOVE "lp -d" WS-PRINTER & WS-PRINT-FILE
+      * E.G. "/ctools/dev/source/cobol/TestStuff.cob"    TO W-PRINTCOM1
+      *    MOVE "/ctools/dev/source/cobol/TestStuff.cob" TO W-PRINTCOM2
+      *****************************************************************
+
+      * add any extra commands here - perhaps cups printing
+      * or sendfax via hylaFAX

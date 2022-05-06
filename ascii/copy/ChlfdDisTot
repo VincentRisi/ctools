@@ -1,0 +1,52 @@
+       FD  DISTRIBUTIONS.
+       01  DIST-REC.
+           03  DIST-KEY.
+               05  DIST-REC-NO           PIC 9.
+           03  DIST-INVOICEWEEK          PIC S9(8)V99.
+           03  DIST-INVOICEPTD           PIC S9(8)V99.
+           03  DIST-INVOICEYTD           PIC S9(8)V99.
+           03  DIST-PAYMENTWEEK          PIC S9(8)V99.
+           03  DIST-PAYMENTPTD           PIC S9(8)V99.
+           03  DIST-PAYMENTYTD           PIC S9(8)V99.
+           03  DIST-RDCHEQUEWEEK         PIC S9(8)V99.
+           03  DIST-RDCHEQUEPTD          PIC S9(8)V99.
+           03  DIST-RDCHEQUEYTD          PIC S9(8)V99.
+           03  DIST-JOURNALDRWEEK        PIC S9(8)V99.
+           03  DIST-JOURNALDRPTD         PIC S9(8)V99.
+           03  DIST-JOURNALDRYTD         PIC S9(8)V99.
+           03  DIST-JOURNALCRWEEK        PIC S9(8)V99.
+           03  DIST-JOURNALCRPTD         PIC S9(8)V99.
+           03  DIST-JOURNALCRYTD         PIC S9(8)V99.
+           03  DIST-CNOTEWEEK            PIC S9(8)V99.
+           03  DIST-CNOTEPTD             PIC S9(8)V99.
+           03  DIST-CNOTEYTD             PIC S9(8)V99.
+           03  DIST-INTERESTWEEK         PIC S9(8)V99.
+           03  DIST-INTERESTPTD          PIC S9(8)V99.
+           03  DIST-INTERESTYTD          PIC S9(8)V99.
+           03  DIST-DISCOUNTWEEK         PIC S9(8)V99.
+           03  DIST-DISCOUNTPTD          PIC S9(8)V99.
+           03  DIST-DISCOUNTYTD          PIC S9(8)V99.
+           03  DIST-ADDONWEEK            PIC S9(8)V99.
+           03  DIST-ADDONPTD             PIC S9(8)V99.
+           03  DIST-ADDONYTD             PIC S9(8)V99.
+           03  DIST-BDEBTWEEK            PIC S9(8)V99.
+           03  DIST-BDEBTPTD             PIC S9(8)V99.
+           03  DIST-BDEBTYTD             PIC S9(8)V99.
+           03  DIST-ACCRECWEEK           PIC S9(8)V99.
+           03  DIST-ACCRECPTD            PIC S9(8)V99.
+           03  DIST-ACCRECYTD            PIC S9(8)V99.
+           03  GST-AMT-TAXED-WEEK        PIC S9(8)V99.
+           03  GST-AMT-TAXED-PTD         PIC S9(8)V99.
+           03  GST-AMT-TAXED-YTD         PIC S9(8)V99.
+           03  GST-AMT-TAXABLE-WEEK      PIC S9(8)V99.
+           03  GST-AMT-TAXABLE-PTD       PIC S9(8)V99.
+           03  GST-AMT-TAXABLE-YTD       PIC S9(8)V99.
+           03  GST-AMT-NONTAXABLE-WEEK   PIC S9(8)V99.
+           03  GST-AMT-NONTAXABLE-PTD    PIC S9(8)V99.
+           03  GST-AMT-NONTAXABLE-YTD    PIC S9(8)V99.
+           03  GST-AMT-EXPORT-WEEK       PIC S9(8)V99.
+           03  GST-AMT-EXPORT-PTD        PIC S9(8)V99.
+           03  GST-AMT-EXPORT-YTD        PIC S9(8)V99.
+      *
+      *GST & DISTRIBUTION RECORDS COMBINED
+      *

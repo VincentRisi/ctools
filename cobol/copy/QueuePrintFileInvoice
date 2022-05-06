@@ -1,0 +1,23 @@
+      *
+       QUEUE-PRINT-FILE SECTION.
+           MOVE 20         TO W-CBSPOOLERFILESPEC.
+           MOVE Ws-Printer TO W-SPOOLERFILESPEC.
+      *    IF WS-INVCRED = "I" OR = "P" OR = "Q"
+      *         MOVE "[Sys]<Spl>InPrintCo" TO W-SPOOLERFILESPEC
+      *    ELSE                
+      *         MOVE "[Sys]<Spl>CrPrintCo" TO W-SPOOLERFILESPEC.
+      *    IF WS-INVCRED = "D"
+      *         MOVE "[Sys]<Spl>DBPrintCo" TO W-SPOOLERFILESPEC.
+           CALL "&ADDQUEUEENTRY" USING
+                                 W-ERROR
+                                 W-QUEUENAME
+                                 W-QUEUENAMELENGTH
+                                 W-Q-NO-SERVER
+                                 W-PRIORITY
+                                 W-QUEUETYPE
+                                 W-QUEUEENTRYBUFFERSEND
+                                 W-QUEUEENTRYBUFFERLENGTH
+                                 W-DATE-TIME
+                                 W-REPEATTIME.
+       QUEUE-PRINT-EXIT.
+           EXIT.

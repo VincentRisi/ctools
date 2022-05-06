@@ -1,0 +1,19 @@
+      *
+        WRITE-FIELD-INDEX SECTION.
+        WRITE-IND000.
+            CALL "WRITEFIELD" USING F-ERROR1
+                                    F-FORM
+                                    F-FIELDNAME
+                                    F-CBFIELDNAME
+                                    F-INDEX
+                                    F-EDNAMEFIELDIND
+                                    F-CBFIELDLENGTH
+                                    F-TYPE.
+            IF F-ERROR1 NOT = 0
+                DISPLAY "WRITEFIELD INDEX ERROR"
+                DISPLAY F-ERROR1
+                DISPLAY F-NAMEFIELD
+                PERFORM ERROR-010
+                STOP RUN.
+        WRITE-IND999.
+            EXIT.

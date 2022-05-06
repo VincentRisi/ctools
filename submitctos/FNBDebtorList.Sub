@@ -1,0 +1,58 @@
+Screen Setup
+
+Y
+
+
+Y
+W B
+100Type
+<Temp>FNBMessage1
+Copy
+<Ctj>Dr8
+<Spl>CtjDr8.Txt
+Y
+
+Copy
+<Ctn>Dr8
+<Spl>CtnDr8.Txt
+Y
+
+Copy
+<GRC>Dr8
+<Spl>GrcDr8.Txt
+Y
+
+Copy
+<Sfj>Dr8
+<Spl>SfjDr8.Txt
+Y
+
+Copy
+<CSC>Dr8
+<Spl>CSCDr8.Txt
+Y
+
+Path
+Win
+Spl
+
+
+Ms Write
+*Dr8.Txt
+
+
+Yes
+
+
+***** Sending a Copy of DR8 to [SplCheque] for Yvonne  ****
+
+Print
+<Temp>Compress*Key <Spl>*dr8.Txt
+[SplCheque]
+
+
+Path
+Win
+Program
+
+**** FNB Debtor List Submit Routine Finished.  *****

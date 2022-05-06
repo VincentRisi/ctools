@@ -1,0 +1,7 @@
+       FD  STPR-MASTER.
+       01  STPR-RECORD.
+           03  STPR-KEY.
+               05  STPR-STOCKNUMBER    PIC X(15).
+           03  STPR-PRICE              PIC 9(6)V99.
+           03  STPR-DATE               PIC 9(8).
+      *

@@ -1,0 +1,23 @@
+       FD  CRFXTRANS-FILE.
+       01  CRFXTRANS-REC.
+           03  CRFXTRANS-KEY. 
+               05  CRFXTRANS-PORDER-NUMBER     PIC X(20).
+           03  CRFXTRANS-ALT-KEY.
+               05  CRFXTRANS-FBC-NUMBER        PIC X(20).
+           03  CRFXTRANS-ACC-NUMBER            PIC 9(7).
+           03  CRFXTRANS-CURRENCY-TYPE         PIC X(5).
+           03  CRFXTRANS-INITIAL-FOREIGN-AMT   PIC 9(8)V99.
+           03  CRFXTRANS-FBC-COVER-AMT         PIC 9(8)V99.
+           03  CRFXTRANS-UNAPPLIED-AMT         PIC 9(8)V99.
+           03  CRFXTRANS-EXCHANGE-RATE         PIC 9(3)V9(5).
+           03  CRFXTRANS-LOCAL-AMT             PIC 9(8)V99.
+           03  CRFXTRANS-ORDER-DATE            PIC 9(8).
+           03  CRFXTRANS-RECEIPT-DUE-DATE      PIC 9(8).
+           03  CRFXTRANS-PAY-DUE-DATE          PIC 9(8).
+           03  CRFXTRANS-PAYMENT-DATE          PIC 9(8).
+           03  CRFXTRANS-INV-DETAIL OCCURS 10.
+               05  CRFXTRANS-INV-NO            PIC X(10).
+               05  CRFXTRANS-INV-FOREIGN-AMT   PIC 9(8)V99.
+               05  CRFXTRANS-INV-DATE          PIC 9(8).
+               05  CRFXTRANS-INV-PAY-DATE      PIC 9(8).
+      *

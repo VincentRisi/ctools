@@ -1,0 +1,6 @@
+           SELECT CRREMIT-TRANS-FILE ASSIGN TO Ws-CrRemitTrans
+               ORGANIZATION IS INDEXED
+               LOCK MANUAL
+               ACCESS MODE IS DYNAMIC
+               FILE STATUS IS WS-REMITTRANS-STATUS
+               RECORD KEY IS CRREMTR-KEY.

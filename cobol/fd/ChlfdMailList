@@ -1,0 +1,16 @@
+       FD  MAIL-MASTER.
+       01  MAIL-RECORD.
+           03  ML-KEY.
+               05  ML-NUMBER         PIC 9(7).
+           03  ML-ALT-KEY.
+               05  ML-CO-NAME        PIC X(31).
+           03  ML-ADDRESS1           PIC X(27).
+           03  ML-ADDRESS2           PIC X(20).
+           03  ML-POST-CODE          PIC X(4).
+           03  ML-TELE-CODE          PIC X(10).
+           03  ML-TELEPHONE          PIC X(11).
+           03  ML-INITIALS           PIC X(7).
+           03  ML-NAME               PIC X(18).
+      *
+      *THIS RECORD IS CREATED BY USING MAILLIST.INT AND
+      * CHLFDMAILSEQUENTIAL

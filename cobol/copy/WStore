@@ -1,0 +1,84 @@
+       01  W-STORE.
+           03  W-ACCEPT                 PIC X.
+           03  W-ERROR                  PIC 9(4) COMP.
+           03  W-ZERO                   PIC 9(4) COMP.
+           03  W-QUEUENAME              PIC X(3).
+           03  W-QUEUENAMELENGTH        PIC 9(4) COMP.
+           03  W-QUEUEENTRYHANDLE       PIC 9(8) COMP.
+           03  W-QUEUEENTRYBUFFER       PIC X(124).
+           03  W-QUEUEENTRYBUFFERSEND.
+               05  W-FDELETEAFTERPROC   PIC X.
+               05  W-CBSPOOLERFILESPEC  PIC 9(2) COMP.
+               05  W-SPOOLERFILESPEC    PIC X(91).
+               05  W-CBFORMNAME         PIC 9(2) COMP.
+               05  W-FORMNAME           PIC X(12).
+               05  W-CBWHEELNAME        PIC 9(2) COMP.
+               05  W-WHEELNAME          PIC X(12).
+               05  W-CCOPIES.
+                   07 W-BYTE1           PIC 9(2) COMP.
+                   07 W-BYTE2           PIC 9(2) COMP.
+               05  W-BPRINTMODE         PIC X.
+               05  W-FALIGNFORM         PIC X.
+               05  W-FSECURITYMODE      PIC X.
+           03  W-QUEUEENTRYBUFFERLENGTH PIC 9(4) COMP.
+           03  W-PAR-QUEUENAME          PIC X(15).
+           03  W-PAR-QUEUENAMELENGTH    PIC 9(4) COMP.
+           03  W-STATUS-QUEUENAME       PIC X(13).
+           03  W-STATUS-QUEUENAMELEN    PIC 9(4) COMP.
+           03  W-PRINTERNAME            PIC X(8).
+           03  W-PRINTERNAMELEN         PIC 9(4) COMP.
+           03  W-Q-NO-SERVER            PIC X.
+           03  W-PRIORITY               PIC 9(2) COMP.
+           03  W-QUEUETYPE              PIC 9(4) COMP.
+           03  W-DATE-TIME              PIC X(4).
+           03  W-REPEATTIME             PIC 9(4) COMP.
+       *    03  W-DELAY                  PIC 9(4) COMP.
+           03  WTELL-PAUSE.
+               05 WTELL-P1              PIC X(3) VALUE X"FF0305".
+               05 WTELL-P2              PIC X(5) VALUE "HELLO".
+           03  W-NULL                   PIC X(250) VALUE ALL X"000000".
+           03  W-NULL-LEN               PIC 9(4) COMP VALUE 750.
+           03  W-RESTART                PIC X(4) VALUE X"02FFFFFF".
+           03  W-RESTARTLENGTH          PIC 9(4) COMP VALUE 4.
+           03  W-FILENAME               PIC X(100).
+           03  FILLER                   PIC X VALUE SPACE.
+           03  W-SPOOLST2               PIC X(7).
+           03  W-SPOOLST.
+               05  WS-CBPRINTERNAME      PIC 9(2) COMP.
+               05  Ws-PrintName          PIC X(12).
+               05  WS-CBCURRENTPAGE      PIC 9(2) COMP.
+               05  WS-CURRENTPAGE        PIC X(12).
+               05  FILLER                PIC X(25).
+               05  WS-CBQUEUENAME        PIC 9(2) COMP.
+               05  WS-QUEUENAME          PIC X(50).
+               05  WS-CHANNEL            PIC X.
+               05  WS-CBCONFIGFILE       PIC 9(2) COMP.
+               05  WS-CONFIGFILE         PIC X(78).
+               05  WS-FATMASTER          PIC 9(2) COMP.
+               05  WS-SPOOLST-IND        PIC 9(2) COMP.
+               05  WS-CBSPOOLST-FILENAME PIC 9(2) COMP.
+               05  WS-SPOOLST-FILENAME   PIC X(21).
+               05  FILLER                PIC X(58).
+               05  WS-CBWHEELNAME        PIC 9(2) COMP.
+               05  WS-WHEELNAME          PIC X(12).
+               05  WS-CBFORMNAME         PIC 9(2) COMP.
+               05  WS-FORMNAME           PIC X(12).
+               05  WS-CBPAUSEMESSAGE     PIC 9(2) COMP.
+               05  WS-PAUSEMESSAGE       PIC X(60).
+               05  WS-FNEEDWHEELCHANGE   PIC 9(2) COMP.
+               05  WS-FNEEDFORMSCHANGE   PIC 9(2) COMP.
+               05  WS-FSHOWPAUSEMESSAGE  PIC 9(2) COMP.
+               05  WS-WSNUM              PIC 9(4) COMP.
+               05  FILLER                PIC X(2).
+               05  WS-CBDOCNAME          PIC 9(2) COMP.
+               05  WS-DOCNAME            PIC X(78).
+               05  WS-CBUSERNAMES        PIC 9(2) COMP.
+               05  WS-USERNAMES          PIC X(30).
+               05  WS-TIMESTARTED        PIC X(4).
+               05  FILLER                PIC X(60).
+           03  W-SPOOLST-LEN             PIC 9(4) COMP.
+       01  W-STATUSBLOCK.
+           03  W-QUEUEENTRYH    PIC 9(8) COMP.
+           03  FILLER           PIC X(7).
+       01  W-STATUSBLOCKLENGTH  PIC 9(4) COMP.
+       77  WS-PSTATUSBUFFER     PIC X(40) VALUE " ".

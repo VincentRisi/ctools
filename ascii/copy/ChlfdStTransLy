@@ -1,0 +1,50 @@
+       FD  STOCK-TRANSLY-FILE.
+       01  STOCK-TRANSLY-REC.
+         02  STTR-LY-KEY.
+           03  STTR-LY-TYPE                 PIC 99.
+           03  STTR-LY-REFERENCE1           PIC 9(6).
+           03  STTR-LY-TRANSACTION-NUMBER   PIC 9(6).
+         02  STTR-LY-ST-KEY.
+           03  STTR-LY-ST-COMPLETE          PIC X.
+           03  STTR-LY-STOCK-NUMBER         PIC X(15).
+           03  STTR-LY-ST-DATE              PIC 9(8).
+         02  STTR-LY-AC-KEY.
+           03  STTR-LY-AC-COMPLETE          PIC X.
+           03  STTR-LY-ACCOUNT-NUMBER       PIC 9(7).
+           03  STTR-LY-AC-DATE              PIC 9(8).
+         02  STTR-LY-INV-NO                 PIC 9(6).
+         02  STTR-LY-DATE                   PIC 9(8).
+         02  STTR-LY-COMPLETE               PIC X.
+         02  DATA-LY-FIELDS.
+           03  STTR-LY-ORDERQTY             PIC 9(5).
+           03  STTR-LY-SHIPQTY              PIC 9(5).
+           03  STTR-LY-SHIPPEDQTY           PIC 9(5).
+           03  STTR-LY-SALES-VALUE          PIC 9(8)V99.
+           03  STTR-LY-COST-VALUE           PIC 9(8)V99.
+           03  STTR-LY-PRICE                PIC 9(8)V99.
+           03  STTR-LY-DESC1                PIC X(20).
+           03  STTR-LY-DESC2                PIC X(20).
+           03  STTR-LY-ITEMDISC             PIC 9(4)V99.
+           03  STTR-LY-TAX                  PIC X.
+           03  STTR-LY-UNIT                 PIC X(4).
+      *     03  STTR-LY-FILLER               PIC X(4).
+         02  COMMENT-LY-FIELDS REDEFINES DATA-LY-FIELDS.
+           03  COM-LY-ORDERQTY             PIC X(5).
+           03  COM-LY-SHIPQTY              PIC X(5).
+           03  COM-LY-DESC                 PIC X(20).
+           03  COM-LY-UNIT                 PIC X(4).
+           03  COM-LY-PRICE                PIC X(9).
+           03  COM-LY-COST                 PIC X(9).
+           03  COM-LY-DISC                 PIC X(5).
+           03  COM-LY-FILLER               PIC X(35).
+      *
+      * REF1 : INVOICE/CREDIT/QUOTE/P-SLIP/BM NUMBER.
+      * STTR-LY-COMPLETE: N=USED FOR ORDERS NOT INVOICED,
+      *                Y=DELETE AT MONTH END,
+      *                B=INVOICED, NOT COMPLETE (BACKORDER).
+      *                L=LINE COMPLETE, BUT ORDER NOT COMPLETE OR
+      *                  FINAL PRINT OF ORDER NOT DONE.
+      *TRANS: 1=INVOICE, 2=BLANK ,3=BLANK,    4=ORDER/PICKING SLIP,
+      *       5=BLANK ,  6=CREDIT,7=TOOLKITS, 8=QUOTE,
+      *       9=BLANK.
+      *

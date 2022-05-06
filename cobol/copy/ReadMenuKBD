@@ -1,0 +1,17 @@
+      *
+        READ-MENU-KBD SECTION.
+        READ-MENU-KBD000.
+      *      CALL "READKBD" USING F-ERROR1
+      *                           W-ESCAPE-KEY.
+      *      IF F-ERROR1 NOT = 0
+      *          DISPLAY "READ-MENU-KBD ERROR"
+      *          DISPLAY F-ERROR1
+      *          STOP RUN.
+      * PASSWORD
+         ACCEPT W-ESCAPE-KEY AT POS WITH SECURE AUTO.
+      *   MOVE 2625 TO POS
+      *   DISPLAY "YOU ENTERED: " W-ESCAPE-KEY.
+      *     
+        READ-MENU-KBD999.
+            EXIT.
+      *

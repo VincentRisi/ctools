@@ -1,0 +1,15 @@
+text2pdf /ctools/fax/$3 -fCourier-Bold -x595 -y842 -l66 -c88 -V16 -H41 > /ctools/fax/$1POrder.temp1.pdf
+#text2pdf /ctools/fax/$3 -fCourier-Bold -x588 -y828 -l66 -c88 -V16 -H41 > /ctools/fax/$1POrder.temp1.pdf
+pdftk /ctools/fax/$1POrder.temp1.pdf background /ctools/dev/source/print/$1QuoteOverlay2.pdf output /ctools/fax/$1POrder$3.pdf
+
+
+#--So far the variables which will be specified from inside the COBOL programs are:
+#---$1 = The company number from 01 to 12     e.g. 07
+#---$2 = The Printername to print the file to e.g. MP140
+#---$3 = The POrder file name e.g. 555.05.15 specified in COBOL
+#---$4 = The page-cnt.  If page-cnt = 01 then don't print, If = 02 OR HIGHER then print.
+#---$5 = WS-AUTO-FAX. IF = F then send by fax
+#---$6 = WS-ANSWER. If = P then print PDF.
+#---$7 = WS-fax-number.  Used ONLY if sending by fax.
+#--- add any extra commands here - perhaps cups printing
+#--- or sendfax via hylaFAX

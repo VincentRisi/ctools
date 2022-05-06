@@ -1,0 +1,96 @@
+       FD  PARAMETER-ASCII.
+       01  ASCII-REC.
+         02  ASCII-KEY.
+           03  ASCII-TYPE                 PIC 9.
+           03  ASCII-RECORD               PIC 9.
+      * = 01
+         02  ASCII-PARAM-FIELDS.
+           03  ASCII-NAME                 PIC X(40).
+           03  ASCII-ADD1                 PIC X(25).
+           03  ASCII-ADD2                 PIC X(25).
+           03  ASCII-ADD3                 PIC X(25).
+           03  ASCII-CODE                 PIC X(4).
+           03  ASCII-DEL1                 PIC X(25).
+           03  ASCII-DEL2                 PIC X(25).
+           03  ASCII-DEL3                 PIC X(25).
+           03  ASCII-PHONE                PIC X(20).
+           03  ASCII-FAX                  PIC X(20).
+           03  ASCII-COMMENT              PIC X(20).
+           03  ASCII-CO-REG-NO            PIC X(15).
+           03  ASCII-CO-VAT-NO            PIC X(15).
+           03  ASCII-ORDER-NUMBER         PIC 9(6).
+           03  ASCII-INVOICE-NUMBER       PIC 9(6).
+           03  ASCII-CREDIT-NUMBER        PIC 9(6).
+           03  ASCII-CASH-RECEIPT-NUMBER  PIC 9(6).
+           03  ASCII-STOCK-RECEIPT-NUMBER PIC 9(6).
+           03  ASCII-JOURNAL-NUMBER       PIC 9(6).
+           03  ASCII-QUOTE-NUMBER         PIC 9(6).
+           03  ASCII-SUPPLY-ORDER-NUMBER  PIC 9(6).
+           03  ASCII-GST-PERCENT          PIC 99V99.
+           03  ASCII-DRTRANS-NUMBER       PIC 9(6).
+           03  ASCII-STTRANS-NUMBER       PIC 9(6).
+           03  ASCII-CURRENT-PER-WW       PIC 99.
+           03  ASCII-CURRENT-PER-MM       PIC 99.
+           03  ASCII-CURRENT-PER-YY       PIC 9999.
+      * = 20
+         02  ASCII-TERM-FIELDS REDEFINES ASCII-PARAM-FIELDS.
+           03  ASCII-TERM-DESC            PIC X(11).
+           03  FILLER                     PIC X(345).
+      * = 30
+         02  ASCII-DELIV-FIELDS REDEFINES ASCII-PARAM-FIELDS.
+           03  ASCII-DELIV-DESC           PIC X(20).
+           03  FILLER                     PIC X(336).
+      * = 40
+         02  ASCII-INVCOMM-FIELDS REDEFINES ASCII-PARAM-FIELDS.
+           03  ASCII-COMM-DESC            PIC X(60).
+           03  FILLER                     PIC X(296).
+      * = 50
+         02  ASCII-QUOTECOMM-FIELDS REDEFINES ASCII-PARAM-FIELDS.
+           03  ASCII-QUOTE-DESC           PIC X(60).
+           03  FILLER                     PIC X(296).
+      * = 60
+         02  ASCII-INVQUES-FIELDS REDEFINES ASCII-PARAM-FIELDS.
+           03  ASCII-PRT-PULLERS          PIC X.
+           03  ASCII-CASH-SALES           PIC X.
+           03  ASCII-STOCK-CHANGE         PIC X.
+           03  ASCII-PS-NORM-PRINTER      PIC 99.
+           03  ASCII-PS-REPR-PRINTER      PIC 99.
+           03  ASCII-PS-RUSH-PRINTER      PIC 99.
+           03  ASCII-STOCK-TO-MAX         PIC X.
+           03  ASCII-ST-LABEL-PRINTER     PIC 99.
+           03  ASCII-ST-PRINT-LABELS      PIC X.
+           03  ASCII-MU-GP-PERC           PIC X.
+           03  ASCII-ACC-CONTACT          PIC X(15).
+           03  ASCII-ACC-PHONE            PIC X(15).
+           03  ASCII-CHECK-QUOTES         PIC X.
+           03  ASCII-ACC-OVER-LIMIT       PIC X.
+           03  ASCII-PAUSE-ON-PSLIP       PIC X.
+           03  ASCII-PAUSE-BACKUP         PIC X.
+           03  FILLER                     PIC X(308).
+      * = 70
+         02  ASCII-BRANCH-STOCK-FIELDS REDEFINES ASCII-PARAM-FIELDS.
+           03  ASCII-BRANCH-NUMBER            PIC 99.
+           03  ASCII-BRANCH-NAME              PIC X(3).
+           03  FILLER                         PIC X(351).
+      * = 80
+         02  REPAIRCOMM-FIELDS REDEFINES ASCII-PARAM-FIELDS.
+           03  ASCII-REPAIR-DESC              PIC X(60).
+           03  FILLER                         PIC X(296).
+      *
+      *PA-TYPE:0=PARAMETER RECORD
+      *        2=TERMS RECORD
+      *        3=DELIVERY RECORD
+      *        4=COMMENT FOR INVOICES(SPECIAL), 
+      *        5=QUOTE FIELDS(DEL&TERMS)
+      *        6=INVOICE, QUES. 1=STOCK PULLERS, 2=CASH SALE RECORD.
+      *            3=WRITE STOCK CHANGES TO TEMP FILE
+      *            4=ORDERGEN TO MAX,   5=NORMAL P/S PRN #
+      *            6=REPRINT P/S PRN#,  7=RUSH JOB PRN #
+      *            8=STOCK LABEL PRN #, 9=PRINT LABELS Y/N
+      *           10=SHOW PROFIT PERC AS M/U OR GP (DEFAULT N=M/U
+      *                                              Y=GP)
+      *        7=BRANCH-STOCK-FIELDS : USED FOR READING ALL BRANCH
+      *          STOCK ITEMS IN ONE PROGRAM.
+      *
+      *PA-RECORD:NUMBER WITHIN THAT RECORD.
+      *       

@@ -1,0 +1,69 @@
+**************************{**  MAIN CONTROL MENU  **}******************        
+*   ************************{** STOCK CONTROL MENU **}********************     
+*   *   **********************{**  STOCK REPORTING  **}*********************** 
+*   *   *   1. Stock Number List                                             * 
+*   *   *   2. Stock Below Min/ Over Max    19. Buyers Guide By Stock        * 
+*   *   *   3. Stock Analysis By Code       20. Supplier Order Generation    * 
+*   *   *   4. Stock Analysis (Qty On Hand) 21. Supplier Order Re-Print      * 
+*   *   *   5. Stock Count Sheet            22. Supplier Orders By Stock     * 
+*   *   *   6. Stock Price List - Local     23. Supplier Orders By Order     * 
+*   *   *   7. Stock Price List - Foreign   24. Supplier Delinquent Orders   * 
+*   *   *   8. Stock Price List - Specials                                   * 
+*   *   *   9. Stock Price/Cost List        25. Import Costing Analysis      * 
+*   *   *  10. Stock Redundant By Date                                       * 
+*   *   *  11. Stock Tariff, Duties Etc     26. Stock Received Since Date ?  * 
+*   *   *                                   27. Stock Quantity Checking      * 
+*   *   *  12. Stock Valuation              28. Stock List By Highest Sales  * 
+*   *   *  13. Stock Moved By Period        29. Stock Sales By Account       * 
+*   *   *  14. Stock Sold - S&GM                                             * 
+*   *   *  15. Stock Bin Number Report      30. Stock Catalogue Index        * 
+*   *   *                                                                    * 
+*   *   *  16. Back-Order List By Stock     31. Stock Alternative Item       * 
+*****   *  17. Back-Order List By Account   32. Stock Item Labels            * 
+    *****  18. Back-Order Letter By Account 33. Stock Lookup Table           * 
+        ************************ENTER SELECTION : __************************** 
+                                                                               
+                                                                               
+
+Form name: St3Menu                         size: 1796  bytes
+height: 26    width: 79    number of fields: 2              
+
+Field name: SELECTION                                        
+Row: 23   Column: 50   Width: 2                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+                                 
+ ******************************* 
+ *  COLOR PALETTE INFORMATION  * 
+ ******************************* 
+                                 
+            Caption Color: 4     
+               Line Color: 7     
+                                 
+                                 
+        *************************
+        *   I N T E N S I T Y   *
+*********************************
+* Color *  Red  * Green *  Blue *
+*********************************
+*   0   *   0   *   3   *   0   *
+*   1   *   0   *   2   *   0   *
+*   2   *   0   *   3   *   3   *
+*   3   *   0   *   2   *   2   *
+*   4   *   3   *   3   *   3   *
+*   5   *   2   *   2   *   2   *
+*   6   *   3   *   3   *   0   *
+*   7   *   3   *   0   *   0   *
+*********************************
+  

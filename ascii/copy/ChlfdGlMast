@@ -1,0 +1,21 @@
+       FD  GL-MASTER.
+       01  GL-RECORD.
+           03  GL-KEY.
+               05  GL-NUMBER       PIC X(12).
+           03  GL-DESCRIPTION      PIC X(40).
+           03  GL-P-B              PIC X.
+           03  GL-DATE             PIC 9(8).
+           03  GL-BALANCE          PIC S9(8)V99.
+           03  GL-OPEN-PER-BAL     PIC S9(8)V99.
+           03  GL-OPEN-YEAR-BAL    PIC S9(8)V99.
+           03  GL-LAST-YEAR-BAL    PIC S9(8)V99.
+           03  GL-CURRENT-PERIODS.
+               04  GL-PER          PIC S9(8)V99 OCCURS 12.
+           03  GL-CURRENT-BUDGETS.
+               04  GL-PER-BU       PIC S9(8)V99 OCCURS 12.
+           03  GL-LAST-PERIODS.
+               04  GL-LAST-PER     PIC S9(8)V99 OCCURS 12.
+      *
+      *GL-LAST-YEAR-BAL = OPEN BAL LAST YEAR
+      *  'P' ACCOUNTS THIS WILL ALWAYS BE ZERO
+      *  'B' ACCOUNTS THIS WILL BE THE OPENING BAL AT BEGIN OF LAST YEAR

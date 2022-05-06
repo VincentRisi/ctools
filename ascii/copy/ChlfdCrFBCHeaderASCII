@@ -1,0 +1,12 @@
+       FD  CRFOREX-ASCII.
+       01  ASCII-REC.
+           03  ASCII-KEY. 
+               05  ASCII-FBC-NUMBER        PIC X(20).
+           03  ASCII-CURRENCY-TYPE         PIC X(5).
+           03  ASCII-INITIAL-FOREIGN-AMT   PIC 9(8)V99.
+           03  ASCII-UNAPPLIED-AMT         PIC 9(8)V99.
+           03  ASCII-EXCHANGE-RATE         PIC 9(3)V9(5).
+           03  ASCII-LOCAL-AMT             PIC 9(8)V99.
+           03  ASCII-CONTRACT-DATE         PIC 9(8).
+           03  ASCII-MATURITY-DATE         PIC 9(8).
+      *

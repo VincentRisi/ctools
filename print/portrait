@@ -1,0 +1,2 @@
+./text2pdf portrait.txt -x595 -y842 -l68 -c88 > .temp1.pdf
+pdftk .temp1.pdf background statement.pdf output portrait.statement.pdf

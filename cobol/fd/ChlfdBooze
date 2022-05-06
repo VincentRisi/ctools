@@ -1,0 +1,13 @@
+       FD  BOOZE-FILE.
+       01  BOOZE-REC.
+           03  BZ-KEY.
+               05  BZ-STOCKNO             PIC X(15).
+           03  BZ-DESC                    PIC X(20).
+           03  BZ-PER                     PIC X(6).
+           03  BZ-PRICE                   PIC 9(6)V99.
+           03  BZ-COST                    PIC 9(6)V99.
+           03  BZ-UNIT-AMT                PIC 9(6).
+           03  BZ-SALE-AMT                PIC 9(6)V99.
+           03  BZ-COST-AMT                PIC 9(6)V99.
+           03  BZ-ONHAND                  PIC 9(6).
+      *

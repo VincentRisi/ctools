@@ -1,0 +1,7 @@
+       FD  StLook-MASTER.
+       01  StLook-Record.
+           03  StLook-Key.
+               05  StLook-Stocknumber    PIC X(15).
+           03  StLook-Alt-Key.
+               05  StLook-SupplierNumber PIC X(15).
+      *

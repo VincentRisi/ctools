@@ -1,0 +1,26 @@
+       FD  MENU-PASSWORDS.
+       01  MENU-RECORD.
+           03  MU-KEY.
+               04  MU-OPTION         PIC 99.
+      *    03  MU-BALANCE            PIC X(420).
+          03  MU-PASSWORD OCCURS 35.
+               04  MU-NUMBER         PIC X(10).
+               04  MU-PRIORITY       PIC 99.
+      
+      *MU-PRIORITY:THE HIGHER THE MU-PRIORITY THE HIGHER THE PRIORITY.
+      *MU-OPTION: 10=DR1MENU,11=DR2MENU,12=DR3MENU,13=DR4MENU
+      *           20=ST1MENU,21=ST2MENU,23=ST3MENU,24=ST4MENU
+      *           30=SL1MENU,31=SL2MENU,32=SL3MENU,34=SL4MENU,35=SL5MENU,
+      *                      36=SL6MENU
+      *           40=CR1MENU,41=CR2MENU,42=CR3MENU,43=CR4MENU
+      *           50=GL1MENU,51=GL2MENU,52=GL3MENU.53=GL4MENU
+      *           60=BM1MENU,
+      *           70=CB1MENU,
+      *           80=SY1MENU,
+      *           85=MASTMENU,
+      *           90=BAUPMENU,
+      *           92=SPECIAL PASSWORDS (EG 92 #1=SLORDERS - CHNGE & DEL
+      *                 2=CHNGE DISCOUNT 3= CHNGE P/ONUMBER ON P/SLIPS
+      *           95=CONTMENU,
+      *           98=MAINCONT,
+      *           99=MASTER-PASSWORD.

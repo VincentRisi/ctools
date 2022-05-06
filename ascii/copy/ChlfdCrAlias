@@ -1,0 +1,6 @@
+       FD  CRALIAS-MASTER.
+       01  CRALIAS-RECORD.
+           03  CRAL-KEY.
+               05  CRAL-ALIAS         PIC X(7).
+           03  CRAL-ACCOUNT-NUMBER    PIC 9(7).
+      *

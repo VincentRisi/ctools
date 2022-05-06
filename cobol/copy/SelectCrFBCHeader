@@ -1,0 +1,6 @@
+           SELECT CRFOREX-FILE ASSIGN TO Ws-CrFBCHeader
+               ORGANIZATION IS INDEXED
+               LOCK MANUAL
+               ACCESS MODE IS DYNAMIC
+               FILE STATUS IS WS-HEADER-STATUS
+               RECORD KEY IS CRFOREX-KEY.

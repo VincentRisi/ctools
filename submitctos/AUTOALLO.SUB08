@@ -1,0 +1,56 @@
+Screen Setup
+
+Y
+
+
+Y
+White Blue
+100
+
+C/2 Run
+MainCont
+
+-N +P
+8
+MENU65SP
+3
+1
+19
+A
+ZZZZ
+P
+N
+
+
+
+20
+X
+<SPL>AA1
+CN
+
+
+20
+X
+<SPL>AA2
+DN
+
+
+
+
+E
+
+Screen Setup
+
+Yes
+
+
+Yes
+White Blue
+100
+
+Print
+<Spl>AA1 <Spl>AA2
+[Spl]
+
+
+**** RUNNING AND PRINTING OF AUTO-ALLOCATIONS COMPLETE ****

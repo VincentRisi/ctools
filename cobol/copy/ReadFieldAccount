@@ -1,0 +1,20 @@
+      *
+       READ-FIELD-ACCOUNT SECTION.
+       READ-FAC000.
+            CALL "READFIELD" USING F-ERROR1
+                                   F-FORM
+                                   F-FIELDNAME
+                                   F-CBFIELDNAME
+                                   F-INDEX
+                                   F-NAMEFIELDACC
+                                   F-CBFIELDLENGTH
+                                   F-CBFIRSTLINE
+                                   F-TYPE.
+            IF F-ERROR1 NOT = 0
+                DISPLAY "READFIELD ACCOUNT ERROR"
+                DISPLAY F-ERROR1
+                DISPLAY F-FIELDNAME
+                STOP RUN.
+            PERFORM ERROR-020.
+       READ-FAC999.
+           EXIT.

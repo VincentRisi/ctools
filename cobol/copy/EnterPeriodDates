@@ -1,0 +1,51 @@
+      *
+       ENTER-PERIOD-DATES SECTION.
+       EPD-005.
+            MOVE 0        TO SIGN-FOUND WS-AMOUNT.
+            MOVE "N"      TO WS-LEAP-YEAR.
+            GO TO EPD-007.
+       EPD-006.
+            MOVE WS-CH-YY TO WS-AMOUNT.
+            COMPUTE WS-AMOUNT = WS-AMOUNT / 4.
+            MOVE WS-AMOUNT TO ALPHA-RATE.
+            IF AL-RATE (5) = "0"
+             IF AL-RATE (6) = "0"
+               MOVE "Y" TO WS-LEAP-YEAR.
+       EPD-007.
+           MOVE 0 TO SUB-1.
+       EPD-010.
+           ADD 1 TO SUB-1.
+           MOVE 0 TO WS-DATE.
+           IF SUB-1 > 12
+              MOVE 1 TO SUB-1
+              GO TO EPD-999.
+           MOVE GLPA-PER (SUB-1) TO GL-BEGDATE (SUB-1).
+           ADD 1 TO SUB-1.
+           MOVE GLPA-PER (SUB-1) TO WS-DATE.
+           IF WS-DD NOT = 1
+              SUBTRACT 1 FROM WS-DD
+              GO TO EPD-020.
+           IF WS-DD = 1
+              SUBTRACT 1 FROM WS-MM
+            IF WS-MM = 1 OR = 3 OR = 5 OR = 7 OR = 8 OR = 10 OR = 12
+              MOVE 31 TO WS-DD
+            ELSE
+              MOVE 30 TO WS-DD.
+            IF WS-MM = 2
+              MOVE WS-YY TO WS-CH-YY
+              PERFORM EPD-006
+             IF WS-LEAP-YEAR = "Y"
+              MOVE 29 TO WS-DD
+             ELSE
+              MOVE 28 TO WS-DD.
+           IF WS-MM = 0
+              MOVE 31 TO WS-DD
+              MOVE 12 TO WS-MM
+              SUBTRACT 1 FROM WS-YY.
+       EPD-020.
+           SUBTRACT 1 FROM SUB-1.
+       EPD-030.
+           MOVE WS-DATE TO GL-ENDDATE (SUB-1).
+           GO TO EPD-010.
+       EPD-999.
+           EXIT.

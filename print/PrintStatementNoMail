@@ -1,0 +1,30 @@
+python fohtotext.py -r statement -T /ctools/spl/$1.temp0.txt /ctools/spl/$1DrNoMalCo$2
+text2pdf /ctools/spl/$1.temp0.txt -fCourier-Bold -x595 -y842 -l66 -c88 -V18 -H41 > /ctools/spl/$1.temp1.pdf
+pdftk /ctools/spl/$1.temp1.pdf background /ctools/dev/source/print/StatementOverlay$2.pdf output /ctools/spl/$1DrNoMalCo$2.pdf
+lp -d $3 /ctools/spl/$1DrNoMalCo$2.pdf
+
+
+#lp -d $3 $4
+#--- the following pdftk cats the first statement to a single
+#--- this is basically for testing faxes with only one statement
+##pdftk DrNoMalCo01.pdf cat 1-1 output single.pdf
+
+#FORMAT FOR PRINTING IS:
+#lp -d W-PRINTERNAME W-PRINTFILE
+
+#EXAMPLE OF COMMAND
+#PrintStatementNoMail Username  CoNumber PrinterName PrintFileName
+#PrintStatementNoMAil ctools     08       CTJ-MP171  /ctools/spl/DrNoMalCo
+
+#--So far the variables which will be specified from inside the COBOL programs are:
+#---$1 = The username                         e.g. steve
+#---$2 = The company number from 01 to 12     e.g. 07
+#---$3 = The Printername to print the file to e.g. MP250
+#---$4 = The Print file name which will replace /ctools/spl/InPrintCo01.pdf when specified in COBOL
+
+
+#--- add any extra commands here - perhaps cups printing
+#--- or sendfax via hylaFAX
+
+
+

@@ -1,0 +1,14 @@
+       CONTROL-100.
+           Move "CoPrinter" To Ws-PrintProg.
+           CALL Ws-PrintProg Using Ws-Linkage.
+           Cancel Ws-PrintProg.
+           If Ws-PrinterSelected = 99
+             Move
+           "THERE IS A PRINTER SELECTION PROBLEM, 'ESC' TO EXIT."
+             To Ws-Message
+             Perform Error-Message
+             Exit Program.
+           Move Ws-PrinterName (21)  To Ws-LabelPrinter.
+           Move Ws-PrinterChars (21) To Ws-Print-Chars.
+           Move Ws-Print-Bold        To Comp-Dig1
+           Move Ws-Print-Unbold      To Comp-Dig2.

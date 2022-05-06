@@ -1,0 +1,114 @@
+ ************************* PRICE CHANGES BY STOCKNUMBER ********************   
+ *                                                                         *   
+ * Change:   1 = Selling Price                                             *   
+ *           2 = Selling Price Based On Average Cost                       *   
+ *           3 = Selling Price & Replacement Cost                          *   
+ *           4 = Selling Price Based On Foreign Cost - With Duties         *   
+ *           5 = Selling Price Based on Foreign Cost - NO Duties           *   
+ *           6 = Foreign Cost                                              *   
+ *           7 = Selling Price Based On Replacement Cost                   *   
+ *           8 = Selling Price using Currency File and On-Cost %           *   
+ *           9 = Create Ave & Last Cost from Selling Price IF Cost = Zero  *   
+ *          10 = Average Cost using Currency File and On-Cost %            *   
+ *          11 = Average Cost By A factor                                  *   
+ *                                                                         *   
+ *    Enter a Number between 1 & 11   : __                                 *   
+ *    Begining Stock Number           : _______________                    *   
+ *      Ending Stock Number           : _______________                    *   
+ *    Factor (20% increase = 1.2)     : _______                            *   
+ *                   (NB. Max Format is 99.9999)                           *   
+ ***************************************************************************   
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+
+Form name: StPrChMt                        size: 1254  bytes
+height: 26    width: 79    number of fields: 5              
+
+Field name: ANSWER1                                          
+Row: 14   Column: 40   Width: 2                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+Field name: RANGE1                                           
+Row: 15   Column: 40   Width: 15                             
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+Field name: RANGE2                                           
+Row: 16   Column: 40   Width: 15                             
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+Field name: FACTOR                                           
+Row: 17   Column: 40   Width: 7                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+                                 
+ ******************************* 
+ *  COLOR PALETTE INFORMATION  * 
+ ******************************* 
+                                 
+            Caption Color: 6     
+               Line Color: 2     
+                                 
+                                 
+        *************************
+        *   I N T E N S I T Y   *
+*********************************
+* Color *  Red  * Green *  Blue *
+*********************************
+*   0   *   0   *   3   *   0   *
+*   1   *   0   *   2   *   0   *
+*   2   *   0   *   3   *   3   *
+*   3   *   0   *   2   *   2   *
+*   4   *   3   *   3   *   3   *
+*   5   *   2   *   2   *   2   *
+*   6   *   3   *   3   *   0   *
+*   7   *   3   *   0   *   0   *
+*********************************
+  

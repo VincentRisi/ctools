@@ -1,0 +1,69 @@
+**************************{**  MAIN CONTROL MENU  **}**************            
+*     **********************{**CREDITOR CONTROL MENU **}*******************    
+*     *    *******************{** SPECIAL PROGRAM MENU **}*********************
+*     *    *                                                                  *
+*     *    *  1. Creditor Master (ALL Fields)                                 *
+*     *    *                                                                  *
+*     *    *  2. Creditor Transactions Entry/Edit                             *
+*     *    *                                                                  *
+*     *    *  3. Creditor Journal Transactions Entry/Edit                     *
+*     *    *                                                                  *
+*     *    *  4. Creditor Master Number Change                                *
+*     *    *                                                                  *
+*     *    *  5. Creditor Master Age Reset with Transactions                  *
+*     *    *                                                                  *
+*     *    *  6. Creditor CAMS Transactions Entry / Edit                      *
+*     *    *                                                                  *
+*     *    *  7. Creditor Remittance Trans Entry / Edit                       *
+*     *    *                                                                  *
+*     *    *  8. Creditor Old / Deleted Account Enquiry                       *
+*******    *                                                                  *
+      *    *                                                                  *
+      ******                                                                  *
+           *                                                                  *
+           ********************ENTER SELECTION : __****************************
+                                                                               
+                                                                               
+
+Form name: Cr4Menu                         size: 1035  bytes
+height: 26    width: 79    number of fields: 2              
+
+Field name: SELECTION                                        
+Row: 23   Column: 49   Width: 2                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+                                 
+ ******************************* 
+ *  COLOR PALETTE INFORMATION  * 
+ ******************************* 
+                                 
+            Caption Color: 4     
+               Line Color: 7     
+                                 
+                                 
+        *************************
+        *   I N T E N S I T Y   *
+*********************************
+* Color *  Red  * Green *  Blue *
+*********************************
+*   0   *   0   *   3   *   0   *
+*   1   *   0   *   2   *   0   *
+*   2   *   0   *   3   *   3   *
+*   3   *   0   *   2   *   2   *
+*   4   *   3   *   3   *   3   *
+*   5   *   2   *   2   *   2   *
+*   6   *   3   *   3   *   0   *
+*   7   *   3   *   0   *   0   *
+*********************************
+  

@@ -1,0 +1,51 @@
+       FD  PRINTER-REMOTE.
+       01  PRINTERREMOTE-REC.
+           03  PRNREM-KEY.
+              05  PRNREM-NUMBER           PIC 99.
+           03  PRNREM-NAME                PIC X(25).
+           03  PRNREM-TYPE                PIC 99.
+           03  PRNREM-DESC                PIC X(20).
+           03  PRNREM-PROMPT-PAPER        PIC X.
+           03  PRNREM-CHARS.
+              05  PRNREM-COMP             PIC X.
+              05  PRNREM-BOLD             PIC X.
+              05  PRNREM-UNBOLD           PIC X.
+              05  PRNREM-NORMAL           PIC X.
+              05  PRNREM-EIGHT            PIC X(4).
+              05  PRNREM-ELEVEN           PIC X(4).
+              05  PRNREM-FOUR             PIC X(4).
+              05  FILLER                  PIC X(26).
+      *USED FOR SETTING UP THE REMOTE PRINTERS FOR BRANCHES RUNNING
+      * OFF 1 LINUX SERVER.
+      *
+      *PRNREM-NUMBER: 1=PARALLEL @ MASTER  (INVOICE)
+      *               2=SERIALA  @ MASTER
+      *               3=SERIALB  @ MASTER
+      *               4=PARALLEL @ STORES  (INVOICE)
+      *               5=SERIALA  @ STORES  (GUM LABELS)
+      *               6=SERIALB  @ STORES
+      *               7=PARALLEL @ COUNTER (INVOICE)
+      *               8=SERIALA  @ COUNTER
+      *               9=SERIALB  @ COUNTER
+      *              10=PARALLELCHEQUE @ CREDITORSDESK
+      *              33=VIDEO
+      *            
+      *
+      *PRNREM-NAME          =ENTER AS [SPL] ETC
+      *PRNREM-DESC          =DRAFT, WP, INVOICE, GUM, ETC
+      *PRNREM-TYPE         1=DRAFT (EYE LINE PAPER)
+      *                    2=DRAFT (A4 PAPER) & [VID]
+      *                    3=INVOICE/CNOTE
+      *                    4=GUMLABELS
+      *                    5=W/PROCCESSING
+      *                    9=PRINTER AUTO CHECK FROM ANOTHER PROGRAM
+      *PRNREM-PROMT-PAPER: Y=PROMT TO LOAD SPECIAL PAPER (EYELINE STD),
+      *                    S=SPECIAL PAPER IN AS STANDARD.
+      *PRINT-CHARS          =HEX CHAR FOR PARTICULAR PRINTER
+      *
+      *  NB.!! FOR ALL OKIDATA PRINTERS: CHANGING FROM 10cpi TO 17cpi
+      *        CAN ONLY BE DONE BY MOVING PRNREM-COMP TO PRINT-REC
+      *        THEN WRITING PRINT-REC.
+      *        TO CHANGE BACK FROM 17cpi TO 10cpi MOVE PRNREM-NORMAL TO
+      *        PRINT-REC THEN WRITE PRINT-REC.
+      *        BOLD/DOUBLE PRINT CAN BE DONE WITHIN A LINE.

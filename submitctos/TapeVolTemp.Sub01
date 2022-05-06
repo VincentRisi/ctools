@@ -1,0 +1,121 @@
+Dis Cluster
+
+APT Terminate
+S
+
+Path
+Win
+Program
+
+Orthello
+
+Screen Setup
+
+Y
+
+
+Y
+W B
+100
+
+Type
+<Temp>TapebackupvolMessage1
+
+1
+
+ISAM Terminate 
+DeInstall XQS Fax Server
+DeInstall Screen print
+DeInstall Mail Service
+
+Delete
+[d0]<$*>*
+
+
+Delete
+[d1]<$*>*
+
+
+Delete
+[Win]<Organizer>SS.Log
+
+Delete
+<*>*-old <*>*.ts <Spl>* <*>*.tmp
+
+
+Delete
+[D1]<Spl>*
+
+
+Tape Retension
+
+Vol Archive
+Win
+Orthello
+
+
+No
+[Qic]
+Yes
+[D1]<Spl>VolArchive.Lst
+
+Yes
+Yes
+Yes
+
+
+Delete
+<$*>*
+
+Rename
+<CTJ>DelSch
+<Spl>DelSch
+
+Print
+<Spl>DelSch
+[SplBStr]
+
+Rename
+<Temp>AA*
+<Spl>AA*
+
+
+Print
+<Spl>AA1 <Spl>AA2
+[SplBStr]
+
+Rename
+<Temp>Quotes
+<Spl>Quotes
+
+Copy
+<Temp>Compressed.Key
+[SplXtra]
+
+Print
+<Spl>Quotes
+[SplXtra]
+
+** Restoring to [D1] drive as a further backup **
+Path
+D1
+Sys
+
+Orthello
+
+Restore Archive
+
+
+
+Yes
+
+
+
+
+
+Yes
+
+Type
+<Temp>TapeVolMessage
+Boot
+

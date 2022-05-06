@@ -1,0 +1,12 @@
+       FD  SALES-ANALYSIS.
+       01  SALES-ANALYSIS-REC.
+           03  SA-KEY.
+               05  SA-ANALYSIS-CODE    PIC 9(2).
+           03  SA-NAME                 PIC X(25).
+           03  SA-COST-WEEK            PIC S9(8)V99 LEADING SEPARATE.
+           03  SA-COST-PTD             PIC S9(8)V99 LEADING SEPARATE.
+           03  SA-COST-YTD             PIC S9(8)V99 LEADING SEPARATE.
+           03  SA-SALES-WEEK           PIC S9(8)V99 LEADING SEPARATE.
+           03  SA-SALES-PTD            PIC S9(8)V99 LEADING SEPARATE.
+           03  SA-SALES-YTD            PIC S9(8)V99 LEADING SEPARATE.
+      *

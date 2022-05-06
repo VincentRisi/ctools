@@ -1,0 +1,6 @@
+       FD  STCAT1-MASTER.
+       01  STCAT1-RECORD.
+           03  STCAT1-KEY.
+               05  STCAT1-STOCKNUMBER    PIC X(15).
+           03  STCAT1-PAGE-NUM           PIC X(5).
+      *

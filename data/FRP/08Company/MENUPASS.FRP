@@ -1,0 +1,113 @@
+                  ************  PASSWORDS ENTRY ************                   
+                  *                                        *                   
+                  *        Option Type : __                *                   
+                  *                                        *                   
+                  *        Option10= Debtor Menu           *                   
+                  *              20= Stock Menu            *                   
+                  *              30= Order Entry Menu      *                   
+                  *              40= Creditor Menu         *                   
+                  *              50= General Menu          *                   
+                  *              60= Bills Of Material Menu*                   
+                  *              70= Cash Book Menu        *                   
+                  *              85= System Manager Menu   *                   
+                  *              90= Backup Menu           *                   
+                  *              92= Special Passwords     *                   
+                  *              95= Control Menu          *                   
+                  *              98= Main Control Menu     *                   
+                  *              99= Master Password       *                   
+                  *              XX  Print All Information *                   
+                  *        Menu Number : __                *                   
+                  *                                        *                   
+                  *        Password    : __________        *                   
+                  *        Priority    : __                *                   
+                  *                                        *                   
+                  ******************************************                   
+                                                                               
+
+Form name: MenuPass                        size: 975   bytes
+height: 25    width: 79    number of fields: 5              
+
+Field name: OPTION                                           
+Row: 2    Column: 41   Width: 2                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+Field name: MENUNO                                           
+Row: 18   Column: 41   Width: 2                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+Field name: NUMBER                                           
+Row: 20   Column: 41   Width: 10                             
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+Field name: PRIORITY                                         
+Row: 21   Column: 41   Width: 2                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+                                 
+ ******************************* 
+ *  COLOR PALETTE INFORMATION  * 
+ ******************************* 
+                                 
+            Caption Color: 4     
+               Line Color: 7     
+                                 
+                                 
+        *************************
+        *   I N T E N S I T Y   *
+*********************************
+* Color *  Red  * Green *  Blue *
+*********************************
+*   0   *   0   *   3   *   0   *
+*   1   *   0   *   2   *   0   *
+*   2   *   0   *   3   *   3   *
+*   3   *   0   *   2   *   2   *
+*   4   *   3   *   3   *   3   *
+*   5   *   2   *   2   *   2   *
+*   6   *   3   *   3   *   0   *
+*   7   *   3   *   0   *   0   *
+*********************************
+  

@@ -1,0 +1,14 @@
+python fohtotext.py -r invoice -T /ctools/spl/I$1.temp0.txt /ctools/spl/I$1
+text2pdf /ctools/spl/I$1.temp0.txt -fCourier-Bold -t8 -s10 -x842 -y605 -c135 -l48 > /ctools/spl/I$1.temp1.pdf
+pdftk /ctools/spl/I$1.temp1.pdf background /ctools/dev/source/print/InvoiceOverlay$2.pdf output /ctools/spl/I$1.temp2.pdf
+pdftk /ctools/spl/I$1.temp2.pdf cat 1-endwest output /ctools/spl/I$1.pdf
+ #pdftk /ctools/spl/I$1.temp2.pdf cat 1-endsouth output /ctools/spl/I$1.pdf
+
+rm /ctools/spl/I$1
+rm /ctools/spl/I$1.temp0.txt
+rm /ctools/spl/I$1.temp1.pdf
+rm /ctools/spl/I$1.temp2.pdf
+
+#--So far the variables which will be specified from inside the COBOL programs are:                
+#---$1 = The invoice /c-note number           e.g. 123456
+#---$2 = The company number from 01 to 12     e.g. 07    

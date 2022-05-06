@@ -1,0 +1,23 @@
+#to test the IF statement.  Use of numeric in "" then use = (see 3rd statement)
+if [ "$1" = "01" ]
+  then
+  echo First Param is 01
+  fi
+  
+ if [ "$2" = "P" ]
+   then
+    echo second param is p
+fi
+
+# to test two if statements.  The && means AND.  The -eq is used for numeric statements
+if [ "$1" -eq 01 ] &&  [ "$2" = "P" ]
+  then echo both are equal
+  fi
+
+#the != means NOT = 
+if [ "$1" != "02" ]
+ then
+    echo dollar one not equal to 02
+  else
+     echo dollar one does equal 02
+    fi

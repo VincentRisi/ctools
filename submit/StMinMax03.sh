@@ -1,0 +1,3 @@
+Submit MainCont StMinMax.Sub03
+
+echo Finished StMinMax.Sub03 Run .......

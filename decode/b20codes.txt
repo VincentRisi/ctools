@@ -1,0 +1,38 @@
+00=HELP        (A-h)      :1B68         01=UP          (up)       :1B5B41
+02=MARK        (home)     :1B5B317E     04=FINISH      (end)      :1B5B347E
+05=PREV-PAGE   (pgup)     :1B5B357E     07=CANCEL      (esc)      :1B
+08=BACKSPACE   (backspace):7F           09=TAB         (tab)      :09
+0A=RETURN|NEXT (enter)    :0A           0B=DOWN        (down)     :1B5B42
+0C=NEXT-PAGE   (pgdn)     :1B5B367E     0D=BOUND       (A-home)   :1B1B5B317E
+0E=LEFT        (left)     :1B5B44       0F=MOVE        (A-m)      :1B6D
+11=SCROLL-UP   (A-pgup)   :1B1B5B357E   12=RIGHT       (right)    :1B5B43
+13=SCROLL-DN   (A-pgdn)   :1B1B5B367E   14=COPY        (A-c)      :1B63
+15=F1          (F1)       :1B5B31317E   16=F2          (F2)       :1B5B31327E
+17=F3          (F3)       :1B5B31337E   18=F4          (F4)       :1B5B31347E
+19=F5          (F5)       :1B5B31357E   1A=F6          (F6)       :1B5B31377E
+1B=GO          (F12)      :1B5B32347E   1C=F7          (F7)       :1B5B31387E
+1D=F8          (F8)       :1B5B31397E   1E=F9          (F9)       :1B5B32307E
+1F=F10         (F10)      :1B5B32317E   89=CODE-TAB    (A-tab)    :1B5B5A
+8F=CODE-MOVE   (AS-M)     :1B4D         95=CODE-F1     (A-1)      :1B1B5B31317E
+96=CODE-F2     (A-2)      :1B1B5B31327E 97=CODE-F3     (A-3)      :1B1B5B31337E
+98=CODE-F4     (A-4)      :1B1B5B31347E 99=CODE-F5     (A-5)      :1B1B5B31357E
+9A=CODE-F6     (A-6)      :1B1B5B31377E 9B=CODE-GO     (A-F12)    :1B1B5B32347E
+9C=CODE-F7     (A-7)      :1B5B31387E   9D=CODE-F8     (A-8)      :1B5B31397E
+9E=CODE-F9     (A-9)      :1B5B32307E   9F=CODE-F10    (A-0)      :1B5B32317E
+D5=SHIFT-F1    (S-F1)     :1B5B32337E   D6=CODE-SHIFT-V(AS-V)     :1B56
+D6=SHIFT-F2    (S-F2)     :1B5B32347E   D7=SHIFT-F3    (S-F3)     :1B5B32357E
+D8=SHIFT-F4    (S-F4)     :1B5B32367E   D9=SHIFT-F5    (S-F5)     :1B5B32387E
+DA=SHIFT-F6    (S-F6)     :1B5B32397E   DB=SHIFT-F7    (S-F7)     :1B5B33317E
+DD=SHIFT-F8    (S-F8)     :1B5B33327E   DE=SHIFT-F9    (S-F9)     :1B5B33337E
+DF=SHIFT-F10   (S-F10)    :1B5B33347E   E2=CODE-B      (A-b)      :1B62
+E5=CODE-E      (A-e)      :1B65         F1=ins-toggle  (ins)      :1B5B327E
+F2=del-char    (del)      :1B5B337E     F3=CODE-LEFT   (A-left)   :1B1B5B44
+F4=CODE-RIGHT  (A-right)  :1B1B5B43     FE=CODE-BS     (A-bckspc) :1B7F
+FF=CODE-DELETE (A-del)    :1B1B5B337E   91=CODE-SCR-UP (F11)      :1B5B32337E
+93=CODE-SCR-DN (A-F11)    :1B1B5B32337E
+
+ If F12 for GO does not suit you may choose A-G and AS-G instead.
+ Of course this all depends on the TERMCAP for the terminal in use.
+ Bear in minds the PC keys in parenthesis are merely suggestions.
+ (b:backward f:forward s:save ctrl-c cancel)
+

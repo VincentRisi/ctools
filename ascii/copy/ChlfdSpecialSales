@@ -1,0 +1,13 @@
+       FD  SPECIALS-FILE.
+       01  SPECIALS-RECORD.
+           03  SP-KEY.
+               05  SP-INITIALS           PIC XX.
+               05  SP-INVOICE-NUMBER     PIC 9(6).
+               05  SP-STOCK              PIC X(15).
+           03  SP-TRANS                  PIC 9.
+           03  SP-ACCOUNT-NUMBER         PIC 9(7).
+           03  SP-ACCOUNT-NAME           PIC X(40).
+           03  SP-DATE-OF-INVOICE        PIC 9(8).
+           03  SP-SALE-AMOUNT            PIC 9(6)V99.
+           03  SP-COST-AMOUNT            PIC 9(6)V99.
+      *

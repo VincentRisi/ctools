@@ -1,0 +1,6 @@
+           SELECT STPR-MASTER ASSIGN TO Ws-StSpecPr
+                ORGANIZATION IS INDEXED
+                LOCK MANUAL
+                ACCESS MODE IS DYNAMIC
+                FILE STATUS IS WS-STPR-STATUS
+                RECORD KEY IS STPR-KEY.

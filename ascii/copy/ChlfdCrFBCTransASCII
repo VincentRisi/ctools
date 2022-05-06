@@ -1,0 +1,23 @@
+       FD  CRFXTRANS-ASCII.
+       01  ASCII-REC.
+           03  ASCII-KEY. 
+               05  ASCII-PORDER-NUMBER     PIC X(20).
+           03  ASCII-ALT-KEY.
+               05  ASCII-FBC-NUMBER        PIC X(20).
+           03  ASCII-ACC-NUMBER            PIC 9(7).
+           03  ASCII-CURRENCY-TYPE         PIC X(5).
+           03  ASCII-INITIAL-FOREIGN-AMT   PIC 9(8)V99.
+           03  ASCII-FBC-COVER-AMT         PIC 9(8)V99.
+           03  ASCII-UNAPPLIED-AMT         PIC 9(8)V99.
+           03  ASCII-EXCHANGE-RATE         PIC 9(3)V9(5).
+           03  ASCII-LOCAL-AMT             PIC 9(8)V99.
+           03  ASCII-ORDER-DATE            PIC 9(8).
+           03  ASCII-RECEIPT-DUE-DATE      PIC 9(8).
+           03  ASCII-PAY-DUE-DATE          PIC 9(8).
+           03  ASCII-PAYMENT-DATE          PIC 9(8).
+           03  ASCII-INV-DETAIL OCCURS 10.
+               05  ASCII-INV-NO            PIC X(10).
+               05  ASCII-INV-FOREIGN-AMT   PIC 9(8)V99.
+               05  ASCII-INV-DATE          PIC 9(8).
+               05  ASCII-INV-PAY-DATE      PIC 9(8).
+      *

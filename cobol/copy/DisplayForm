@@ -1,0 +1,18 @@
+      *
+        DISPLAY-FORM SECTION.
+        DISP-000.
+           MOVE 0 TO F-IFRAME
+                     F-ICOL.
+           MOVE 3 TO F-ILINE.
+           CALL "DISPLAYFORM" USING F-ERROR1
+                                    F-FORM
+                                    F-IFRAME
+                                    F-ICOL
+                                    F-ILINE.
+           IF F-ERROR1 NOT = 0
+               DISPLAY "DISPLAY FORM ERROR1 NOT = 0"
+               DISPLAY F-ERROR1
+               STOP RUN.
+           PERFORM ERROR-020.
+        DISP-999.
+           EXIT.

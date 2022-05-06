@@ -1,0 +1,46 @@
+      *
+       CTOS-DISPLAY SECTION.
+           CALL 'DISPLAY' USING CDA-ERROR 
+                                CDA-ROW 
+                                CDA-COL
+                                CDA-DATA
+                                CDA-DATALEN
+                                CDA-COLOR
+                                CDA-ATTR.
+           EXIT.
+       CTOS-DISPLAY-PWD SECTION.
+           CALL 'DISPLAYPWD' USING CDA-ERROR 
+                                   CDA-ROW 
+                                   CDA-COL
+                                   CDA-DATA
+                                   CDA-DATALEN
+                                   CDA-COLOR
+                                   CDA-ATTR.
+           EXIT.
+      *
+       CTOS-ACCEPT SECTION.
+           CALL 'ACCEPT' USING CDA-ERROR
+                               CDA-ROW
+                               CDA-COL
+                               CDA-DATA
+                               CDA-DATALEN
+                               CDA-COLOR
+                               CDA-ATTR
+                               CDA-KEY
+                               CDA-FILTER.
+           MOVE CDA-KEY TO W-ESCAPE-KEY.                    
+           EXIT.
+           
+       CTOS-ACCEPT-PWD SECTION.
+           CALL 'ACCEPTPWD' USING CDA-ERROR
+                                  CDA-ROW
+                                  CDA-COL
+                                  CDA-DATA
+                                  CDA-DATALEN
+                                  CDA-COLOR
+                                  CDA-ATTR
+                                  CDA-KEY
+                                  CDA-FILTER.
+           MOVE CDA-KEY TO W-ESCAPE-KEY.                    
+           EXIT.
+      *

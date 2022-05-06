@@ -1,0 +1,14 @@
+       FD  GLTRANS-LY-FILE.
+       01  GLTRANS-LY-REC.
+           03  GLTRANS-LY-KEY.
+               05  GLTRANS-LY-REFERENCE   PIC X(10).
+               05  GLTRANS-LY-TRANS       PIC 9(6).
+               05  GLTRANS-LY-TYPE        PIC 9(2).
+           03  GLTRANS-LY-NO              PIC 9(2).
+           03  GLTRANS-LY-ACC-DATE.
+               05  GLTRANS-LY-ACCNO       PIC X(12).
+               05  GLTRANS-LY-DATE        PIC 9(8).
+           03  GLTRANS-LY-AMOUNT          PIC S9(8)V99.
+           03  GLTRANS-LY-LINE-DESC       PIC X(25).
+      *
+      *

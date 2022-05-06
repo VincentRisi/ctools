@@ -1,0 +1,10 @@
+       FD  DEBTOR-DELIVERY.
+       01  DEBTOR-DEL-RECORD.
+           03  DRDEL-KEY.
+               05  DRDEL-ACCOUNT-NUMBER PIC 9(7).
+               05  DRDEL-NUMBER         PIC 99.
+           03  DRDEL-NAME               PIC X(20).
+           03  DRDEL-ADDRESS1           PIC X(25).
+           03  DRDEL-ADDRESS2           PIC X(25).
+           03  DRDEL-ADDRESS3           PIC X(25).
+      *

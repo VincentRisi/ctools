@@ -1,0 +1,9 @@
+       FD  ORDER-GEN-ASCII.
+       01  ASCII-REC.
+           03  ASCII-KEY.
+               05  ASCII-SUPPLIER           PIC X(7).
+               05  ASCII-SEA-AIR            PIC X.
+               05  ASCII-STOCK-NUMBER       PIC X(15).
+           03  ASCII-QUANTITY               PIC 9(5).
+      *
+      *OG-SEA-AIR:SEA=S, AIR=A

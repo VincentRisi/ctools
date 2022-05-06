@@ -1,0 +1,96 @@
+       FD  PARAMETER-FILE.
+       01  PARAMETER-REC.
+         02  PA-KEY.
+           03  PA-TYPE                 PIC 9.
+           03  PA-RECORD               PIC 9.
+      * = 1
+         02  PARAMETER-FIELDS.
+           03  PA-NAME                 PIC X(40).
+           03  PA-ADD1                 PIC X(25).
+           03  PA-ADD2                 PIC X(25).
+           03  PA-ADD3                 PIC X(25).
+           03  PA-CODE                 PIC X(4).
+           03  PA-DEL1                 PIC X(25).
+           03  PA-DEL2                 PIC X(25).
+           03  PA-DEL3                 PIC X(25).
+           03  PA-PHONE                PIC X(20).
+           03  PA-FAX                  PIC X(20).
+           03  PA-COMMENT              PIC X(20).
+           03  PA-CO-REG-NO            PIC X(15).
+           03  PA-CO-VAT-NO            PIC X(15).
+           03  PA-ORDER-NUMBER         PIC 9(6).
+           03  PA-INVOICE-NUMBER       PIC 9(6).
+           03  PA-CREDIT-NUMBER        PIC 9(6).
+           03  PA-CASH-RECEIPT-NUMBER  PIC 9(6).
+           03  PA-STOCK-RECEIPT-NUMBER PIC 9(6).
+           03  PA-JOURNAL-NUMBER       PIC 9(6).
+           03  PA-QUOTE-NUMBER         PIC 9(6).
+           03  PA-SUPPLY-ORDER-NUMBER  PIC 9(6).
+           03  PA-GST-PERCENT          PIC 99V99.
+           03  PA-DRTRANS-NUMBER       PIC 9(6).
+           03  PA-STTRANS-NUMBER       PIC 9(6).
+           03  PA-CURRENT-PER-WW       PIC 99.
+           03  PA-CURRENT-PER-MM       PIC 99.
+           03  PA-CURRENT-PER-YY       PIC 9999.
+      * = 2
+         02  TERM-FIELDS REDEFINES PARAMETER-FIELDS.
+           03  TERM-DESC               PIC X(11).
+           03  FILLER                  PIC X(345).
+      * = 3
+         02  DELIVERY-FIELDS REDEFINES PARAMETER-FIELDS.
+           03  DELIV-DESC              PIC X(20).
+           03  FILLER                  PIC X(336).
+      * = 4
+         02  INVCOMM-FIELDS REDEFINES PARAMETER-FIELDS.
+           03  COMM-DESC               PIC X(60).
+           03  FILLER                  PIC X(296).
+      * = 5
+         02  QUOTECOMM-FIELDS REDEFINES PARAMETER-FIELDS.
+           03  QUOTE-DESC              PIC X(60).
+           03  FILLER                  PIC X(296).
+      * = 6
+         02  INVQUES-FIELDS REDEFINES PARAMETER-FIELDS.
+           03  INVQUES-PRT-PULLERS      PIC X.
+           03  INVQUES-CASH-SALES       PIC X.
+           03  INVQUES-STOCK-CHANGE     PIC X.
+           03  INVQUES-PS-NORM-PRINTER  PIC 99.
+           03  INVQUES-PS-REPR-PRINTER  PIC 99.
+           03  INVQUES-PS-RUSH-PRINTER  PIC 99.
+           03  INVQUES-STOCK-TO-MAX     PIC X.
+           03  INVQUES-ST-LABEL-PRINTER PIC 99.
+           03  INVQUES-ST-PRINT-LABELS  PIC X.
+           03  INVQUES-MU-GP-PERC       PIC X.
+           03  INVQUES-ACC-CONTACT      PIC X(15).
+           03  INVQUES-ACC-PHONE        PIC X(15).
+           03  INVQUES-CHECK-QUOTES     PIC X.
+           03  INVQUES-ACC-OVER-LIMIT   PIC X.
+           03  INVQUES-PAUSE-ON-PSLIP   PIC X.
+           03  INVQUES-PAUSE-BACKUP     PIC X.
+           03  FILLER                   PIC X(308).
+      * = 7
+         02  BRANCH-STOCK-FIELDS REDEFINES PARAMETER-FIELDS.
+           03  BRANCH-NUMBER           PIC 99.
+           03  BRANCH-NAME             PIC X(3).
+           03  FILLER                  PIC X(351).
+      * = 8
+         02  REPAIRCOMM-FIELDS REDEFINES PARAMETER-FIELDS.
+           03  REPAIR-DESC             PIC X(60).
+           03  FILLER                  PIC X(296).
+      *
+      *PA-TYPE:0=PARAMETER RECORD
+      *        2=TERMS RECORD
+      *        3=DELIVERY RECORD
+      *        4=COMMENT FOR INVOICES(SPECIAL), 
+      *        5=QUOTE FIELDS(DEL&TERMS)
+      *        6=INVOICE, QUES. 1=STOCK PULLERS, 2=CASH SALE RECORD.
+      *            3=WRITE STOCK CHANGES TO TEMP FILE
+      *            4=ORDERGEN TO MAX,   5=NORMAL P/S PRN #
+      *            6=REPRINT P/S PRN#,  7=RUSH JOB PRN #
+      *            8=STOCK LABEL PRN #, 9=PRINT LABELS Y/N
+      *           10=SHOW PROFIT PERC AS M/U OR GP (DEFAULT N=M/U
+      *                                              Y=GP)
+      *        7=BRANCH-STOCK-FIELDS : USED FOR READING ALL BRANCH
+      *          STOCK ITEMS IN ONE PROGRAM.
+      *
+      *PA-RECORD:NUMBER WITHIN THAT RECORD.
+      *

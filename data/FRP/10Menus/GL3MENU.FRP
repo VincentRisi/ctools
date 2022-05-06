@@ -1,0 +1,69 @@
+*****************************  MAIN CONTROL MENU  ******************           
+*   *************************** GENERAL LEDGER MENU ********************       
+*   *   *************************** REPORTING MENU ****************************
+*   *   *                                                                     *
+*   *   * 1. Chart of Accounts Report                                         *
+*   *   *                                                                     *
+*   *   * 2. Journal File Listing Report                                      *
+*   *   * 3. Journal Audit Trail Report                                       *
+*   *   *                                                                     *
+*   *   * 4. Trans Search By Type/Period                                      *
+*   *   *                                                                     *
+*   *   * 5. Trial Balance Report - Detail                                    *
+*   *   * 6. Trial Balance Report - Summary                                   *
+*   *   * 7. Trial Balance Report - L/Year                                    *
+*   *   *                                                                     *
+*   *   * 8. Summary Income Statement                                         *
+*   *   * 9. Summary Income Statement - By Group                              *
+*****   *                                                                     *
+    *   *10. Summary Balance Sheet                                            *
+    *****11. Summary Balance Sheet - By Group                                 *
+        *                                                                     *
+        *12. Asset Register Report                                            *
+        **********************ENTER SELECTION : __*****************************
+                                                                               
+                                                                               
+                                                                               
+
+Form name: Gl3Menu                         size: 1065  bytes
+height: 26    width: 79    number of fields: 2              
+
+Field name: SELECTION                                        
+Row: 22   Column: 48   Width: 2                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+                                 
+ ******************************* 
+ *  COLOR PALETTE INFORMATION  * 
+ ******************************* 
+                                 
+            Caption Color: 4     
+               Line Color: 7     
+                                 
+                                 
+        *************************
+        *   I N T E N S I T Y   *
+*********************************
+* Color *  Red  * Green *  Blue *
+*********************************
+*   0   *   0   *   3   *   0   *
+*   1   *   0   *   2   *   0   *
+*   2   *   0   *   3   *   3   *
+*   3   *   0   *   2   *   2   *
+*   4   *   3   *   3   *   3   *
+*   5   *   2   *   2   *   2   *
+*   6   *   3   *   3   *   0   *
+*   7   *   3   *   0   *   0   *
+*********************************
+  

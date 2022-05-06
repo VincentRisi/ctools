@@ -1,0 +1,26 @@
+Sort
+[Win]<Oryx>StOrders
+[Win]<Oryx>Temp
+@[Win]<Temp>StOrderSort.Key
+
+[Win]<$>SortWorkFile1
+[Win]<$>SortWorkFile2
+
+Rename
+[Win]<Oryx>Temp
+[Win]<Oryx>StOrders
+Y
+
+I Reo
+[Win]<Oryx>StOrders
+<OryxInd>StOrders.Ind
+
+
+
+@[Win]<Temp>StOrders.Key
+5
+100
+50
+500
+
+Y

@@ -1,0 +1,7 @@
+       FD  STALT-MASTER.
+       01  STALT-RECORD.
+           03  STALT-KEY.
+               05  STALT-STOCKNUMBER    PIC X(15).
+           03  STALT-ALTERNATIVES OCCURS 10.
+               05  STALT-NUMBER         PIC X(15).
+      *

@@ -1,0 +1,6 @@
+           SELECT STNWPR-MASTER ASSIGN TO Ws-StNewPrice
+                ORGANIZATION IS INDEXED
+                LOCK MANUAL
+                ACCESS MODE IS DYNAMIC
+                FILE STATUS IS WS-STNWPR-STATUS
+                RECORD KEY IS STNWPR-KEY.

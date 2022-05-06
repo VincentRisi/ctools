@@ -1,0 +1,50 @@
+Path
+Win
+Program
+
+Dis Cluster
+APT Terminate
+S
+
+Screen Setup
+
+Y
+
+
+Y
+
+100
+
+
+Tape Reten
+
+
+File
+<Data*>* <CDat*>*
+
+<Temp>TapeBackup.key
+
+1
+
+Selec Arch
+@<Temp>TapeBackup.key
+
+
+[Qic]
+Y
+
+Rest Archi
+[Qic]
+
+
+
+
+
+
+y
+[Win]<Spl>Backup.Lst
+
+
+Type
+<Temp>TapeVolMessage
+Boot

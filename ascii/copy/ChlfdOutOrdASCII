@@ -1,0 +1,3 @@
+       FD  OUTSTANDING-ASCII.
+       01  ASCII-REC.
+           03  ASCII-MESSAGE             PIC X(86).

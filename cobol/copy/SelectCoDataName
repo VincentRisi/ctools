@@ -1,0 +1,6 @@
+           SELECT DATA-FILE ASSIGN TO Ws-Data
+               ORGANIZATION IS INDEXED
+               LOCK MANUAL
+               ACCESS MODE IS DYNAMIC
+               FILE STATUS IS WS-DATA-STATUS
+               RECORD KEY IS DATA-KEY.

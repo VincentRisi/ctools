@@ -1,0 +1,22 @@
+       FD  DEBTOR-TRANS-ASCII.
+       01  ASCII-REC.
+           03  ASCII-KEY.
+               05  ASCII-TYPE               PIC 99.
+               05  ASCII-TRANSACTION-NUMBER PIC 9(6).
+           03  ASCII-ACC-KEY.
+               05  ASCII-ACCOUNT-NUMBER     PIC 9(7).
+           03  ASCII-REFERENCE1             PIC X(20).
+           03  ASCII-REFERENCE2             PIC X(6).
+           03  ASCII-DATE                   PIC 9(8).
+           03  ASCII-DEL-DATE               PIC 9(8). 
+           03  ASCII-AMT-OF-INVOICE         PIC 9(7)V99.
+           03  ASCII-AMT-OUTSTANDING        PIC 9(7)V99.
+      *
+      * REF1 : ORDER NUMBER
+      * REF2 : OUTST.INV.NO./CASH RECEIPT NO./JOURNAL NO.
+      *DRTR-TYPE:1=INV(+),             2=CASH(-),   
+      *          3=R/D CHEQUE(+),      5=CR-JRN(-),
+      *          4=DR-JRN(+)           6=C/NOTE(-),
+      *          7=INTEREST(+),        8=DISC(-),
+      *         10=CHEQUE REFUND(+)    9=B-DEBT(-),
+      *                               11=INTEREST REV(-)

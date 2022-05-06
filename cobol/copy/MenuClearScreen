@@ -1,0 +1,13 @@
+      *
+       CLEAR-SCREEN SECTION.
+       CLEAR-000.
+           CALL "XE4".
+           MOVE SPACES TO WS-MESSAGE
+           MOVE 0300 TO POS.
+       CLEAR-015.
+           DISPLAY WS-MESSAGE AT POS.
+           IF POS < 3100
+              ADD 100 TO POS
+              GO TO CLEAR-015.
+       CLEAR-999.
+           EXIT.

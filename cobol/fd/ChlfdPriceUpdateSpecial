@@ -1,0 +1,14 @@
+       FD  PRICE-SP-MASTER.
+       01  PRICE-SP-RECORD.
+            03  PRICE-SP-KEY.
+                05  PRICE-SP-ST-NUM       PIC X(15).
+            03  PRICE-SP-DESCRIPTION      PIC X(40).
+            03  PRICE-SP-UNIT-OF-SALE     PIC X(4).
+            03  PRICE-SP-TARIFF           PIC X(8).
+            03  PRICE-SP-NEW-DEALER-PRICE PIC 9(6)V99.
+            03  PRICE-SP-PAGE-NUMBER      PIC X(3).
+            03  FILLER                    PIC XX.
+            03  PRICE-SP-OLD-LIST-PRICE   PIC 9(6)V99.
+            03  PRICE-SP-NEW-LIST-PRICE   PIC 9(6)V99.
+
+

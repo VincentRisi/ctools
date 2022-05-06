@@ -1,0 +1,6 @@
+           SELECT GLJRN-FILE ASSIGN TO Ws-GlJrn
+               ORGANIZATION IS INDEXED
+               LOCK MANUAL
+               ACCESS MODE IS DYNAMIC
+               RECORD KEY IS GLJRN-KEY
+               FILE STATUS IS WS-GLJRN-STATUS.

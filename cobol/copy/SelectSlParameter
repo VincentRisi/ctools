@@ -1,0 +1,6 @@
+           SELECT PARAMETER-FILE ASSIGN TO Ws-Parameter
+               ORGANIZATION IS INDEXED
+               LOCK MANUAL
+               ACCESS MODE IS DYNAMIC
+               FILE STATUS IS WS-SLPARAMETER-STATUS
+               RECORD KEY IS PA-KEY.

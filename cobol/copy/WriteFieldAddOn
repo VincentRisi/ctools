@@ -1,0 +1,19 @@
+      *
+       WRITE-FIELD-ADDON SECTION.
+       WRITE-ADD000.
+            CALL "WRITEFIELD" USING F-ERROR1
+                                    F-FORM
+                                    F-FIELDNAME
+                                    F-CBFIELDNAME
+                                    F-INDEX
+                                    F-EDNAMEFIELDADDON
+                                    F-CBFIELDLENGTH
+                                    F-TYPE.
+            IF F-ERROR1 NOT = 0
+                DISPLAY "WRITEFIELD ADD ON ERROR"
+                DISPLAY F-FIELDNAME
+                DISPLAY F-ERROR1
+                PERFORM ERROR-010
+                STOP RUN.
+       WRITE-ADD999.
+           EXIT.

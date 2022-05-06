@@ -1,0 +1,35 @@
+       FD  BANK-CAMS-FILE.
+       01  BANK-CAMS-REC.
+           03  BANK-CAMS-LINE.
+               05  BANK-CAMS-STATEMENT-DATE  PIC X(10).
+               05  BANK-CAMS-FILL1           PIC X(1).
+               05  BANK-CAMS-STATEMENT-NUM   PIC X(6).
+               05  BANK-CAMS-FILL2           PIC X(2).
+               05  BANK-CAMS-NARRATIVE       PIC X(47).
+               05  BANK-CAMS-FILL3           PIC X(3).
+               05  BANK-CAMS-CH-REFNUM       PIC X(8).
+               05  BANK-CAMS-FILL4           PIC X(4).
+               05  BANK-CAMS-AMOUNT          PIC X(14).
+               05  BANK-CAMS-FILL5           PIC X(2).
+               05  BANK-CAMS-DATE            PIC X(5).
+               05  BANK-CAMS-FILL6           PIC X.
+               05  BANK-CAMS-FOUND           PIC X(3).
+               05  BANK-CAMS-FILL7           PIC X(13).
+               05  BANK-CAMS-VAT-AMT         PIC X(11).
+               05  BANK-CAMS-FILL8           PIC X.
+               05  BANK-CAMS-FEC-FOUND       PIC X.
+               05  BANK-CAMS-RETURN-CHAR     PIC X.
+      *
+      * THE CAMS FILE OFF THE PC SHOULD BE MADE TO BE 133 CHARS LONG
+      * - INCLUDING THE RETURN CHAR AT THE END OF EACH LINE -
+      * FOR ALL LINES, HEADERS AS WELL.  CUT OFF ALL LINES AFTER THE 
+      * CLOSING BALANCE ENTRY.
+      *ONE BLANK LINE MUST APPEAR BEFORE THE "CLOSING BALANCE" LINE
+      *AND ONE BLANK LINE AFTER IT.
+      *
+      *THE OPENING AND CLOSING BALANCES MUST BE SHOWN AS:
+      *Opening balance    Closing balance
+      *THESE BALANCES MUST BE PUSHED ALONG TO THE RIGHT SO THAT THE 
+      *BEGINNING OF THE WORD "Opening" ETC. MUST START AT POS 87 IN THE
+      *LINE AND MUST LINE UP THE BALANCE WITH ALL OTHER FIGURES UNDER
+      *THE "BALANCE" COLUMN

@@ -1,0 +1,14 @@
+       FD  SBREP-MASTER.
+       01  SBREP-REC.
+           03  SBREP-KEY.
+               05  SBREP-REP             PIC X.
+           03  SBREP-REPNAME             PIC X(15).
+           03  SBREP-SALES-BUDGET        PIC 9(8)V99.
+           03  SBREP-PROFIT-BUDGET       PIC 9(8)V99.
+           03  SBREP-INT                 PIC XX.
+           03  SBREP-INTNAME             PIC X(15).
+      *REP = CORPORATE REP NAME
+      *INT = INTERNAL SALESMAN
+      *BUDGET = MONTHLY BUDGET.  IF REP = $ THEN REFERS TO COMPANY
+      *                          MONTHLY BUDGET.
+      *

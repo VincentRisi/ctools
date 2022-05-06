@@ -1,0 +1,69 @@
+**************************{**  MAIN CONTROL MENU  **}******************        
+*   ************************{** CREDITOR CONTROL MENU **}*****************     
+*   *   **********************{* MAINTENANCE & ENQUIRY *}**********************
+*   *   *                                                                     *
+*   *   *                                                                     *
+*   *   *  1. Creditors Account Entry/Edit                                    *
+*   *   *  2. Creditors Account Inquiry      12. Creditor Alias Entry/Edit    *
+*   *   *  3. Short Name Inquiry                                              *
+*   *   *                                    13. CAMS Conversion From Cheques *
+*   *   *  4. Currency File                  14. CAMS Trans Allocation to Pay *
+*   *   *                                    15. CAMS Payment Download to Disk*
+*   *   *  5. Invoice/Credit note Entry/Edit                                  *
+*   *   *  6. Invoice Date/Discount Edit     16. EMail Remittance Entry / Edit*
+*   *   *  7. Cr-Jrn Enquiry By Account      17. EMail Remittance Enquiry     *
+*   *   *  8. Cr-Trans Enquiry By Account    18. EMail Foreign Trans For Remit*
+*   *   *                                                                     *
+*   *   *  9. Cash Allocations (Manual)      19. Creditor Trans Inquiry       *
+*   *   *                                                                     *
+*****   * 10. FBC Master File Entry/Edit     20. Period End Routine           *
+    *   * 11. FBC Transactions Entry/Edit    21. Maintain Data Files          *
+    *****                                       (Ensure No Terminal is Using  *
+        *                                         Any Creditor Files)         *
+        *                                                                     *
+        ***********************ENTER SELECTION : __****************************
+                                                                               
+                                                                               
+
+Form name: Cr2Menu                         size: 1422  bytes
+height: 26    width: 79    number of fields: 2              
+
+Field name: SELECTION                                        
+Row: 23   Column: 49   Width: 2                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+                                 
+ ******************************* 
+ *  COLOR PALETTE INFORMATION  * 
+ ******************************* 
+                                 
+            Caption Color: 4     
+               Line Color: 7     
+                                 
+                                 
+        *************************
+        *   I N T E N S I T Y   *
+*********************************
+* Color *  Red  * Green *  Blue *
+*********************************
+*   0   *   0   *   3   *   0   *
+*   1   *   0   *   2   *   0   *
+*   2   *   0   *   3   *   3   *
+*   3   *   0   *   2   *   2   *
+*   4   *   3   *   3   *   3   *
+*   5   *   2   *   2   *   2   *
+*   6   *   3   *   3   *   0   *
+*   7   *   3   *   0   *   0   *
+*********************************
+  

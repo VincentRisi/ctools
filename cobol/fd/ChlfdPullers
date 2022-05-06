@@ -1,0 +1,5 @@
+       FD  PULLER-MASTER.
+       01  PULLER-REC.
+           03  PU-KEY.
+               05  PU-INITIAL            PIC XX.
+           03  PU-NAME                   PIC X(20).

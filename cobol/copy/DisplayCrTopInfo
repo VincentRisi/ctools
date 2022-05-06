@@ -1,0 +1,22 @@
+      *
+       DISPLAY-CR-TOP-INFO SECTION.
+       DTI-005.
+           MOVE 0562 TO POS
+           DISPLAY "Period :" AT POS
+           ADD 9 TO POS
+           DISPLAY GLPA-CURRENT-CRPER AT POS.
+
+           MOVE GLPA-CURRENT-CRPER TO SUB-1.
+           MOVE 0658 TO POS
+           MOVE GL-BEGDATE (SUB-1) TO SPLIT-DATE
+           PERFORM CONVERT-DATE-FORMAT
+           DISPLAY DISPLAY-DATE AT POS
+           ADD 11 TO POS
+           DISPLAY ":" AT POS.
+           ADD 2 TO POS
+           MOVE GL-ENDDATE (SUB-1) TO SPLIT-DATE
+           PERFORM CONVERT-DATE-FORMAT
+           DISPLAY DISPLAY-DATE AT POS.
+       DTI-999.
+           EXIT.
+      *

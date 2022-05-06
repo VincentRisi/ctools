@@ -1,0 +1,6 @@
+           SELECT CRCH-FILE ASSIGN TO Ws-CrCheques
+              ORGANIZATION IS INDEXED
+              LOCK MANUAL
+              ACCESS MODE IS DYNAMIC
+              RECORD KEY IS CRCH-KEY
+              FILE STATUS IS WS-CRCHEQUE-STATUS.

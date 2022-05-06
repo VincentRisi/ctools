@@ -1,0 +1,45 @@
+     *  GET SECTION
+            IF F-EXIT-CH = X"05"
+                 PERFORM READ-CREDITOR-PREVIOUS
+              IF WS-END NOT = "Y"
+                 GO TO GET-003
+              ELSE
+                 PERFORM CLEAR-FORM
+                 GO TO GET-000.
+
+
+     *   FILL SECTION
+            IF F-EXIT-CH = X"05"
+               PERFORM REWRITE-CREDITOR-RECORD
+               PERFORM READ-CREDITOR-PREVIOUS
+               PERFORM GET-003 THRU GET-005
+               GO TO FILL-001.
+
+
+      *
+       READ-CREDITOR-PREVIOUS SECTION.
+       RDPREV-005. 
+           READ CREDITOR-MASTER PREVIOUS WITH LOCK
+            AT END
+              MOVE 0 TO CR-ACCOUNT-NUMBER
+                        WS-ACCOUNTNUMBER
+              MOVE "Y" TO WS-END
+            MOVE "END OF PREVIOUS PAGE SEQUENCE, ENTER A NEW IDENTIFIER"
+              TO WS-MESSAGE
+              PERFORM ERROR-MESSAGE
+              GO TO RDPREV-999.
+           IF WS-CREDITOR-ST1 = 23 OR 35 OR 49
+               MOVE 0 TO WS-CREDITOR-ST1
+               MOVE "CREDITOR BUSY ON READ-NEXT, 'ESC' TO RETRY"
+               TO WS-MESSAGE
+               PERFORM ERROR-MESSAGE
+               GO TO RDPREV-005.
+           IF WS-CREDITOR-ST1 NOT = 0
+               MOVE 0 TO WS-CREDITOR-ST1
+               PERFORM START-CREDITOR
+               GO TO RDPREV-005.
+           MOVE CR-ACCOUNT-NUMBER TO WS-ACCOUNTNUMBER
+                                     WS-ACC-SAVE.
+           MOVE "N" TO NEW-CREDITORNO.
+       RDPREV-999.
+           EXIT.

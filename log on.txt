@@ -1,0 +1,26 @@
+C:\putty.exe -load ctools -pw ctos
+C:\putty.exe -load john -pw thrcanbonly1
+C:\putty.exe -load steve -pw thutmes
+C:\putty.exe -load ctj-donovan -pw blakkie
+C:\putty.exe -load ctj-lourens -pw frodo
+C:\putty.exe -load ctj-counter1 -pw ctj-counter
+C:\putty.exe -load ctj-christo -pw christo
+C:\putty.exe -load ctj-werner -pw fritz
+C:\putty.exe -load ctj-store -pw security
+C:\putty.exe -load ctj-jonathan -pw ctjsales
+C:\putty.exe -load ctj-prince -pw prince
+C:\putty.exe -load ctj-penny -pw creditors
+C:\putty.exe -load ctj-lizzie -pw arnie
+C:\putty.exe -load ctj-ray -pw coelecanth
+C:\putty.exe -load ctn-niresh -pw sentra
+C:\putty.exe -load ctn-randhir -pw home
+C:\putty.exe -load ctn-viresh -pw viresh
+C:\putty.exe -load csc-suzanne -pw admin
+C:\putty.exe -load csc-bianca -pw profit
+C:\putty.exe -load csc-rudie -pw bigprofit
+C:\putty.exe -load sfj-craig -pw profits
+C:\putty.exe -load sfj-gert -pw bigprofits
+C:\putty.exe -load sfj-chesley -pw etude
+C:\putty.exe -load sfj-arno -pw sfj-stores
+C:\putty.exe -load sfj-bianca -pw lucille
+

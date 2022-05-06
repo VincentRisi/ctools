@@ -1,0 +1,74 @@
+       FD  DATA-FILE.
+       01  DATA-RECORD.
+           03  DATA-KEY.
+               04  DATA-NUMBER     PIC 999.
+           03  DATA-NAME           PIC X(25).
+      **************************************************************
+      * Position   ******DATA-FILE NAME***      WORKING STORAGE    *
+      *  Sub-1     New Name       Old Name          NAME           *
+      *   1      :1=DrMaster      Debtors         Ws-Debtor        *
+      *   2       2=DrTrans                       Ws-DrTrans       *
+      *   3       3=DrContact                     Ws-DrContact     *
+      *   4       4=DrMail                        Ws-DrMail        *
+      *   5      11=StMaster      Stock           Ws-Stock         *
+      *   6      12=StTrans                       Ws-StTrans       *
+      *   7      13=StReceipt     Receipt         Ws-StReceipt     *
+      *   8      14=StReceiptLY   ReceiptLY       Ws-StReceiptLy   *
+      *   9      15=StImports     Imports         Ws-StImports     *
+      *  10      16=StOrders      SOrders         Ws-StOrders      *
+      *  11      17=StSpecPr                      Ws-StSpecPr      *
+      *  12      18=StOrderGen    OrderGen        Ws-StOrderGen    *
+      *  13      19=StNewPrices                   Ws-StNewPrice    *
+      *  14      20=StChanges                     Ws-StChange      *
+      *  15      21=SlDailyEx     Dailyex         Ws-DailyEx       *
+      *  16      22=SlInvRev      InvRev          Ws-InvRev        *
+      *  17      23=SlParameter   Parameter       Ws-Parameter     *
+      *  18      24=SlSoldBy      SoldBy          Ws-SoldBy        *
+      *  19      25=SlSbRep       SbRep           Ws-SbRep         *
+      *  20      26=SlMaster      Sales           Ws-Sales         *
+      *  21      27=SlDistTot     Distribution    Ws-Distribution  *
+      *  22      28=SlRegister    Register        Ws-Register      *
+      *  23      29=SlSpecials                    Ws-Specials      *
+      *  24      30=CrMaster      Creditors       Ws-CrMaster      *
+      *  25      31=CrTrans                       Ws-CrTrans       *
+      *  26      32=CrJrn                         Ws-CrJrn         *
+      *  27      33=CrCurrency                    Ws-CrCurrency    *
+      *  28      40=CbMaster                      Ws-CbMaster      *
+      *  29      41=CbMasterLY                    Ws-CbMasterLy    *
+      *  30      42=CbTrans                       Ws-CbTrans       *
+      *  31      43=CbTransLY                     Ws-CbTransLy     *
+      *  32      51=GlMaster                      Ws-GlMaster      *
+      *  33      52=GlMasterLY                    Ws-GlMasterLy    *
+      *  34      53=GlTrans                       Ws-GlTrans       *
+      *  35      54=GlTransLY                     Ws-GlTransLy     *
+      *  36      55=GlJrn                         Ws-GlJrn         *
+      *  37      56=GlParameter                   Ws-GlParameter   *
+      *  38      60=BmMaster      Toolkit         Ws-Toolkit       *
+      *  39      80=CoCompany     Company         Ws-CoCompany     *
+      *  40      81=CoMenu        Menu            Ws-Menu          *
+      *  41      82=CoDataName                    Ws-Data          *
+      *  42      83=CoForms.Lib   Progs.Lib     **UNUSED***        *
+      *  43      84=CoFaxParam                    Ws-CoFaxParm     *
+      *  44      85=CoPullBy                      Ws-CoPullBy      *
+      *  45      86=CoCashSale                    Ws-CoCashSale    *
+      *  46      87=CoPullers                     Ws-CoPull        *
+      *  47      88=CoPrinters                    Ws-CoPrinters    *
+      *  48      89=StCatalogue                   Ws-StCatalogue   *
+      *  49      90=StAlternative                 Ws-StAlternative *
+      *  50      91=CrFBCHeader                   Ws-CrFBCHeader   *
+      *  51      92=CrFBCTrans                    Ws-CrFBCTrans    *
+      *  52      93=CrAlias                       Ws-CrAlias       *
+      *  53      94=CrCheques                     Ws-CrCheques     *
+      *  54      95=StDiscAcc                     Ws-StDiscAcc     *
+      *  55      96=CoStaffInOut                  Ws-CoStaffInOut  *
+      *  56      97=StBranchCat                   Ws-StTransLY     *
+      *  57      98=STransLy                      Ws-StTransLY     *
+      *  58      99=SlRegLY                       Ws-SlRegLY       *
+      *  60     100=CrCamsTrans                   Ws-CrCamsTrans   *
+      *  61     101=BankCamsTrans                 Ws-bankCamsTrans *
+      *  62     102=CrRemittance                  Ws-CrRemittance  *
+      *  63     103=CrRemitTrans                  Ws-CrRemitTrans  *
+      *  64     104=DrMasterOld                   Ws-DebtorOld     *
+      *  65     105=StockLookup                   Ws-StockLookup   *
+      *  66     106=CrMasterOld                   Ws-CrMasterOld   *
+      **************************************************************

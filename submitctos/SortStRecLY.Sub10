@@ -1,0 +1,26 @@
+Sort
+[Win]<Qutm>StReceiptLY
+[Win]<Qutm>Temp
+@[Win]<Temp>StRecSort.Key
+
+[Win]<$>SortWorkFile1
+[Win]<$>SortWorkFile2
+
+Rename
+[Win]<Qutm>Temp
+[Win]<Qutm>StReceiptLY
+Y
+
+I Reo
+[Win]<Qutm>StReceiptLY
+<QutmInd>StReceiptLY.Ind
+
+
+
+@[Win]<Temp>StRec.Key
+5
+100
+50
+500
+
+Y

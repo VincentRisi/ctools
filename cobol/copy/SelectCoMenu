@@ -1,0 +1,6 @@
+           SELECT MENU-PASSWORDS ASSIGN TO Ws-Menu
+               ORGANIZATION IS INDEXED
+               LOCK MANUAL
+               ACCESS MODE IS DYNAMIC
+               RECORD KEY IS MU-KEY
+               FILE STATUS IS WS-MENU-STATUS.

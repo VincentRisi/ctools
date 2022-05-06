@@ -1,0 +1,27 @@
+       FD  OFIS-FILE.
+       01  OFIS-RECORD.
+           03  OFIS-KEY.
+               05  OFIS-NAME          PIC X(25).
+               05  OFIS-FIRSTNAME     PIC X(25).
+           03  OFIS-TITLE             PIC X(10).
+           03  OFIS-AFFILIATION       PIC X(25).
+           03  OFIS-CATEGORY          PIC X(25).
+           03  OFIS-PHONE             PIC X(25).
+           03  OFIS-PHONE-LABEL       PIC X(10).
+           03  OFIS-ADDRESS1          PIC X(50).
+           03  OFIS-ADDRESS2          PIC X(50).
+           03  OFIS-ADDRESS3          PIC X(50).
+           03  OFIS-FAX               PIC X(25).
+           03  OFIS-FAX-LABEL         PIC X(10).
+           03  OFIS-ADDRESS4          PIC X(50).
+           03  OFIS-ADDRESS5          PIC X(50).
+           03  OFIS-ADDRESS6          PIC X(50).
+           03  OFIS-NOTES OCCURS 200.
+               05  OFIS-LINE-DESC    PIC X(80).
+      *
+      * KEYS TO THE RECORD ARE :
+      * 1=OFIS KEY:
+      *      OFIS-NAME
+      *      OFIS-FIRSTNAME
+      * 2=OFIS-AFFILIATION
+      * 3=OFIS-CATEGORY

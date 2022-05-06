@@ -1,0 +1,109 @@
+      *
+       CHECK-PASSWORD-INFO SECTION.
+       CPI-005.
+           MOVE 1 TO SUB-1.
+       CPI-010.
+           IF WS-MENUNUMBER (SUB-1) NOT = WS-OPTION
+            IF SUB-1 < 35
+              ADD 1 TO SUB-1
+              GO TO CPI-010.
+       CPI-020.
+           MOVE WS-SELECTION                 TO SUB-3.
+           MOVE WS-PA-NUMBER (SUB-1 SUB-3)   TO WS-PASSWORDNEEDED
+           MOVE WS-PA-PRIORITY (SUB-1 SUB-3) TO WS-PRIORITYNEEDED.
+       CPI-999.
+           EXIT.
+      *
+       CHECK-PASSWORD SECTION.
+       CP-020.
+          IF WS-OVER-RIDE = "Y"
+              MOVE 0 TO   WS-PRIORITYNEEDED
+                          WS-LASTPRIORITY
+                          WS-LASTOPTION
+              MOVE " " TO WS-LASTPASSWORD
+                          WS-PASSWORDNEEDED.
+           MOVE 1 TO SUB-1 SUB-3.
+           MOVE 2910 TO POS
+           DISPLAY "                                        " AT POS.
+ 
+           PERFORM CHECK-PASSWORD-INFO.
+           IF WS-PASSWORDNEEDED = "    "
+               MOVE "Y" TO WS-PASSWORD-VALID
+               GO TO CP-900.
+       CP-450.
+           IF WS-LASTOPTION = 99
+            IF WS-LASTPRIORITY NOT < WS-PRIORITYNEEDED
+              MOVE "Y" TO WS-PASSWORD-VALID
+              GO TO CP-900.
+           IF WS-LASTPASSWORD = WS-PASSWORDNEEDED
+              MOVE "Y" TO WS-PASSWORD-VALID
+              GO TO CP-900.
+       CP-500.
+           MOVE " " TO WS-PASSWORD-KEY.
+           MOVE 2925 TO POS
+           DISPLAY "ENTER A PASSWORD :" AT POS
+           MOVE 2945 TO POS
+           MOVE 1 TO SUB-2.
+       CP-550.
+           PERFORM READ-MENU-KBD.
+           IF W-ESCAPE-KEY = X"0E" OR = X"08"
+           IF SUB-2 > 1
+               MOVE " " TO WS-PA-KEY (SUB-2)
+               SUBTRACT 1 FROM SUB-2 POS
+               MOVE " " TO WS-PASSWORD-VALID WS-PA-KEY (SUB-2)
+               DISPLAY WS-PASSWORD-VALID AT POS
+               GO TO CP-550
+           ELSE
+               GO TO CP-550.
+
+           IF W-CRTSTATUS = 0000
+            IF W-ESCAPE-KEY = " "
+               GO TO CP-800.
+               
+           IF W-ESCAPE-KEY = X"0A" OR = X"1B"
+               GO TO CP-800.
+           MOVE W-ESCAPE-KEY TO WS-PA-KEY (SUB-2)
+           MOVE "#" TO WS-PASSWORD-VALID
+           DISPLAY WS-PASSWORD-VALID AT POS.
+           IF SUB-2 NOT > 10
+               ADD 1 TO SUB-2 POS
+               GO TO CP-550.
+       CP-800.
+           IF WS-PASSWORD-KEY = WS-PASSWORDNEEDED
+              MOVE "Y" TO WS-PASSWORD-VALID
+              GO TO CP-860.
+           MOVE WS-OPTION TO WS-OPTIONSAVE
+           MOVE 99 TO WS-OPTION.
+       CP-810.
+           PERFORM CPI-005 THRU CPI-010.
+           MOVE "N" TO WS-PASSWORD-VALID
+           MOVE 1 TO SUB-2.
+       CP-850.
+           IF WS-PASSWORD-KEY = WS-PA-NUMBER (SUB-1 SUB-2)
+            IF WS-PA-PRIORITY (SUB-1 SUB-2) NOT < WS-PRIORITYNEEDED
+              MOVE "Y" TO WS-PASSWORD-VALID
+              MOVE WS-PA-PRIORITY (SUB-1 SUB-2) TO WS-LASTPRIORITY
+              GO TO CP-860.
+           IF SUB-2 NOT > 34
+              ADD 1 TO SUB-2
+              GO TO CP-850.
+       CP-860.
+           IF WS-PASSWORD-VALID = "N"
+               MOVE 0   TO WS-LASTOPTION
+                           WS-LASTPRIORITY
+               MOVE " " TO WS-LASTPASSWORD
+                           WS-PASSWORD-KEY
+           ELSE
+               MOVE WS-OPTION         TO WS-LASTOPTION
+               MOVE WS-OPTIONSAVE     TO WS-OPTION
+               MOVE WS-PASSWORD-KEY   TO WS-LASTPASSWORD.
+       CP-900.
+           PERFORM ERROR-020.
+           MOVE 2910 TO POS
+           DISPLAY WS-MESSAGE AT POS.
+       CP-999.
+           EXIT.
+      *
+       COPY "ReadMenuKBD".
+      *
+      *END-OF-JOB

@@ -1,0 +1,86 @@
+      *
+       WRITE-STOCK-CHANGES SECTION.
+       WSTCH-000.
+             MOVE ST-STOCKNUMBER TO STCH-STOCKNUMBER.
+             START STOCKCHANGE-MASTER KEY NOT < STCH-KEY
+               INVALID KEY NEXT SENTENCE.
+       WSTCH-005.
+             READ STOCKCHANGE-MASTER WITH LOCK
+                 INVALID KEY NEXT SENTENCE.
+             IF WS-STCHANGE-ST1 = 23 OR 35
+                GO TO WSTCH-006.
+             IF WS-STCHANGE-ST1 NOT = 0
+                MOVE 0 TO WS-STCHANGE-ST1
+                MOVE "STOCKCHANGE BUSY ON READ, 'ESC' TO RETRY."
+                TO WS-MESSAGE
+                PERFORM ERROR-MESSAGE
+                GO TO WSTCH-005.
+       WSTCH-006.
+          MOVE ST-DESCRIPTION1     TO STCH-DESCRIPTION1
+          MOVE ST-DESCRIPTION2     TO STCH-DESCRIPTION2
+          MOVE ST-CATEGORY         TO STCH-CATEGORY
+          MOVE ST-SUPPLIER         TO STCH-SUPPLIER
+          MOVE ST-FOREIGNCOST      TO STCH-FOREIGNCOST
+          MOVE ST-SUPPLIERDISC     TO STCH-SUPPLIERDISC
+          MOVE ST-CURRENCY         TO STCH-CURRENCY
+          MOVE ST-CURRENCY-RATE    TO STCH-CURRENCY-RATE
+          MOVE ST-PRICE            TO STCH-PRICE
+          MOVE ST-MIN-PERC         TO STCH-MIN-PERC
+          MOVE ST-UNITOFMEASURE    TO STCH-UNITOFMEASURE
+          MOVE ST-DISCOUNT1        TO STCH-DISCOUNT1
+          MOVE ST-DISCOUNT2        TO STCH-DISCOUNT2
+          MOVE ST-DISCOUNT3        TO STCH-DISCOUNT3
+          MOVE ST-DISCOUNT4        TO STCH-DISCOUNT4
+          MOVE ST-DISCOUNT5        TO STCH-DISCOUNT5
+          MOVE ST-DISCOUNT6        TO STCH-DISCOUNT6
+          MOVE ST-DISCOUNT7        TO STCH-DISCOUNT7
+          MOVE ST-DISCOUNT8        TO STCH-DISCOUNT8
+          MOVE ST-DISCOUNT9        TO STCH-DISCOUNT9
+          MOVE ST-AVERAGECOST      TO STCH-AVERAGECOST
+          MOVE ST-LASTCOST         TO STCH-LASTCOST
+          MOVE ST-DEL-DELAY        TO STCH-DEL-DELAY
+          MOVE ST-MINBUYQTY        TO STCH-MINBUYQTY
+          MOVE ST-ANALYSIS         TO STCH-ANALYSIS
+          MOVE ST-DUTYPERCENT      TO STCH-DUTYPERCENT
+          MOVE ST-DUTYTARIFF       TO STCH-DUTYTARIFF
+          MOVE ST-SURCHARGE        TO STCH-SURCHARGE
+          MOVE ST-PERMIT           TO STCH-PERMIT.
+      *******************************************************
+      *D=DELETE, C=CHANGE, R=RENAMED, N=NEW NUMBER, M=MERGE *
+      *******************************************************
+          IF F-EXIT-CH = X"1F"
+            MOVE "D"               TO STCH-TYPE-OF-CHANGE
+            GO TO WSTCH-010.
+          IF NEW-STOCKNO = "Y"
+            MOVE "N"               TO STCH-TYPE-OF-CHANGE
+            GO TO WSTCH-010.
+          IF WS-STCHANGE-ST1 = "0"
+           IF STCH-TYPE-OF-CHANGE NOT = "N" AND NOT = "D" AND NOT = "R"
+           MOVE "C"                TO STCH-TYPE-OF-CHANGE
+            GO TO WSTCH-010.
+           
+           MOVE "C"                TO STCH-TYPE-OF-CHANGE.
+       WSTCH-010.
+           IF WS-STCHANGE-ST1 = 23 OR 35
+              GO TO WSTCH-020.
+           REWRITE STOCKCHANGE-RECORD
+              INVALID KEY NEXT SENTENCE.
+           IF WS-STCHANGE-ST1 NOT = 0
+              MOVE 0 TO WS-STCHANGE-ST1
+              MOVE "STOCKCHANGE BUSY ON REWRITE, 'ESC' TO RETRY."
+              TO WS-MESSAGE
+              PERFORM ERROR-MESSAGE
+              GO TO WSTCH-010.
+          GO TO WSTCH-999.
+       WSTCH-020.
+          WRITE STOCKCHANGE-RECORD
+              INVALID KEY NEXT SENTENCE.
+          IF WS-STCHANGE-ST1 NOT = 0
+              MOVE 0 TO WS-STCHANGE-ST1
+              MOVE "STOCKCHANGE BUSY ON WRITE, 'ESC' TO RETRY."
+              TO WS-MESSAGE
+              PERFORM ERROR-MESSAGE
+              GO TO WSTCH-020.
+       WSTCH-999.
+           EXIT.
+      *

@@ -1,0 +1,7 @@
+       FD  TOOLKITS.
+       01  TOOL-REC.
+           03  TO-KEY.
+               05  TO-TOOLKIT-NUMBER    PIC X(15).
+               05  TO-COMPONENT-NUMBER  PIC X(15).
+           03  TO-QUANTITY              PIC 999.
+      *

@@ -1,0 +1,17 @@
+       FD  Staff-File.
+       01  Staff-Record.
+           03  Staff-Key.
+              05  Staff-Name           PIC X(25).
+           03  Staff-Last-Date         PIC 9(8).
+           03  Staff-Last-Time         PIC 9(5).
+           03  Staff-Status            PIC X.
+           03  Staff-DOB               PIC 9(8).
+      *
+      *Staff record of when staff are in or out
+      *Staff-Name: Must be the EXACT name found in the user file
+      *            for GPS Username
+      *Status: I=IN
+      *        O=OUT
+      *        L=ON LEAVE
+      *        N=NOT YET IN
+      *        S=SICK LEAVE

@@ -1,0 +1,26 @@
+      *
+       GET-SYSTEM-Y2K-DATE SECTION.
+       GSYD-001.
+           CALL "GETDATETIME" USING Erc
+                                    DateTime.
+
+           CALL "CONVERTQUAD" USING DateTime
+                                    DateTime.
+       GSYD-006.
+           MOVE Spaces           TO pbRet.
+           MOVE "!YYYY!!0o!!0d!" TO pbTemplate
+           MOVE 14               TO cbTemplate.
+       GSYD-010.
+           CALL "NLSFormatDateTime" USING Erc
+                                          pNLStableArea
+                                          DateTime
+                                          pbTemplate
+                                          cbTemplate
+                                          pbRet
+                                          cbMax
+                                          pcbRet.
+       GSYD-900.
+           Move pbRet TO Ws-Date.
+       GSYD-999.
+           EXIT.
+      *

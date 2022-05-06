@@ -1,0 +1,6 @@
+            SELECT DISTRIBUTIONS ASSIGN TO Ws-Distribution
+               ORGANIZATION IS INDEXED
+               LOCK MANUAL
+               ACCESS MODE IS DYNAMIC
+               FILE STATUS IS WS-DISTRIBUTION-STATUS
+               RECORD KEY IS DIST-KEY.

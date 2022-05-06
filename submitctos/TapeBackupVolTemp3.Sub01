@@ -1,0 +1,89 @@
+****This is the Submit to use IF the backup did not get put onto the tape****
+*** Everything before the backup worked BUT for an UNKNOWN reason no backup ****   happened
+
+Screen Setup
+
+Y
+
+
+Y
+W B
+100
+
+Vol Archive
+Win
+Orthello
+
+
+No
+[Qic]
+Yes
+[D1]<Spl>VolArchive.Lst
+
+Yes
+Yes
+Yes
+
+
+Delete
+<$*>*
+
+
+;InStal Que Man
+;Yes
+;60
+
+Print
+<Spl>DelSch
+[SplBSTR]
+
+Rename
+<Temp>AA*
+<Spl>AA*
+
+
+Print
+<Spl>AA1 <Spl>AA2
+[SplB]
+
+
+
+Rename
+<Temp>Quotes
+<Spl>Quotes
+
+
+;LCop
+;[f0]<SPl>*Lst
+;
+;[Win]<SPl>
+;
+
+Print
+<Spl>Quotes
+[SplXtra]
+
+
+
+** Restoring to [D1] drive as a further backup **
+Path
+D1
+Sys
+
+Restore Archive
+
+
+
+Yes
+
+
+
+
+
+Yes
+
+
+Type
+<Temp>TapeVolMessage
+Boot
+

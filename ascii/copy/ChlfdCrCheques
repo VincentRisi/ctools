@@ -1,0 +1,8 @@
+       FD  CRCH-FILE.
+       01  CRCH-REC.
+           03  CRCH-KEY.
+               05  CRCH-ACC-NUMBER  PIC 9(7).
+           03  CRCH-CHEQUE-NO       PIC 9(6).
+           03  CRCH-CHEQUE-AMT      PIC 9(7)V99.
+           03  CRCH-DATE            PIC 9(8).
+      *    

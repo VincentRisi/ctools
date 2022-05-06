@@ -1,0 +1,69 @@
+**************************{**  MAIN CONTROL MENU  **}******************        
+*  *************************{** STOCK CONTROL MENU  **}********************    
+*  *  ************************{* MAINTENANCE & ENQUIRY *}**********************
+*  *  *  1. StockNumber Entry/Edit       18. Supplier Order File Entry/Edit   *
+*  *  *  2. StockNumber Enquiry          19. Supplier Order Enquiry - Stock   *
+*  *  *  3. StockNumber Bin Location     20. Supplier Order Enquiry - Order   *
+*  *  *  4. StockNumber Min/Max          21. Supplier Order Enquiry - Supplier*
+*  *  *  5. StockNumber Min/Max - Range  22. Supplier Order Due Dates         *
+*  *  *  6. StockNumber Price            23. Supplier Order-Gen Entry/Edit    *
+*  *  *  7. StockNumber Price - Range    24. Supplier Order-Gen Postings      *
+*  *  *  8. Stock Special Price                                               *
+*  *  *                                  25. Qty at Stock-take Entry/Edit     *
+*  *  *  9. StockNumber Change Number    26. Stock Pricelist Entry/Edit       *
+*  *  * 10. StockNumber Copy Details                                          *
+*  *  *                                  27. Stock Catalogue Page Entry/Edit  *
+*  *  * 11. Stock Enquiry By Descr.      28. Stock Catalogue Enquiry By Number*
+*  *  * 12. Stock B-O/Reserve Check                                           *
+*  *  *                                  29. Stock Alternative Entry/Edit     *
+*  *  * 13. Stock Receipts - Local       30. Stock Alternative Enquiry        *
+*  *  * 14. Stock Receipts - Local(Enq)                                       *
+****  * 15. Stock Receipts - Imported    31. Stock Number per Category Inquiry*
+   **** 16. Back-Order Enquiry By Stock  32. Stock Enquiry - ALL Branches     *
+      * 17. Back-Order Enquiry By Account                                     *
+      ***************************ENTER SELECTION : __**************************
+                                                                               
+                                                                               
+
+Form name: St2Menu                         size: 1792  bytes
+height: 26    width: 79    number of fields: 2              
+
+Field name: SELECTION                                        
+Row: 23   Column: 51   Width: 2                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+                                 
+ ******************************* 
+ *  COLOR PALETTE INFORMATION  * 
+ ******************************* 
+                                 
+            Caption Color: 4     
+               Line Color: 7     
+                                 
+                                 
+        *************************
+        *   I N T E N S I T Y   *
+*********************************
+* Color *  Red  * Green *  Blue *
+*********************************
+*   0   *   0   *   3   *   0   *
+*   1   *   0   *   2   *   0   *
+*   2   *   0   *   3   *   3   *
+*   3   *   0   *   2   *   2   *
+*   4   *   3   *   3   *   3   *
+*   5   *   2   *   2   *   2   *
+*   6   *   3   *   3   *   0   *
+*   7   *   3   *   0   *   0   *
+*********************************
+  

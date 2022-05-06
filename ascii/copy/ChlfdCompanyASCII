@@ -1,0 +1,6 @@
+       FD  COMPANY-ASCII.
+       01  ASCII-RECORD.
+           03  ASCII-NUMBER          PIC 99.
+           03  ASCII-NAME            PIC X(40).
+           03  ASCII-VOL             PIC X(25).
+      *

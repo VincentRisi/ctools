@@ -1,0 +1,7 @@
+           SELECT Mail-Master ASSIGN TO Ws-DrMail
+               ORGANIZATION IS INDEXED
+               LOCK MANUAL
+               ACCESS MODE IS DYNAMIC
+               RECORD KEY IS ML-KEY
+               FILE STATUS IS Ws-DrMail-STATUS
+               ALTERNATE RECORD KEY IS ML-ALT-KEY WITH DUPLICATES.

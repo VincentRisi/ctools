@@ -1,0 +1,50 @@
+      *
+       QUEUE-PRINT-FILE SECTION.
+           MOVE 20                     TO W-CBSPOOLERFILESPEC.
+           MOVE "[Win]<Spl>PriceLists" TO W-SPOOLERFILESPEC.
+           CALL "&ADDQUEUEENTRY" USING
+                                 W-ERROR
+                                 W-QUEUENAME
+                                 W-QUEUENAMELENGTH
+                                 W-Q-NO-SERVER
+                                 W-PRIORITY
+                                 W-QUEUETYPE
+                                 W-QUEUEENTRYBUFFERSEND
+                                 W-QUEUEENTRYBUFFERLENGTH
+                                 W-DATE-TIME
+                                 W-REPEATTIME.
+       QUEUE-PRINT-EXIT.
+           EXIT.
+      *
+       OPEN-DATA-FILES SECTION.
+           MOVE SPACE                  TO W-QUEUEENTRYBUFFERSEND.
+           MOVE "[Win]<Spl>PriceLists" TO W-FILENAME.
+           MOVE X"00"                  TO W-FDELETEAFTERPROC.
+           MOVE 0     TO W-CBFORMNAME.
+           MOVE 0     TO W-CBWHEELNAME.
+           MOVE 1     TO W-BYTE1.
+           MOVE 0     TO W-BYTE2.
+           MOVE X"00" TO W-BPRINTMODE.
+           MOVE X"00" TO W-FALIGNFORM.
+           MOVE X"00" TO W-FSECURITYMODE.
+           MOVE "SPL" TO W-QUEUENAME.
+           MOVE 3     TO W-QUEUENAMELENGTH.
+           MOVE 0     TO W-QUEUEENTRYHANDLE.
+           MOVE 123   TO W-QUEUEENTRYBUFFERLENGTH.
+           MOVE 11    TO W-STATUSBLOCKLENGTH.
+           MOVE "PARALLELCONTROL" TO W-PAR-QUEUENAME.
+           MOVE 15                TO W-PAR-QUEUENAMELENGTH.
+           MOVE "SPOOLERSTATUS"   TO W-STATUS-QUEUENAME.
+           MOVE 13                TO W-STATUS-QUEUENAMELEN.
+           MOVE "PARALLEL"        TO W-PRINTERNAME.
+           MOVE 8     TO W-PRINTERNAMELEN.
+           MOVE X"FF" TO W-Q-NO-SERVER.
+           MOVE 5     TO W-PRIORITY.
+           MOVE 1     TO W-QUEUETYPE.
+           MOVE X"00000000" TO W-DATE-TIME.
+           MOVE 0           TO W-REPEATTIME.
+           MOVE 50          TO W-DELAY.
+           MOVE 0           TO W-ZERO.
+           MOVE 255         TO W-SPOOLST-LEN.
+       OPEN-DATA-999.
+           EXIT.

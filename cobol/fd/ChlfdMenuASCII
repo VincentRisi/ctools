@@ -1,0 +1,5 @@
+       FD  MENU-ASCII.
+       01  ASCII-RECORD.
+           03  ASCII-KEY              PIC 99.
+           03  ASCII-MESSAGE          PIC X(420).
+      *

@@ -1,0 +1,6 @@
+       FD  NEWCREDNUM-MASTER.
+       01  NEWCREDNUM-RECORD.
+           03  NEWCR-KEY.
+               05  NEWCR-OLDACCOUNT PIC X(6).
+           03  CR-ALT-KEY.
+               05  NEWCR-NEWACCOUNT PIC 9(7).

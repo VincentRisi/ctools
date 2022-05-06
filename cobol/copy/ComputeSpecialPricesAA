@@ -1,0 +1,89 @@
+      *
+       COMPUTE-SPECIAL-PRICES SECTION.
+       CSP-005.
+           IF ST-AVERAGECOST = 0
+               MOVE
+             "THIS ITEM DOES NOT HAVE A COST, ADVISE YOUR SUPERVISOR"
+               TO WS-MESSAGE
+               PERFORM ERROR-000
+               GO TO CSP-999.
+      ***************************************************************
+      *THIS EXTRA READ IS BROUGHT IN TO READ THE PRICE AND AVE COST *
+      * OTHERWISE THE M/U % IS INCORRECTLY WORKED.                  *
+      ***************************************************************
+               
+           READ STOCK-MASTER
+               INVALID KEY NEXT SENTENCE.
+           COMPUTE WS-PERC = ((ST-PRICE - ST-AVERAGECOST)
+                   / ST-AVERAGECOST) * 100.
+                   
+      **************************************************************
+      * THIS NEW SECTION ADDED AS THE BRANCHES WERE BATTLING WITH  *
+      *  COSTS THAT WERE TOO HIGH.   4/7/1999                      *
+      **************************************************************
+           IF ST-CATEGORY = "PLA"
+              COMPUTE WS-NEWPRICE ROUNDED = ST-AVERAGECOST * 1.015
+              GO TO CSP-010.
+           IF ST-CATEGORY = "DPR"
+              COMPUTE WS-NEWPRICE ROUNDED = ST-AVERAGECOST * 1.10
+              GO TO CSP-010.
+           IF ST-CATEGORY = "FLK" OR = "WLR" OR = "SCS" OR = "BTS"
+            OR = "MAG" OR = "XRN" OR = "PAN" OR = "VIK" OR = "KAR"
+              COMPUTE WS-NEWPRICE ROUNDED = ST-AVERAGECOST * 1.025
+              GO TO CSP-010.
+           IF ST-CATEGORY = "RES"
+              COMPUTE WS-NEWPRICE ROUNDED = ST-AVERAGECOST * 1.10
+              GO TO CSP-010.
+           IF ST-STOCKNUMBER = "ORX SR3AS" OR = "ORX SR3ASN"
+                       OR = "ORX SUPERPRO" OR = "ORX SUPERPROK"
+              COMPUTE WS-NEWPRICE ROUNDED = ST-AVERAGECOST * 1.025
+              GO TO CSP-010.
+                   
+           IF ST-FOREIGNCOST > 0
+              GO TO CSP-008.
+      *
+      * LOCAL ITEMS COSTING
+      *
+           IF WS-PERC > 99
+              COMPUTE WS-NEWPRICE ROUNDED = ST-AVERAGECOST * 1.10
+              GO TO CSP-010.
+           IF WS-PERC > 80
+              COMPUTE WS-NEWPRICE ROUNDED = ST-AVERAGECOST * 1.075
+              GO TO CSP-010.
+           IF WS-PERC > 25
+              COMPUTE WS-NEWPRICE ROUNDED = ST-AVERAGECOST * 1.05
+              GO TO CSP-010.
+           IF WS-PERC < 26
+              COMPUTE WS-NEWPRICE ROUNDED = ST-AVERAGECOST * 1.025
+              GO TO CSP-010.
+       CSP-008.
+      *
+      * FOREIGN ITEMS COSTING
+      *
+           IF WS-PERC > 85
+              COMPUTE WS-NEWPRICE ROUNDED = ST-AVERAGECOST * 1.10
+              GO TO CSP-010.
+           IF WS-PERC > 55
+              COMPUTE WS-NEWPRICE ROUNDED = ST-AVERAGECOST * 1.075
+              GO TO CSP-010.
+           IF WS-PERC > 25
+              COMPUTE WS-NEWPRICE ROUNDED = ST-AVERAGECOST * 1.05
+              GO TO CSP-010.
+           IF WS-PERC < 26
+              COMPUTE WS-NEWPRICE ROUNDED = ST-AVERAGECOST * 1.025.
+       CSP-010.
+           MOVE
+           "THE MARGIN ON THIS ITEM IS        %, NORMAL PRICE IS R"
+              TO WS-MESSAGE
+           PERFORM ERROR-000
+           MOVE 3042 TO POS
+           MOVE WS-PERC TO F-EDNAMEFIELDADDON
+           DISPLAY F-EDNAMEFIELDADDON AT POS
+           
+           MOVE 3070 TO POS
+           MOVE ST-PRICE TO F-EDNAMEFIELDAMOUNT
+           DISPLAY F-EDNAMEFIELDAMOUNT AT POS
+           MOVE WS-NEWPRICE TO STTR-PRICE.
+       CSP-999.
+           EXIT.
+      *

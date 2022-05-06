@@ -1,0 +1,69 @@
+**************************{**  MAIN CONTROL MENU  **}*********************     
+*    ***********************{** SYSTEM MANAGER MENU **}************************
+*    *                                                                        *
+*    *  1. Menu Password Entry / Edit       11. Ofis Organiser                *
+*    *                                                                        *
+*    *  2. Company Volume/Directory Info                                      *
+*    *                                                                        *
+*    *  3. Company Data-Names Entry/Edit                                      *
+*    *                                                                        *
+*    *  4. Company Fax Module Entry/Edit                                      *
+*    *                                                                        *
+*    *  5. Company Quote Delivery Params                                      *
+*    *                                                                        *
+*    *  6. Company Repair Comment Params                                      *
+*    *                                                                        *
+*    *  7. Company Invoice Questions                                          *
+*    *                                                                        *
+*    *  8. Company Printer Parameters                                         *
+*    *                                                                        *
+*    *  9. Staff Names Entry / Edit                                           *
+******                                                                        *
+     * 10. Stock Branch Names                                                 *
+     ***************************ENTER SELECTION : __***************************
+                                                                               
+                                                                               
+                                                                               
+
+Form name: MastMenu                        size: 872   bytes
+height: 26    width: 79    number of fields: 2              
+
+Field name: SELECTION                                        
+Row: 22   Column: 50   Width: 2                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+                                 
+ ******************************* 
+ *  COLOR PALETTE INFORMATION  * 
+ ******************************* 
+                                 
+            Caption Color: 4     
+               Line Color: 7     
+                                 
+                                 
+        *************************
+        *   I N T E N S I T Y   *
+*********************************
+* Color *  Red  * Green *  Blue *
+*********************************
+*   0   *   0   *   3   *   0   *
+*   1   *   0   *   2   *   0   *
+*   2   *   0   *   3   *   3   *
+*   3   *   0   *   2   *   2   *
+*   4   *   3   *   3   *   3   *
+*   5   *   2   *   2   *   2   *
+*   6   *   3   *   3   *   0   *
+*   7   *   3   *   0   *   0   *
+*********************************
+  

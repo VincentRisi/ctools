@@ -1,0 +1,19 @@
+      *
+       JUSTIFY-FIELDS SECTION.
+       JUST-000.
+            IF F-CBFIRSTLINE = 7
+                DIVIDE W-CALC BY 10 GIVING W-CALC.
+            IF F-CBFIRSTLINE = 6
+                DIVIDE W-CALC BY 100 GIVING W-CALC.
+            IF F-CBFIRSTLINE = 5
+                DIVIDE W-CALC BY 1000 GIVING W-CALC.
+            IF F-CBFIRSTLINE = 4
+                DIVIDE W-CALC BY 10000 GIVING W-CALC.
+            IF F-CBFIRSTLINE = 3
+                DIVIDE W-CALC BY 100000 GIVING W-CALC.
+            IF F-CBFIRSTLINE = 2
+                DIVIDE W-CALC BY 1000000 GIVING W-CALC.
+            IF F-CBFIRSTLINE = 1
+                DIVIDE W-CALC BY 10000000 GIVING W-CALC.
+       JUST-999.
+           EXIT.

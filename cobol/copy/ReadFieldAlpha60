@@ -1,0 +1,18 @@
+      *
+        READ-FIELD-ALPHA60 SECTION.
+        READ60-A000.
+            CALL "READFIELD" USING F-ERROR1
+                                   F-FORM
+                                   F-FIELDNAME
+                                   F-CBFIELDNAME
+                                   F-INDEX
+                                   F-NAMEFIELD60
+                                   F-CBFIELDLENGTH
+                                   F-CBFIRSTLINE
+                                   F-TYPE.
+            IF F-ERROR1 NOT = 0
+                DISPLAY "READFIELD ALPHA60 ERROR"
+                DISPLAY F-ERROR1
+                STOP RUN.
+        READ60-A999.
+            EXIT.

@@ -1,0 +1,65 @@
+*****************************  MAIN CONTROL MENU  ******************           
+*   *************************** DEBTOR CONTROL MENU **********************     
+*   *   ************************* SPECIAL PROGRAM MENU ************************
+*   *   *                                                                     *
+*   *   *   1. Debtor Master File (ALL Fields)                                *
+*   *   *                                                                     *
+*   *   *   2. Debtor Transactions                                            *
+*   *   *                                                                     *
+*   *   *   3. Debtor Master Change Number                                    *
+*   *   *                                                                     *
+*   *   *   4. Debtor Sales Figures Added to Another Account                  *
+*   *   *                                                                     *
+*   *   *   5. Debtor Sales Analysis Checking on Register                     *
+*   *   *                                                                     *
+*   *   *   6. Debtor Master Period Aging Reset with Transactions             *
+*   *   *                                                                     *
+*   *   *   7. Debtor Salesman Number Change                                  *
+*****   *                                                                     *
+    *   *   8. Debtor Old / Deleted Account Enquiry                           *
+    *****                                                                     *
+        *                                                                     *
+        ************************ENTER SELECTION : __***************************
+
+Form name: Dr4Menu                         size: 973   bytes
+height: 22    width: 79    number of fields: 2              
+
+Field name: SELECTION                                        
+Row: 21   Column: 50   Width: 2                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+                                 
+ ******************************* 
+ *  COLOR PALETTE INFORMATION  * 
+ ******************************* 
+                                 
+            Caption Color: 4     
+               Line Color: 7     
+                                 
+                                 
+        *************************
+        *   I N T E N S I T Y   *
+*********************************
+* Color *  Red  * Green *  Blue *
+*********************************
+*   0   *   0   *   3   *   0   *
+*   1   *   0   *   2   *   0   *
+*   2   *   0   *   3   *   3   *
+*   3   *   0   *   2   *   2   *
+*   4   *   3   *   3   *   3   *
+*   5   *   2   *   2   *   2   *
+*   6   *   3   *   3   *   0   *
+*   7   *   3   *   0   *   0   *
+*********************************
+  

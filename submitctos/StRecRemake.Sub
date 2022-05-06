@@ -1,0 +1,107 @@
+*** Running Remake Programs *****
+C RUN
+StReLoMv.Int
+
++P -N
+
+
+C RUN
+StReLyMv.Int
+
++P -N
+
+
+
+C RUN
+StReImMv.Int
+
++P -N
+
+
+*** Renaming *1 Files *****
+
+Pat
+Win
+Data
+
+
+Is ren
+StImports1
+StImports
+<DataInd>StImports.Ind
+Y
+
+Is ren
+StReceipt1
+StReceipt
+<DataInd>StReceipt.Ind
+Y
+
+Is ren
+StReceiptLy1
+StReceiptLy
+<DataInd>StReceiptLy.Ind
+Y
+
+
+*** Sorting StReceipt files *****
+
+Sort
+[Win]<Data>StReceipt
+[Win]<Data>Temp
+@[Win]<Temp>StRecSort.Key
+
+[Win]<$>SortWorkFile1
+[Win]<$>SortWorkFile2
+
+Rename
+[Win]<Data>Temp
+[Win]<Data>StReceipt
+Y
+
+I Reo
+[Win]<Data>StReceipt
+<DataInd>StReceipt.Ind
+
+
+
+@[Win]<Temp>StRec.Key
+5
+100
+50
+500
+
+Y
+
+
+
+
+Sort
+[Win]<Data>StReceiptLY
+[Win]<Data>Temp
+@[Win]<Temp>StRecSort.Key
+
+[Win]<$>SortWorkFile1
+[Win]<$>SortWorkFile2
+
+Rename
+[Win]<Data>Temp
+[Win]<Data>StReceiptLY
+Y
+
+I Reo
+[Win]<Data>StReceiptLY
+<DataInd>StReceiptLY.Ind
+
+
+
+@[Win]<Temp>StRec.Key
+5
+100
+50
+500
+
+Y
+
+
+**** StRecRemake Job Finished *****

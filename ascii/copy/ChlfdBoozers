@@ -1,0 +1,9 @@
+       FD  BOOZERS-FILE.
+       01  BOOZERS-REC.
+           03  BZS-KEY.
+               05  BZS-NAME                PIC X(10).
+           03  BZS-PAID-AMT                PIC 9(4)V99.
+           03  BZS-DATE-PAID               PIC 9(8).
+           03  BZS-CREDIT-AMT              PIC S9(4)V99.
+           03  BZS-SALE-AMT                PIC 9(6)V99.
+      *

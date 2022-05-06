@@ -1,0 +1,16 @@
+      *
+       ERROR-MESSAGE SECTION.
+       ERROR-000.
+             MOVE 3015 TO POS.
+             DISPLAY "                                      " AT POS.
+             DISPLAY WS-MESSAGE AT 3015 WITH reverse-video BLINK
+                BELL FOREGROUND-COLOR IS 4.
+             CALL "C$SLEEP" USING 2.
+       ERROR-010.
+      *       CALL "LOCKKBD" USING F-FIELDNAME.
+       ERROR-020.
+             MOVE " " TO WS-MESSAGE.
+             DISPLAY WS-MESSAGE AT 3015.
+       ERROR-999.
+             EXIT.
+      *

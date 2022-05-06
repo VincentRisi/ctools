@@ -1,0 +1,15 @@
+      *
+       MOVE-IN-DISCOUNTS SECTION.
+       MID-005.
+            MOVE 5    TO ST-DISCOUNT1
+            MOVE 10   TO ST-DISCOUNT2
+            MOVE 15   TO ST-DISCOUNT3
+            MOVE 20   TO ST-DISCOUNT4
+            MOVE 2.5  TO ST-DISCOUNT5
+            MOVE 7.5  TO ST-DISCOUNT6
+            MOVE 12.5 TO ST-DISCOUNT7
+            MOVE 25   TO ST-DISCOUNT8
+            MOVE 30   TO ST-DISCOUNT9
+            MOVE "N"  TO ST-PERMIT.
+       MID-999.
+            EXIT.

@@ -1,0 +1,286 @@
+#include "ctosio.h"
+#include "Scanner.h"
+
+COMPILER CTOSIO
+
+ctos_form  *form;
+ctos_field *field, *lookup;
+
+struct auto_char
+{
+  char* data;
+  auto_char(const wchar_t* token)
+  {
+    int dataLen = wcslen(token);
+    data = new char[dataLen + 1];
+    for (int i=0; i<dataLen; i++)
+      data[i] = token[i]%256;
+    data[dataLen] = 0;
+  }
+  ~auto_char()
+  {
+    delete [] data;
+  }
+  int number()
+  {
+    return atoi(data);
+  }
+};
+
+CHARACTERS
+  letter = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz_-/.".
+  digit = "0123456789".
+  cr = '\r'.
+  lf = '\n'.
+  tab = '\t'.
+  ff = '\f'.
+  butLf = ANY - lf.
+  
+ TOKENS
+   ident   = letter { letter | digit }.
+   numeric = digit { digit }.
+   line    = "*" { butLf }.
+   
+   Auto_exit        = "Auto-exit".
+   bytes            = "bytes".
+   Caption          = "Caption".
+   Color            = "Color".
+   Column           = "Column".
+   Control          = "Control".
+   Default          = "Default".
+   default          = "default".
+   Field            = "Field".
+   fields           = "fields".
+   first            = "first".
+   Form             = "Form".
+   height           = "height".
+   Help             = "Help".
+   Index            = "Index".
+   Justification    = "Justification".
+   last             = "last".
+   Line             = "Line".
+   List             = "List".
+   Mandatory        = "Mandatory".
+   message          = "message".
+   name             = "name".
+   Number           = "Number".
+   number           = "number".
+   of               = "of".
+   Protected        = "Protected".
+   Repeating        = "Repeating".
+   routine          = "routine".
+   Row              = "Row".
+   Secret           = "Secret".
+   Selected         = "Selected".
+   Sequence         = "Sequence".
+   Show             = "Show".
+   size             = "size".
+   Unselected       = "Unselected".
+   Validation       = "Validation".
+   values           = "values".
+   Width            = "Width".
+   width            = "width".
+   
+  IGNORE cr + lf + tab + ff
+ 
+ PRODUCTIONS
+   CTOSIO = FORM { FIELD } OTHER.
+   
+   FORM = 
+     Form name ":" ident
+     (.
+       auto_char name(t->val);
+       form->name = strdup(name.data);
+     .)
+     size ":" numeric
+     (.
+       auto_char size(t->val);
+       form->size = size.number();
+       form->data_size = 0;
+     .)  bytes        
+     height ":" numeric
+     (.
+       auto_char height(t->val);
+       form->height = height.number();
+     .)
+     width ":" numeric
+     (.
+       auto_char width(t->val);
+       form->width = width.number();
+     .)
+     number of fields ":" numeric
+     (.
+      auto_char number_of_fields(t->val);
+      form->number_of_fields = number_of_fields.number();
+     .)
+   . 
+      
+   FIELD =
+     Field name ":" 
+     (.
+       char field_name[64];
+       field_name[0] = 0;
+     .)
+     [
+       numeric
+       (.
+         auto_char fno(t->val);
+         strncpy(field_name, fno.data, sizeof(field_name)-1);
+       .)
+     ] 
+     ident
+     (.
+       auto_char name(t->val);
+       strncat(field_name, name.data, sizeof(field_name)-strlen(field_name)-1);
+       field = ctos_alloc_field(form, field_name);
+     .)
+     Row ":" numeric
+     (.
+       auto_char row(t->val);
+       field->row = row.number();
+     .)
+     Column ":" numeric
+     (.
+       auto_char column(t->val);
+       field->column = column.number();
+     .)
+     Width ":" numeric
+     (.
+       auto_char width(t->val);
+       field->width = width.number();
+     .)
+     Repeating "?" ident
+     (.
+       auto_char repeating(t->val);
+       field->repeating = repeating.data[0]; 
+     .)
+     Index ":" [ numeric
+     (.
+       auto_char index(t->val);
+       field->index = index.number();
+     .) ]
+     "(" 
+     first ":" [ numeric
+     (.
+       auto_char first(t->val);
+       field->first = first.number();
+     .) ]
+     last ":" [ numeric
+     (.
+       auto_char last(t->val);
+       field->last = last.number();
+     .) ]
+     ")" 
+     Control ":" ident
+     (.
+       ctos_form_setfield_offset(form, field);
+       auto_char control(t->val);
+       field->control = control.data[0];
+     .)
+     Justification ":" ident
+     (.
+       auto_char justification(t->val);
+       field->justification = justification.data[0];
+     .)
+     Sequence number ":" [ numeric
+     (.
+       auto_char sequence_number(t->val);
+       field->sequence_number = sequence_number.number();
+     .) ]
+     Secret "?" ident
+     (.
+       auto_char secret(t->val);
+       field->secret = secret.data[0]; 
+     .)
+     Protected "?" ident
+     (.
+       auto_char prot(t->val);
+       field->prot = prot.data[0]; 
+     .)
+     Mandatory "?" ident
+     (.
+       auto_char mand(t->val);
+       field->mand = mand.data[0]; 
+     .)
+     Default ":" [ ident
+     (.
+       auto_char defval(t->val);
+       field->default_value = strdup(defval.data);
+     .) ]
+     Show default "?" ident
+     (.
+       auto_char show_default(t->val);
+       field->show_default = show_default.data[0]; 
+     .)
+     Auto_exit "?" ident
+     (.
+       auto_char auto_exit(t->val);
+       field->auto_exit = auto_exit.data[0]; 
+     .)
+     Unselected ":" ident
+     (.
+       auto_char unselected(t->val);
+       field->unselected = unselected.data[0]; 
+     .)
+     Selected ":" ident
+     (.
+       auto_char selected(t->val);
+       field->selected = selected.data[0]; 
+     .)
+     Validation routine ":" [ ident
+     (.
+       auto_char validation_routine(t->val);
+       field->validation_routine = strdup(validation_routine.data);
+     .) ]
+     Help message ":" { ident
+     (.
+       {
+         auto_char help_line(t->val);
+         ctos_add_help(field, help_line.data);
+       }
+     .) }
+     Selected Color Number ":" [ numeric
+     (.
+       auto_char selected_color(t->val);
+       field->selected_color = selected_color.number();
+     .) ]
+     Unselected Color Number ":" [ numeric
+     (.
+       auto_char unselected_color(t->val);
+       field->unselected_color = unselected_color.number();
+     .) ]
+     List of values ":" { ident
+     (.
+       {
+         auto_char list_value(t->val);
+         ctos_add_value(field, list_value.data);
+       }
+     .) }
+   .
+     
+   OTHER = 
+     { 
+       line 
+     }
+     Caption Color ":" [ numeric
+     (.
+       auto_char caption_color(t->val);
+       form->caption_color = caption_color.number(); 
+      .) ]
+     Line Color ":" [ numeric        
+     (.
+       auto_char line_color(t->val);
+       form->line_color = line_color.number(); 
+      .) ]
+     {
+       line 
+       (.
+         {
+           auto_char color_line(t->val);
+           ctos_check_color(form, color_line.data);
+         }
+       .)
+     }
+   .
+
+END CTOSIO.

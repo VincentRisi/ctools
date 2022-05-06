@@ -1,0 +1,6 @@
+           SELECT ORDER-GEN-FILE ASSIGN TO Ws-StOrderGen
+               ORGANIZATION IS INDEXED
+               LOCK MANUAL
+               ACCESS MODE IS DYNAMIC
+               FILE STATUS IS WS-GEN-STATUS
+               RECORD KEY IS OG-KEY.

@@ -1,0 +1,64 @@
+       FD  STOCK-MASTER4.
+       01  STOCK-RECORD4.
+           03  ST4-KEY.
+               05  ST4-STOCKNUMBER    PIC X(15).
+           03  ST4-ALT-KEY.
+               05  ST4-DESCRIPTION1   PIC X(20).
+           03  ST4-DESCRIPTION2       PIC X(20).
+           03  ST4-CATEGORY           PIC X(3).
+           03  ST4-SUPPLIER           PIC X(7).
+           03  ST4-FOREIGNCOST        PIC 9(6)V999.
+           03  ST4-SUPPLIERDISC       PIC 99V99.
+           03  ST4-CURRENCY           PIC X(5).
+           03  ST4-CURRENCY-RATE      PIC 9(3)V9(5).
+           03  ST4-PRICE              PIC 9(6)V99.
+           03  ST4-OLDPRICE           PIC 9(6)V99.
+           03  ST4-MIN-PERC           PIC 9(3)V99.
+           03  ST4-UNITOFMEASURE      PIC X(4).
+           03  ST4-DISCOUNT1          PIC 9(2)V99.
+           03  ST4-DISCOUNT2          PIC 9(2)V99.
+           03  ST4-DISCOUNT3          PIC 9(2)V99.
+           03  ST4-DISCOUNT4          PIC 9(2)V99.
+           03  ST4-DISCOUNT5          PIC 9(2)V99.
+           03  ST4-DISCOUNT6          PIC 9(2)V99.
+           03  ST4-DISCOUNT7          PIC 9(2)V99.
+           03  ST4-DISCOUNT8          PIC 9(2)V99.
+           03  ST4-DISCOUNT9          PIC 9(2)V99.
+           03  ST4-AVERAGECOST        PIC 9(6)V99.
+           03  ST4-LASTCOST           PIC 9(6)V99.
+           03  ST4-BINLOCATION        PIC X(6).
+           03  ST4-MINBUYQTY          PIC 9(6).
+           03  ST4-DEL-DELAY          PIC 9(2).
+           03  ST4-MAXIMUMLEVEL       PIC 9(6).
+           03  ST4-MINIMUMLEVEL       PIC 9(6).
+           03  ST4-QTYONHAND          PIC 9(6).
+           03  ST4-QTYONRESERVE       PIC 9(6).
+           03  ST4-QTYONORDER         PIC 9(6).
+           03  ST4-QTYONBORDER        PIC 9(6).
+           03  ST4-QTY-ST4-TAKE        PIC 9(6).
+           03  ST4-DATE-CREATED       PIC 9(8).
+           03  ST4-LASTPRICECHANGE    PIC 9(8).
+           03  ST4-LASTSALEDATE       PIC 9(8).
+           03  ST4-LASTRECEIPTDATE    PIC 9(8).
+           03  ST4-LASTORDERDATE      PIC 9(8).
+           03  ST4-QTYRECMTD          PIC S9(6).
+           03  ST4-QTYRECYTD          PIC S9(6).
+           03  ST4-QTYRECLAST         PIC S9(6).
+           03  ST4-QTYADJMTD          PIC S9(6).
+           03  ST4-QTYADJYTD          PIC S9(6).
+           03  ST4-QTYADJLAST         PIC S9(6).
+           03  ST4-SALESUNITMTD       PIC S9(6).
+           03  ST4-SALESUNITSYTD      PIC S9(6).
+           03  ST4-SALESUNITSLAST     PIC S9(6).
+           03  ST4-SALESRANDSMTD      PIC S9(7)V99.
+           03  ST4-SALESRANDSYTD      PIC S9(7)V99.
+           03  ST4-SALESRANDSLAST     PIC S9(7)V99.
+           03  ST4-SALESCOSTMTD       PIC S9(7)V99.
+           03  ST4-SALESCOSTYTD       PIC S9(7)V99.
+           03  ST4-SALESCOSTLAST      PIC S9(7)V99.
+           03  ST4-ANALYSIS           PIC X.
+           03  ST4-DUTYPERCENT        PIC 9(2)V9.
+           03  ST4-DUTYTARIFF         PIC 9(8).
+           03  ST4-SURCHARGE          PIC 9(2)V9.
+           03  ST4-PERMIT             PIC X.
+      *

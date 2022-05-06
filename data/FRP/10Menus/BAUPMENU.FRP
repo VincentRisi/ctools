@@ -1,0 +1,65 @@
+*****************************  MAIN CONTROL MENU  *********************     
+*    ************************** BACKUP/RESTORE MENU ************************
+*    *                                                                     *
+*    *                BACKUP / RESTORE                                     *
+*    *                FLOPPY DISK                                          *
+*    *                1. Backup Data Files                                 *
+*    *                2. Restore Data Files                                *
+*    *                                                                     *
+*    *                [QIC] TAPE                                           *
+*    *                3. Backup Data Files                                 *
+*    *                4. Restore Data Files                                *
+*    *                5. Backup Volume (Friday Backup)                     *
+*    *                6. Backup Data Files &                               *
+*    *                     Send Overdue Debtor Faxes                       *
+*    *                7. Backup PRIOR to Month/Year-End Processing         *
+*    ***********************************************************************
+*    *                UTILITIES                                            *
+*    *                8. Format A Floppy Disk                              *
+*    *                9. Erase Data On [Qic] Tape                          *
+******               10. Retension [Qic] Tape                              *
+     *                                                                     *
+     ************************ENTER SELECTION : __***************************
+
+Form name: BaUpMenu                        size: 894   bytes
+height: 22    width: 76    number of fields: 2              
+
+Field name: SELECTION                                        
+Row: 21   Column: 47   Width: 2                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+                                 
+ ******************************* 
+ *  COLOR PALETTE INFORMATION  * 
+ ******************************* 
+                                 
+            Caption Color: 4     
+               Line Color: 7     
+                                 
+                                 
+        *************************
+        *   I N T E N S I T Y   *
+*********************************
+* Color *  Red  * Green *  Blue *
+*********************************
+*   0   *   0   *   3   *   0   *
+*   1   *   0   *   2   *   0   *
+*   2   *   0   *   3   *   3   *
+*   3   *   0   *   2   *   2   *
+*   4   *   3   *   3   *   3   *
+*   5   *   2   *   2   *   2   *
+*   6   *   3   *   3   *   0   *
+*   7   *   3   *   0   *   0   *
+*********************************
+  

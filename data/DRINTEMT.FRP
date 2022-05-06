@@ -1,0 +1,112 @@
+              *******{** DEBTORS INTEREST ALLOCATION PROGRAM **}*******        
+              *                                                       *        
+              *                                                       *        
+              * Account # : _______                                   *        
+              * Name      : ________________________________________  *        
+              *                                                       *        
+              * Interest % (P.A.)  : _______                          *        
+              *     Eg 20 = 20%                                       *        
+              * Period To Allocate : _  (1 = 30 DAYS)                 *        
+              *  (Only this period      (2 = 60 DAYS)                 *        
+              *    is allocated)        (3 = 90 DAYS)                 *        
+              *                         (4 = 120 DAYS)                *        
+              *                                                       *        
+              * NB. Eg. Interest on 90Days = (Interest/12 * 3)        *        
+              *         The 3 is for 3 months outstanding.            *        
+              *********************************************************        
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+
+Form name: DrInteMt                        size: 777   bytes
+height: 24    width: 79    number of fields: 5              
+
+Field name: ACCOUNT                                          
+Row: 3    Column: 28   Width: 7                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:  4          Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: NAME                                             
+Row: 4    Column: 28   Width: 40                             
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:  4          Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PERCENTAGE                                       
+Row: 6    Column: 37   Width: 7                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:  4          Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PERIOD                                           
+Row: 8    Column: 37   Width: 1                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:  4          Unselected Color Number: 0
+List of values:                                              
+
+
+
+                                 
+ ******************************* 
+ *  COLOR PALETTE INFORMATION  * 
+ ******************************* 
+                                 
+            Caption Color: 4     
+               Line Color: 2     
+                                 
+                                 
+        *************************
+        *   I N T E N S I T Y   *
+*********************************
+* Color *  Red  * Green *  Blue *
+*********************************
+*   0   *   0   *   3   *   0   *
+*   1   *   0   *   2   *   0   *
+*   2   *   0   *   3   *   3   *
+*   3   *   0   *   2   *   2   *
+*   4   *   3   *   3   *   3   *
+*   5   *   2   *   2   *   2   *
+*   6   *   3   *   3   *   0   *
+*   7   *   3   *   0   *   0   *
+*********************************
+  

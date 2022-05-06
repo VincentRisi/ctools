@@ -1,0 +1,28 @@
+      *
+       DISPLAY-CB-NO-TOP-INFO SECTION.
+       DTI-005.
+           MOVE "PERIOD" TO F-FIELDNAME
+           MOVE 6        TO F-CBFIELDNAME
+           MOVE WS-NO    TO F-NAMEFIELD
+           MOVE 2        TO F-CBFIELDLENGTH
+           PERFORM WRITE-FIELD-ALPHA.
+
+           MOVE WS-NO     TO SUB-1
+           MOVE "BEGDATE" TO F-FIELDNAME
+           MOVE 7         TO F-CBFIELDNAME
+           MOVE GL-BEGDATE (SUB-1) TO SPLIT-DATE
+           PERFORM CONVERT-DATE-FORMAT
+           MOVE DISPLAY-DATE TO F-NAMEFIELD
+           MOVE 10           TO F-CBFIELDLENGTH
+           PERFORM WRITE-FIELD-ALPHA.
+       DTI-010.
+           MOVE WS-NO     TO SUB-1
+           MOVE "ENDDATE" TO F-FIELDNAME
+           MOVE 7         TO F-CBFIELDNAME
+           MOVE GL-ENDDATE (SUB-1) TO SPLIT-DATE
+           PERFORM CONVERT-DATE-FORMAT
+           MOVE DISPLAY-DATE TO F-NAMEFIELD
+           MOVE 10           TO F-CBFIELDLENGTH
+           PERFORM WRITE-FIELD-ALPHA.
+       DTI-999.
+           EXIT.

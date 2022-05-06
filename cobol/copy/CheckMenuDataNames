@@ -1,0 +1,43 @@
+      *
+       CHECK-DATA-NAMES SECTION.
+       CDN-005.
+          MOVE " " TO ALPHA-RATE.
+          MOVE 0   TO SUB-1.
+       CDN-010.
+          Move Ws-Forms-Name   TO ALPHA-RATE.
+       CDN-015.
+          ADD 1 TO SUB-1.
+          IF SUB-1 NOT > 60
+           IF AL-RATE (SUB-1) NOT = ">"
+            GO TO CDN-015.
+       CDN-016.
+          ADD 1 TO SUB-1.
+          MOVE " " TO AL-RATE (SUB-1).
+          IF SUB-1 NOT = 60
+            GO TO CDN-016.
+          MOVE 0   TO SUB-1.
+       CDN-018.
+          ADD 1 TO SUB-1.
+          IF SUB-1 NOT > 60
+           IF AL-RATE (SUB-1) NOT = " "
+            GO TO CDN-018.
+       CDN-020.
+          MOVE WS-DATA-NAME TO DATA-RATE.
+          MOVE 1            TO SUB-2.
+       CDN-025.
+          MOVE DAT-RATE (SUB-2) TO AL-RATE (SUB-1)
+          ADD 1 TO SUB-1 SUB-2.
+          IF DAT-RATE (SUB-2) NOT = " "
+           IF SUB-1 NOT > 60
+             GO TO CDN-025.
+      * OLD WAY OF DOING IT BEFORE WS-CO-NAME COULD BE PIC 99.
+      *    MOVE WS-CO-NUMBER TO AL-RATE (SUB-1).
+          MOVE WS-CO-NUMBER TO WS-COMPANY-DIGITS
+          MOVE WS-CO-DIG1   TO AL-RATE (SUB-1)
+          ADD 1             TO SUB-1
+          MOVE WS-CO-DIG2   TO AL-RATE (SUB-1).
+       CDN-030.
+          MOVE ALPHA-RATE TO F-Filename
+          MOVE Sub-1      TO F-cbFileName.
+       CDN-999.
+          EXIT.

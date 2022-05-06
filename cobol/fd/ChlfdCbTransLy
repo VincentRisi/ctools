@@ -1,0 +1,38 @@
+       FD  CBTRANS-LY-FILE.
+       01  CBTRANS-LY-REC.
+           03  CBTRANS-LY-KEY.
+               05  CBTRANS-LY-TRANS       PIC 9(6).
+               05  CBTRANS-LY-TYPE        PIC 9(2).
+           03  CBTRANS-LY-REFERENCE       PIC X(10).
+           03  CBTRANS-LY-PERIOD.
+               05  CBTRANS-LY-NO          PIC 99.
+           03  CBTRANS-LY-ALT-KEY.
+               05  CBTRANS-LY-CBMASTER    PIC X(12).
+               05  CBTRANS-LY-DATE        PIC 9(8).
+           03  CBTRANS-LY-TYPE-OF-POST    PIC X.
+           03  CBTRANS-LY-ALLOCATED       PIC X.
+           03  CBTRANS-LY-ACCOUNT-NUMBER  PIC X(12).
+           03  CBTRANS-LY-AMOUNT          PIC S9(8)V99.
+           03  CBTRANS-LY-LINE-DESC       PIC X(25).
+      *
+      *CBTRANS-LY-TYPE: 1=CHEQUE PAYMENT,                (CR)
+      *                 2=STOP-ORDER PAYMENT (MTX),      (CR) 
+      *                 3=TRANSFER (PAYMENT),            (CR)
+      *                 4=R/D CHEQUES (DEPOSITED),       (CR)
+      *                 5=STALE CHEQUES (DEPOSITED),     (CR)
+      *                 6=BANK CHARGES,                  (CR)
+      *                 7=BANK INTEREST PAID,            (CR)
+      *                 8=TRANSFER TO CALL A/C,          (CR)
+      *                 9=                               (CR)
+      *                10=                               (CR)
+      *
+      *                20=DEPOSIT (CHEQUES + CASH),      (DR)
+      *                21=DEPOSIT (TRANSFERS),           (DR)
+      *                22=R/D CHEQUES (PAYMENTS),        (DR)
+      *                23=STALE CHEQUES (PAYMENTS),      (DR)
+      *                24=BANK CHARGES REVERSED,         (DR)
+      *                25=BANK INTEREST RECEIVED,        (DR)
+      *                26=TRANSFER FROM CALL A/C,        (DR)
+      *                25=                               (DR)
+      *CBTRANS-LY-ALLOCATED: Y=PROCESSED, N=O/S, H=HELD
+      *CBTRANS-LY-TYPE-OF-POST: C=CR-CONTROL, D=DR-CONTROL, S=SUNDRIES.

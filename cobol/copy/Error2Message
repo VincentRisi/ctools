@@ -1,0 +1,19 @@
+      *
+       ERROR2-MESSAGE SECTION.
+       ERROR2-000.
+             PERFORM CENTRE-MESSAGE-INFO.
+             
+             MOVE 2915 TO POS.
+             DISPLAY "                                      " AT POS.
+             DISPLAY WS-MESSAGE AT 2901 WITH reverse-video
+      *       DISPLAY WS-MESSAGE AT 2901 WITH reverse-video BLINK
+                BELL FOREGROUND-COLOR IS 4.
+       ERROR2-010.
+             CALL "LOCKKBD" USING F-FIELDNAME.
+       ERROR2-020.
+             MOVE 2901 TO POS
+             MOVE " " TO WS-MESSAGE
+             DISPLAY WS-MESSAGE AT POS.
+       ERROR2-999.
+             EXIT.
+      *

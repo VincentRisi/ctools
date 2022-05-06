@@ -1,0 +1,69 @@
+***************************  MAIN CONTROL MENU  **************************     
+*   *************************BILLS OF MATERIAL MENU****************************
+*   *  1. Bill-Of-Material Entry/Edit.                                        *
+*   *  2. Bill-Of-Material Item Enquiry With Quantities.                      *
+*   *  3. Stocknumber Found In What Bill-Of-Material.                         *
+*   *  4. Bill-Of-Material Copy to a New Number.                              *
+*   *                                                                         *
+*   *  5. Bill-Of-Material Item Replacement.                                  *
+*   *  6. Bill-Of-material Quantity Change By Factor.                         *
+*   *  7. Reset StockMaster Analysis With 'T'.                                *
+*   *  8. Add NEW item to Bill-Of-Material.                                   *
+*   *                                                                         *
+*   *  9. Bill-Of-Material Manufacture Entry/Edit.                            *
+*   * 10. Bill-Of-Material Status Enquiry.                                    *
+*   * 11. Bill-Of-material Status Enquiry - L/Yr.                             *
+*   *                                                                         *
+*   * 12. Bill-Of-Material List By Bill Number.                               *
+*   * 13. Bill-Of-Material List By Item With Quantities.                      *
+***** 14. Bill-Of-Material Check List For Shipping.                           *
+    * 15. Works-Orders Listing By Order.                                      *
+    ****************************ENTER SELECTION : __***************************
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+
+Form name: Bm1Menu                         size: 1190  bytes
+height: 26    width: 79    number of fields: 2              
+
+Field name: SELECTION                                        
+Row: 20   Column: 50   Width: 2                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+                                 
+ ******************************* 
+ *  COLOR PALETTE INFORMATION  * 
+ ******************************* 
+                                 
+            Caption Color: 4     
+               Line Color: 7     
+                                 
+                                 
+        *************************
+        *   I N T E N S I T Y   *
+*********************************
+* Color *  Red  * Green *  Blue *
+*********************************
+*   0   *   0   *   3   *   0   *
+*   1   *   0   *   2   *   0   *
+*   2   *   0   *   3   *   3   *
+*   3   *   0   *   2   *   2   *
+*   4   *   3   *   3   *   3   *
+*   5   *   2   *   2   *   2   *
+*   6   *   3   *   3   *   0   *
+*   7   *   3   *   0   *   0   *
+*********************************
+  

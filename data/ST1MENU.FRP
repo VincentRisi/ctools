@@ -1,0 +1,65 @@
+**************************{**  MAIN CONTROL MENU  **}****************     
+*   ************************{** STOCK CONTROL MENU  **}*******************
+*   *                                                                    *
+*   *                                                                    *
+*   *                                                                    *
+*   *                                                                    *
+*   *              1. Maintenance / Enquiry Menu                         *
+*   *                                                                    *
+*   *              2. Reporting Menu                                     *
+*   *                                                                    *
+*   *              3. Special Program Menu                               *
+*   *                                                                    *
+*   *                                                                    *
+*   *                                                                    *
+*   *                                                                    *
+*   *                                                                    *
+*   *                                                                    *
+*   *                                                                    *
+*   *                                                                    *
+*****                                                                    *
+    *                                                                    *
+    **************************ENTER SELECTION : __************************
+
+Form name: St1Menu                         size: 571   bytes
+height: 22    width: 74    number of fields: 2              
+
+Field name: SELECTION                                        
+Row: 21   Column: 48   Width: 2                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+                                 
+ ******************************* 
+ *  COLOR PALETTE INFORMATION  * 
+ ******************************* 
+                                 
+            Caption Color: 4     
+               Line Color: 7     
+                                 
+                                 
+        *************************
+        *   I N T E N S I T Y   *
+*********************************
+* Color *  Red  * Green *  Blue *
+*********************************
+*   0   *   0   *   3   *   0   *
+*   1   *   0   *   2   *   0   *
+*   2   *   0   *   3   *   3   *
+*   3   *   0   *   2   *   2   *
+*   4   *   3   *   3   *   3   *
+*   5   *   2   *   2   *   2   *
+*   6   *   3   *   3   *   0   *
+*   7   *   3   *   0   *   0   *
+*********************************
+  

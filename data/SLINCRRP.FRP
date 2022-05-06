@@ -1,0 +1,235 @@
+             *********{** PRINT INVOICES/CREDIT NOTES **}**********            
+             *                                                    *            
+             *   I=Invoice, C=C/Notes, P=Proforma Invoice,  : _   *            
+             *    D=DocuBase or X=PDF Monthly Disk File           *            
+             *                                                    *            
+             *   Proforma from Q=Quote, P=P/Slip, R=Repair  : _   *            
+             *            Add Proforma's Into ONE Invoice   : _   *            
+             *                                                    *            
+             * Select Option   : _          Printer Option  : _   *            
+             * 1= Range Of Numbers            1=Master Printer    *            
+             * 2= Selected Numbers (Max. 4)   2=Counter Printer   *            
+             *                                3=Stores Printer    *            
+             * Currency Type   : ___          4=Hp Laser Printer  *            
+             * Currency Rate   : __________   5=Create EMail File *            
+             *                                NB 2,3+4 Will Print *            
+             * Type Of Print:  : _               Immediately The  *            
+             *   1 = Invoice Only                Report Is Ready. *            
+             *   2 = D/Notes Only                                 *            
+             *   3 = Invoice & D/Notes                            *            
+             *                                                    *            
+             *  Range 1: Enter The Beginning And Ending Numbers,  *            
+             *    OR  2: Enter Up To Four Individual Numbers.     *            
+             *                                                    *            
+             *     ______      ______      ______      ______     *            
+             ******************************************************            
+                                                                               
+                                                                               
+                                                                               
+
+Form name: SlInCrRp                        size: 1502  bytes
+height: 27    width: 79    number of fields: 13             
+
+Field name: INVCRED                                          
+Row: 2    Column: 62   Width: 1                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PROFTYPE                                         
+Row: 5    Column: 62   Width: 1                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: F
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: ADDTO                                            
+Row: 6    Column: 62   Width: 1                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: OPTION                                           
+Row: 8    Column: 33   Width: 1                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: PRINTER                                          
+Row: 8    Column: 62   Width: 1                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: CURRENCY                                         
+Row: 12   Column: 33   Width: 5                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: EXCHANGERATE                                     
+Row: 13   Column: 33   Width: 10                             
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                
+
+
+Field name: PROG-TYPE                                        
+Row: 15   Column: 33   Width: 1                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: F  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 4           Unselected Color Number: 0
+List of values:                                              
+
+
+
+Field name: RANGE1                                           
+Row: 23   Column: 19   Width: 6                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 7           Unselected Color Number: 6
+List of values:                                              
+
+
+
+Field name: RANGE2                                           
+Row: 23   Column: 31   Width: 6                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 7           Unselected Color Number: 6
+List of values:                                              
+
+
+
+Field name: RANGE3                                           
+Row: 23   Column: 43   Width: 6                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 7           Unselected Color Number: 6
+List of values:                                              
+
+
+
+Field name: RANGE4                                           
+Row: 23   Column: 55   Width: 6                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number: 7           Unselected Color Number: 6
+List of values:                                              
+
+
+
+                                 
+ ******************************* 
+ *  COLOR PALETTE INFORMATION  * 
+ ******************************* 
+                                 
+            Caption Color: 2     
+               Line Color: 6     
+                                 
+                                 
+        *************************
+        *   I N T E N S I T Y   *
+*********************************
+* Color *  Red  * Green *  Blue *
+*********************************
+*   0   *   0   *   3   *   0   *
+*   1   *   0   *   2   *   0   *
+*   2   *   0   *   3   *   3   *
+*   3   *   0   *   2   *   2   *
+*   4   *   3   *   3   *   3   *
+*   5   *   2   *   2   *   2   *
+*   6   *   3   *   3   *   0   *
+*   7   *   3   *   0   *   0   *
+*********************************
+  

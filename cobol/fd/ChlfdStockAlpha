@@ -1,0 +1,64 @@
+       FD  STOCK-ALPHA-MASTER.
+       01  STOCK-ALPHA-RECORD.
+           03  ST-AL-KEY.
+               05  ST-AL-STOCKNUMBER    PIC X(15).
+           03  ST-AL-ALT-KEY.
+               05  ST-AL-DESCRIPTION1   PIC X(20).
+           03  ST-AL-DESCRIPTION2       PIC X(20).
+           03  ST-AL-CATEGORY           PIC X(3).
+           03  ST-AL-SUPPLIER           PIC X(7).
+           03  ST-AL-FOREIGNCOST        PIC 9(6)V999.
+           03  ST-AL-SUPPLIERDISC       PIC 99V99.
+           03  ST-AL-CURRENCY           PIC X(5).
+           03  ST-AL-CURRENCY-RATE      PIC 9(3)V9(5).
+           03  ST-AL-PRICE              PIC 9(6)V99.
+           03  ST-AL-OLDPRICE           PIC 9(6)V99.
+           03  ST-AL-MIN-PERC           PIC 9(3)V99.
+           03  ST-AL-UNITOFMEASURE      PIC X(4).
+           03  ST-AL-DISCOUNT1          PIC 9(2)V99.
+           03  ST-AL-DISCOUNT2          PIC 9(2)V99.
+           03  ST-AL-DISCOUNT3          PIC 9(2)V99.
+           03  ST-AL-DISCOUNT4          PIC 9(2)V99.
+           03  ST-AL-DISCOUNT5          PIC 9(2)V99.
+           03  ST-AL-DISCOUNT6          PIC 9(2)V99.
+           03  ST-AL-DISCOUNT7          PIC 9(2)V99.
+           03  ST-AL-DISCOUNT8          PIC 9(2)V99.
+           03  ST-AL-DISCOUNT9          PIC 9(2)V99.
+           03  ST-AL-AVERAGECOST        PIC 9(6)V99.
+           03  ST-AL-LASTCOST           PIC 9(6)V99.
+           03  ST-AL-BINLOCATION        PIC X(6).
+           03  ST-AL-MINBUYQTY          PIC X(6).
+           03  ST-AL-DEL-DELAY          PIC X(2).
+           03  ST-AL-MAXIMUMLEVEL       PIC X(6).
+           03  ST-AL-MINIMUMLEVEL       PIC X(6).
+           03  ST-AL-QTYONHAND          PIC X(6).
+           03  ST-AL-QTYONRESERVE       PIC X(6).
+           03  ST-AL-QTYONORDER         PIC X(6).
+           03  ST-AL-QTYONBORDER        PIC X(6).
+           03  ST-AL-QTY-ST-TAKE        PIC X(6).
+           03  ST-AL-DATE-CREATED       PIC X(8).
+           03  ST-AL-LASTPRICECHANGE    PIC X(8).
+           03  ST-AL-LASTSALEDATE       PIC X(8).
+           03  ST-AL-LASTRECEIPTDATE    PIC X(8).
+           03  ST-AL-LASTORDERDATE      PIC X(8).
+           03  ST-AL-QTYRECMTD          PIC X(6).
+           03  ST-AL-QTYRECYTD          PIC X(6).
+           03  ST-AL-QTYRECLAST         PIC X(6).
+           03  ST-AL-QTYADJMTD          PIC X(6).
+           03  ST-AL-QTYADJYTD          PIC X(6).
+           03  ST-AL-QTYADJLAST         PIC X(6).
+           03  ST-AL-SALESUNITMTD       PIC X(6).
+           03  ST-AL-SALESUNITSYTD      PIC X(6).
+           03  ST-AL-SALESUNITSLAST     PIC X(6).
+           03  ST-AL-SALESRANDSMTD      PIC X(9).
+           03  ST-AL-SALESRANDSYTD      PIC X(9).
+           03  ST-AL-SALESRANDSLAST     PIC X(9).
+           03  ST-AL-SALESCOSTMTD       PIC X(9).
+           03  ST-AL-SALESCOSTYTD       PIC X(9).
+           03  ST-AL-SALESCOSTLAST      PIC X(9).
+           03  ST-AL-ANALYSIS           PIC X.
+           03  ST-AL-DUTYPERCENT        PIC 9(2)V9.
+           03  ST-AL-DUTYTARIFF         PIC 9(8).
+           03  ST-AL-SURCHARGE          PIC 9(2)V9.
+           03  ST-AL-PERMIT             PIC X.
+      *

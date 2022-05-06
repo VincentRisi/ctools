@@ -1,0 +1,17 @@
+       FD  PRINTER-ASCII.
+       01  ASCII-RECORD.
+           03  ASCII-KEY.
+              05  ASCII-NUMBER           PIC 99.
+           03  ASCII-NAME                PIC X(25).
+           03  ASCII-TYPE                PIC 99.
+           03  ASCII-DESC                PIC X(20).
+           03  ASCII-PROMPT-PAPER        PIC X.
+           03  ASCII-CHARS.
+              05  ASCII-COMP             PIC X.
+              05  ASCII-BOLD             PIC X.
+              05  ASCII-UNBOLD           PIC X.
+              05  ASCII-NORMAL           PIC X.
+              05  ASCII-EIGHT            PIC X(4).
+              05  ASCII-ELEVEN           PIC X(4).
+              05  ASCII-FOUR             PIC X(4).
+              05  FILLER                 PIC X(39).

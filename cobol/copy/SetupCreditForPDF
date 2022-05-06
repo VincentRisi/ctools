@@ -1,0 +1,43 @@
+      *
+       SETUP-CREDIT-FOR-PDF SECTION.
+       SUCFP-005.
+          ACCEPT WS-USERNAME FROM ENVIRONMENT "USER".
+          
+      *    MOVE WS-USERNAME TO WS-MESSAGE
+      *    PERFORM ERROR-MESSAGE.
+          
+      *    MOVE W-FILENAME TO WS-MESSAGE
+      *    PERFORM ERROR-MESSAGE.
+       SUCFP-010.
+          MOVE 
+          CONCATENATE('PrintCredit ', TRIM(WS-USERNAME), ' '
+              WS-CO-NUMBER, ' ', TRIM(WS-PRINTER-SAVE))
+                TO WS-COMMAND-LINE.
+      *          TRIM(WS-PRINTER)) TO WS-COMMAND-LINE.
+
+      *    MOVE WS-COMMAND-LINE TO  WS-MESSAGE
+      *    PERFORM ERROR-MESSAGE.
+      
+      *    MOVE W-STATUS TO  WS-MESSAGE
+      *    PERFORM ERROR-MESSAGE.
+      *    DISPLAY W-STATUS  AT 2810.      
+      *    DISPLAY WS-COMMAND-LINE.  
+      *    ACCEPT W-ENTER.
+          CALL "SYSTEM" USING WS-COMMAND-LINE
+                     RETURNING W-STATUS.
+       SUCFP-999.
+           EXIT.
+      *     STOP RUN.
+
+
+      *So far the variables which will be specified from inside the
+      *   COBOL programs are:
+      *$1 = The username                         e.g. steve
+      *$2 = The company number from 01 to 12     e.g. 07
+      *$3 = The Printername to print the file to e.g. MP250
+      *$4 = The Print file name which will replace
+      *                /ctools/spl/CrPrintCo01 when specified in COBOL
+
+
+      * add any extra commands here - perhaps cups printing
+      * or sendfax via hylaFAX

@@ -1,0 +1,35 @@
+text2pdf /ctools/fax/$3 -fCourier-Bold -x595 -y842 -l66 -c88 -V16 -H41 > /ctools/fax/$1Quote2.temp1.pdf
+pdftk /ctools/fax/$1Quote2.temp1.pdf background /ctools/dev/source/print/$1QuoteOverlay2.pdf output /ctools/fax/$1Quote$3.pdf
+
+if [ "$4" = "02" ] && [ "$6" = "P" ]
+   then
+     lp -d $2 /ctools/fax/$1Quote$3.pdf
+ fi
+
+if [ "$4" = "02" ] && [ "$5" = "F" ]
+   then
+     sendfax -n -d $7 /ctools/fax/$1Quote$3.pdf
+ fi
+
+#lp -d $2 /ctools/spl/$1Quote$3.pdf
+#lp -d $2 $3
+
+#--- the following pdftk cats the first statement to a single file from two
+#--- this is basically for testing faxes with only one statement
+##pdftk QuoteCo01.pdf cat 1-1 output single.pdf
+
+#FORMAT FOR PRINTING IS:
+#lp -d W-PRINTERNAME W-PRINTFILE
+
+#--So far the variables which will be specified from inside the COBOL programs are:
+#---$1 = The company number from 01 to 12     e.g. 07
+#---$2 = The Printername to print the file to e.g. MP140
+#---$3 = The Quote file name e.g. Q90555.05.15 specified in COBOL
+#---$4 = The page-count.  IF page-cnt=02 then print, If=01 then don't
+#---$5 = WS-AUTO-FAX.     IF = F then send by fax
+#---$6 = WS-ANSWER.       IF = P then print PDF.
+#---$7 = WS-fax-number.  Used ONLY if sending by fax.
+#--- add any extra commands here - perhaps cups printing
+#--- or sendfax via hylaFAX
+
+

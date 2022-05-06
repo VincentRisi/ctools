@@ -1,0 +1,88 @@
+      *
+       GET-USER-PRINT-NAME SECTION.
+       GUPN-005.
+      *      MOVE "IN GET USER PRINT FILE SECTION" TO WS-MESSAGE
+      *      PERFORM ERROR-MESSAGE.
+      *      MOVE WS-PRINTER TO WS-MESSAGE
+      *      PERFORM ERROR1-000      
+      *      MOVE WS-PRINTER-SAVE TO WS-MESSAGE
+      *      PERFORM ERROR-MESSAGE
+      *      PERFORM ERROR1-020.
+      
+            IF WS-PRINTER-SAVE > " "
+               MOVE WS-PRINTER-SAVE TO WS-PRINTER
+               MOVE SPACES          TO WS-PRINTER-SAVE.
+            IF WS-PRINTERSELECTED = 0 OR = 88
+                GO TO GUPN-999.
+      *      ACCEPT WS-USERNAME FROM ENVIRONMENT "USER".
+       GUPN-006.
+            MOVE SPACES TO ALPHA-RATE DATA-RATE.
+            MOVE "/ctools/spl/" TO ALPHA-RATE
+            ACCEPT WS-USERNAME FROM ENVIRONMENT "USER".
+            MOVE WS-USERNAME TO DATA-RATE.
+            MOVE 13 TO SUB-45
+            MOVE 1 TO SUB-46.
+       GUPN-007.
+            IF DAT-RATE (SUB-46) = " "
+                MOVE 1 TO SUB-46
+                MOVE SPACES TO DATA-RATE
+                GO TO GUPN-010.
+            MOVE DAT-RATE (SUB-46) TO AL-RATE (SUB-45).
+            IF SUB-45 < 100
+                ADD 1 TO SUB-45 SUB-46
+                GO TO GUPN-007.
+       GUPN-010.
+            ACCEPT WS-DATE FROM DATE YYYYMMDD.
+            MOVE WS-DATE TO DATA-RATE.
+       GUPN-015.
+            IF DAT-RATE (SUB-46) = " "
+               MOVE 1 TO SUB-46
+               MOVE SPACES TO DATA-RATE
+               GO TO GUPN-020.
+            MOVE DAT-RATE (SUB-46) TO AL-RATE (SUB-45).
+            IF SUB-45 < 100
+                ADD 1 TO SUB-45 SUB-46
+                GO TO GUPN-015.
+       GUPN-020.
+            ACCEPT WS-TIME FROM TIME.
+            MOVE WS-TIME TO DATA-RATE.
+       GUPN-025.
+            IF DAT-RATE (SUB-46) = " "
+               MOVE 1 TO SUB-46
+               MOVE SPACES TO DATA-RATE
+               GO TO GUPN-030.
+            MOVE DAT-RATE (SUB-46) TO AL-RATE (SUB-45).
+            IF SUB-45 < 100
+                ADD 1 TO SUB-45 SUB-46
+                GO TO GUPN-025.
+       GUPN-030.
+            MOVE ".tmp" TO DATA-RATE.
+       GUPN-035.
+            IF DAT-RATE (SUB-46) = " "
+               MOVE 1 TO SUB-46
+               MOVE SPACES TO DATA-RATE
+               GO TO GUPN-040.
+            MOVE DAT-RATE (SUB-46) TO AL-RATE (SUB-45).
+            IF SUB-45 < 100
+                ADD 1 TO SUB-45 SUB-46
+                GO TO GUPN-035.
+       GUPN-040.
+            MOVE ALPHA-RATE TO WS-PRINT-FILE-NAME.
+            
+      *      MOVE "LEAVING GET USER PRINT FILE, 2 PRINTER DISPLAYS"
+      *         TO WS-MESSAGE
+      *      PERFORM ERROR-MESSAGE.
+      *      MOVE WS-PRINT-FILE-NAME TO WS-MESSAGE
+      *      PERFORM ERROR-MESSAGE.
+
+            MOVE WS-PRINTER TO WS-PRINTER-SAVE.
+            MOVE WS-PRINT-FILE-NAME TO WS-PRINTER.
+            
+      *      MOVE WS-PRINTER TO WS-MESSAGE
+      *      PERFORM ERROR1-000      
+      *      MOVE WS-PRINTER-SAVE TO WS-MESSAGE
+      *      PERFORM ERROR-MESSAGE
+      *      PERFORM ERROR1-020.
+       GUPN-999.
+           EXIT.
+      *

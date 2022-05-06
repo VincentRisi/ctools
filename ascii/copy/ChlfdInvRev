@@ -1,0 +1,5 @@
+       FD  INV-REV.
+       01  INVREV-REC.
+           03  INV-KEY.
+               05  INV-NO             PIC 9(6).
+      *

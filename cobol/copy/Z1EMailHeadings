@@ -1,0 +1,54 @@
+      *-----------------------------------------------------------*
+       ZE1-EMAIL-HEADINGS SECTION.
+      *-----------------------------------------------------------*
+       ZE1-50.
+            MOVE ALL SPACES TO WS-FST-LINE WS-OTH-LINE-1.
+            MOVE "´¶" TO WS-DELIM-F
+            MOVE "¶"  TO WS-DELIM-O
+            MOVE "³"  TO WS-DELIM-END1
+                         WS-DELIM-END2.
+            
+            MOVE 1             TO SUB-1
+            MOVE SUB-1         TO WS-O-LINE
+            MOVE "SuppLine"    TO WS-O-L
+            MOVE WS-OTH-LINE-1 TO WS-DATA-F
+            WRITE LASER-REC FROM WS-FST-LINE.
+       ZE1-51.
+            ADD 1              TO SUB-1
+            IF SUB-1 > 13
+               MOVE 0 TO SUB-1
+               GO TO ZE1-53.
+            MOVE SUB-1         TO WS-O-LINE
+            MOVE "SuppLine"    TO WS-O-L
+            MOVE WS-OTH-LINE-1 TO WS-DATA-O
+            WRITE LASER-REC FROM WS-OTH-LINE.
+            GO TO ZE1-51.
+       ZE1-53.
+            MOVE 1             TO SUB-1
+            MOVE SUB-1         TO WS-O-LINE
+            MOVE "TermLine"    TO WS-O-L
+            MOVE WS-OTH-LINE-1 TO WS-DATA-O
+            WRITE LASER-REC FROM WS-OTH-LINE
+            MOVE 0             TO SUB-1.
+       ZE1-54.
+            ADD 1              TO SUB-1
+            IF SUB-1 > 20
+               MOVE 0 TO SUB-1
+               GO TO ZE1-60.
+            MOVE SUB-1         TO WS-O-LINE
+            MOVE "BodyLine"    TO WS-O-L
+            MOVE WS-OTH-LINE-1 TO WS-DATA-O
+            WRITE LASER-REC FROM WS-OTH-LINE.
+            GO TO ZE1-54.
+       ZE1-60.
+            ADD 1              TO SUB-1
+            IF SUB-1 > 5
+               MOVE 0 TO SUB-1
+               GO TO ZE1-100.
+            MOVE SUB-1         TO WS-O-LINE
+            MOVE "TotlLine"    TO WS-O-L
+            MOVE WS-OTH-LINE-1 TO WS-DATA-O
+            WRITE LASER-REC FROM WS-OTH-LINE.
+            GO TO ZE1-60.
+       ZE1-100.
+           EXIT.

@@ -1,0 +1,26 @@
+Sort
+[Win]<GDat>StReceiptLY
+[Win]<GDat>Temp
+@[Win]<Temp>StRecSort.Key
+
+[Win]<$>SortWorkFile1
+[Win]<$>SortWorkFile2
+
+Rename
+[Win]<GDat>Temp
+[Win]<GDat>StReceiptLY
+Y
+
+I Reo
+[Win]<GDat>StReceiptLY
+<GDatInd>StReceiptLY.Ind
+
+
+
+@[Win]<Temp>StRec.Key
+5
+100
+50
+500
+
+Y

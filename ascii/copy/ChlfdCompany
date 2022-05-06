@@ -1,0 +1,10 @@
+       FD  COMPANY-MENU.
+       01  COMPANY-RECORD.
+           03  PTY-KEY.
+               04  PTY-NUMBER     PIC 99.
+           03  PTY-CO-NAME        PIC X(40).
+           03  PTY-VOL-DIR        PIC X(25).
+      *
+      *PTY-VOL-DIR: THIS IS THE FULL VOLUME & DIRECTORY NAME WHERE DATA
+      *             IS TO BE FOUND FOR THE COMPANY.
+      *         E.G. {NATAL}[Win]<Data>

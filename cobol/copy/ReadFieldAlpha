@@ -1,0 +1,19 @@
+      *
+        READ-FIELD-ALPHA SECTION.
+        READ-A000.
+            CALL "READFIELD" USING F-ERROR1
+                                   F-FORM
+                                   F-FIELDNAME
+                                   F-CBFIELDNAME
+                                   F-INDEX
+                                   F-NAMEFIELD
+                                   F-CBFIELDLENGTH
+                                   F-CBFIRSTLINE
+                                   F-TYPE.
+            IF F-ERROR1 NOT = 0
+                DISPLAY "READFIELD ALPHA ERROR"
+                DISPLAY F-ERROR1
+                PERFORM ERROR-010
+                STOP RUN.
+        READ-A999.
+            EXIT.

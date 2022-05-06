@@ -1,0 +1,24 @@
+      *
+       COMPUTE-DATE-PERIOD-RESET SECTION.
+       CDP-005.
+           MOVE GLPA-CURRENT-SLPER TO SUB-4.
+           IF SUB-4 = 12
+              MOVE 1 TO SUB-4
+           ELSE
+              ADD 1  TO SUB-4.
+           MOVE 0 TO WS-CALC-PERIOD.
+       CDP-010.
+           IF SUB-4 = 1
+              MOVE 12 TO SUB-4
+           ELSE
+              SUBTRACT 1 FROM SUB-4.
+       CDP-030.
+           IF WS-AGE-DATE NOT < GL-BEGDATE (SUB-4)
+            IF WS-AGE-DATE NOT > GL-ENDDATE (SUB-4)
+               GO TO CDP-999.
+           ADD 1 TO WS-CALC-PERIOD.
+           IF WS-CALC-PERIOD > 3
+              GO TO CDP-999.
+           GO TO CDP-010.
+       CDP-999.
+           EXIT.

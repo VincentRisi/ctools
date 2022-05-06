@@ -1,0 +1,5 @@
+{"message":"template has been stored",
+"template":{"name":"mailgunmessage.html",
+"description":"Test template for Mailgun",
+"createdAt":"Thu, 07 Nov 2019 13:18:32 UTC",
+"id":"31e0f75d-7822-4bda-851b-5b504cc09344"}}

@@ -1,0 +1,59 @@
+      *
+       NUMBER-CHECK SECTION.
+       NC-000.
+             MOVE " " TO WS-CH (1)
+                         WS-CH (2)
+                         WS-CH (3)
+                         WS-CH (4)
+                         WS-CH (5)
+                         WS-CH (6)
+                         WS-CH (7)
+                         WS-CH (8)
+                         WS-CH (9)
+                         WS-CH (10)
+                         WS-CH (11)
+                         WS-CH (12)
+                         WS-CH (13)
+	                     WS-CH (14)
+                         WS-CH (15).
+             MOVE 1 TO SUB-5 SUB-6.
+             MOVE 0 TO SIGN-FOUND.
+       NC-010.
+             IF AL-RATE (SUB-5) NOT = "-" AND NOT = " " AND NOT = "1"
+              AND NOT = "2" AND NOT = "3" AND NOT = "4" AND NOT = "5"
+              AND NOT = "6" AND NOT = "7" AND NOT = "8" AND NOT = "9"
+              AND NOT = "0"
+                 MOVE 9 TO SIGN-FOUND
+                 MOVE 1 TO SUB-5
+                 GO TO NC-900.
+             ADD 1 TO SUB-5.
+             IF SUB-5 < 14
+                 GO TO NC-010.
+             MOVE 1 TO SUB-5 SUB-6.
+       NC-060.
+             IF AL-RATE (SUB-5) NOT = "-" AND NOT = " "
+              IF SUB-6 = 3 OR = 7 OR = 10
+                MOVE "-" TO WS-CH (SUB-6)
+                ADD 1 TO SUB-6
+                MOVE AL-RATE (SUB-5) TO WS-CH (SUB-6)
+                GO TO NC-065.
+             MOVE AL-RATE (SUB-5) TO WS-CH (SUB-6).
+       NC-065.
+             IF WS-CH (SUB-6) = " "
+                ADD 1 TO SUB-5
+              IF SUB-5 < 14
+               IF AL-RATE (SUB-5) NOT = " " AND NOT = "-"
+                MOVE "-" TO WS-CH (SUB-6)
+                SUBTRACT 1 FROM SUB-5
+              ELSE
+                SUBTRACT 1 FROM SUB-5.
+             ADD 1 TO SUB-5 SUB-6.
+             IF SUB-6 < 14
+                GO TO NC-060.
+             MOVE 1 TO SUB-5 SUB-6.
+       NC-900.
+             IF SIGN-FOUND = 9
+                MOVE "ERROR IN ACCOUNT NUMBER, RE-ENTER" TO WS-MESSAGE
+                PERFORM ERROR-MESSAGE.
+       NC-999.
+             EXIT.

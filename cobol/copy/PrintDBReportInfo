@@ -1,0 +1,19 @@
+       PRINT-DB-REPORT-INFO SECTION.
+       PRIDB-005.
+           MOVE WS-pbValue TO WS-TerminalName
+           MOVE pbRet      TO WS-Report-Date
+           WRITE DB-REC FROM WS-Report-Final-Lines AFTER 1
+           MOVE " "        TO DB-REC
+           MOVE "**** END OF PRINT FILE ****" TO DB-REC
+           WRITE DB-REC AFTER 1
+           MOVE " "        TO DB-REC
+           WRITE DB-REC AFTER 1.
+           IF WS-PRINT-TYPE = 2
+               MOVE WS-PRINT-NORMAL TO DB-REC
+               WRITE DB-REC.
+      * new line below entered for linux to get a form feed AFTER the
+      * report is finished printing.
+           MOVE " "        TO DB-REC
+           WRITE DB-REC BEFORE PAGE.
+       PRIDB-999.
+           EXIT.

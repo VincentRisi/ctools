@@ -1,0 +1,8 @@
+       FD  StNwPr1-MASTER.
+       01  StNwPr1-Record.
+           03  StNwPr1-Key.
+               05  StNwPr1-Stocknumber    PIC X(15).
+           03  StNwPr1-Price              PIC 9(6)V99.
+           03  StNwPr1-Date               PIC 9(8).
+           03  StNwpr1-Analysis           PIC X.
+      *

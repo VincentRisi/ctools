@@ -1,0 +1,156 @@
+      *
+       CONVERT-DATE-FORMAT SECTION.
+       CDF-010.
+            MOVE SPLIT-DD TO CONVERT-DD
+            MOVE SPLIT-MM TO CONVERT-MM
+            MOVE SPLIT-YY TO CONVERT-YY
+            MOVE WS-CONVERT-DATE TO DISPLAY-DATE.
+       CDF-999.
+            EXIT.
+      *
+       CONVERT-SPLIT-FORMAT SECTION.
+       CSDF-010.
+            MOVE CONVERT-DD TO SPLIT-DD
+            MOVE CONVERT-MM TO SPLIT-MM
+            MOVE CONVERT-YY TO SPLIT-YY.
+       CSDF-999.
+            EXIT.
+      *
+       CHECK-DATE-VALID SECTION.
+       CDV-005.
+            MOVE 0        TO SIGN-FOUND WS-AMOUNT.
+            MOVE "N"      TO WS-LEAP-YEAR.
+            MOVE WS-CH-YY TO WS-AMOUNT.
+            COMPUTE WS-AMOUNT = WS-AMOUNT / 4.
+            MOVE WS-AMOUNT TO ALPHA-RATE.
+            IF AL-RATE (5) = "0"
+             IF AL-RATE (6) = "0"
+               MOVE "Y" TO WS-LEAP-YEAR.
+       CDV-010.
+            IF SPLIT-DATE > 2045
+               MOVE "YOU CANNOT HAVE A YEAR > 2045, RE-ENTER."
+               TO WS-MESSAGE
+               PERFORM ERROR-MESSAGE
+               MOVE 9 TO SIGN-FOUND
+               GO TO CDV-999.
+            IF SPLIT-DATE < 1901
+               MOVE "YOU CANNOT HAVE A YEAR < 1901, RE-ENTER."
+               TO WS-MESSAGE
+               PERFORM ERROR-MESSAGE
+               MOVE 9 TO SIGN-FOUND
+               GO TO CDV-999.
+            IF WS-CH-MM > 12
+               MOVE "NO YEAR CAN HAVE MORE THAN 12 MONTHS, RE-ENTER."
+               TO WS-MESSAGE
+               PERFORM ERROR-MESSAGE
+               MOVE 9 TO SIGN-FOUND
+               GO TO CDV-999.
+            IF WS-CH-MM = 0
+               MOVE "NO YEAR CAN HAVE A ZERO MONTH, RE-ENTER."
+               TO WS-MESSAGE
+               PERFORM ERROR-MESSAGE
+               MOVE 9 TO SIGN-FOUND
+               GO TO CDV-999.
+            IF WS-CH-MM = 1 OR = 3 OR = 5 OR = 7 OR = 8 OR = 10 OR = 12
+             IF WS-CH-DD > 31
+               MOVE "NO MONTH CAN HAVE MORE THAN 31 DAYS, RE-ENTER."
+               TO WS-MESSAGE
+               PERFORM ERROR-MESSAGE
+               MOVE 9 TO SIGN-FOUND
+               GO TO CDV-999.
+            IF WS-CH-MM = 4 OR = 6 OR = 9 OR = 11
+             IF WS-CH-DD > 30
+              MOVE "THIS MONTH CANNOT HAVE MORE THAN 30 DAYS, RE-ENTER."
+               TO WS-MESSAGE
+               PERFORM ERROR-MESSAGE
+               MOVE 9 TO SIGN-FOUND
+              GO TO CDV-999.
+            IF WS-CH-MM = 2
+             IF WS-LEAP-YEAR = "Y"
+              IF WS-CH-DD > 29
+              MOVE "LEAP YEARS HAVE ONLY 29 DAYS IN FEBRUARY, RE-ENTER."
+               TO WS-MESSAGE
+               PERFORM ERROR-MESSAGE
+               MOVE 9 TO SIGN-FOUND
+               GO TO CDV-999.
+            IF WS-CH-MM = 2
+             IF WS-LEAP-YEAR = "N"
+              IF WS-CH-DD > 28
+              MOVE
+               "NON-LEAP YEARS HAVE ONLY 28 DAYS IN FEBRUARY, RE-ENTER."
+               TO WS-MESSAGE
+               PERFORM ERROR-MESSAGE
+               MOVE 9 TO SIGN-FOUND
+               GO TO CDV-999.
+            IF WS-CH-DD = 0
+               MOVE "NO MONTH CAN HAVE A ZERO DAY, RE-ENTER."
+               TO WS-MESSAGE
+               PERFORM ERROR-MESSAGE
+               MOVE 9 TO SIGN-FOUND.
+       CDV-999.
+            EXIT.
+      *
+       DATE-CHECKING SECTION.
+       DC-000.
+             MOVE " " TO WS-DC (1)
+                         WS-DC (2)
+                         WS-DC (3)
+                         WS-DC (4)
+                         WS-DC (5)
+                         WS-DC (6)
+                         WS-DC (7)
+                         WS-DC (8)
+                         WS-DC (9)
+                         WS-DC (10).
+             MOVE 1 TO SUB-5 SUB-6.
+             MOVE 0 TO SIGN-FOUND.
+       DC-010.
+             IF AL-RATE (SUB-5) NOT = "/" AND NOT = "0" AND NOT = "1"
+              AND NOT = "2" AND NOT = "3" AND NOT = "4" AND NOT = "5"
+              AND NOT = "6" AND NOT = "7" AND NOT = "8" AND NOT = "9"
+              AND NOT = " "
+                 MOVE 9 TO SIGN-FOUND
+                 MOVE 1 TO SUB-5
+                 GO TO DC-900.
+             ADD 1 TO SUB-5.
+             IF SUB-5 < 11
+                 GO TO DC-010.
+             MOVE 1 TO SUB-5 SUB-6.
+       DC-060.
+             IF AL-RATE (SUB-5) NOT = "/"
+              IF SUB-6 = 3 OR = 6
+                MOVE "/" TO WS-DC (SUB-6)
+                ADD 1 TO SUB-6
+                MOVE AL-RATE (SUB-5) TO WS-DC (SUB-6)
+                GO TO DC-065.
+             MOVE AL-RATE (SUB-5) TO WS-DC (SUB-6).
+       DC-065.
+             ADD 1 TO SUB-5 SUB-6.
+             IF SUB-6 < 11
+                GO TO DC-060.
+             MOVE 1 TO SUB-5 SUB-6.
+       DC-080.
+             IF WS-DC (SUB-5) = "/"
+              IF SUB-5 = 1 OR = 2 OR = 4 OR = 5 
+                    OR = 7 OR = 8 OR = 9 OR = 10
+                MOVE "DATE ENTERED INCORRECTLY, RE-ENTER" TO WS-MESSAGE
+                PERFORM ERROR-MESSAGE
+                MOVE 9 TO SIGN-FOUND
+                GO TO DC-999.
+             ADD 1 TO SUB-5.
+             IF SUB-5 < 11
+                GO TO DC-080.
+             MOVE 1 TO SUB-5 SUB-6.
+       DC-090.
+             IF WS-DC (SUB-5) = "/"
+                ADD 1 TO SUB-5.
+             MOVE WS-DC (SUB-5) TO WS-ND (SUB-6).
+             ADD 1 TO SUB-5 SUB-6.
+             IF SUB-6  < 9
+                GO TO DC-090.
+       DC-900.
+             IF SIGN-FOUND = 9
+                MOVE "ERROR IN DATE ENTRY, RE-ENTER" TO WS-MESSAGE
+                PERFORM ERROR-MESSAGE.
+       DC-999.
+             EXIT.

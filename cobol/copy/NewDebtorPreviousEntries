@@ -1,0 +1,48 @@
+      * GET SECTION
+            IF F-EXIT-CH = X"05"
+                 PERFORM READ-DEBTOR-PREVIOUS
+              IF WS-END NOT = "Y"
+                 GO TO GET-003
+              ELSE
+                 PERFORM CLEAR-FORM
+                 GO TO GET-000.
+
+
+      *FILL SECTION
+            IF F-EXIT-CH = X"05"
+               PERFORM REWRITE-DEBTOR-RECORD
+               PERFORM READ-DEBTOR-PREVIOUS
+               PERFORM GET-003 THRU GET-005
+               GO TO FILL-001.
+
+      *
+       READ-DEBTOR-PREVIOUS SECTION.
+       RDPR-001.
+           MOVE 0 TO WS-DEBTOR-ST1.
+       RDPR-005.
+           READ DEBTOR-MASTER PREVIOUS WITH LOCK
+            AT END
+              MOVE 0 TO DR-ACCOUNT-NUMBER
+                        WS-ACCOUNTNUMBER
+              MOVE "Y" TO WS-END
+              PERFORM CLEAR-FORM
+              MOVE "END OF NEXT PAGE SEQUENCE, ENTER A NEW IDENTIFIER"
+              TO WS-MESSAGE
+              PERFORM ERROR-000
+              GO TO RDPR-999.
+           IF WS-DEBTOR-ST1 = 23 OR 35 OR 49 OR 51
+               MOVE 0 TO WS-DEBTOR-ST1
+               MOVE "DEBTORS BUSY ON READ-NEXT, 'ESC' TO RETRY"
+               TO WS-MESSAGE
+               PERFORM ERROR-MESSAGE
+               GO TO RDPR-005.
+           IF WS-DEBTOR-ST1 NOT = 0
+               MOVE 0 TO WS-ACCOUNTNUMBER
+               MOVE 0 TO WS-DEBTOR-ST1
+               PERFORM START-DEBTOR
+               GO TO RDPR-005.
+           MOVE DR-ACCOUNT-NUMBER TO WS-ACCOUNTNUMBER
+                                     WS-ACC-SAVE.
+           MOVE "N" TO NEW-DEBTORNO.
+       RDPR-999.
+           EXIT.

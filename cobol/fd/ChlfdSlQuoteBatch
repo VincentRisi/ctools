@@ -1,0 +1,8 @@
+       FD  QUOTEBATCH.
+       01  QUOTEBATCH-RECORD.
+           03  QB-KEY.
+               05  QB-QUOTENUMBER    PIC 9(6).
+           03  QB-PDF-PRINT-FILE     PIC X(100).
+           03  QB-EMAIL-SENDER       PIC X(50).
+           03  QB-EMAIL-RECIPIENT    PIC X(50).
+           03  QB-SUBJECT-FIXED      PIC X(100).

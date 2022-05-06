@@ -1,0 +1,33 @@
+Type
+<Temp>StMinMaxMessage
+
+1
+
+C Run
+MainCont.Int
+
++P -N
+
+
+5 
+MENU65
+2 
+1 
+5
+
+ 
+ORX
+N
+N
+N
+Y
+ 
+OSP
+N
+N
+N
+Y
+
+E
+
+**** FINISHED STMINMAX.SUB5 RUN ******

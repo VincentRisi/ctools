@@ -1,0 +1,6 @@
+           SELECT PULL-BY ASSIGN TO Ws-CoPullBy
+               ORGANIZATION IS INDEXED
+               LOCK MANUAL
+               ACCESS MODE IS DYNAMIC
+               FILE STATUS IS WS-PULLBY-STATUS
+               RECORD KEY IS PB-KEY.

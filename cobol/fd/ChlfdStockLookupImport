@@ -1,0 +1,7 @@
+       FD  STOCK-IMP-MASTER.
+       01  STOCK-IMP-RECORD.
+            03  STOCK-IMP-KEY.
+                05  STOCK-IMP-ST-NUM       PIC X(20).
+            03  FILLER                     PIC X.
+            03  STOCK-IMP-SUPPLIER         PIC X(20).
+            03  FILLER                     PIC X(2).

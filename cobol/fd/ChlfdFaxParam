@@ -1,0 +1,14 @@
+       FD  Fax-Parameter.
+       01  Fax-ParamRecord.
+           03  Fax-PaKey.
+               04  Fax-ParmKey  Pic 9.
+           03  Fax-PaNumber     Pic 9.
+           03  Fax-PaName       Pic X(25).
+      ***********************************************************
+      *Fax-PaName = MURATA, CTOS FAX-SLICE ,XQS-FAX OR HYLAFAX  *
+      ***********************************************************
+      *Fax-PaNumber: 1=FAX SLICE (OLD STYLE) CTOS               *
+      *              2=MURATA INTERFACE      CTOS               *
+      *              3=XQSFAX                CTOS               *
+      *              4=HYLAFAX               LINUX              *
+      ***********************************************************

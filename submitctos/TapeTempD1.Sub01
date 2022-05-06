@@ -1,0 +1,49 @@
+Screen Setup
+
+Yes
+
+
+Yes
+White Blue
+100
+
+Path
+d1
+Program
+
+File
+@<Temp>CompanyBackup.Fls
+
+<Temp>TapeBackup.key
+
+1
+
+Selec Arch
+@<Temp>TapeBackup.key
+
+
+[Qic]
+Yes
+[Win]<Spl>Archive.Lst
+
+
+
+Rest Archi
+[Qic]
+
+
+
+
+
+
+y
+[Win]<Spl>Backup.Lst
+
+
+Video
+
+
+Type
+<Temp>TapeVolMessage
+Boot
+

@@ -1,0 +1,94 @@
+      *
+       SETUP-QUOTE-FOR-PDF-MGEMAIL SECTION.
+       SUQFPMGEM-005.
+      *    ACCEPT WS-USERNAME FROM ENVIRONMENT "USER".
+          ACCEPT WS-USEREMAILADD FROM ENVIRONMENT "USEREMAILADD".
+          
+      *    MOVE WS-USEREMAILADD TO WS-MESSAGE
+      *    PERFORM ERROR-MESSAGE.
+
+        IF WS-CO-NUMBER = 1
+           GO TO SUQFPMGEM-010.
+        IF WS-CO-NUMBER = 3
+           GO TO SUQFPMGEM-020.
+        IF WS-CO-NUMBER = 7
+           GO TO SUQFPMGEM-030.
+        IF WS-CO-NUMBER = 8
+           GO TO SUQFPMGEM-040.
+           
+       GO TO SUQFPMGEM-999.
+       SUQFPMGEM-010.
+      * FOR CTJ LEAVING MOST THINGS AS DEFAULT
+          MOVE CONCATENATE('python MailGunEmail.py ', 
+          ' ', '-f', ' ', TRIM(WS-PRINTER-PDF),
+          ' ', '-F', ' ', TRIM(WS-USEREMAILADD),
+          ' ', '-r', ' ', TRIM(WS-USEREMAILADD),
+          ' ', '-s', ' ', TRIM(WS-SUBJECT-FIXED),
+          ' ', '-t', ' ', 'MGMessageCTJQu.html',
+          ' ', '-T', ' ', TRIM(WSF-MAIL-NUMBER))
+               TO WS-COMMAND-LINE.
+          GO TO SUQFPMGEM-500.
+       SUQFPMGEM-020.
+      * FOR CTN LEAVING MOST THINGS AS DEFAULT
+          MOVE CONCATENATE('python MailGunEmail.py ', 
+          ' ', '-f', ' ', TRIM(WS-PRINTER-PDF),
+          ' ', '-F', ' ', TRIM(WS-USEREMAILADD),
+          ' ', '-r', ' ', TRIM(WS-USEREMAILADD),
+          ' ', '-s', ' ', TRIM(WS-SUBJECT-FIXED),
+          ' ', '-t', ' ', 'MGMessageCTNQu.html',
+          ' ', '-T', ' ', TRIM(WSF-MAIL-NUMBER))
+               TO WS-COMMAND-LINE.
+          GO TO SUQFPMGEM-500.
+       SUQFPMGEM-030.
+      * FOR SFJ CHANGING THE DEFAULT
+          MOVE CONCATENATE('python MailGunEmail.py ', 
+          ' ', '-f', ' ', TRIM(WS-PRINTER-PDF),
+          ' ', '-F', ' ', TRIM(WS-USEREMAILADD),
+          ' ', '-r', ' ', TRIM(WS-USEREMAILADD),
+          ' ', '-s', ' ', TRIM(WS-SUBJECT-FIXED),
+          ' ', '-t', ' ', 'MGMessageSFJQu.html',
+          ' ', '-T', ' ', TRIM(WSF-MAIL-NUMBER))
+               TO WS-COMMAND-LINE.
+          GO TO SUQFPMGEM-500.
+       SUQFPMGEM-040.
+      * FOR CSC LEAVING MOST THINGS AS  DEFAULT
+          MOVE CONCATENATE('python MailGunEmail.py ', 
+          ' ', '-f', ' ', TRIM(WS-PRINTER-PDF),
+          ' ', '-F', ' ', TRIM(WS-USEREMAILADD),
+          ' ', '-r', ' ', TRIM(WS-USEREMAILADD),
+          ' ', '-s', ' ', TRIM(WS-SUBJECT-FIXED),
+          ' ', '-t', ' ', 'MGMessageCSCQu.html',
+          ' ', '-T', ' ', TRIM(WSF-MAIL-NUMBER))
+               TO WS-COMMAND-LINE.
+          GO TO SUQFPMGEM-500.
+       SUQFPMGEM-500.      
+      *    MOVE WS-COMMAND-LINE TO  WS-MESSAGE
+      *    PERFORM ERROR-MESSAGE.
+
+      *     DISPLAY WS-COMMAND-LINE  AT 2810
+      *     ACCEPT W-ENTER.
+          CALL "SYSTEM" USING WS-COMMAND-LINE.
+      *               RETURNING W-STATUS.
+      
+      *    MOVE W-STATUS TO  WS-MESSAGE
+      *    PERFORM ERROR-MESSAGE.
+      *    DISPLAY W-STATUS  AT 2810.
+       SUQFPMGEM-999.
+           EXIT.
+      *     STOP RUN.
+      *
+      *('-A', '--API',      default='api')
+      *('-a', '--auth',     default=
+      *                         'key-14a564ed4dc9242de3b4f09b9fd72587')
+      *('-b', '--bcc',      default='pos@christensen.co.za')
+      *('-f', '--file',     default='QUOTE.pdf')
+      *('-F', '--From',     default=
+      *                'CHRISTENSEN TOOLS LTD<sales@christensen.co.za>')
+      *('-r', '--reply_to', default='sales@christensen.co.za')
+      *('-s', '--subject',  default='QUOTE 140931 ex Saftec JHB')
+      *('-t', '--template', default='MailGunMessage.html')
+      *('-T', '--To',       default=
+      *                 'sc@christensen.co.za; Steve@Christensen.co.za')
+      *('-u', '--url',      default=
+      *     'https://api.mailgun.net/v3/pos.christensen.co.za/messages')
+      *

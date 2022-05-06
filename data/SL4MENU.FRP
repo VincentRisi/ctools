@@ -1,0 +1,69 @@
+**************************{**  MAIN CONTROL MENU  **}**************            
+*  *************************{**  SALES CONTROL MENU  **}***************        
+*  * *************************{**  COUNTER SALES MENU  **}*********************
+*  * * 1. Invoice Entry                 16. P/Order Inq by Order/Invoice      *
+*  * * 2. Customer Order Entry                                                *
+*  * * 3. Invoice/Credit Note Print     17. Suppliers Orders Inq By Stock     *
+*  * * 4. Invoice Delivery Labels       18. Suppliers Orders Inq By Order     *
+*  * *                                                                        *
+*  * * 5. Debtor Master Inquiry         19. Quotations - Entry/Edit           *
+*  * * 6. Debtor Short-Name Inquiry     20. Quote Item Inquiry By Account     *
+*  * * 7. Debtor Account Status Inquiry 21. Quote Item Inquiry By Stock       *
+*  * *                                                                        *
+*  * * 8. Stock Inquiry By Account      22. Print Completed Customer Orders   *
+*  * * 9. Stock Short-Desc. Inquiry     23. Toolkit Item Inquiry By Kit       *
+*  * *                                                                        *
+*  * *10. V.A.T. File Inquiry           24. Invoice/C-Note/P-Slip/Quote Inq   *
+*  * *11. Sales Analysis Enquiry        25. P/Slip UN-Pulled/Del Inquiry      *
+*  * *                                                                        *
+*  * *12. B-Orders Inquiry By Account   26. P/Slip Puller Allocations         *
+*  * *13. B-Orders Inquiry By Stock     27. Invoice Delivery Confirmations    *
+**** *                                  28. P/Slip/Invoice Area Edit          *
+   ***14. Inv Orders Inquiry By Account 29. Group Stock Order Convert To PSlip*
+     *15. Inv Orders Inquiry By Stock   30. Stock Enquiry - ALL Branches      *
+     **************************ENTER SELECTION : __****************************
+                                                                               
+                                                                               
+
+Form name: Sl4Menu                         size: 1667  bytes
+height: 26    width: 79    number of fields: 2              
+
+Field name: SELECTION                                        
+Row: 23   Column: 49   Width: 2                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+                                 
+ ******************************* 
+ *  COLOR PALETTE INFORMATION  * 
+ ******************************* 
+                                 
+            Caption Color: 4     
+               Line Color: 7     
+                                 
+                                 
+        *************************
+        *   I N T E N S I T Y   *
+*********************************
+* Color *  Red  * Green *  Blue *
+*********************************
+*   0   *   0   *   3   *   0   *
+*   1   *   0   *   2   *   0   *
+*   2   *   0   *   3   *   3   *
+*   3   *   0   *   2   *   2   *
+*   4   *   3   *   3   *   3   *
+*   5   *   2   *   2   *   2   *
+*   6   *   3   *   3   *   0   *
+*   7   *   3   *   0   *   0   *
+*********************************
+  

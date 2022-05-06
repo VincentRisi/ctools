@@ -1,0 +1,69 @@
+**************************{**  MAIN CONTROL MENU  **}**************            
+*  **************************{**  SALES CONTROL MENU  **}**************        
+*  *   ***********************{**  SPECIAL PROGRAM MENU  **}*******************
+*  *   *                                                                      *
+*  *   *  1. Register File Entry / Edit            16. Pullby Entry / Edit    *
+*  *   *  2. Register File - Change Acc Number     17. Register Xport/Import  *
+*  *   *  3. Soldby Initial's Change: Inv/Order                               *
+*  *   *                                      {Special Submit Routines}       *
+*  *   *  {Last Year Information Programs}    18. Auto Allocations Run        *
+*  *   *  4. Invoice / C-Note Print           19. Branch Update Run           *
+*  *   *  5. Invoice Enquiry By Account       20. Debtor Overdue Faxes        *
+*  *   *  6. Invoice Enquiry By Stock         21. Doculogix Month-End         *
+*  *   *  7. P/O Inq By P/Slip/Invoice/Repair 22. DD Duplicate Disk Image-USB *
+*  *   *  8. Inv/C-Note/P-Slip/Quote Enquiry  23. Stock MinMax YTD Batch Run  *
+*  *   *  9. Invoice Delivery Confirmation    24. Stock MinMax L/Yr Batch Run *
+*  *   * 10. Register Account Enquiry                                         *
+*  *   * 11. Register Name/Address Edit                                       *
+*  *   * 12. Register Enquiry By: Name, Postal                                *
+*  *   *      or Delivery Address                                             *
+*  *   * 13. Register File Entry / Edit                                       *
+****   * 14. Register File - Change Acc Number                                *
+   ***** 15. Register File Report By Acc & Date                               *
+       *                                                                      *
+       ************************ENTER SELECTION : __****************************
+                                                                               
+                                                                               
+
+Form name: Sl6Menu                         size: 1348  bytes
+height: 26    width: 79    number of fields: 2              
+
+Field name: SELECTION                                        
+Row: 23   Column: 49   Width: 2                              
+Repeating? No   Index:        (first:        last:      )    
+Control: Tx  Justification: L   Sequence number:             
+Secret? No   Protected? No   Mandatory? No                   
+Default:                                                     
+Show default? Yes  Auto-exit? No   Unselected: A  Selected: E
+Validation routine:                                          
+Help message:                                                
+                                                             
+Selected Color Number:             Unselected Color Number:  
+List of values:                                              
+
+
+
+                                 
+ ******************************* 
+ *  COLOR PALETTE INFORMATION  * 
+ ******************************* 
+                                 
+            Caption Color: 4     
+               Line Color: 7     
+                                 
+                                 
+        *************************
+        *   I N T E N S I T Y   *
+*********************************
+* Color *  Red  * Green *  Blue *
+*********************************
+*   0   *   0   *   3   *   0   *
+*   1   *   0   *   2   *   0   *
+*   2   *   0   *   3   *   3   *
+*   3   *   0   *   2   *   2   *
+*   4   *   3   *   3   *   3   *
+*   5   *   2   *   2   *   2   *
+*   6   *   3   *   3   *   0   *
+*   7   *   3   *   0   *   0   *
+*********************************
+  

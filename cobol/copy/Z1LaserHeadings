@@ -1,0 +1,52 @@
+      *-----------------------------------------------------------*
+       ZL1-LASER-HEADINGS SECTION.
+      *-----------------------------------------------------------*
+       ZL1-50.
+            MOVE ALL SPACES TO WS-FST-LINE WS-OTH-LINE-1.
+            MOVE "´¶" TO WS-DELIM-F
+            MOVE "¶"  TO WS-DELIM-O.
+            
+            MOVE 1             TO SUB-1
+            MOVE SUB-1         TO WS-O-LINE
+            MOVE "SuppLine"    TO WS-O-L
+            MOVE WS-OTH-LINE-1 TO WS-DATA-F
+            WRITE LASER-REC FROM WS-FST-LINE.
+       ZL1-51.
+            ADD 1              TO SUB-1
+            IF SUB-1 > 12
+               MOVE 0 TO SUB-1
+               GO TO ZL1-53.
+            MOVE SUB-1         TO WS-O-LINE
+            MOVE "SuppLine"    TO WS-O-L
+            MOVE WS-OTH-LINE-1 TO WS-DATA-O
+            WRITE LASER-REC FROM WS-OTH-LINE.
+            GO TO ZL1-51.
+       ZL1-53.
+            MOVE 1             TO SUB-1
+            MOVE SUB-1         TO WS-O-LINE
+            MOVE "TermLine"    TO WS-O-L
+            MOVE WS-OTH-LINE-1 TO WS-DATA-O
+            WRITE LASER-REC FROM WS-OTH-LINE
+            MOVE 0             TO SUB-1.
+       ZL1-54.
+            ADD 1              TO SUB-1
+            IF SUB-1 > 20
+               MOVE 0 TO SUB-1
+               GO TO ZL1-60.
+            MOVE SUB-1         TO WS-O-LINE
+            MOVE "BodyLine"    TO WS-O-L
+            MOVE WS-OTH-LINE-1 TO WS-DATA-O
+            WRITE LASER-REC FROM WS-OTH-LINE.
+            GO TO ZL1-54.
+       ZL1-60.
+            ADD 1              TO SUB-1
+            IF SUB-1 > 5
+               MOVE 0 TO SUB-1
+               GO TO ZL1-100.
+            MOVE SUB-1         TO WS-O-LINE
+            MOVE "TotlLine"    TO WS-O-L
+            MOVE WS-OTH-LINE-1 TO WS-DATA-O
+            WRITE LASER-REC FROM WS-OTH-LINE.
+            GO TO ZL1-60.
+       ZL1-100.
+           EXIT.
